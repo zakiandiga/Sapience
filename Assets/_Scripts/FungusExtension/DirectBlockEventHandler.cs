@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Fungus;
 
 namespace Fungus
 {
@@ -13,21 +10,23 @@ namespace Fungus
     {
         public BlockReference targetBlock;
 
+        
         private void Start()
         {
-            PlayerController.OnCallingDialogue += CallingDialogue;
+            Interactable.OnCallingDialogue += CallingDialogue;
         }
 
         private void OnDisable()
         {
-            PlayerController.OnCallingDialogue -= CallingDialogue;
+            Interactable.OnCallingDialogue -= CallingDialogue;
         }
-
+       
         private void CallingDialogue(BlockReference currentBlock)
         {
             targetBlock = currentBlock;
             targetBlock.Execute();
         }
+    
     }
 }
 
