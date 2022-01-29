@@ -6,12 +6,12 @@ public class Interactable : MonoBehaviour
 {
     protected bool isInteractable;
 
-    [SerializeField] protected Player currentPlayer;
+    protected Player currentPlayer;
     public BlockReference currentBlockReference;
 
     public static event Action<BlockReference> OnCallingDialogue;
 
-    protected void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         currentPlayer = collision.GetComponent<Player>();
         if (currentPlayer.CurrentInteractible == null)
@@ -20,7 +20,6 @@ public class Interactable : MonoBehaviour
             isInteractable = true;
             currentPlayer.OnPlayerInteract += Interact;
         }
-
     }
 
     protected void OnTriggerStay2D(Collider2D collision)
@@ -44,8 +43,7 @@ public class Interactable : MonoBehaviour
             currentPlayer.OnPlayerInteract -= Interact;
             currentPlayer.SetInteractible(null);
             currentPlayer = null;
-            isInteractable = false;
-            
+            isInteractable = false;            
         }
     }
     
