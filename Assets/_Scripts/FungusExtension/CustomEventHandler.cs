@@ -16,12 +16,12 @@ namespace Fungus
     {
         private void Start()
         {
-            Player.OnCallingDialogue += CallingDialogue;
+            //Player.OnCallingDialogue += CallingDialogue;
         }
 
         private void OnDisable()
         {
-            Player.OnCallingDialogue -= CallingDialogue;
+            //Player.OnCallingDialogue -= CallingDialogue;
         }
 
         private void CallingDialogue(BlockReference playerName)

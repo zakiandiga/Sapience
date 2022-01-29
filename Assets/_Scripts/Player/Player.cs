@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
     #region Player Events
     public static event Action<int> OnTakeDamage;
 
-    public static event Action<BlockReference> OnCallingDialogue;
+    //public static event Action<BlockReference> OnCallingDialogue;
 
     public event Action<Player> OnPlayerInteract;
     #endregion
