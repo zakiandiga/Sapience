@@ -6,6 +6,7 @@
 Assets/AssetStoreTools*
 Assets/Fungus/Audio
 Assets/FungusExamples
+[Ll]ogs/
 
 # Visual Studio cache directory
 .vs/
