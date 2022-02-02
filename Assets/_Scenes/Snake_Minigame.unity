@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 146527d06b1e9af478bea09495a4008c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeDirection: {fileID: 5716471526627055201, guid: 95f70c7cf5b927e48bbbb408c27d833b, type: 3}
+  changeDirection: {fileID: -7253344855522323531, guid: 2f9295c6e7dc1904fac4dd359c799c0a, type: 3}
 --- !u!1 &1018594076
 GameObject:
   m_ObjectHideFlags: 0
