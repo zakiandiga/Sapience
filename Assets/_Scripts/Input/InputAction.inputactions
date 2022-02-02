@@ -153,6 +153,7 @@
             "id": "20a8a8c1-6146-4124-ba5f-90d345a8d534",
             "actions": [
                 {
+<<<<<<< HEAD
                     "name": "Direction",
                     "type": "Button",
                     "id": "dd979ae7-de93-4866-a29b-04cdc671f84d",
@@ -170,6 +171,9 @@
                 },
                 {
                     "name": "Button2",
+=======
+                    "name": "Directional",
+>>>>>>> origin/MinigameBranch1
                     "type": "Button",
                     "id": "fd14deb5-d5b2-46f1-a3a7-5ca480d8f3b0",
                     "expectedControlType": "Button",
@@ -180,6 +184,7 @@
             "bindings": [
                 {
                     "name": "WASD",
+<<<<<<< HEAD
                     "id": "3a4b260f-f8d7-4403-b132-22e70bee07b0",
                     "path": "2DVector",
                     "interactions": "",
@@ -308,7 +313,60 @@
                     "groups": "",
                     "action": "Button2",
                     "isComposite": false,
+=======
+                    "id": "e742857e-b73f-415d-8980-61bff76e8472",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Directional",
+                    "isComposite": true,
+>>>>>>> origin/MinigameBranch1
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "6f728e3d-8122-461d-8de0-a46a86f4eaba",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Directional",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "f39178eb-dcc3-4193-9fda-8efbd8b55e2e",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Directional",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "b658ee12-73e5-4a86-84dd-48af282cb7a6",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Directional",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "b67d1930-c83c-4a18-8acf-02f1a2a5cd3d",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Directional",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
