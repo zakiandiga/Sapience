@@ -10,8 +10,8 @@ public class Player : MonoBehaviour
     public Interactable CurrentInteractible { get; private set; }
 
     #region State Properties
-    public PlayerStateMachine StateMachine { get; private set; }
-    public PlayerIdle IdleState { get; private set; }
+    //public PlayerStateMachine StateMachine { get; private set; }
+    //public PlayerIdle IdleState { get; private set; }
     #endregion
 
     #region Movement Properties
@@ -91,8 +91,8 @@ public class Player : MonoBehaviour
 
     private void InitializeStateMachine()
     {
-        StateMachine = new PlayerStateMachine();
-        IdleState = new PlayerIdle(this, StateMachine, playerData, animator, animationHolder);
+        //StateMachine = new PlayerStateMachine();
+        //IdleState = new PlayerIdle(this, StateMachine, playerData, animator, animationHolder);
     }
 
     private void EnablingPlayerControl(string blockName)

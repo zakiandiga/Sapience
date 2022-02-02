@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -23,8 +21,6 @@ public class PlayerInputHandler : MonoBehaviour
 
     public bool IsJumping { get; private set; }
     public bool Interacting { get; private set; }
-
-
 
     private void OnEnable()
     {        
