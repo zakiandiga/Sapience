@@ -9,18 +9,13 @@ public class PlayerInputHandler : MonoBehaviour
 
     public float MoveAxis
     {
-        get
-        {
-            return run.action.ReadValue<float>();
-        }
-        private set
-        {
-            run.action.ReadValue<float>();
-        }
+        get => run.action.ReadValue<float>();
+        private set { }
     }
 
-    public bool IsJumping { get; private set; }
+    public bool IsJumping { get;  private set; }
     public bool Interacting { get; private set; }
+
 
     private void OnEnable()
     {        
@@ -64,7 +59,6 @@ public class PlayerInputHandler : MonoBehaviour
         {
             Interacting = true;
         }
-
     }
 
     private void Jump(InputAction.CallbackContext context)

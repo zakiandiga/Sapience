@@ -125,12 +125,7 @@ public class Player : MonoBehaviour
                     OnPlayerInteract?.Invoke(this);
                     inputHandler.StopInteract();
                     playerState = PlayerMoveState.interacting;
-                }
-
-                if (inputHandler.IsJumping)
-                {
-                    Jump();
-                }
+                }              
 
                 break;
 
@@ -141,10 +136,10 @@ public class Player : MonoBehaviour
                     playerState = PlayerMoveState.idle;
                 }
 
-                if (inputHandler.IsJumping)//temp
-                {
-                    Jump();
-                }
+                break;
+
+            case PlayerMoveState.onAir:
+
                 break;
 
             case PlayerMoveState.interacting:
@@ -156,14 +151,24 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(playerState != PlayerMoveState.interacting || playerState != PlayerMoveState.onAir)
+        {
+            if(inputHandler.IsJumping)
+            {
+                Debug.Log("Jump pressed!");
+                //playerState = PlayerMoveState.onAir;
+                Jump();
+            }
+        }
 
-        rb.velocity = new Vector2 (_playerVelocity.x * speed * Time.deltaTime, _playerVelocity.y);
+
+        rb.velocity = new Vector2 (_playerVelocity.x * speed * Time.deltaTime, rb.velocity.y);
 
     }
 
     private void Jump()
     {
-        rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+        rb.velocity = new Vector2 (rb.velocity.x, _playerVelocity.y * jumpForce * Time.deltaTime);
     }
 
     public bool GroundCheck()
