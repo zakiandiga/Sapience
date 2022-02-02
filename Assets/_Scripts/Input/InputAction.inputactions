@@ -172,7 +172,7 @@
             "id": "20a8a8c1-6146-4124-ba5f-90d345a8d534",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Directional",
                     "type": "Button",
                     "id": "c714398c-e67c-4ee9-a308-80d7ded7ae42",
                     "expectedControlType": "Button",
@@ -182,15 +182,59 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "cc85161f-c332-404f-a3fe-c566e78d45fd",
-                    "path": "",
+                    "name": "WASD",
+                    "id": "e742857e-b73f-415d-8980-61bff76e8472",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
+                    "action": "Directional",
+                    "isComposite": true,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "6f728e3d-8122-461d-8de0-a46a86f4eaba",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Directional",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "f39178eb-dcc3-4193-9fda-8efbd8b55e2e",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Directional",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "b658ee12-73e5-4a86-84dd-48af282cb7a6",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Directional",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "b67d1930-c83c-4a18-8acf-02f1a2a5cd3d",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Directional",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
