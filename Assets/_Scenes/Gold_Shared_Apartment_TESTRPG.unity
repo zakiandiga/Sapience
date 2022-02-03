@@ -28276,9 +28276,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a403ae5bdeff02543a75c23f40143752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  run: {fileID: -8188395422539938626, guid: 95f70c7cf5b927e48bbbb408c27d833b, type: 3}
-  jump: {fileID: 463046679987797049, guid: 95f70c7cf5b927e48bbbb408c27d833b, type: 3}
-  interact: {fileID: 4512749628501501145, guid: 95f70c7cf5b927e48bbbb408c27d833b, type: 3}
+  run: {fileID: -1936028400165699512, guid: 2f9295c6e7dc1904fac4dd359c799c0a, type: 3}
+  jump: {fileID: 6720305852862902678, guid: 2f9295c6e7dc1904fac4dd359c799c0a, type: 3}
+  interact: {fileID: -5569614742509606380, guid: 2f9295c6e7dc1904fac4dd359c799c0a, type: 3}
 --- !u!50 &1187093354
 Rigidbody2D:
   serializedVersion: 4

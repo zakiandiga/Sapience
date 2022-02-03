@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
 
@@ -119,14 +117,15 @@ public class Player : MonoBehaviour
                 {
                     playerState = PlayerMoveState.move;
                 }
+
                 if (inputHandler.Interacting)
                 {
+                    Debug.Log("Player INTERACTING");
                     //OnCallingDialogue?.Invoke(tempBlockRef);
                     OnPlayerInteract?.Invoke(this);
-                    inputHandler.StopInteract();
-                    playerState = PlayerMoveState.interacting;
+                    //inputHandler.StopInteract();
+                    //playerState = PlayerMoveState.interacting;
                 }              
-
                 break;
 
             case PlayerMoveState.move:                

@@ -23,9 +23,11 @@ public class MovementManager : MonoBehaviour
         OnBlockStart?.Invoke(blockName);
     }
 
-    public void SetScene(string scene)
+    public void LoadMinigame(string minigameSceneName)
     {
-        SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
+        //Handle loading screen here
+        SceneManager.LoadSceneAsync(minigameSceneName, LoadSceneMode.Additive);
+    
     }
 
     public void AnnouncingFlowchart(Flowchart flowchart)

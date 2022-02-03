@@ -7,15 +7,9 @@ public class PlayerInputHandler : MonoBehaviour
     [SerializeField] private InputActionReference jump;
     [SerializeField] private InputActionReference interact;
 
-    public float MoveAxis
-    {
-        get => run.action.ReadValue<float>();
-        private set { }
-    }
-
-    public bool IsJumping { get;  private set; }
-    public bool Interacting { get; private set; }
-
+    public float MoveAxis => run.action.ReadValue<float>();
+    public bool IsJumping => jump.action.triggered;
+    public bool Interacting => interact.action.triggered;
 
     private void OnEnable()
     {        
@@ -32,49 +26,13 @@ public class PlayerInputHandler : MonoBehaviour
         {
             run.action.Enable();
             jump.action.Enable();
-            interact.action.Enable();
-
-            jump.action.started += Jump;
-            jump.action.canceled += Jump;
-            interact.action.started += Interact;
-            interact.action.canceled += Interact;
-
+            interact.action.Enable();  
         }
         else if (!enabling)
         {
             run.action.Disable();
             jump.action.Disable();
-            interact.action.Disable();
-
-            jump.action.started -= Jump;
-            jump.action.canceled -= Jump;
-            interact.action.started -= Interact;
-            interact.action.canceled -= Interact;
+            interact.action.Disable();            
         }
-    }
-
-    private void Interact(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            Interacting = true;
-        }
-    }
-
-    private void Jump(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            IsJumping = true;
-        }
-        if (context.canceled)
-        {
-            IsJumping = false;
-        }
-    }
-
-    public void JumpStop() => IsJumping = false;
-
-    public void StopInteract() => Interacting = false;
-
+    }     
 }

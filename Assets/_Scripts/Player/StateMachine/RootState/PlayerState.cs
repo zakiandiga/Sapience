@@ -76,7 +76,7 @@ public class PlayerState: AbstractState
                 onJumpPressedTolerance = true;
                 Timer.Create(JumpPressedTimeout, jumpTimerTick, jumpPressedTimer);
             }
-            player.InputHandler.JumpStop();
+            //player.InputHandler.JumpStop();
         }
 
         if (isTurning)
