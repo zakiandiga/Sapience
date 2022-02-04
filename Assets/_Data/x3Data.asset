@@ -12,17 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b00723abf8b4cc945ab7828c52041e81, type: 3}
   m_Name: x3Data
   m_EditorClassIdentifier: 
-  dataOwner: X3
-  groundSpeed: 15
-  accelTime: 20
-  deccelTime: 18.4
-  airSpeed: 8
-  airAccelTime: 5
-  jumpHeight: 8
-  jumpConst: -1
+  characterName: X3
+  groundSpeed: 150
+  airSpeed: 50
+  jumpStrength: 100
   gravityValue: -98.5
-  airAttackGravityMod: -10
-  maxJumpCount: 2
-  recoveryFall: 0.5
-  recoveryAirNormalAttack: 0.8
-  staggerTime: 0.8

@@ -30,4 +30,9 @@ public class NPC : Interactable
         //Do extra stuff NPC do
 
     }
+
+    public void SetBarking()
+    {
+        isBarking = true;
+    }
 }

@@ -4,39 +4,13 @@ using Fungus;
 
 public class Player : MonoBehaviour
 {
-    public string PlayerName { get { return playerName; } private set { } }
+    public string PlayerName => playerData.characterName;
     public Interactable CurrentInteractible { get; private set; }
 
-    #region State Properties
-    //public PlayerStateMachine StateMachine { get; private set; }
-    //public PlayerIdle IdleState { get; private set; }
-    #endregion
-
-    #region Movement Properties
-    public Vector2 PlayerVelocity { get { return _playerVelocity; } private set { } }
-    public Vector2 RawVelocity { get { return _rawVelocity; } private set { } }
-    public bool IsGrounded { get { return GroundCheck(); } private set { } }
-
-    public PlayerInputHandler InputHandler { get { return inputHandler; } private set { } }
-
-    #endregion
-
-    [SerializeField] private string playerName;
-
-    [SerializeField] private PlayerMoveState playerState = PlayerMoveState.idle;
-
-    ///States:
-    ///idle
-    ///move
-    ///interact
-    ///jump
-    ///land
-    ///fall
-    ///disabled
+    private PlayerMoveState playerState = PlayerMoveState.idle;
 
     private PlayerInputHandler inputHandler;
-    private Animator animator;
-    private AnimationHolder animationHolder;
+    private CharacterAnimation playerAnimation;
     private Rigidbody2D rb;
 
 
@@ -52,16 +26,8 @@ public class Player : MonoBehaviour
     #endregion
 
     #region Player Events
-    public static event Action<int> OnTakeDamage;
-
-    //public static event Action<BlockReference> OnCallingDialogue;
-
     public event Action<Player> OnPlayerInteract;
     #endregion
-
-    //Temporary debug
-    public BlockReference tempBlockRef;
-
 
     private void Awake()
     {
@@ -72,6 +38,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         inputHandler = GetComponent<PlayerInputHandler>();
+        playerAnimation = GetComponentInChildren<CharacterAnimation>();
     }
 
     private void OnEnable()
@@ -84,13 +51,6 @@ public class Player : MonoBehaviour
     {
         MovementManager.OnBlockEnd -= EnablingPlayerControl;
         MovementManager.OnBlockStart -= DisablingPlayerControl;
-    }
-
-
-    private void InitializeStateMachine()
-    {
-        //StateMachine = new PlayerStateMachine();
-        //IdleState = new PlayerIdle(this, StateMachine, playerData, animator, animationHolder);
     }
 
     private void EnablingPlayerControl(string blockName)
