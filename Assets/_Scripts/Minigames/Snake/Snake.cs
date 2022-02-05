@@ -9,9 +9,15 @@ public class Snake : MonoBehaviour
     private Vector2 gridPosition;
     private float gridMoveTimer;
     private float gridMoveTimerMax;
+    private LevelGrid levelGrid;
 
     [SerializeField] private InputActionReference changeDirection;
 
+    public void Setup(LevelGrid levelGrid)
+    {
+        this.levelGrid = levelGrid;
+    }
+    
     private void Start()
     {
         changeDirection.action.Enable();
@@ -20,7 +26,7 @@ public class Snake : MonoBehaviour
     private void Awake()
     {
         gridPosition = new Vector2(10, 10);
-        gridMoveTimerMax = 1f;
+        gridMoveTimerMax = .3f;
         gridMoveTimer = gridMoveTimerMax;
         gridMoveDirection = new Vector2(1, 0);
     }
@@ -39,6 +45,12 @@ public class Snake : MonoBehaviour
 
     private void Update()
     {
+        HandleInput();
+        HandleGridMovement();
+    }
+
+    private void HandleInput()
+    {
         if (ChangePosition.y > 0 && gridMoveDirection.y != 1) //Up
         {
             if (gridMoveDirection.y != -1)
@@ -46,7 +58,7 @@ public class Snake : MonoBehaviour
                 gridMoveDirection.x = 0;
                 gridMoveDirection.y = +1;
             }
-            
+
         }
 
         if (ChangePosition.y < 0 && gridMoveDirection.y != -1) //Down
@@ -65,7 +77,7 @@ public class Snake : MonoBehaviour
                 gridMoveDirection.x = -1;
                 gridMoveDirection.y = 0;
             }
-            
+
         }
 
         if (ChangePosition.x > 0 && gridMoveDirection.x != 1) //Right
@@ -75,16 +87,34 @@ public class Snake : MonoBehaviour
                 gridMoveDirection.x = +1;
                 gridMoveDirection.y = 0;
             }
-            
-        }
 
+        }
+    }
+
+    private void HandleGridMovement()
+    {
         gridMoveTimer += Time.deltaTime; //Constant Movement
         if (gridMoveTimer >= gridMoveTimerMax)
         {
             gridPosition += gridMoveDirection;
             gridMoveTimer -= gridMoveTimerMax;
-        }
 
-        transform.position = new Vector3(gridPosition.x, gridPosition.y);
+            transform.position = new Vector3(gridPosition.x, gridPosition.y);
+            transform.eulerAngles = new Vector3(0, 0, GetAngleFromVector(gridMoveDirection));
+
+            levelGrid.SnakeMoved(gridPosition);
+        }
+    }
+
+    private float GetAngleFromVector(Vector2 dir)
+    {
+        float n = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        if (n < 0) n += 360;
+        return n;
+    }
+
+    public Vector2 GetGridPosition()
+    {
+        return gridPosition;
     }
 }
