@@ -23,6 +23,11 @@ public class MovementManager : MonoBehaviour
         OnBlockStart?.Invoke(blockName);
     }
 
+    public void LoadDay(GameObject dayObject)
+    {
+        dayObject.SetActive(true);
+    }
+
     public void LoadMinigame(string minigameSceneName)
     {
         //Handle loading screen here
@@ -33,5 +38,13 @@ public class MovementManager : MonoBehaviour
     public void AnnouncingFlowchart(Flowchart flowchart)
     {
         OnAnnounceFlowchart?.Invoke(flowchart);
+    }
+
+    public void ChangeRoom(GameObject currentRoom, GameObject nextRoom)
+    {
+        //fade out
+        currentRoom.SetActive(false);
+        nextRoom.SetActive(true);
+        //fade in
     }
 }
