@@ -30,19 +30,23 @@ public class LevelGrid
         do
         {
             foodGridPosition = new Vector2(Random.Range(0, width), Random.Range(0, height));
-        } while (snake.GetGridPosition() == foodGridPosition); //Randomizes food spawn position and prevents the food from spawning on top of the snake
+        } while (snake.GetFullSnakeGridPositionList().IndexOf(foodGridPosition) != -1); //Randomizes food spawn position and prevents the food from spawning on top of the snake
 
         foodGameObject = new GameObject("Food", typeof(SpriteRenderer));
         foodGameObject.GetComponent<SpriteRenderer>().sprite = GameAssets.i.foodSprite;
         foodGameObject.transform.position = new Vector3(foodGridPosition.x, foodGridPosition.y);
     }
 
-    public void SnakeMoved(Vector2 snakeGridPosition)
+    public bool TrySnakeEatFood(Vector2 snakeGridPosition)
     {
         if (snakeGridPosition == foodGridPosition)
         {
             Object.Destroy(foodGameObject);
             SpawnFood();
+            return true;
+        } else
+        {
+            return false;
         }
     }
 
