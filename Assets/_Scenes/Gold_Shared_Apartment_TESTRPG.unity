@@ -2179,9 +2179,6 @@ GameObject:
   - component: {fileID: 65297968}
   - component: {fileID: 65297967}
   - component: {fileID: 65297966}
-  - component: {fileID: 65297965}
-  - component: {fileID: 65297964}
-  - component: {fileID: 65297963}
   - component: {fileID: 65297959}
   - component: {fileID: 65297958}
   - component: {fileID: 65297954}
@@ -2258,12 +2255,10 @@ GameObject:
   - component: {fileID: 65297980}
   - component: {fileID: 65297938}
   - component: {fileID: 65297935}
-  - component: {fileID: 65298001}
   - component: {fileID: 65298002}
   - component: {fileID: 65298003}
   - component: {fileID: 65297957}
   - component: {fileID: 65297955}
-  - component: {fileID: 65297886}
   - component: {fileID: 65297894}
   - component: {fileID: 65297962}
   - component: {fileID: 65297961}
@@ -2275,7 +2270,8 @@ GameObject:
   - component: {fileID: 65297999}
   - component: {fileID: 65297983}
   - component: {fileID: 65298004}
-  - component: {fileID: 65298005}
+  - component: {fileID: 65297963}
+  - component: {fileID: 65297886}
   m_Layer: 0
   m_Name: day1_day_x3_shared_apt
   m_TagString: Untagged
@@ -2309,7 +2305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 129
+  itemId: 140
   indentLevel: 0
   description: 
   targetObject: {fileID: 268782385}
@@ -2317,8 +2313,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: MovementManager
-  targetMethod: PlayerMove
-  targetMethodText: 'PlayerMove (String): Void'
+  targetMethod: LoadMinigame
+  targetMethodText: 'LoadMinigame (String): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -2327,7 +2323,7 @@ MonoBehaviour:
       intValue: 0
       boolValue: 0
       floatValue: 0
-      stringValue: Some Musings
+      stringValue: Snake_Minigame_TEST
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
@@ -3073,7 +3069,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -948.6495
     y: 352.97238
-    width: 148.9011
+    width: 151
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3106,7 +3102,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1216.0195
     y: 341.33984
-    width: 146.70328
+    width: 149
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3482,7 +3478,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -536.40765
     y: 686.4883
-    width: 134.61539
+    width: 137
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3836,7 +3832,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -582.63794
     y: 535.4299
-    width: 91.75824
+    width: 93
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3866,7 +3862,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -437.98047
     y: 533.55194
-    width: 108.24175
+    width: 111
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5178,7 +5174,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -84.583725
     y: 326.0577
-    width: 121.428566
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5235,7 +5231,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 101.45709
     y: 371.41568
-    width: 110.43956
+    width: 111
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5567,7 +5563,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -528.92474
     y: 412.23718
-    width: 142.30768
+    width: 146
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5754,82 +5750,59 @@ MonoBehaviour:
   m_GameObject: {fileID: 65297884}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 41
+  itemId: 139
   indentLevel: 0
-  storyText: 'Shaking your head, you wonder if you should try and get in a bite to
-    eat or head to the office early to get some work done before the big announcements. '
   description: 
-  character: {fileID: 1218727728}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 2026551462}
---- !u!114 &65297964
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65297884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 40
-  indentLevel: 0
-  storyText: 'You pause at the word, "lifelike". What does that even mean? You are
-    alive, therefore you are lifelike, it''s not possible to look more lifelike than
-    that. '
-  description: 
-  character: {fileID: 1218727728}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 2026551462}
---- !u!114 &65297965
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65297884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 39
-  indentLevel: 0
-  storyText: ' I can''t believe how different X-6755 looks with it, she looks so
-    much more...{w}lifelike.{w=0/5} '
-  description: 
-  character: {fileID: 311545510}
-  portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 998947429}
+  targetObject: {fileID: 268782385}
+  targetComponentAssemblyName: MovementManager, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: MovementManager
+  targetMethod: ChangeRoom
+  targetMethodText: 'ChangeRoom (GameObject, GameObject): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      typeFullname: UnityEngine.GameObject
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 1221143377}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      typeFullname: UnityEngine.GameObject
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 1250481795}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &65297966
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5874,7 +5847,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -547.5228
     y: 152.99706
-    width: 129.12088
+    width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5885,11 +5858,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 65297894}
   - {fileID: 65297996}
-  - {fileID: 65298005}
   - {fileID: 65297966}
-  - {fileID: 65297965}
-  - {fileID: 65297964}
-  - {fileID: 65297963}
   - {fileID: 65297886}
   suppressAllAutoSelections: 0
 --- !u!114 &65297968
@@ -6018,7 +5987,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -878.781
     y: 575.073
-    width: 113.73626
+    width: 114
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6046,7 +6015,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -803.8449
     y: 245.82338
-    width: 123.626366
+    width: 125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6267,7 +6236,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -95.7955
     y: 245.69176
-    width: 122.527466
+    width: 125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6383,7 +6352,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 110.61825
     y: 246.90044
-    width: 114.83516
+    width: 116
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6414,7 +6383,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -183.98282
     y: 128.89386
-    width: 107.14285
+    width: 109
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6548,7 +6517,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 100.53166
     y: 120.28322
-    width: 128.02197
+    width: 129
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6648,9 +6617,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 63.376625
+    x: 66.673325
     y: 12.302673
-    width: 136.81317
+    width: 140
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6661,11 +6630,11 @@ MonoBehaviour:
   commandList:
   - {fileID: 65297971}
   - {fileID: 65297998}
-  - {fileID: 65298001}
   - {fileID: 65298003}
   - {fileID: 65297992}
   - {fileID: 65297991}
   - {fileID: 65297989}
+  - {fileID: 65297963}
   suppressAllAutoSelections: 0
 --- !u!114 &65297995
 MonoBehaviour:
@@ -6680,11 +6649,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 934.8331, y: 272.3569}
+  scrollPos: {x: 1100.258, y: 198.00294}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 441
-  zoom: 0.9100001
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -6692,8 +6661,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 65297994}
-  selectedCommands: []
+  - {fileID: 65297967}
+  selectedCommands:
+  - {fileID: 65297886}
   variables:
   - {fileID: 65297968}
   - {fileID: 65297932}
@@ -7078,7 +7048,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -334.57996
     y: 279.12378
-    width: 119.23077
+    width: 122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7090,51 +7060,6 @@ MonoBehaviour:
   - {fileID: 65297983}
   - {fileID: 65298004}
   suppressAllAutoSelections: 0
---- !u!114 &65298001
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65297884}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 125
-  indentLevel: 0
-  description: Call the action scene
-  targetObject: {fileID: 268782385}
-  targetComponentAssemblyName: MovementManager, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: MovementManager
-  targetMethod: SetScene
-  targetMethodText: 'SetScene (String): Void'
-  methodParameters:
-  - objValue:
-      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      typeFullname: System.String
-      intValue: 0
-      boolValue: 0
-      floatValue: 0
-      stringValue: OverworldTest
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 0}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
 --- !u!114 &65298002
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7248,68 +7173,6 @@ MonoBehaviour:
   targetMethod: SetBarking
   targetMethodText: 'SetBarking (): Void'
   methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &65298005
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65297884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 138
-  indentLevel: 0
-  description: 
-  targetObject: {fileID: 268782385}
-  targetComponentAssemblyName: MovementManager, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: MovementManager
-  targetMethod: ChangeRoom
-  targetMethodText: 'ChangeRoom (GameObject, GameObject): Void'
-  methodParameters:
-  - objValue:
-      typeAssemblyname: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      typeFullname: UnityEngine.GameObject
-      intValue: 0
-      boolValue: 0
-      floatValue: 0
-      stringValue: 
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 1221143377}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
-  - objValue:
-      typeAssemblyname: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      typeFullname: UnityEngine.GameObject
-      intValue: 0
-      boolValue: 0
-      floatValue: 0
-      stringValue: 
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 1250481795}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
   saveReturnValue: 0
   returnValueVariableKey: 
   returnValueType: System.Void
@@ -32813,7 +32676,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 60.376625
     y: 14.302673
-    width: 165.85368
+    width: 165.06851
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -32852,11 +32715,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 619.1241, y: 163.20728}
+  scrollPos: {x: 724.5503, y: 208.48131}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 441
-  zoom: 0.8199998
+  zoom: 0.7299999
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -62174,6 +62037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 189598818609364658, guid: df69e07dde052df4ba234e17d421849a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 189598818609364668, guid: df69e07dde052df4ba234e17d421849a, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -62230,6 +62097,10 @@ PrefabInstance:
     - target: {fileID: 2991678816198128157, guid: c17ed59c37d18254e9b5ce80ae3a8b71, type: 3}
       propertyPath: m_Name
       value: Day1_X3_SharedApt
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991678816198128157, guid: c17ed59c37d18254e9b5ce80ae3a8b71, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2991678816198128158, guid: c17ed59c37d18254e9b5ce80ae3a8b71, type: 3}
       propertyPath: m_RootOrder
@@ -62602,6 +62473,10 @@ PrefabInstance:
     - target: {fileID: 7888605611819044060, guid: 36dbdb9530499ee48864f63e45f63abe, type: 3}
       propertyPath: m_Name
       value: AutomaticDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7888605611819044060, guid: 36dbdb9530499ee48864f63e45f63abe, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7888605611819044061, guid: 36dbdb9530499ee48864f63e45f63abe, type: 3}
       propertyPath: currentBlockReference.block
