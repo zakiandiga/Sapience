@@ -5,9 +5,7 @@ using Fungus;
 public class Interactable : MonoBehaviour
 {
     protected bool isInteractable;
-
     protected Player currentPlayer;
-
     [SerializeField] protected GameObject interactIcon;
 
     public BlockReference currentBlockReference;
