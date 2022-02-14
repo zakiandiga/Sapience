@@ -33,6 +33,7 @@ public class MovementManager : MonoBehaviour
 
     public void DisablePlayer(string blockName)
     {
+        Debug.Log("This is working");
         OnBlockStart?.Invoke(blockName);
     }
 

@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Overworld/OverworldTest.unity
     guid: 772bdefa37c34344bb7ee299dc05aac9
+  - enabled: 1
+    path: Assets/_Scenes/Snake_Minigame.unity
+    guid: 786d22a8ab00b11489c97b0dec144aca
   m_configObjects: {}
