@@ -285,6 +285,8 @@ GameObject:
   - component: {fileID: 405352123}
   - component: {fileID: 405352128}
   - component: {fileID: 405352129}
+  - component: {fileID: 405352125}
+  - component: {fileID: 405352124}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -307,6 +309,48 @@ MonoBehaviour:
   scope: 1
   key: scoreNumber
   value: 0
+--- !u!114 &405352124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405352122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709e9e9f3046ff44d81b197a0695279a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 405352125}
+  suppressBlockAutoSelect: 0
+  targetBlock:
+    block: {fileID: 0}
+--- !u!114 &405352125
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405352122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 323
+    y: 174
+    width: 111
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 0
+  blockName: New Block
+  description: 
+  eventHandler: {fileID: 405352124}
+  commandList: []
+  suppressAllAutoSelections: 0
 --- !u!114 &405352126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,7 +375,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 405352125}
   selectedCommands: []
   variables:
   - {fileID: 405352129}

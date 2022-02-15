@@ -6,7 +6,7 @@ namespace Fungus
                       "OnAfterMinigames",
                       "The block will execute on Calling the block directly.")]
     [AddComponentMenu("")]
-    public class AfterMinigameEventHandler : MonoBehaviour
+    public class AfterMinigameEventHandler : EventHandler
     {
         public BlockReference targetBlock;
 
@@ -21,9 +21,8 @@ namespace Fungus
             Snake.OnMinigameEnd -= CallingDialogue;
         }
 
-        private void CallingDialogue(BlockReference currentBlock)
+        private void CallingDialogue(string currentBlock)
         {
-            targetBlock = currentBlock;
             targetBlock.Execute();
         }
     }
