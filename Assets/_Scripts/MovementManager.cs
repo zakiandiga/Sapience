@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Fungus;
@@ -9,20 +7,25 @@ public class MovementManager : MonoBehaviour
 {
     public static event Action<string> OnBlockEnd;
     public static event Action<string> OnBlockStart;
-
     public static event Action<Flowchart> OnAnnounceFlowchart;
 
+    private CameraManager cameraManager;
+
     private string currentScene;
-    private AsyncOperation minigameLoading;
+
+    private void Start()
+    {
+        cameraManager = GetComponent<CameraManager>();
+    }
 
     private void OnEnable()
     {
         currentScene = SceneManager.GetActiveScene().name;
-        MinigameHandler.OnMinigameClosing += CloseMinigame;
+        MinigameBase.OnMinigameClose += CloseMinigame;
     }
     private void OnDisable()
     {
-        MinigameHandler.OnMinigameClosing -= CloseMinigame;
+        MinigameBase.OnMinigameClose -= CloseMinigame;
     }
 
     public void PlayerMove(string blockName)
@@ -33,7 +36,6 @@ public class MovementManager : MonoBehaviour
 
     public void DisablePlayer(string blockName)
     {
-        Debug.Log("This is working");
         OnBlockStart?.Invoke(blockName);
     }
 
@@ -44,10 +46,10 @@ public class MovementManager : MonoBehaviour
 
     private void CloseMinigame(string sceneName)
     {
-        Debug.Log("CloseMinigame CALLED!");
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentScene));
         SceneManager.UnloadSceneAsync(sceneName);
 
+        cameraManager.SetMinigameCamera(false);
         //enable player movement here
         PlayerMove(sceneName);
     }
@@ -55,7 +57,6 @@ public class MovementManager : MonoBehaviour
     public void LoadMinigame(string minigameSceneName)
     {
         //Handle loading screen here
-        //StartCoroutine(LoadMinigameAsync(minigameSceneName));
         SceneManager.LoadSceneAsync(minigameSceneName, LoadSceneMode.Additive);
 
         SceneManager.sceneLoaded += OnMinigameLoaded;
@@ -64,6 +65,8 @@ public class MovementManager : MonoBehaviour
     private void OnMinigameLoaded(Scene scene, LoadSceneMode mode)
     {
         SceneManager.SetActiveScene(scene);
+
+        cameraManager.SetMinigameCamera(true);
 
         //Handle fade out here
     }

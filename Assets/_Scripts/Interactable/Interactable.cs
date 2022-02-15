@@ -60,13 +60,7 @@ public class Interactable : MonoBehaviour
             currentPlayer = null;
             isInteractable = false;          
         }
-    }
-    
+    }   
 
-    public virtual void Interact(Player player)
-    {
-        Debug.Log("Base class call Interact()");
-        OnCallingDialogue?.Invoke(currentBlockReference);
-    }
-    
+    public virtual void Interact(Player player) => OnCallingDialogue?.Invoke(currentBlockReference);   
 }

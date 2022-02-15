@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
 
     #region Player Events
     public event Action<Player> OnPlayerInteract;
+    public static event Action<Transform> OnPlayerEnabled;
+    public static event Action<Transform> OnPlayerDisabled;
     #endregion
 
     private void Awake()
@@ -43,6 +45,7 @@ public class Player : MonoBehaviour
 
     private void OnEnable()
     {
+        OnPlayerEnabled?.Invoke(this.transform);
         MovementManager.OnBlockEnd += EnablingPlayerControl;
         MovementManager.OnBlockStart += DisablingPlayerControl;
     }
@@ -51,6 +54,8 @@ public class Player : MonoBehaviour
     {
         MovementManager.OnBlockEnd -= EnablingPlayerControl;
         MovementManager.OnBlockStart -= DisablingPlayerControl;
+        OnPlayerDisabled?.Invoke(this.transform);
+
     }
 
     private void EnablingPlayerControl(string blockName)

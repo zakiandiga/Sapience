@@ -8,9 +8,8 @@ namespace Fungus
     [AddComponentMenu("")]
     public class DirectBlockEventHandler : EventHandler
     {
-        public BlockReference targetBlock;
+        private BlockReference targetBlock;
 
-        
         private void Start()
         {
             Interactable.OnCallingDialogue += CallingDialogue;
@@ -22,11 +21,11 @@ namespace Fungus
         }
        
         private void CallingDialogue(BlockReference currentBlock)
-        {
+        {            
             targetBlock = currentBlock;
-            targetBlock.Execute();
-        }
-    
+            if(currentBlock.block.BlockName == this.parentBlock.BlockName)
+                targetBlock.Execute();
+        }    
     }
 }
 

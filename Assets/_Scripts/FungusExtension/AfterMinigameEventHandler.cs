@@ -8,22 +8,24 @@ namespace Fungus
     [AddComponentMenu("")]
     public class AfterMinigameEventHandler : EventHandler
     {
-        public BlockReference targetBlock;
+        private BlockReference targetBlock;
 
 
         private void Start()
         {
-            Snake.OnMinigameEnd += CallingDialogue;
+            MinigameBase.OnMinigameEnd += CallingDialogue;
         }
 
         private void OnDisable()
         {
-            Snake.OnMinigameEnd -= CallingDialogue;
+            MinigameBase.OnMinigameEnd -= CallingDialogue;
         }
 
-        private void CallingDialogue(string currentBlock)
+        private void CallingDialogue(BlockReference currentBlock)
         {
-            targetBlock.Execute();
+            targetBlock = currentBlock;
+            if(targetBlock.block.BlockName == this.parentBlock.BlockName)
+                targetBlock.Execute();
         }
     }
 }

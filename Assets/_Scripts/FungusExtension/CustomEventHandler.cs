@@ -14,20 +14,7 @@ namespace Fungus
     [AddComponentMenu("")]
     public class CustomEventHandler : EventHandler
     {
-        private void Start()
-        {
-            //Player.OnCallingDialogue += CallingDialogue;
-        }
-
-        private void OnDisable()
-        {
-            //Player.OnCallingDialogue -= CallingDialogue;
-        }
-
-        private void CallingDialogue(BlockReference playerName)
-        {
-            ExecuteBlock();
-        }
+       
     }
 
 }
