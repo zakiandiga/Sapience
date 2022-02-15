@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Fungus;
+using System;
 
 public class Snake : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class Snake : MonoBehaviour
         Alive,
         Dead
     }
+
+    public static event Action<string> OnMinigameEnd;
 
     private State state;
     private Direction gridMoveDirection;
@@ -57,7 +60,7 @@ public class Snake : MonoBehaviour
 
         snakeBodyPartList = new List<SnakeBodyPart>();
 
-        state = State.Dead; //Snake starts dead until Fungus gameStarted bool commands it to switch to alive
+        state = State.Alive; //Snake starts dead until Fungus gameStarted bool commands it to switch to alive
         isDead = false;
     }
     public Vector2 ChangePosition
@@ -75,10 +78,10 @@ public class Snake : MonoBehaviour
 
     private void Update()
     {
-        if (flowchart.GetBooleanVariable("gameStarted") == true) //Starts the snake upon the completion of the Fungus flowchart
+        /*if (flowchart.GetBooleanVariable("gameStarted") == true) //Starts the snake upon the completion of the Fungus flowchart
         {
             state = State.Alive;
-        }
+        }*/
 
         switch (state) {
             case State.Alive:
@@ -87,6 +90,7 @@ public class Snake : MonoBehaviour
                 break;
             case State.Dead:
                 isDead = true;
+                OnMinigameEnd?.Invoke("Snakes");
                 break;
         }
     }
