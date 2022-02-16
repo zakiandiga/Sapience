@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 using Fungus;
 using System;
 
-public class Snake : MonoBehaviour
+public class Snake : MinigameBase
 {
     private enum Direction //The movement states of the snake
     {
@@ -15,13 +15,12 @@ public class Snake : MonoBehaviour
         Down
     }
 
-    private enum State //The alive or dead states for the snake
+    private enum State //The waiting, alive, or dead states for the snake
     {
+        Waiting,
         Alive,
         Dead
     }
-
-    public static event Action<string> OnMinigameEnd;
 
     private State state;
     private Direction gridMoveDirection;
@@ -60,7 +59,7 @@ public class Snake : MonoBehaviour
 
         snakeBodyPartList = new List<SnakeBodyPart>();
 
-        state = State.Alive; //Snake starts dead until Fungus gameStarted bool commands it to switch to alive
+        state = State.Waiting; //Snake starts dead until Fungus gameStarted bool commands it to switch to alive
         isDead = false;
     }
     public Vector2 ChangePosition
@@ -78,22 +77,28 @@ public class Snake : MonoBehaviour
 
     private void Update()
     {
-        /*if (flowchart.GetBooleanVariable("gameStarted") == true) //Starts the snake upon the completion of the Fungus flowchart
-        {
-            state = State.Alive;
-        }*/
-
         switch (state) {
+            case State.Waiting:
+                break;
             case State.Alive:
                 HandleInput();
                 HandleGridMovement();
                 break;
             case State.Dead:
                 isDead = true;
-                OnMinigameEnd?.Invoke("Snakes");
+                EndingMinigame();
                 break;
         }
     }
+
+
+
+    public void StartSnake()
+    {
+        state = State.Alive;
+    }
+
+
 
     private void HandleInput()
     {
@@ -132,6 +137,8 @@ public class Snake : MonoBehaviour
 
         }
     }
+
+
 
     private void HandleGridMovement()
     {
@@ -203,6 +210,8 @@ public class Snake : MonoBehaviour
         }
     }
 
+
+
     private void CreateSnakeBodyPart()
     {
         snakeBodyPartList.Add(new SnakeBodyPart(snakeBodyPartList.Count));
@@ -223,7 +232,9 @@ public class Snake : MonoBehaviour
         return n;
     }
 
-    public Vector2 GetGridPosition()
+
+
+    public Vector2 GetGridPosition() //Returns the gridposition of the snake head
     {
         return gridPosition;
     }
@@ -237,6 +248,7 @@ public class Snake : MonoBehaviour
         }
         return gridPositionList;
     }
+
 
 
     private class SnakeBodyPart //Constructor for snake body
