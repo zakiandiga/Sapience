@@ -35,7 +35,7 @@ public class GameHandler : MonoBehaviour
 
     public static void AddScore()
     {
-        score += 100;
+        score += 1;
     }
 
 }
