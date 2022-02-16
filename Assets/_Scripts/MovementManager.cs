@@ -8,6 +8,7 @@ public class MovementManager : MonoBehaviour
     public static event Action<string> OnBlockEnd;
     public static event Action<string> OnBlockStart;
     public static event Action<Flowchart> OnAnnounceFlowchart;
+    public static event Action<Transform> OnSetPlayerSpawn;
 
     private CameraManager cameraManager;
 
@@ -83,5 +84,10 @@ public class MovementManager : MonoBehaviour
         currentRoom.SetActive(false);
         nextRoom.SetActive(true);
         //fade in
+    }
+
+    public void SetPlayerPosition(Transform targetPosition)
+    {
+        OnSetPlayerSpawn?.Invoke(targetPosition);
     }
 }

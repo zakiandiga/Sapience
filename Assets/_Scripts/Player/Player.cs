@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using Fungus;
 
 public class Player : MonoBehaviour
 {
@@ -37,7 +36,7 @@ public class Player : MonoBehaviour
     }
 
     private void Start()
-    {
+    {        
         rb = GetComponent<Rigidbody2D>();
         inputHandler = GetComponent<PlayerInputHandler>();
         playerAnimation = GetComponentInChildren<CharacterAnimation>();
@@ -48,12 +47,14 @@ public class Player : MonoBehaviour
         OnPlayerEnabled?.Invoke(this.transform);
         MovementManager.OnBlockEnd += EnablingPlayerControl;
         MovementManager.OnBlockStart += DisablingPlayerControl;
+        MovementManager.OnSetPlayerSpawn += SetPlayerPosition;
     }
 
     private void OnDisable()
     {
         MovementManager.OnBlockEnd -= EnablingPlayerControl;
         MovementManager.OnBlockStart -= DisablingPlayerControl;
+        MovementManager.OnSetPlayerSpawn -= SetPlayerPosition;
         OnPlayerDisabled?.Invoke(this.transform);
 
     }
@@ -154,6 +155,11 @@ public class Player : MonoBehaviour
     public void SetInteractible(Interactable currentInteractible)
     {
         CurrentInteractible = currentInteractible;
+    }
+
+    private void SetPlayerPosition(Transform targetPosition)
+    {
+        transform.position = targetPosition.position;
     }
 
 }

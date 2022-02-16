@@ -15,7 +15,7 @@ public class CameraManager : MonoBehaviour
     private void OnEnable()
     {
         Player.OnPlayerEnabled += AssignPlayer;
-        Player.OnPlayerDisabled -= DeassignPlayer;
+        Player.OnPlayerDisabled += DeassignPlayer;
     }
 
     private void OnDisable()
