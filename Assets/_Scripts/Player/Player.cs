@@ -160,6 +160,7 @@ public class Player : MonoBehaviour
     private void SetPlayerPosition(Transform targetPosition)
     {
         transform.position = targetPosition.position;
+        OnPlayerEnabled?.Invoke(this.transform);
     }
 
 }

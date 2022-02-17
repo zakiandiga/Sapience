@@ -2210,6 +2210,8 @@ GameObject:
   - component: {fileID: 65298000}
   - component: {fileID: 65297981}
   - component: {fileID: 65298052}
+  - component: {fileID: 65298043}
+  - component: {fileID: 65298053}
   m_Layer: 0
   m_Name: day1_day_x3_shared_apt
   m_TagString: Untagged
@@ -8052,7 +8054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 257.59375, y: 229.71783}
+  scrollPos: {x: 206.09375, y: 206.71783}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 444
@@ -8064,9 +8066,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 65297994}
-  selectedCommands:
-  - {fileID: 65298052}
+  - {fileID: 65298051}
+  selectedCommands: []
   variables:
   - {fileID: 65297968}
   - {fileID: 65297932}
@@ -11349,6 +11350,51 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &65298043
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 225
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1395711124}
+  targetComponentAssemblyName: MovementManager, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: MovementManager
+  targetMethod: LoadMinigame
+  targetMethodText: 'LoadMinigame (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: Snake_Minigame_TEST
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &65298044
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11527,12 +11573,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 400.40625
     y: 12.282166
-    width: 142
+    width: 150
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 219
-  blockName: DebugMinigame
+  blockName: LoadingMinigame
   description: 
   eventHandler: {fileID: 65298048}
   commandList:
@@ -11599,17 +11645,19 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 427.40625
-    y: 177.28217
+    y: 175.28217
     width: 112
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 222
-  blockName: DebugTalk
+  blockName: DebugLoadMinigame
   description: 
   eventHandler: {fileID: 65298000}
   commandList:
   - {fileID: 65297981}
+  - {fileID: 65298053}
+  - {fileID: 65298043}
   suppressAllAutoSelections: 0
 --- !u!114 &65298052
 MonoBehaviour:
@@ -11646,6 +11694,51 @@ MonoBehaviour:
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
       objectValue: {fileID: 338315390}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &65298053
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 226
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1395711124}
+  targetComponentAssemblyName: MovementManager, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: MovementManager
+  targetMethod: DisablePlayer
+  targetMethodText: 'DisablePlayer (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
@@ -27701,8 +27794,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1013134299
+  m_SortingLayer: -1
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: d8e186e5177df2349a4057fac8978b2b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -38400,7 +38493,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 642.94464
     y: 160.20801
-    width: 130
+    width: 124.4186
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39027,7 +39120,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 293.76447
     y: 161.52368
-    width: 189.53488
+    width: 182.55812
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39203,7 +39296,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 58.376625
     y: 8.302673
-    width: 172.7907
+    width: 166.27905
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39733,7 +39826,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -299.4314
     y: 637.7716
-    width: 107.674416
+    width: 103.48837
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39895,7 +39988,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -71.25238
     y: 527.0368
-    width: 130
+    width: 119.76743
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39924,7 +40017,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -576.25604
     y: 518.67615
-    width: 156.04651
+    width: 143.02325
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -40105,7 +40198,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -308.26926
     y: 373.00607
-    width: 109.53488
+    width: 103.48837
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -40214,7 +40307,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -86.40821
     y: 282.9464
-    width: 178.37209
+    width: 173.2558
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -40243,7 +40336,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -541.11896
     y: 277.6173
-    width: 135.58139
+    width: 131.39534
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -40430,7 +40523,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 485.59854
     y: 82.0053
-    width: 141.16278
+    width: 136.04651
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -40461,7 +40554,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -310.89917
     y: 161.73018
-    width: 131.86046
+    width: 124.4186
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -40924,7 +41017,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 666.79755
     y: 258.3226
-    width: 83.48837
+    width: 80.23256
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

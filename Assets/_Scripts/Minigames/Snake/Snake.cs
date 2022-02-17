@@ -85,8 +85,11 @@ public class Snake : MinigameBase
                 HandleGridMovement();
                 break;
             case State.Dead:
-                isDead = true;
-                EndingMinigame();
+                if(!isDead)
+                {
+                    isDead = true;
+                    EndingMinigame();
+                }
                 break;
         }
     }
