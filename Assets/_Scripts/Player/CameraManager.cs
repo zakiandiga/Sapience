@@ -14,20 +14,22 @@ public class CameraManager : MonoBehaviour
 
     private void OnEnable()
     {
-        Player.OnPlayerEnabled += AssignPlayer;
+        Player.OnSetPlayerPosition += AssignPlayer;
         Player.OnPlayerDisabled += DeassignPlayer;
     }
 
     private void OnDisable()
     {
-        Player.OnPlayerEnabled -= AssignPlayer;
+        Player.OnSetPlayerPosition -= AssignPlayer;
         Player.OnPlayerDisabled -= DeassignPlayer;
     }
 
     private void AssignPlayer(Transform player)
     {
         Debug.Log("Assign player " + player.gameObject.name);
-        currentPlayer = player;
+        if(currentPlayer != player)
+            currentPlayer = player;
+
         cinemachine.m_Follow = currentPlayer;
     }
 

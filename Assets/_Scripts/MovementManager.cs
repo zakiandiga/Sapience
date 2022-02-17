@@ -59,13 +59,20 @@ public class MovementManager : MonoBehaviour
     #endregion
 
     #region Fungus Invoke Methods
-    public void SetPlayerPosition(Transform targetPosition) => OnSetPlayerSpawn?.Invoke(targetPosition);
+    public void SetPlayerPosition(Transform targetPosition)
+    {
+        OnSetPlayerSpawn?.Invoke(targetPosition);
+    }
 
     public void PlayerMove(string blockName) => OnBlockEnd?.Invoke(blockName);
 
     public void DisablePlayer(string blockName) => OnBlockStart?.Invoke(blockName);
 
-    public void LoadDay(GameObject dayObject) => dayObject.SetActive(true);
+    public void LoadDay(GameObject dayObject)
+    {
+        dayObject.SetActive(true);
+    } 
+
 
     public void LoadMinigame(string minigameSceneName)
     {

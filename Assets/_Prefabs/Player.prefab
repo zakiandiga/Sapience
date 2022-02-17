@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: 5f487dff25b309d4586644599b190a74, type: 2}
-  speed: 150
+  speed: 200
 --- !u!114 &6796494449539547865
 MonoBehaviour:
   m_ObjectHideFlags: 0

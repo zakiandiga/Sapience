@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
 
     #region Player Events
     public event Action<Player> OnPlayerInteract;
-    public static event Action<Transform> OnPlayerEnabled;
+    public static event Action<Transform> OnSetPlayerPosition;
     public static event Action<Transform> OnPlayerDisabled;
     #endregion
 
@@ -43,8 +43,7 @@ public class Player : MonoBehaviour
     }
 
     private void OnEnable()
-    {
-        OnPlayerEnabled?.Invoke(this.transform);
+    {        
         MovementManager.OnBlockEnd += EnablingPlayerControl;
         MovementManager.OnBlockStart += DisablingPlayerControl;
         MovementManager.OnSetPlayerSpawn += SetPlayerPosition;
@@ -52,6 +51,7 @@ public class Player : MonoBehaviour
 
     private void OnDisable()
     {
+        Debug.Log("Player Disabled");
         MovementManager.OnBlockEnd -= EnablingPlayerControl;
         MovementManager.OnBlockStart -= DisablingPlayerControl;
         MovementManager.OnSetPlayerSpawn -= SetPlayerPosition;
@@ -160,7 +160,7 @@ public class Player : MonoBehaviour
     private void SetPlayerPosition(Transform targetPosition)
     {
         transform.position = targetPosition.position;
-        OnPlayerEnabled?.Invoke(this.transform);
+        OnSetPlayerPosition?.Invoke(this.transform);
     }
 
 }
