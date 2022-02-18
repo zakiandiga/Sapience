@@ -14,37 +14,37 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Gold_Office.unity
     guid: 74fdc9dfc56dc604e847f0d11baeac23
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Platinum_Apartment.unity
     guid: 03e2f8b4ff27bd547b396a00e7fa9bda
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Platinum_Boss_Dinner.unity
     guid: 4b297952549d2e7498529a80d6c6a0be
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Platinum_Office.unity
     guid: 6d7cf33f861ebdf4aba6be28166d5bf0
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Silver_Apartment.unity
     guid: 5de61c02308b31b4abfc75478cf800e2
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Platinum_Commute.unity
     guid: 0ce11da0431f2f4418464cf2a15561b3
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Silver_Commute.unity
     guid: 0384f378dd6f519439cde583f0dfd392
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Silver_Office.unity
     guid: 4eef34a864802a94282e2d5657de12fe
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Gold_Shared_Apartment_TESTRPG.unity
     guid: a8ae72200e060e043bde82c2ae0d7451
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Overworld/OverworldTest.unity
     guid: 772bdefa37c34344bb7ee299dc05aac9
   - enabled: 1
     path: Assets/_Scenes/Snake_Minigame.unity
     guid: 786d22a8ab00b11489c97b0dec144aca
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Snake_Minigame_TEST.unity
     guid: 2edfa65d97a761649abbe35b05ac1fe1
   m_configObjects: {}

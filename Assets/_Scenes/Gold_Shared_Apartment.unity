@@ -8100,7 +8100,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -436.71667
-    y: 27.004004
+    y: 25.511467
     width: 142.53726
     height: 40
   tint: {r: 0, g: 1, b: 0.042036295, a: 1}
@@ -41773,12 +41773,13 @@ GameObject:
   - component: {fileID: 1331215912}
   - component: {fileID: 1331215911}
   - component: {fileID: 1331215910}
-  - component: {fileID: 1331215901}
   - component: {fileID: 1331215899}
   - component: {fileID: 1331215898}
   - component: {fileID: 1331215897}
   - component: {fileID: 1331215896}
   - component: {fileID: 1331215895}
+  - component: {fileID: 1331215972}
+  - component: {fileID: 1331215971}
   m_Layer: 0
   m_Name: day1_night_x3_shared_apt
   m_TagString: Untagged
@@ -42459,27 +42460,6 @@ MonoBehaviour:
   scope: 2
   key: Mad
   value: 0
---- !u!114 &1331215901
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331215886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 279
-  indentLevel: 0
-  targetFlowchart: {fileID: 2058956504}
-  targetBlock: {fileID: 2058956503}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!114 &1331215902
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -42509,7 +42489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 2
   key: Day
-  value: 0
+  value: 1
 --- !u!114 &1331215904
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -42701,7 +42681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 93.37663
+    x: 94.7465
     y: 18.30267
     width: 165.06845
     height: 40
@@ -42731,7 +42711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 75.135445, y: 102.970894}
+  scrollPos: {x: 31.299837, y: 109.820206}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 685
@@ -42743,7 +42723,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1331215913}
+  - {fileID: 1331215937}
   selectedCommands: []
   variables:
   - {fileID: 1331215909}
@@ -43991,7 +43971,6 @@ MonoBehaviour:
   - {fileID: 1331215931}
   - {fileID: 1331215932}
   - {fileID: 1331215910}
-  - {fileID: 1331215901}
   suppressAllAutoSelections: 0
 --- !u!114 &1331215938
 MonoBehaviour:
@@ -44056,7 +44035,7 @@ MonoBehaviour:
       floatValue: 0
       stringValue: 
       colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 0}
+      gameObjectValue: {fileID: 752914570}
       materialValue: {fileID: 0}
       objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
@@ -44116,8 +44095,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: MovementManager
-  targetMethod: DisablePlayer
-  targetMethodText: 'DisablePlayer (String): Void'
+  targetMethod: PlayerMove
+  targetMethodText: 'PlayerMove (String): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -44166,9 +44145,10 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1331215938}
   commandList:
-  - {fileID: 1331215941}
+  - {fileID: 1331215972}
   - {fileID: 1331215940}
   - {fileID: 1331215939}
+  - {fileID: 1331215941}
   suppressAllAutoSelections: 0
 --- !u!114 &1331215943
 MonoBehaviour:
@@ -44746,8 +44726,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: MovementManager
-  targetMethod: DisablePlayer
-  targetMethodText: 'DisablePlayer (String): Void'
+  targetMethod: PlayerMove
+  targetMethodText: 'PlayerMove (String): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -44823,9 +44803,10 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1331215959}
   commandList:
-  - {fileID: 1331215960}
+  - {fileID: 1331215971}
   - {fileID: 1331215961}
   - {fileID: 1331215950}
+  - {fileID: 1331215960}
   suppressAllAutoSelections: 0
 --- !u!114 &1331215963
 MonoBehaviour:
@@ -45086,6 +45067,96 @@ MonoBehaviour:
   - {fileID: 1331215899}
   - {fileID: 1331215898}
   suppressAllAutoSelections: 0
+--- !u!114 &1331215971
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331215886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 290
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1395711124}
+  targetComponentAssemblyName: MovementManager, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: MovementManager
+  targetMethod: DisablePlayer
+  targetMethodText: 'DisablePlayer (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1331215972
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331215886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 289
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1395711124}
+  targetComponentAssemblyName: MovementManager, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: MovementManager
+  targetMethod: DisablePlayer
+  targetMethodText: 'DisablePlayer (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &1343078225
 GameObject:
   m_ObjectHideFlags: 0
@@ -50345,7 +50416,6 @@ GameObject:
   - component: {fileID: 1548148955}
   - component: {fileID: 1548148954}
   - component: {fileID: 1548148953}
-  - component: {fileID: 1548148946}
   - component: {fileID: 1548148957}
   - component: {fileID: 1548148956}
   - component: {fileID: 1548148959}
@@ -50368,6 +50438,7 @@ GameObject:
   - component: {fileID: 1548148962}
   - component: {fileID: 1548148940}
   - component: {fileID: 1548148939}
+  - component: {fileID: 1548148946}
   m_Layer: 0
   m_Name: day_picker_shared_apt
   m_TagString: Untagged
@@ -52607,8 +52678,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1548148947}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 1548148944}
