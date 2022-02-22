@@ -21,6 +21,21 @@ public class NPC : Interactable
         }
     }
 
+    protected override void OnTriggerExit2D(Collider2D collision)
+    {
+        if (!isBarking)
+            base.OnTriggerExit2D(collision);
+
+        else
+        {            
+            if(currentBlockReference.block.IsExecuting())
+            {
+                currentBlockReference.block.Stop();
+            }
+            base.OnTriggerExit2D(collision);
+        }
+    }
+
     public override void Interact(Player player)
     {
         base.Interact(player);

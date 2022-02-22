@@ -86,7 +86,7 @@ public class Player : MonoBehaviour
 
                 if (inputHandler.Interacting)
                 {
-                    Debug.Log("Player INTERACTING");
+                    //Debug.Log("Player INTERACTING");
                     //OnCallingDialogue?.Invoke(tempBlockRef);
                     OnPlayerInteract?.Invoke(this);
                     //inputHandler.StopInteract();

@@ -12,6 +12,8 @@ public class MovementManager : MonoBehaviour
 
     private CameraManager cameraManager;
 
+    private Flowchart currentFlowchart;
+
     private string currentScene;
 
     private void Start()
@@ -44,6 +46,7 @@ public class MovementManager : MonoBehaviour
     private void CloseMinigame(string sceneName)
     {
         cameraManager.SetMinigameCamera(false);
+        //put transition here
         SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName(sceneName));
         SceneManager.sceneUnloaded += FinalizeClosingMinigame;
     }
@@ -54,28 +57,23 @@ public class MovementManager : MonoBehaviour
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentScene));
 
         //enable player movement here
-        PlayerMove("Minigame");
+        //PlayerMove("Minigame");
+        currentFlowchart.SetBooleanVariable("OnMinigame", false);
     }
     #endregion
 
     #region Fungus Invoke Methods
-    public void SetPlayerPosition(Transform targetPosition)
-    {
-        OnSetPlayerSpawn?.Invoke(targetPosition);
-    }
+    public void SetPlayerPosition(Transform targetPosition) => OnSetPlayerSpawn?.Invoke(targetPosition);
 
     public void PlayerMove(string blockName) => OnBlockEnd?.Invoke(blockName);
 
     public void DisablePlayer(string blockName) => OnBlockStart?.Invoke(blockName);
 
-    public void LoadDay(GameObject dayObject)
-    {
-        dayObject.SetActive(true);
-    } 
+    public void LoadDay(GameObject dayObject) => dayObject.SetActive(true);
 
-
-    public void LoadMinigame(string minigameSceneName)
+    public void LoadMinigame(string minigameSceneName, Flowchart flowchart)
     {
+        currentFlowchart = flowchart;
         SceneManager.LoadSceneAsync(minigameSceneName, LoadSceneMode.Additive);
         SceneManager.sceneLoaded += FinalizeLoadMinigame;
     }

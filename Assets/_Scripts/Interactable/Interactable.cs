@@ -50,7 +50,7 @@ public class Interactable : MonoBehaviour
         }
     }
 
-    protected void OnTriggerExit2D(Collider2D collision)
+    protected virtual void OnTriggerExit2D(Collider2D collision)
     {
         if (currentPlayer != null)
         {
@@ -60,7 +60,11 @@ public class Interactable : MonoBehaviour
             currentPlayer = null;
             isInteractable = false;          
         }
-    }   
+    }
 
-    public virtual void Interact(Player player) => OnCallingDialogue?.Invoke(currentBlockReference);   
+    public virtual void Interact(Player player)
+    {
+        OnCallingDialogue?.Invoke(currentBlockReference);
+
+    }
 }
