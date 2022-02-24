@@ -8142,8 +8142,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 65297994}
-  selectedCommands: []
+  - {fileID: 65297990}
+  selectedCommands:
+  - {fileID: 65297992}
   variables:
   - {fileID: 65297968}
   - {fileID: 65297932}
@@ -13820,7 +13821,7 @@ GameObject:
   m_Component:
   - component: {fileID: 131678290}
   m_Layer: 0
-  m_Name: Characters
+  m_Name: FungusCharacters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13841,8 +13842,8 @@ Transform:
   - {fileID: 5325857768432770636}
   - {fileID: 1218727727}
   - {fileID: 1161645283}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 989406929}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &131689409
 GameObject:
@@ -35134,8 +35135,8 @@ Transform:
   - {fileID: 1309253522}
   - {fileID: 1461053578}
   - {fileID: 286517765}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 989406929}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &761509139
 GameObject:
@@ -35428,7 +35429,7 @@ Transform:
   - {fileID: 1089941246}
   - {fileID: 958346569}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &860323048
 GameObject:
@@ -36406,6 +36407,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &989406928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 989406929}
+  m_Layer: 0
+  m_Name: FungusElements
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &989406929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989406928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 131678290}
+  - {fileID: 760926905}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &998947424 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6996238454770703980, guid: c7146e09ff7cca3438bcf19766cbf2c9, type: 3}
@@ -36629,7 +36662,7 @@ Transform:
   - {fileID: 1769919367}
   - {fileID: 1274217510}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1034153846
 GameObject:
@@ -37447,7 +37480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1331215914}
+  selectedFlowchart: {fileID: 65297995}
 --- !u!4 &1123761817
 Transform:
   m_ObjectHideFlags: 1
@@ -57904,7 +57937,7 @@ Transform:
   - {fileID: 1849576802}
   - {fileID: 673249921}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1750808514
 GameObject:
@@ -75834,7 +75867,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2665749050037415960, guid: 1559341d0d951714788c262c2cfb6926, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2665749050037415960, guid: 1559341d0d951714788c262c2cfb6926, type: 3}
       propertyPath: m_LocalPosition.x
