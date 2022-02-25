@@ -4,7 +4,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public string PlayerName => playerData.characterName;
-    public Interactable CurrentInteractible { get; private set; }
+    public Interactable CurrentInteractable { get; private set; }
 
     private PlayerMoveState playerState = PlayerMoveState.idle;
 
@@ -62,6 +62,7 @@ public class Player : MonoBehaviour
     private void EnablingPlayerControl(string blockName)
     {
         playerState = PlayerMoveState.idle;
+        CurrentInteractable = null;
         inputHandler.InputActionSwitch(true);
     }
 
@@ -154,7 +155,7 @@ public class Player : MonoBehaviour
 
     public void SetInteractible(Interactable currentInteractible)
     {
-        CurrentInteractible = currentInteractible;
+        CurrentInteractable = currentInteractible;
     }
 
     private void SetPlayerPosition(Transform targetPosition)

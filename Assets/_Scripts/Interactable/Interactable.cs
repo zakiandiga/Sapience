@@ -4,7 +4,8 @@ using Fungus;
 
 public class Interactable : MonoBehaviour
 {
-    protected bool isInteractable;
+    protected InteractableState interactableState = InteractableState.idle;
+
     protected Player currentPlayer;
     [SerializeField] protected GameObject interactIcon;
 
@@ -17,6 +18,34 @@ public class Interactable : MonoBehaviour
         InteractIconSwitch(false);
     }
 
+    protected void OnEnable()
+    {
+        interactableState = InteractableState.idle;
+    }
+
+
+    protected void OnDisable()
+    {
+        if (interactableState != InteractableState.idle)
+            interactableState = InteractableState.idle;
+
+        if (currentPlayer != null)
+        {
+            currentPlayer.OnPlayerInteract -= Interact;
+            InteractIconSwitch(false);
+            currentPlayer = null;
+        }        
+
+        MovementManager.OnBlockEnd -= SwitchingInteractIconFromBlock;
+    }
+
+    protected void SwitchingInteractIconFromBlock(string blockName)
+    {
+        MovementManager.OnBlockEnd -= SwitchingInteractIconFromBlock;
+        interactableState = InteractableState.idle;
+        //InteractIconSwitch(true);
+    }
+
     protected void InteractIconSwitch(bool status)
     {
         if(interactIcon != null)
@@ -26,10 +55,10 @@ public class Interactable : MonoBehaviour
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         currentPlayer = collision.GetComponent<Player>();
-        if (currentPlayer.CurrentInteractible == null)
+        if (currentPlayer.CurrentInteractable == null && interactableState == InteractableState.idle)
         {
             currentPlayer.SetInteractible(this);
-            isInteractable = true;
+            interactableState = InteractableState.isInteractable;
             InteractIconSwitch(true);
             currentPlayer.OnPlayerInteract += Interact;
         }
@@ -40,10 +69,10 @@ public class Interactable : MonoBehaviour
         if (currentPlayer == null)
         {
             currentPlayer = collision.GetComponent<Player>();
-            if (currentPlayer.CurrentInteractible == null)
+            if (currentPlayer.CurrentInteractable == null && interactableState == InteractableState.idle)
             {
                 currentPlayer.SetInteractible(this);
-                isInteractable = true;
+                interactableState = InteractableState.isInteractable;
                 InteractIconSwitch(true);
                 currentPlayer.OnPlayerInteract += Interact;
             }
@@ -52,19 +81,37 @@ public class Interactable : MonoBehaviour
 
     protected virtual void OnTriggerExit2D(Collider2D collision)
     {
-        if (currentPlayer != null)
+        if (currentPlayer != null && interactableState == InteractableState.isInteractable)
         {
-            currentPlayer.OnPlayerInteract -= Interact;
+            currentPlayer.OnPlayerInteract -= Interact;            
+            interactableState = InteractableState.idle;
             currentPlayer.SetInteractible(null);
             InteractIconSwitch(false);
             currentPlayer = null;
-            isInteractable = false;          
+            //isInteractable = false;
+            
         }
     }
 
     public virtual void Interact(Player player)
     {
-        OnCallingDialogue?.Invoke(currentBlockReference);
+        if(interactableState == InteractableState.isInteractable)
+        {
+            interactableState = InteractableState.interacting;
 
+            MovementManager.OnBlockEnd += SwitchingInteractIconFromBlock;
+
+            InteractIconSwitch(false);
+            OnCallingDialogue?.Invoke(currentBlockReference);        
+
+        }
     }
+}
+
+public enum InteractableState
+{ 
+    idle,
+    isInteractable,
+    interacting,
+    disabled
 }

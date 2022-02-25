@@ -14,8 +14,9 @@ public class NPC : Interactable
         else if(isBarking)
         {
             currentPlayer = collision.GetComponent<Player>();
-            if (currentPlayer.CurrentInteractible == null)
+            if (currentPlayer.CurrentInteractable == null && interactableState == InteractableState.idle)
             {
+                interactableState = InteractableState.isInteractable;
                 Interact(currentPlayer);
             }
         }
@@ -29,15 +30,16 @@ public class NPC : Interactable
         else
         {            
             if(currentBlockReference.block.IsExecuting())
-            {
                 currentBlockReference.block.Stop();
-            }
+
+            interactableState = InteractableState.idle;
             base.OnTriggerExit2D(collision);
         }
     }
 
     public override void Interact(Player player)
     {
+
         base.Interact(player);
 
         Debug.Log(gameObject.name + "NPC Interact with " + currentPlayer.name);
