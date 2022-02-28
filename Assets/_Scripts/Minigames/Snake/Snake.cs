@@ -59,8 +59,7 @@ public class Snake : MinigameBase
 
         snakeBodyPartList = new List<SnakeBodyPart>();
 
-        state = State.Waiting; //Snake starts dead until Fungus gameStarted bool commands it to switch to alive
-        isDead = false;
+        state = State.Waiting; //Snake starts waiting until Fungus gameStarted bool commands it to switch to alive
     }
     public Vector2 ChangePosition
     {
@@ -85,11 +84,7 @@ public class Snake : MinigameBase
                 HandleGridMovement();
                 break;
             case State.Dead:
-                if(!isDead)
-                {
-                    isDead = true;
-                    EndingMinigame();
-                }
+                EndingMinigame();
                 break;
         }
     }
