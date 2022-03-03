@@ -37037,8 +37037,8 @@ GameObject:
   m_Component:
   - component: {fileID: 869327383}
   - component: {fileID: 869327382}
-  - component: {fileID: 869327381}
   - component: {fileID: 869327384}
+  - component: {fileID: 869327381}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -37046,14 +37046,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &869327381
-AudioListener:
+--- !u!114 &869327381
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869327380}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!20 &869327382
 Camera:
   m_ObjectHideFlags: 0
@@ -78068,5 +78074,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: SayDialog_Narrator
       objectReference: {fileID: 0}
+    - target: {fileID: 9195786104362511062, guid: a5cd3848e6ac85542af8e5f8fd5b3ba6, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c18ae2c530c264a6880266d5e0a71337, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5cd3848e6ac85542af8e5f8fd5b3ba6, type: 3}

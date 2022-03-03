@@ -175,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volume: 1
   loop: 1
-  targetAudioSource: {fileID: 0}
+  targetAudioSource: {fileID: 9195786104362511062}
   audioMode: 0
   beepSounds:
   - {fileID: 8300000, guid: 774486030b696474e8b3cf7f178123da, type: 3}
@@ -209,7 +209,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 774486030b696474e8b3cf7f178123da, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
