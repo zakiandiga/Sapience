@@ -14,21 +14,27 @@ public class MovementManager : MonoBehaviour
 
     private Flowchart currentFlowchart;
 
-    private string currentScene;
+    private string currentStoryScene;
+    private string currentMinigameScene;
 
     private void Start()
     {
         cameraManager = GetComponent<CameraManager>();
+        if(!SceneManager.GetSceneByName("AudioManager").isLoaded)
+        {
+            Debug.Log("Loading AudioManager");
+            SceneManager.LoadScene("AudioManager", LoadSceneMode.Additive);
+        }
     }
 
     private void OnEnable()
     {
-        currentScene = SceneManager.GetActiveScene().name;
-        MinigameBase.OnMinigameClose += CloseMinigame;
+        currentStoryScene = SceneManager.GetActiveScene().name;
+
     }
     private void OnDisable()
     {
-        MinigameBase.OnMinigameClose -= CloseMinigame;
+
     }
 
     #region Event Subscribers
@@ -38,26 +44,49 @@ public class MovementManager : MonoBehaviour
         SceneManager.SetActiveScene(scene);
         Debug.Log("OnMinigameLoaded: " + scene.name);
 
+        MinigameBase.OnMinigameClose += CloseMinigame;
+        cameraManager.OnCameraBlendingStart += WaitingCameraBlendToMinigame;
         cameraManager.SetMinigameCamera(true);
 
         //Handle fade out here
     }
 
+    private void WaitingCameraBlendToMinigame(bool cameraBlend)
+    {
+        cameraManager.OnCameraBlendingStart -= WaitingCameraBlendToMinigame;
+
+        if (cameraBlend)
+        {
+            Debug.Log("Camera is transitioning");
+        }
+    }
+
+    private void WaitingCameraBlendFromMinigame(bool cameraBlend)
+    {
+        Debug.Log("Camera blending done!");
+        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName(currentMinigameScene));
+        SceneManager.sceneUnloaded += FinalizeClosingMinigame;
+    }
+
     private void CloseMinigame(string sceneName)
     {
+        Debug.Log("CLOSING MINIGAME, Waiting for camera blending to finish");
+        cameraManager.OnCameraBlendingFinish += WaitingCameraBlendFromMinigame;
         cameraManager.SetMinigameCamera(false);
-        //put transition here
-        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName(sceneName));
-        SceneManager.sceneUnloaded += FinalizeClosingMinigame;
+        //put transition here        
+        //waiting for the OnCameraBlending(false) event
     }
 
     private void FinalizeClosingMinigame(Scene scene)
     {
+        Debug.Log("Finalizing minigame");
         SceneManager.sceneUnloaded -= FinalizeClosingMinigame;
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentScene));
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentStoryScene));
 
         //enable player movement here
         //PlayerMove("Minigame");
+        MinigameBase.OnMinigameClose -= CloseMinigame;
+        currentMinigameScene = null;
         currentFlowchart.SetBooleanVariable("OnMinigame", false);
     }
     #endregion
@@ -74,8 +103,14 @@ public class MovementManager : MonoBehaviour
     public void LoadMinigame(string minigameSceneName, Flowchart flowchart)
     {
         currentFlowchart = flowchart;
-        SceneManager.LoadSceneAsync(minigameSceneName, LoadSceneMode.Additive);
+        currentMinigameScene = minigameSceneName;
+        SceneManager.LoadSceneAsync(currentMinigameScene, LoadSceneMode.Additive);
         SceneManager.sceneLoaded += FinalizeLoadMinigame;
+    }
+
+    public void PlayMusic(string musicName)
+    {
+        MusicManager.Instance.PlayMusic(musicName);
     }
 
     public void ChangeRoom(GameObject currentRoom, GameObject nextRoom)

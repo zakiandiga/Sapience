@@ -7,6 +7,7 @@ public class AutomaticDoor : Interactable
         currentPlayer = collision.GetComponent<Player>();
         if (currentPlayer.CurrentInteractable == null)
         {
+            interactableState = InteractableState.isInteractable;
             Interact(currentPlayer);
         }
     }

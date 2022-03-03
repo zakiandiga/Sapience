@@ -1,14 +1,24 @@
+using System;
 using Cinemachine;
 using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
+    private Camera mainCam;
     [SerializeField] private GameObject virtualCam;
+    private CinemachineBrain cinemachineBrain;
     private CinemachineVirtualCamera cinemachine;
     private Transform currentPlayer;
 
+    public event Action<bool> OnCameraBlendingStart;
+    public event Action<bool> OnCameraBlendingFinish;
+
+    private bool cameraBlending = false;
+
     private void Start()
     {
+        mainCam = Camera.main;
+        cinemachineBrain = mainCam.GetComponent<CinemachineBrain>();
         cinemachine = virtualCam.GetComponent<CinemachineVirtualCamera>();
     }
 
@@ -42,4 +52,21 @@ public class CameraManager : MonoBehaviour
         else
             cinemachine.Priority = 10;
     }
+
+    private void Update()
+    {    
+        if (cinemachineBrain.IsBlending && !cameraBlending)
+        {
+            Debug.Log("Camera start blending");
+            cameraBlending = true;
+            OnCameraBlendingStart?.Invoke(true);
+        }
+        else if (!cinemachineBrain.IsBlending && cameraBlending)
+        {
+            Debug.Log("Camera STOP blending");
+            cameraBlending = false;
+            OnCameraBlendingFinish?.Invoke(false);
+        }
+    }
+
 }
