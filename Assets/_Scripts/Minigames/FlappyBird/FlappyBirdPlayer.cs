@@ -20,7 +20,10 @@ public class FlappyBirdPlayer : MonoBehaviour
 
     private void OnDisable()
     {
-        flap.action.Disable();
+        Vector3 position = transform.position;
+        position.y = 0f;
+        transform.position = position;
+        direction = Vector3.zero;
     }
 
     private void Update()
@@ -38,7 +41,7 @@ public class FlappyBirdPlayer : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obstacle")
         {
-            FindObjectOfType<FlappyGameManager>().GameOver();
+            FindObjectOfType<FlappyGameManager>().LoseLife();
         } else if (collision.gameObject.tag == "Scoring")
         {
             FindObjectOfType<FlappyGameManager>().IncreaseScore();

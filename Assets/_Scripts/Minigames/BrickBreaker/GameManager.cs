@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
         score += brick.points;
 
         if (Cleared()){
-            
+            GameOver();
         }
     }
 
