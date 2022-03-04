@@ -2484,6 +2484,9 @@ GameObject:
   - component: {fileID: 65298103}
   - component: {fileID: 65297981}
   - component: {fileID: 65297988}
+  - component: {fileID: 65297991}
+  - component: {fileID: 65298104}
+  - component: {fileID: 65298000}
   m_Layer: 0
   m_Name: day1_day_x3_shared_apt
   m_TagString: Untagged
@@ -8021,9 +8024,39 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 65298088}
+  - {fileID: 65297991}
+  - {fileID: 65298000}
+  - {fileID: 65298104}
   - {fileID: 65298037}
   - {fileID: 65297981}
   suppressAllAutoSelections: 0
+--- !u!114 &65297991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 292
+  indentLevel: 0
+  storyText: Noooooooooooooooooooooooo!
+  description: 
+  character: {fileID: 311545510}
+  portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1391366135}
 --- !u!114 &65297992
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8125,7 +8158,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 65297990}
   selectedCommands:
-  - {fileID: 65297981}
+  - {fileID: 65298104}
   variables:
   - {fileID: 65297968}
   - {fileID: 65297932}
@@ -8372,6 +8405,33 @@ MonoBehaviour:
   scope: 0
   key: MessageReceived
   value: 0
+--- !u!114 &65298000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 294
+  indentLevel: 0
+  storyText: Duh
+  description: 
+  character: {fileID: 311545510}
+  portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1391366135}
 --- !u!114 &65298001
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -15095,6 +15155,33 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &65298104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 293
+  indentLevel: 0
+  storyText: Yay!
+  description: 
+  character: {fileID: 311545510}
+  portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1391366135}
 --- !u!1 &90587570
 GameObject:
   m_ObjectHideFlags: 0
@@ -32010,6 +32097,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &666227233 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7713282639571324865, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
+  m_PrefabInstance: {fileID: 1391366133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &666227235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666227233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30abf168795668844984c0ea276eb616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioEvent:
+    Guid:
+      Data1: 1488417960
+      Data2: 1238434197
+      Data3: -208703860
+      Data4: -820170187
+    Path: event:/Dialogue/Say-X3
 --- !u!1 &673249920
 GameObject:
   m_ObjectHideFlags: 0
@@ -50246,6 +50357,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -1.4249878
       objectReference: {fileID: 0}
+    - target: {fileID: 4254359936010306168, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
+      propertyPath: audioMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254359936010306168, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -50334,7 +50453,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: X3_SayDialog(new)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3910464613334239722, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
 --- !u!224 &1391366134 stripped
 RectTransform:
@@ -50346,7 +50466,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7153043395286991130, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
   m_PrefabInstance: {fileID: 1391366133}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 666227233}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}

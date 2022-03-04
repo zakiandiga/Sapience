@@ -110,7 +110,7 @@ public class MovementManager : MonoBehaviour
 
     public void PlayMusic(string musicName)
     {
-        MusicManager.Instance.PlayMusic(musicName);
+        //MusicManager.Instance.PlayMusic(musicName);
     }
 
     public void ChangeRoom(GameObject currentRoom, GameObject nextRoom)
