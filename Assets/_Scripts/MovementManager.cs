@@ -35,7 +35,7 @@ public class MovementManager : MonoBehaviour
     private void OnDisable()
     {
 
-    }
+    }    
 
     #region Event Subscribers
     private void FinalizeLoadMinigame(Scene scene, LoadSceneMode mode)

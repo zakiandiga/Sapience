@@ -253,6 +253,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -280,6 +281,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -308,6 +310,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -335,6 +338,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -363,6 +367,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -390,6 +395,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -418,6 +424,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -445,6 +452,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -760,6 +768,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -789,6 +798,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -817,6 +827,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -846,6 +857,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -930,6 +942,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -957,6 +970,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -984,6 +998,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1011,6 +1026,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1038,6 +1054,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1065,6 +1082,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1093,6 +1111,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1121,6 +1140,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1148,6 +1168,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1175,6 +1196,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1202,6 +1224,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1229,6 +1252,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1298,6 +1322,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1325,6 +1350,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1353,6 +1379,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1380,6 +1407,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1460,6 +1488,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1792,6 +1821,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1938,6 +1968,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1965,6 +1996,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1992,6 +2024,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2487,6 +2520,13 @@ GameObject:
   - component: {fileID: 65297991}
   - component: {fileID: 65298104}
   - component: {fileID: 65298000}
+  - component: {fileID: 65298105}
+  - component: {fileID: 65298110}
+  - component: {fileID: 65298109}
+  - component: {fileID: 65298108}
+  - component: {fileID: 65298107}
+  - component: {fileID: 65298106}
+  - component: {fileID: 65298111}
   m_Layer: 0
   m_Name: day1_day_x3_shared_apt
   m_TagString: Untagged
@@ -2548,6 +2588,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2576,6 +2617,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2603,6 +2645,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2630,6 +2673,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2687,6 +2731,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2978,6 +3023,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -3006,6 +3052,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -3033,6 +3080,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -3062,6 +3110,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -3089,6 +3138,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -3755,6 +3805,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -3783,6 +3834,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 1e8d0c03ec960944da2562f5b024da2e, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -3812,6 +3864,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -3840,6 +3893,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -3867,6 +3921,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 1e8d0c03ec960944da2562f5b024da2e, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -5837,6 +5892,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -5865,6 +5921,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -5915,6 +5972,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -5942,6 +6000,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -5970,6 +6029,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6183,6 +6243,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6211,6 +6272,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6298,6 +6360,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6414,6 +6477,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6926,6 +6990,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6954,6 +7019,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6983,6 +7049,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -7011,6 +7078,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -7039,6 +7107,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -7130,6 +7199,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -7269,6 +7339,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -7297,6 +7368,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -7325,6 +7397,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -7955,6 +8028,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -8026,13 +8100,20 @@ MonoBehaviour:
   - {fileID: 65298088}
   - {fileID: 65297991}
   - {fileID: 65298000}
+  - {fileID: 65298106}
+  - {fileID: 65298107}
+  - {fileID: 65298108}
+  - {fileID: 65298109}
+  - {fileID: 65298110}
+  - {fileID: 65298105}
+  - {fileID: 65298111}
   - {fileID: 65298104}
   - {fileID: 65298037}
   - {fileID: 65297981}
   suppressAllAutoSelections: 0
 --- !u!114 &65297991
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -8049,6 +8130,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -8076,6 +8158,7 @@ MonoBehaviour:
   character: {fileID: 533016234}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -8158,7 +8241,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 65297990}
   selectedCommands:
-  - {fileID: 65298104}
+  - {fileID: 65298109}
   variables:
   - {fileID: 65297968}
   - {fileID: 65297932}
@@ -8354,6 +8437,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -8382,6 +8466,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -8407,7 +8492,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &65298000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -8424,6 +8509,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -8453,6 +8539,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -8895,6 +8982,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -8923,6 +9011,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -8950,6 +9039,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -9352,6 +9442,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -9758,6 +9849,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -9785,6 +9877,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -10192,6 +10285,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -10705,6 +10799,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -10820,6 +10915,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -10848,6 +10944,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 1e8d0c03ec960944da2562f5b024da2e, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -11524,6 +11621,7 @@ MonoBehaviour:
   character: {fileID: 533016234}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -11596,6 +11694,7 @@ MonoBehaviour:
   character: {fileID: 533016234}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -11912,6 +12011,7 @@ MonoBehaviour:
   character: {fileID: 533016234}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -12044,6 +12144,7 @@ MonoBehaviour:
   character: {fileID: 533016234}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -12116,6 +12217,7 @@ MonoBehaviour:
   character: {fileID: 533016234}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -13844,6 +13946,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -13916,6 +14019,7 @@ MonoBehaviour:
   character: {fileID: 1733453829}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -13943,6 +14047,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -14381,6 +14486,7 @@ MonoBehaviour:
   character: {fileID: 533016234}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -15157,7 +15263,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &65298104
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -15174,6 +15280,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -15182,6 +15289,202 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 1391366135}
+--- !u!114 &65298105
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 295
+  indentLevel: 0
+  storyText: 
+  description: 
+  character: {fileID: 1161645284}
+  portrait: {fileID: 21300000, guid: 328dd7212f7a53c499f60fd9ae20de1a, type: 3}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1461053579}
+--- !u!114 &65298106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 300
+  indentLevel: 0
+  storyText: Duh 2
+  description: 
+  character: {fileID: 311545510}
+  portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1391366135}
+--- !u!114 &65298107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 299
+  indentLevel: 0
+  storyText: Oh my god
+  description: 
+  character: {fileID: 311545510}
+  portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1391366135}
+--- !u!114 &65298108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 298
+  indentLevel: 0
+  storyText: yipeeee
+  description: 
+  character: {fileID: 311545510}
+  portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1391366135}
+--- !u!114 &65298109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 297
+  indentLevel: 0
+  storyText: atulah
+  description: 
+  character: {fileID: 311545510}
+  portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1391366135}
+--- !u!114 &65298110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 296
+  indentLevel: 0
+  storyText: duh lagi
+  description: 
+  character: {fileID: 311545510}
+  portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1391366135}
+--- !u!114 &65298111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 301
+  indentLevel: 0
+  storyText: 
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &90587570
 GameObject:
   m_ObjectHideFlags: 0
@@ -16036,6 +16339,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16064,6 +16368,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16091,6 +16396,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16118,6 +16424,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16145,6 +16452,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16172,6 +16480,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16214,6 +16523,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16241,6 +16551,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16269,6 +16580,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16296,6 +16608,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16323,6 +16636,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16351,6 +16665,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -18746,6 +19061,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -18773,6 +19089,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -18800,6 +19117,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -18828,6 +19146,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -18856,6 +19175,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -18884,6 +19204,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -18911,6 +19232,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -18938,6 +19260,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -18966,6 +19289,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19643,6 +19967,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19670,6 +19995,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19698,6 +20024,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19725,6 +20052,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19752,6 +20080,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19779,6 +20108,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19806,6 +20136,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19834,6 +20165,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19862,6 +20194,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19928,6 +20261,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19955,6 +20289,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19982,6 +20317,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -20009,6 +20345,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -25279,6 +25616,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -25306,6 +25644,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -25333,6 +25672,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -25360,6 +25700,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -25387,6 +25728,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -25414,6 +25756,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -25441,6 +25784,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -25468,6 +25812,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -25572,6 +25917,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -25842,6 +26188,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -26127,6 +26474,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -26154,6 +26502,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -26182,6 +26531,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -26210,6 +26560,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -26795,6 +27146,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -27254,6 +27606,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -27282,6 +27635,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -27309,6 +27663,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -27579,6 +27934,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -27850,6 +28206,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -27934,6 +28291,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -27961,6 +28319,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -28009,6 +28368,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -28280,6 +28640,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -28550,6 +28911,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -28577,6 +28939,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -28604,6 +28967,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -28631,6 +28995,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -28659,6 +29024,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -29157,6 +29523,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -29184,6 +29551,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -29295,6 +29663,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -29397,6 +29766,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -29424,6 +29794,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -29527,6 +29898,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -30040,6 +30412,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -31126,6 +31499,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -31153,6 +31527,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -31215,6 +31590,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -31242,6 +31618,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -33517,6 +33894,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -33565,6 +33943,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -33614,6 +33993,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34052,6 +34432,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34080,6 +34461,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34108,6 +34490,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34135,6 +34518,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34162,6 +34546,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34189,6 +34574,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34216,6 +34602,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34244,6 +34631,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34271,6 +34659,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34319,6 +34708,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34346,6 +34736,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34374,6 +34765,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34401,6 +34793,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34428,6 +34821,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34455,6 +34849,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34482,6 +34877,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34509,6 +34905,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34536,6 +34933,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34563,6 +34961,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34590,6 +34989,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34617,6 +35017,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34645,6 +35046,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34673,6 +35075,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34701,6 +35104,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34728,6 +35132,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34756,6 +35161,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34783,6 +35189,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34811,6 +35218,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34838,6 +35246,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -34866,6 +35275,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35103,6 +35513,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35131,6 +35542,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35159,6 +35571,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35187,6 +35600,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35215,6 +35629,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35264,6 +35679,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35322,6 +35738,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35350,6 +35767,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35377,6 +35795,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35404,6 +35823,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35431,6 +35851,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35459,6 +35880,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35487,6 +35909,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35514,6 +35937,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35542,6 +35966,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35570,6 +35995,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35597,6 +36023,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35624,6 +36051,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35651,6 +36079,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35678,6 +36107,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35706,6 +36136,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35733,6 +36164,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35760,6 +36192,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35788,6 +36221,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35815,6 +36249,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35843,6 +36278,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35871,6 +36307,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35898,6 +36335,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35925,6 +36363,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35952,6 +36391,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -35979,6 +36419,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36006,6 +36447,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36033,6 +36475,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36060,6 +36503,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36087,6 +36531,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36114,6 +36559,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36141,6 +36587,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36168,6 +36615,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36196,6 +36644,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36223,6 +36672,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36250,6 +36700,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36277,6 +36728,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36304,6 +36756,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36332,6 +36785,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36360,6 +36814,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36387,6 +36842,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36414,6 +36870,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -36441,6 +36898,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40274,6 +40732,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40301,6 +40760,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40329,6 +40789,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40356,6 +40817,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40383,6 +40845,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40410,6 +40873,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40437,6 +40901,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40464,6 +40929,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40492,6 +40958,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40519,6 +40986,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40682,6 +41150,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40709,6 +41178,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40736,6 +41206,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40763,6 +41234,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40790,6 +41262,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40817,6 +41290,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40844,6 +41318,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40871,6 +41346,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40898,6 +41374,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -40925,6 +41402,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41082,6 +41560,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41109,6 +41588,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41136,6 +41616,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41163,6 +41644,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41190,6 +41672,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41217,6 +41700,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41244,6 +41728,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41688,6 +42173,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41715,6 +42201,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41742,6 +42229,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41769,6 +42257,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41796,6 +42285,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41823,6 +42313,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41850,6 +42341,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41877,6 +42369,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41904,6 +42397,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41931,6 +42425,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41958,6 +42453,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -41985,6 +42481,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42012,6 +42509,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42039,6 +42537,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42066,6 +42565,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42093,6 +42593,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42120,6 +42621,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42147,6 +42649,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42174,6 +42677,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42201,6 +42705,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42228,6 +42733,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42255,6 +42761,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42282,6 +42789,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42309,6 +42817,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42336,6 +42845,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42363,6 +42873,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42390,6 +42901,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42417,6 +42929,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42444,6 +42957,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42471,6 +42985,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42498,6 +43013,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42525,6 +43041,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42552,6 +43069,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42579,6 +43097,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42606,6 +43125,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42633,6 +43153,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42660,6 +43181,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42687,6 +43209,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42714,6 +43237,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42741,6 +43265,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42769,6 +43294,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42796,6 +43322,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42823,6 +43350,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42850,6 +43378,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -42877,6 +43406,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -43100,6 +43630,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -43128,6 +43659,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -43155,6 +43687,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -43182,6 +43715,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -43721,6 +44255,7 @@ MonoBehaviour:
   character: {fileID: 533016234}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -43807,6 +44342,7 @@ MonoBehaviour:
   character: {fileID: 533016234}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -44228,6 +44764,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -44391,6 +44928,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -44555,6 +45093,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -44729,6 +45268,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -45454,6 +45994,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -45481,6 +46022,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -45560,6 +46102,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -45588,6 +46131,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -45616,6 +46160,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -45688,6 +46233,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -45857,6 +46403,7 @@ MonoBehaviour:
   character: {fileID: 533016234}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -46018,6 +46565,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -46330,6 +46878,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -46445,6 +46994,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -46560,6 +47110,7 @@ MonoBehaviour:
   character: {fileID: 533016234}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -46618,6 +47169,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -46801,6 +47353,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -47250,6 +47803,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -47278,6 +47832,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -47792,6 +48347,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -48401,6 +48957,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -48449,6 +49006,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -48477,6 +49035,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -48553,6 +49112,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -48580,6 +49140,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -48607,6 +49168,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -48635,6 +49197,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -48773,6 +49336,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -48821,6 +49385,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -48849,6 +49414,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -48926,6 +49492,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -48954,6 +49521,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49090,6 +49658,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49118,6 +49687,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49145,6 +49715,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49291,6 +49862,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49369,6 +49941,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49397,6 +49970,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49613,6 +50187,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49640,6 +50215,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49668,6 +50244,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49746,6 +50323,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49774,6 +50352,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49802,6 +50381,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49830,6 +50410,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49857,6 +50438,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49935,6 +50517,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -49963,6 +50546,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -50638,6 +51222,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 38.074997
       objectReference: {fileID: 0}
+    - target: {fileID: 4346099511649620162, guid: 5c79f757d5608044aafb0da7dcbf67da, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -19.893066
+      objectReference: {fileID: 0}
     - target: {fileID: 5514802049631104143, guid: 5c79f757d5608044aafb0da7dcbf67da, type: 3}
       propertyPath: m_Name
       value: Q-4792_SayDialog
@@ -51206,6 +51794,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51233,6 +51822,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51260,6 +51850,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51289,6 +51880,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51318,6 +51910,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51346,6 +51939,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51374,6 +51968,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51401,6 +51996,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51454,6 +52050,7 @@ MonoBehaviour:
   character: {fileID: 1161645284}
   portrait: {fileID: 21300000, guid: 328dd7212f7a53c499f60fd9ae20de1a, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51482,6 +52079,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51511,6 +52109,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51540,6 +52139,7 @@ MonoBehaviour:
   character: {fileID: 1161645284}
   portrait: {fileID: 21300000, guid: 328dd7212f7a53c499f60fd9ae20de1a, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51568,6 +52168,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51597,6 +52198,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51626,6 +52228,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51653,6 +52256,7 @@ MonoBehaviour:
   character: {fileID: 1161645284}
   portrait: {fileID: 21300000, guid: 328dd7212f7a53c499f60fd9ae20de1a, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51681,6 +52285,7 @@ MonoBehaviour:
   character: {fileID: 1161645284}
   portrait: {fileID: 21300000, guid: 328dd7212f7a53c499f60fd9ae20de1a, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51709,6 +52314,7 @@ MonoBehaviour:
   character: {fileID: 1161645284}
   portrait: {fileID: 21300000, guid: 328dd7212f7a53c499f60fd9ae20de1a, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51737,6 +52343,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51765,6 +52372,7 @@ MonoBehaviour:
   character: {fileID: 1161645284}
   portrait: {fileID: 21300000, guid: 328dd7212f7a53c499f60fd9ae20de1a, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51793,6 +52401,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51821,6 +52430,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51921,6 +52531,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51948,6 +52559,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -51976,6 +52588,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -52003,6 +52616,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -52031,6 +52645,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -52084,6 +52699,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -52111,6 +52727,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -52138,6 +52755,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -58916,6 +59534,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -58944,6 +59563,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -58971,6 +59591,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -59209,6 +59830,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -59236,6 +59858,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -59263,6 +59886,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -59290,6 +59914,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -59370,6 +59995,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -59398,6 +60024,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -59425,6 +60052,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -59453,6 +60081,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -59480,6 +60109,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -59508,6 +60138,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -61075,6 +61706,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -61463,6 +62095,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -61491,6 +62124,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -61518,6 +62152,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -61605,6 +62240,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -61756,6 +62392,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -61784,6 +62421,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -61813,6 +62451,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -61913,6 +62552,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -61972,6 +62612,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62037,6 +62678,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62155,6 +62797,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62182,6 +62825,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62209,6 +62853,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62236,6 +62881,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62263,6 +62909,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62595,6 +63242,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62622,6 +63270,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62650,6 +63299,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62677,6 +63327,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62704,6 +63355,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62731,6 +63383,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62758,6 +63411,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62785,6 +63439,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62812,6 +63467,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62839,6 +63495,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62866,6 +63523,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62968,6 +63626,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62995,6 +63654,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63023,6 +63683,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63050,6 +63711,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63077,6 +63739,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63104,6 +63767,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63131,6 +63795,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63158,6 +63823,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63185,6 +63851,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63212,6 +63879,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63239,6 +63907,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63266,6 +63935,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63449,6 +64119,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63518,6 +64189,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63545,6 +64217,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63572,6 +64245,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63599,6 +64273,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63626,6 +64301,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63654,6 +64330,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63681,6 +64358,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63708,6 +64386,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63774,6 +64453,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63801,6 +64481,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63828,6 +64509,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63855,6 +64537,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63882,6 +64565,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63910,6 +64594,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63937,6 +64622,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63964,6 +64650,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -63991,6 +64678,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64018,6 +64706,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64045,6 +64734,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64072,6 +64762,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64100,6 +64791,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64127,6 +64819,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64154,6 +64847,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64181,6 +64875,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64208,6 +64903,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64235,6 +64931,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64262,6 +64959,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64289,6 +64987,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64316,6 +65015,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64343,6 +65043,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64370,6 +65071,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64397,6 +65099,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64474,6 +65177,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64501,6 +65205,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64528,6 +65233,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64555,6 +65261,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64582,6 +65289,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64634,6 +65342,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64661,6 +65370,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -64688,6 +65398,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -65040,6 +65751,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 10bf4a0a491e53b408f190cc7d5b32e1, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -65067,6 +65779,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -65094,6 +65807,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -65442,6 +66156,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -65469,6 +66184,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -65496,6 +66212,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -65523,6 +66240,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -65550,6 +66268,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -65577,6 +66296,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -65604,6 +66324,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -65631,6 +66352,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -65658,6 +66380,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -65685,6 +66408,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66167,6 +66891,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66194,6 +66919,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66221,6 +66947,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66248,6 +66975,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66275,6 +67003,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66302,6 +67031,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66329,6 +67059,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66356,6 +67087,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66383,6 +67115,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66410,6 +67143,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66457,6 +67191,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66484,6 +67219,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66511,6 +67247,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66538,6 +67275,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66565,6 +67303,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66592,6 +67331,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66619,6 +67359,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66646,6 +67387,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66673,6 +67415,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66700,6 +67443,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66727,6 +67471,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66754,6 +67499,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66781,6 +67527,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66808,6 +67555,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66835,6 +67583,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66862,6 +67611,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66889,6 +67639,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66916,6 +67667,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66943,6 +67695,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66970,6 +67723,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -66998,6 +67752,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67025,6 +67780,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67101,6 +67857,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67218,6 +67975,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67245,6 +68003,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67272,6 +68031,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67319,6 +68079,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67346,6 +68107,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67373,6 +68135,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67400,6 +68163,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67427,6 +68191,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67454,6 +68219,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67481,6 +68247,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67508,6 +68275,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67535,6 +68303,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67563,6 +68332,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67590,6 +68360,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67617,6 +68388,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67664,6 +68436,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67691,6 +68464,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67718,6 +68492,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67745,6 +68520,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67791,6 +68567,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67819,6 +68596,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67846,6 +68624,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67873,6 +68652,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -67900,6 +68680,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68100,6 +68881,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68127,6 +68909,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68154,6 +68937,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68181,6 +68965,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68208,6 +68993,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68235,6 +69021,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68262,6 +69049,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68289,6 +69077,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68316,6 +69105,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68343,6 +69133,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68370,6 +69161,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68397,6 +69189,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68560,6 +69353,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68587,6 +69381,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68615,6 +69410,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68643,6 +69439,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68670,6 +69467,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68697,6 +69495,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68725,6 +69524,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68752,6 +69552,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68779,6 +69580,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68806,6 +69608,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68834,6 +69637,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68861,6 +69665,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68888,6 +69693,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68915,6 +69721,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68942,6 +69749,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -68969,6 +69777,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -69543,6 +70352,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -70263,6 +71073,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -70554,6 +71365,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -70581,6 +71393,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -70608,6 +71421,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -70635,6 +71449,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -70662,6 +71477,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -70689,6 +71505,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -70716,6 +71533,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -70743,6 +71561,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -70770,6 +71589,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -70798,6 +71618,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -71670,6 +72491,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -71698,6 +72520,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -71725,6 +72548,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -71754,6 +72578,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -71782,6 +72607,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -71809,6 +72635,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72113,6 +72940,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72140,6 +72968,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72169,6 +72998,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72196,6 +73026,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72245,6 +73076,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72274,6 +73106,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72453,6 +73286,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72482,6 +73316,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72559,6 +73394,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72586,6 +73422,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72613,6 +73450,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72640,6 +73478,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72667,6 +73506,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72694,6 +73534,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72721,6 +73562,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72749,6 +73591,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -72777,6 +73620,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73058,6 +73902,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73086,6 +73931,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73113,6 +73959,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73141,6 +73988,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73169,6 +74017,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73196,6 +74045,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73223,6 +74073,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73442,6 +74293,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73469,6 +74321,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73496,6 +74349,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73524,6 +74378,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73551,6 +74406,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73579,6 +74435,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73665,6 +74522,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73692,6 +74550,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73719,6 +74578,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73747,6 +74607,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73774,6 +74635,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73801,6 +74663,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73830,6 +74693,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73858,6 +74722,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73886,6 +74751,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73913,6 +74779,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -73940,6 +74807,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -74406,6 +75274,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -74434,6 +75303,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -74461,6 +75331,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -74488,6 +75359,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -74516,6 +75388,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75176,6 +76049,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75204,6 +76078,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75231,6 +76106,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75259,6 +76135,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75286,6 +76163,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75356,6 +76234,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75383,6 +76262,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75411,6 +76291,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75438,6 +76319,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75466,6 +76348,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75514,6 +76397,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75591,6 +76475,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75618,6 +76503,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75646,6 +76532,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75673,6 +76560,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75715,6 +76603,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75742,6 +76631,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75770,6 +76660,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75798,6 +76689,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75825,6 +76717,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75852,6 +76745,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75879,6 +76773,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75928,6 +76823,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75956,6 +76852,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -75983,6 +76880,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76010,6 +76908,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76080,6 +76979,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76108,6 +77008,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76136,6 +77037,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76163,6 +77065,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76191,6 +77094,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76219,6 +77123,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76246,6 +77151,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76350,6 +77256,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76377,6 +77284,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76405,6 +77313,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76434,6 +77343,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76461,6 +77371,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76488,6 +77399,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76515,6 +77427,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76542,6 +77455,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76570,6 +77484,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76598,6 +77513,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76625,6 +77541,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76652,6 +77569,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76679,6 +77597,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76707,6 +77626,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76735,6 +77655,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76762,6 +77683,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76789,6 +77711,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76817,6 +77740,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76886,6 +77810,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76914,6 +77839,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76941,6 +77867,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76968,6 +77895,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -76995,6 +77923,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77044,6 +77973,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77230,6 +78160,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77257,6 +78188,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77284,6 +78216,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77311,6 +78244,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77338,6 +78272,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77366,6 +78301,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77393,6 +78329,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77420,6 +78357,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77447,6 +78385,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77475,6 +78414,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77577,6 +78517,7 @@ MonoBehaviour:
   character: {fileID: 5325857768432770637}
   portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77604,6 +78545,7 @@ MonoBehaviour:
   character: {fileID: 1218727728}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77631,6 +78573,7 @@ MonoBehaviour:
   character: {fileID: 311545510}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
   voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -77850,6 +78793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovementManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2665749050037415963, guid: 1559341d0d951714788c262c2cfb6926, type: 3}
+      propertyPath: activeMonitor
+      value: 
+      objectReference: {fileID: 666227233}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1559341d0d951714788c262c2cfb6926, type: 3}
 --- !u!1001 &5113372249673949411

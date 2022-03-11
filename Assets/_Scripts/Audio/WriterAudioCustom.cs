@@ -19,9 +19,26 @@ public class WriterAudioCustom : MonoBehaviour, IWriterListener
             return;
         }
 
-        currentSpeaker = RuntimeManager.CreateInstance(audioEvent);
+        if(currentSpeaker.isValid())
+        {
+            Debug.Log("No need to set currentSpeaker");
+            return;
+        }
+        else
+        {
+            
+            currentSpeaker = RuntimeManager.CreateInstance(audioEvent);
+            Debug.Log("Set currentSpeaker to " + currentSpeaker);
 
-        Play();
+        }
+            Play();
+    }
+
+    private void OnDisable()
+    {
+        Debug.Log("at OnDisable");
+        currentSpeaker.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        currentSpeaker.release();
     }
 
     protected void Play()
@@ -32,8 +49,8 @@ public class WriterAudioCustom : MonoBehaviour, IWriterListener
 
     protected void Stop()
     {
-        currentSpeaker.release();
-        currentSpeaker.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        //currentSpeaker.release();
+        //currentSpeaker.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
 
     }
 
@@ -65,6 +82,8 @@ public class WriterAudioCustom : MonoBehaviour, IWriterListener
     }
     public void OnEnd(bool stopAudio)
     {
+        Debug.Log("OnEnd called!");
+        Debug.Log("currentSpeaker is Valid = " + currentSpeaker.isValid());
         if(stopAudio)
         {
             Stop();
