@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4210903603527970515}
   - component: {fileID: 4210903603527970513}
   m_Layer: 0
-  m_Name: Goldhampton3
+  m_Name: Goldhampton3_Bark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
