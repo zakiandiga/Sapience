@@ -76,6 +76,7 @@ public class Paddle : MinigameBase
             case GameState.Dead:
                 ball.StopBall();
                 EndingMinigame();
+                state = GameState.Waiting;
                 break;
         }
     }
@@ -139,7 +140,7 @@ public class Paddle : MinigameBase
         state = GameState.Alive;
     }
     
-    public  void Dead()
+    public void Dead()
     {
         state = GameState.Dead;
     }
