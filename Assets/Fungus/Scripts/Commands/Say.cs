@@ -30,6 +30,9 @@ namespace Fungus
         [Tooltip("Voiceover audio to play when writing the text")]
         [SerializeField] protected AudioClip voiceOverClip;
 
+        [Tooltip("Should this line fire off the speaker's voice?")]
+        public bool fireOffVoice = false;
+
         [Tooltip("Always show this Say text when the command is executed multiple times")]
         [SerializeField] protected bool showAlways = true;
 
@@ -50,6 +53,7 @@ namespace Fungus
 
         [Tooltip("Wait for the Voice Over to complete before continuing")]
         [SerializeField] protected bool waitForVO = false;
+
 
         //add wait for vo that overrides stopvo
 

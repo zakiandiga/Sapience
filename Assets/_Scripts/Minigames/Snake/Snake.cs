@@ -85,6 +85,7 @@ public class Snake : MinigameBase
                 break;
             case State.Dead:
                 EndingMinigame();
+                state = State.Waiting;
                 break;
         }
     }
