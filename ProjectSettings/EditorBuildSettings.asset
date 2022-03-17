@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/Snake_Minigame.unity
     guid: 786d22a8ab00b11489c97b0dec144aca
   - enabled: 1
-    path: Assets/_Scenes/Gold_Office_TESTRPG.unity
+    path: Assets/_Scenes/TestingScenes/Gold_Office_TESTRPG.unity
     guid: 0cc3719163bb3d24a80d378fd7acaf59
   - enabled: 1
     path: Assets/_Scenes/AudioManager.unity
