@@ -4,23 +4,40 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public string PlayerName => playerData.characterName;
+    public float VerticalVelocity => rb.velocity.y;
+    public float HorizontalVelocity => rb.velocity.x;
     public Interactable CurrentInteractable { get; private set; }
 
-    private PlayerMoveState playerState = PlayerMoveState.idle;
+    private PlayerRootState rootState = PlayerRootState.OnGround;
+    private PlayerMoveState moveState = PlayerMoveState.ready;
 
     private PlayerInputHandler inputHandler;
     private CharacterAnimation playerAnimation;
+    private BoxCollider2D playerCollider;
     private Rigidbody2D rb;
+    private float groundCheckBounds = 0.3f;
+    [SerializeField] private LayerMask groundLayer;
+    private RaycastHit2D groundCheckHit;
 
 
     #region Private Variables
     [SerializeField] private PlayerData playerData;
     private Vector2 _playerVelocity = Vector2.zero;
-    private Vector2 _rawVelocity = Vector2.zero;
-    private Vector2 _movementVelocity = Vector2.zero;
+    private float tempAxis = 0f;
+    private float smoothInputVelocity = 1f;
+    [SerializeField] private float accelerationMomentum = 50f;
+    [SerializeField] private float deccelerationMomentum = 50f;
+    [SerializeField] private float turningMomentum = 50f;
+    [SerializeField] private float turningSpeedTreshold = 100f;
+    private bool moveOngoing = false;
 
-    [SerializeField] private float speed = 10f;
-    private float jumpForce = 50;
+    [SerializeField] private float maxSpeed = 10f;
+    private float currentSpeed;
+    [SerializeField] private float jumpForce = 50f;
+    [SerializeField] private float gravityMods = 10f;
+    [SerializeField] private float jumpPressedLimit = 0.8f;
+    private string jumpPressedLimitTimer = "JumpPressedTimer";
+    private bool jumpOngoing = false;
 
     #endregion
 
@@ -30,23 +47,25 @@ public class Player : MonoBehaviour
     public static event Action<Transform> OnPlayerDisabled;
     #endregion
 
-    private void Awake()
-    {
-        //InitializeStateMachine();
-    }
-
     private void Start()
-    {        
+    {
+        Debug.Log("Start");
+        playerCollider = GetComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
-        inputHandler = GetComponent<PlayerInputHandler>();
         playerAnimation = GetComponentInChildren<CharacterAnimation>();
+
     }
 
     private void OnEnable()
-    {        
+    {
+        Debug.Log("OnEnable");
         MovementManager.OnBlockEnd += EnablingPlayerControl;
         MovementManager.OnBlockStart += DisablingPlayerControl;
         MovementManager.OnSetPlayerSpawn += SetPlayerPosition;
+
+        inputHandler = GetComponent<PlayerInputHandler>();
+        inputHandler.OnJump += JumpTrigger;
+
     }
 
     private void OnDisable()
@@ -55,108 +74,251 @@ public class Player : MonoBehaviour
         MovementManager.OnBlockEnd -= EnablingPlayerControl;
         MovementManager.OnBlockStart -= DisablingPlayerControl;
         MovementManager.OnSetPlayerSpawn -= SetPlayerPosition;
+        inputHandler.OnJump -= JumpTrigger;
         OnPlayerDisabled?.Invoke(this.transform);
 
     }
 
     private void EnablingPlayerControl(string blockName)
     {
-        playerState = PlayerMoveState.idle;
+        rootState = PlayerRootState.OnGround;
         CurrentInteractable = null;
         inputHandler.InputActionSwitch(true);
     }
 
     private void DisablingPlayerControl(string blockName)
     {
-        playerState = PlayerMoveState.interacting;
+        rootState = PlayerRootState.interacting;
         inputHandler.InputActionSwitch(false);
     }
 
     void Update()
     {
-        _playerVelocity.x = inputHandler.MoveAxis;
+        
 
-        switch (playerState)
+        switch (rootState)
         {
-            case PlayerMoveState.idle:                
-
-                if(Mathf.Abs(_playerVelocity.x) > 0.01f)
+            case PlayerRootState.OnGround:                
+                if(VerticalVelocity < -0.05f)
                 {
-                    playerState = PlayerMoveState.move;
+                    rootState = PlayerRootState.onAir;
+                }
+
+                if(Mathf.Abs(inputHandler.MoveAxis) > 0.01f)
+                {
+                    if(!moveOngoing)
+                        moveOngoing = true;
                 }
 
                 if (inputHandler.Interacting)
                 {
-                    //Debug.Log("Player INTERACTING");
-                    //OnCallingDialogue?.Invoke(tempBlockRef);
                     OnPlayerInteract?.Invoke(this);
-                    //inputHandler.StopInteract();
-                    //playerState = PlayerMoveState.interacting;
-                }              
-                break;
-
-            case PlayerMoveState.move:                
-
-                if (Mathf.Abs(_playerVelocity.x) <= 0.01f)
-                {
-                    playerState = PlayerMoveState.idle;
                 }
 
                 break;
 
-            case PlayerMoveState.onAir:
+            case PlayerRootState.move:
+                /*
+                if(Mathf.Abs(_playerVelocity.x) >= 0.01f)
+                    Debug.Log(_playerVelocity.x);
+
+                if (VerticalVelocity < -0.05f)
+                {
+                    rootState = PlayerRootState.onAir;
+                }
+
+                if(Mathf.Abs(inputHandler.MoveAxis) >= 0.01f)
+                {
+                    if(ChangeDirection(inputHandler.MoveAxis))
+                    {
+
+                    }
+
+                    currentSpeed = Mathf.SmoothDamp(currentSpeed, maxSpeed, ref smoothInputVelocity, accelerationMomentum / 100);
+                }
+                
+                else if (Mathf.Abs(inputHandler.MoveAxis) <= 0.01f)
+                {
+                    //deccelerating
+                    currentSpeed = Mathf.SmoothDamp(currentSpeed, 0, ref smoothInputVelocity, accelerationMomentum / 100);
+                    
+
+                    if(Mathf.Abs(currentSpeed) <= 0.1f)
+                        rootState = PlayerRootState.OnGround;
+                }
+                */
+                break;
+
+            case PlayerRootState.onAir:
+                if(!inputHandler.IsJumpPressed)
+                {
+                    jumpOngoing = false;
+                    if (Timer.TimerRunning(jumpPressedLimitTimer))
+                        Timer.ForceStopTimer(jumpPressedLimitTimer);
+                }
+
 
                 break;
 
-            case PlayerMoveState.interacting:
+            case PlayerRootState.interacting:
 
                 //playerState = PlayerMoveState.idle; //shortcut to direct idle
                 break;  
         }        
+
+        if(moveOngoing)
+        {
+            GroundMove();
+        }
     }
 
     private void FixedUpdate()
     {
-        if(playerState != PlayerMoveState.interacting || playerState != PlayerMoveState.onAir)
+        if(rootState == PlayerRootState.onAir)
         {
-            if(inputHandler.IsJumping)
-            {
-                Debug.Log("Jump pressed!");
-                //playerState = PlayerMoveState.onAir;
+            if(jumpOngoing)
                 Jump();
+            else if (!jumpOngoing)
+            {
+                Fall();
+
+                if (GroundCheck())
+                {
+                    Debug.Log("Grounded");
+                    jumpOngoing = false;
+                    rootState = PlayerRootState.OnGround; 
+                }
             }
         }
 
-
-        rb.velocity = new Vector2 (_playerVelocity.x * speed * Time.deltaTime, rb.velocity.y);
-
+        HorizontalMovement();
     }
 
-    private void Jump()
+    private void GroundMove()
     {
-        rb.velocity = new Vector2 (rb.velocity.x, _playerVelocity.y * jumpForce * Time.deltaTime);
+        switch(moveState)
+        {
+            case PlayerMoveState.ready:
+
+                Debug.Log("Enter Ready moveState");
+                tempAxis = inputHandler.MoveAxis;
+                Debug.Log("Exit to acceleration");
+                moveState = PlayerMoveState.acceleration;
+                break;
+
+            case PlayerMoveState.acceleration:
+                _playerVelocity.x = tempAxis;
+                currentSpeed = Mathf.SmoothDamp(currentSpeed, maxSpeed, ref smoothInputVelocity, accelerationMomentum / 100);
+
+                if(currentSpeed >= maxSpeed * (90f/100f))
+                {
+                    Debug.Log("Exit to TopSpeed");
+                    moveState = PlayerMoveState.topSpeed;
+                }
+
+                if(Mathf.Abs(inputHandler.MoveAxis) < 0.1f)
+                {
+                    Debug.Log("Exit to decceleration");
+                    moveState = PlayerMoveState.decceleration;
+                }
+                break;
+
+            case PlayerMoveState.topSpeed:
+                if(Mathf.Abs(inputHandler.MoveAxis) < 0.1f)
+                {
+                    Debug.Log("Exit from topSpeed to decceleration");
+                    moveState = PlayerMoveState.decceleration;
+                }
+                break;
+
+            case PlayerMoveState.decceleration:
+                currentSpeed = Mathf.SmoothDamp(currentSpeed, 0, ref smoothInputVelocity, deccelerationMomentum / 100);
+
+                //If player press directional input
+                if(Mathf.Abs(inputHandler.MoveAxis) > 0.01f)
+                {
+                    //on the opposite direction
+                    if(ChangeDirection(inputHandler.MoveAxis))
+                    {
+                        if(Mathf.Abs(_playerVelocity.x) > 0.01f)
+                        {
+                            tempAxis *= -1;
+                            Debug.Log("Exit to turning");
+                            moveState = PlayerMoveState.turning;
+                        }
+                    }
+                    //on the same direction
+                    else if(!ChangeDirection(inputHandler.MoveAxis))
+                    {
+                        Debug.Log("exit to accel");
+                        moveState = PlayerMoveState.acceleration;
+                    }
+                }
+
+                //If no directional input and current speed is almost 0
+                else if(Mathf.Abs(inputHandler.MoveAxis) < 0.01f && Mathf.Abs(currentSpeed) < 0.1f)
+                {
+                    moveState = PlayerMoveState.stop;
+                }
+                break;
+
+            case PlayerMoveState.turning:
+
+                currentSpeed = Mathf.SmoothDamp(currentSpeed, 0, ref smoothInputVelocity, turningMomentum / 100);
+                if (Mathf.Abs(currentSpeed) < turningSpeedTreshold)
+                {
+                    _playerVelocity.x = tempAxis;
+                    moveState = PlayerMoveState.acceleration;
+                }
+                break;
+
+            case PlayerMoveState.stop:
+                tempAxis = 0;
+                _playerVelocity.x = tempAxis;
+                moveState = PlayerMoveState.ready;
+                moveOngoing = false;
+                break;
+        }
     }
+
+    private void JumpTrigger(PlayerInputHandler inputHandler)
+    {
+        if(GroundCheck() && (rootState == PlayerRootState.OnGround || rootState == PlayerRootState.move))
+        {
+            jumpOngoing = true;
+
+            if (!Timer.TimerRunning(jumpPressedLimitTimer))
+                Timer.Create(ForceFalling, jumpPressedLimit, jumpPressedLimitTimer);
+            
+            rootState = PlayerRootState.onAir;
+        }
+    }
+
+    private void Jump() => rb.velocity = Vector2.up * jumpForce * Time.deltaTime;
+
+    private void Fall() => rb.velocity += Vector2.up * (gravityMods * -1) * Time.deltaTime;
+
+    private void HorizontalMovement() => rb.velocity = new Vector2(_playerVelocity.x * currentSpeed * Time.deltaTime, rb.velocity.y);
 
     public bool GroundCheck()
     {
-        return true;
+        groundCheckHit = Physics2D.BoxCast(playerCollider.bounds.center, playerCollider.bounds.size, 0, Vector2.down, groundCheckBounds, groundLayer);
+        
+        Color rayColor = groundCheckHit.collider != null ? Color.green : Color.red;
+        Debug.DrawRay(playerCollider.bounds.center, Vector2.down * (playerCollider.bounds.extents.y + groundCheckBounds), rayColor);
+        
+        return groundCheckHit.collider != null;
+    } 
+
+    private bool ChangeDirection(float inputAxis)
+    {
+        if ((inputAxis > 0 && HorizontalVelocity > 0) || (inputAxis < 0 && HorizontalVelocity < 0))
+            return false;
+        else
+            return true;        
     }
 
-    public void SetHorizontalVelocity(float horizontalVelocity, float speedModifier)
-    {
-        _rawVelocity.x = horizontalVelocity;
-        _playerVelocity.x = horizontalVelocity * speedModifier;
-    }
-
-    public void SetVerticalVelocity(float verticalVelocity)
-    {
-        _rawVelocity.y = verticalVelocity;
-    }
-
-    public void SetInteractible(Interactable currentInteractible)
-    {
-        CurrentInteractable = currentInteractible;
-    }
+    public void SetInteractible(Interactable currentInteractible) => CurrentInteractable = currentInteractible;
 
     private void SetPlayerPosition(Transform targetPosition)
     {
@@ -164,12 +326,27 @@ public class Player : MonoBehaviour
         OnSetPlayerPosition?.Invoke(this.transform);
     }
 
+    private void ForceFalling()
+    {
+        if (jumpOngoing)
+            jumpOngoing = false;
+    }
+}
+
+public enum PlayerRootState
+{
+    OnGround,
+    move,
+    onAir,
+    interacting
 }
 
 public enum PlayerMoveState
 {
-    idle,
-    move,
-    onAir,
-    interacting
+    ready,
+    acceleration,
+    topSpeed,
+    decceleration,
+    turning,
+    stop
 }

@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: 716899001
     Data4: -1537474084
   Banks:
-  - {fileID: 2685271992374345005}
+  - {fileID: 2287462648481007877}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -70,7 +70,7 @@ MonoBehaviour:
     Data3: 2015015827
     Data4: 1451714334
   Banks:
-  - {fileID: 2685271992374345005}
+  - {fileID: 2287462648481007877}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -78,7 +78,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 50
---- !u!114 &-481757564640473310
+--- !u!114 &-455409756446047407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,12 +90,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: E:/FMOD Projects/Ladder/Build/Desktop/Master.strings.bank
+  Path: Assets/_fmodBank/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637828820311717416
+  lastModified: 637831242624829004
   FileSizes:
-  - Name: Desktop
+  - Name: 
     Value: 1028
   Exists: 1
 --- !u!114 &-334409484506561
@@ -117,7 +117,7 @@ MonoBehaviour:
     Data3: -251757127
     Data4: 506645998
   Banks:
-  - {fileID: 2685271992374345005}
+  - {fileID: 2287462648481007877}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -139,8 +139,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -481757564640473310}
-  - {fileID: 2685271992374345005}
+  - {fileID: -455409756446047407}
+  - {fileID: 2287462648481007877}
   EditorEvents:
   - {fileID: -8481704790593232355}
   - {fileID: -334409484506561}
@@ -149,12 +149,12 @@ MonoBehaviour:
   - {fileID: -863230190215787018}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 2685271992374345005}
+  - {fileID: 2287462648481007877}
   StringsBanks:
-  - {fileID: -481757564640473310}
-  cacheTime: 637828820311717416
+  - {fileID: -455409756446047407}
+  cacheTime: 637831242624829004
   cacheVersion: 10
---- !u!114 &2685271992374345005
+--- !u!114 &2287462648481007877
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,13 +166,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: E:/FMOD Projects/Ladder/Build/Desktop/Master.bank
+  Path: Assets/_fmodBank/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637828820311697574
-  FileSizes:
-  - Name: Desktop
-    Value: 3065568
+  lastModified: 637831242624798821
+  FileSizes: []
   Exists: 1
 --- !u!114 &5517987174882966018
 MonoBehaviour:
@@ -193,7 +191,7 @@ MonoBehaviour:
     Data3: -2003167104
     Data4: 1992430862
   Banks:
-  - {fileID: 2685271992374345005}
+  - {fileID: 2287462648481007877}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -220,7 +218,7 @@ MonoBehaviour:
     Data3: -208703860
     Data4: -820170187
   Banks:
-  - {fileID: 2685271992374345005}
+  - {fileID: 2287462648481007877}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1

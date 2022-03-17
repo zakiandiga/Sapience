@@ -21,9 +21,9 @@ public class MusicManager : MonoBehaviour
 
     private void Update()
     {
-        if(input.IsJumping)
+        if(input.IsJumpPressed)
         {
-            StartMusic();
+            //StartMusic();
         }
 
         if(input.Interacting)
