@@ -69,6 +69,7 @@ public class Paddle : MinigameBase
                 if (!oneTime)
                 {
                     ball.ResetBall();
+                    FindObjectOfType<BrickGameManager>().StartMusic();
                     oneTime = true;
                 }
                 HandleInput();
@@ -129,7 +130,8 @@ public class Paddle : MinigameBase
 
             Quaternion rotation = Quaternion.AngleAxis(newAngle, Vector3.forward); //Sets the ball's new angle that was calculated above
             ball.rigidbody.velocity = rotation * Vector2.up * ball.rigidbody.velocity.magnitude;
-            //ball.rigidbody.velocity = ball.rigidbody.velocity.normalized * 500f; //Keeps ball's speed constant after bounce
+
+            FindObjectOfType<BrickGameManager>().PlayPaddleBounceSound();
         }
     }
 

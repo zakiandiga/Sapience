@@ -15,7 +15,7 @@ public class SnakeFungusIntegration : MonoBehaviour
         fungusScore = GameHandler.GetScore();
         flowchart.SetIntegerVariable("scoreNumber", fungusScore);
 
-        snakeDead = Snake.isDead;
+        //snakeDead = Snake.isDead;
         flowchart.SetBooleanVariable("gameOver", snakeDead);
     }
 }

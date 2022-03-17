@@ -8,7 +8,7 @@ public class OutOfBounds : MonoBehaviour
     {
         if(collision.gameObject.name == "Ball")
         {
-            FindObjectOfType<GameManager>().Miss();
+            FindObjectOfType<BrickGameManager>().Miss();
         }
     }
 }
