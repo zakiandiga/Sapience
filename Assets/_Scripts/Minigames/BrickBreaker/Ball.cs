@@ -41,4 +41,14 @@ public class Ball : MonoBehaviour
         this.transform.position = Vector2.zero;
         this.rigidbody.velocity = Vector2.zero;
     }
+
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "BrickBreakerWall")
+        {
+            FindObjectOfType<BrickGameManager>().PlayWallSound();
+        }
+    }
 }

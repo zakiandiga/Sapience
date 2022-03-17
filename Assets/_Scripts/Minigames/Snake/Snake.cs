@@ -33,7 +33,9 @@ public class Snake : MinigameBase
     private List<SnakeBodyPart> snakeBodyPartList;
 
     public Flowchart flowchart;
-    public static bool isDead;
+
+    public GameHandler gameHandler;
+    public bool gameStarted;
 
     [SerializeField] private InputActionReference changeDirection;
 
@@ -44,6 +46,8 @@ public class Snake : MinigameBase
     
     private void Start()
     {
+        gameHandler = FindObjectOfType<GameHandler>();
+        gameStarted = false;
         changeDirection.action.Enable();
     }
 
@@ -59,7 +63,7 @@ public class Snake : MinigameBase
 
         snakeBodyPartList = new List<SnakeBodyPart>();
 
-        state = State.Waiting; //Snake starts waiting until Fungus gameStarted bool commands it to switch to alive
+        state = State.Waiting; //Snake starts the game waiting until Fungus invokes the StartSnake() function
     }
     public Vector2 ChangePosition
     {
@@ -84,6 +88,7 @@ public class Snake : MinigameBase
                 HandleGridMovement();
                 break;
             case State.Dead:
+                gameHandler.playLoseSound();
                 EndingMinigame();
                 state = State.Waiting;
                 break;
@@ -94,6 +99,7 @@ public class Snake : MinigameBase
 
     public void StartSnake()
     {
+        gameStarted = true;
         state = State.Alive;
     }
 

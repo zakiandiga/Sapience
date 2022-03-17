@@ -15,7 +15,7 @@ public class BrickBreakerScoreWindow : MonoBehaviour
 
     private void Update()
     {
-        scoreText.text = "Score: " + GameManager.score.ToString();
-        livesText.text = "Lives: " + GameManager.lives.ToString();
+        scoreText.text = "Score: " + BrickGameManager.score.ToString();
+        livesText.text = "Lives: " + BrickGameManager.lives.ToString();
     }
 }

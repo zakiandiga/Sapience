@@ -43,7 +43,7 @@ public class Brick : MonoBehaviour
             this.spriteRenderer.sprite = this.states[this.health - 1];
         }
 
-        FindObjectOfType<GameManager>().Hit(this);
+        FindObjectOfType<BrickGameManager>().Hit(this);
     }
 
 

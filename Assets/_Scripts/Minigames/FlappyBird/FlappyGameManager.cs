@@ -13,6 +13,15 @@ public class FlappyGameManager : MinigameBase
     public Parallax backgroundParallax;
 
 
+    public AudioClip flappyBirdMusic;
+    public AudioClip scorePointSound;
+    public AudioClip collisionSound;
+    public AudioClip gameOverSound;
+    public AudioSource flappyAudioSource;
+    public AudioSource flappyMusicSource;
+    private bool startMusicOnce;
+
+
 
     private void Awake()
     {
@@ -22,14 +31,27 @@ public class FlappyGameManager : MinigameBase
         spawner.enabled = false;
         groundParallax.enabled = false;
         backgroundParallax.enabled = false;
+
+        flappyAudioSource = GetComponent<AudioSource>(); //If these GetComponentFunctions don't work, then you can comment them out or delete them and just drag the audio sources into the open script component
+
+        flappyMusicSource = GetComponent<AudioSource>();
+        flappyMusicSource.clip = flappyBirdMusic;
+        flappyMusicSource.loop = true;
+        startMusicOnce = false;
     }
 
     public void Play()
-    {
+    {  
         player.enabled = true;
         spawner.enabled = true;
         groundParallax.enabled = true;
         backgroundParallax.enabled = true;
+
+        if (!startMusicOnce)
+        {
+            flappyMusicSource.Play();
+            startMusicOnce = true;
+        }
 
     }
 
@@ -51,6 +73,7 @@ public class FlappyGameManager : MinigameBase
 
     public void LoseLife()
     {
+        flappyAudioSource.PlayOneShot(collisionSound, 1);
         Pause();
         lives--;
         if (lives == 0)
@@ -64,6 +87,7 @@ public class FlappyGameManager : MinigameBase
 
     public void GameOver()
     {
+        flappyAudioSource.PlayOneShot(gameOverSound, 1);
         Debug.Log("Game over");
         EndingMinigame();
     }
@@ -71,6 +95,7 @@ public class FlappyGameManager : MinigameBase
     public void IncreaseScore()
     {
         score++;
+        flappyAudioSource.PlayOneShot(scorePointSound, 1);
 
         if (score > bestScore)
         {
