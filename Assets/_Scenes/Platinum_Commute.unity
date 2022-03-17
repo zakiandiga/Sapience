@@ -160,7 +160,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2112,7 +2112,6 @@ GameObject:
   - component: {fileID: 862884688}
   - component: {fileID: 862884689}
   - component: {fileID: 862884690}
-  - component: {fileID: 862884691}
   m_Layer: 0
   m_Name: day2_x4_morning_platinum_commute
   m_TagString: Untagged
@@ -2268,7 +2267,7 @@ MonoBehaviour:
   itemId: 0
   blockName: Day 2 - Continue Commute
   description: 
-  eventHandler: {fileID: 862884691}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 862884649}
   - {fileID: 862884648}
@@ -4701,21 +4700,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 862884631}
   suppressBlockAutoSelect: 0
---- !u!114 &862884691
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 862884618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 862884623}
-  suppressBlockAutoSelect: 0
-  waitForFrames: 1
 --- !u!1 &899277445
 GameObject:
   m_ObjectHideFlags: 0
@@ -4953,6 +4937,7 @@ GameObject:
   - component: {fileID: 1022250921}
   - component: {fileID: 1022250934}
   - component: {fileID: 1022250933}
+  - component: {fileID: 1022250922}
   m_Layer: 0
   m_Name: day_picker_platinum_commute
   m_TagString: Untagged
@@ -5018,7 +5003,7 @@ MonoBehaviour:
   itemId: 0
   blockName: Day Picker
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 1022250922}
   commandList:
   - {fileID: 1022250931}
   - {fileID: 1022250919}
@@ -5052,6 +5037,21 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &1022250922
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022250917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1022250920}
+  suppressBlockAutoSelect: 0
+  waitForFrames: 1
 --- !u!114 &1022250923
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5465,8 +5465,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1022250920}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 1022250923}
@@ -7686,7 +7685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 862884628}
+  selectedFlowchart: {fileID: 1022250927}
 --- !u!4 &1666736375
 Transform:
   m_ObjectHideFlags: 1

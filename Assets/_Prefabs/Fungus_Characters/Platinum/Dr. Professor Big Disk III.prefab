@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8753254720696979754}
   - component: {fileID: 8753254720696979753}
   m_Layer: 0
-  m_Name: Dr. Professor Big Disk III
+  m_Name: Dr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
