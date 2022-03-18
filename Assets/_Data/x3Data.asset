@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: x3Data
   m_EditorClassIdentifier: 
   characterName: X3
-  groundSpeed: 150
-  airSpeed: 50
-  jumpStrength: 100
-  gravityValue: -98.5
+  maxSpeed: 800
+  accelerationMomentum: 40
+  deccelerationMomentum: 30
+  turningMomentum: 25
+  turningSpeedTreshold: 80
+  jumpForce: 660
+  fallForce: 80
+  jumpPressLimit: 0.2

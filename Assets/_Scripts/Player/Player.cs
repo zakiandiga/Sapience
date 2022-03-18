@@ -9,13 +9,18 @@ public class Player : MonoBehaviour
     private PlayerRootState rootState = PlayerRootState.OnGround;
     private PlayerMoveState moveState = PlayerMoveState.ready;
 
+    #region Player's Components
     private PlayerInputHandler inputHandler;
     private CharacterAnimation playerAnimation;
     private BoxCollider2D playerCollider;
     private Rigidbody2D rb;
+    #endregion
+
+    #region GroundChecks
     private float groundCheckBounds = 0.3f;
     [SerializeField] private LayerMask groundLayer;
     private RaycastHit2D groundCheckHit;
+    #endregion
 
     #region Movement Properties & Variables
     [SerializeField] private PlayerData playerData;
@@ -27,9 +32,9 @@ public class Player : MonoBehaviour
     private float turningMomentum => playerData.turningMomentum;
     private float turningSpeedTreshold => playerData.turningSpeedTreshold;
     private float maxSpeed => playerData.maxSpeed;
-    [SerializeField] private float jumpForce => playerData.jumpForce;
-    [SerializeField] private float gravityMods => playerData.fallForce;
-    [SerializeField] private float jumpPressedLimit => playerData.jumpPressLimit;
+    private float jumpForce => playerData.jumpForce;
+    private float gravityMods => playerData.fallForce;
+    private float jumpPressedLimit => playerData.jumpPressLimit;
 
     private Vector2 _playerVelocity = Vector2.zero;
     private float tempAxis = 0f;
@@ -39,6 +44,10 @@ public class Player : MonoBehaviour
     private bool moveOngoing = false;
     
     private string jumpPressedLimitTimer = "JumpPressedTimer";
+
+    private bool jumpTriggered = false;
+    private float jumpTriggerTreshold = 0.3f;
+    private string jumpTriggerTresholdTimer = "JumpTriggerTimer";
     #endregion
 
     #region Player Events
@@ -49,7 +58,6 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("Start");
         playerCollider = GetComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
         playerAnimation = GetComponentInChildren<CharacterAnimation>();
@@ -58,7 +66,6 @@ public class Player : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log("OnEnable");
         MovementManager.OnBlockEnd += EnablingPlayerControl;
         MovementManager.OnBlockStart += DisablingPlayerControl;
         MovementManager.OnSetPlayerSpawn += SetPlayerPosition;
@@ -70,7 +77,6 @@ public class Player : MonoBehaviour
 
     private void OnDisable()
     {
-        Debug.Log("Player Disabled");
         MovementManager.OnBlockEnd -= EnablingPlayerControl;
         MovementManager.OnBlockStart -= DisablingPlayerControl;
         MovementManager.OnSetPlayerSpawn -= SetPlayerPosition;
@@ -94,8 +100,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        
-
         switch (rootState)
         {
             case PlayerRootState.OnGround:                
@@ -104,50 +108,13 @@ public class Player : MonoBehaviour
                     rootState = PlayerRootState.onAir;
                 }
 
-                if(Mathf.Abs(inputHandler.MoveAxis) > 0.01f)
-                {
-                    if(!moveOngoing)
-                        moveOngoing = true;
-                }
 
                 if (inputHandler.Interacting)
                 {
                     OnPlayerInteract?.Invoke(this);
                 }
 
-                break;
-
-            case PlayerRootState.move:
-                /*
-                if(Mathf.Abs(_playerVelocity.x) >= 0.01f)
-                    Debug.Log(_playerVelocity.x);
-
-                if (VerticalVelocity < -0.05f)
-                {
-                    rootState = PlayerRootState.onAir;
-                }
-
-                if(Mathf.Abs(inputHandler.MoveAxis) >= 0.01f)
-                {
-                    if(ChangeDirection(inputHandler.MoveAxis))
-                    {
-
-                    }
-
-                    currentSpeed = Mathf.SmoothDamp(currentSpeed, maxSpeed, ref smoothInputVelocity, accelerationMomentum / 100);
-                }
-                
-                else if (Mathf.Abs(inputHandler.MoveAxis) <= 0.01f)
-                {
-                    //deccelerating
-                    currentSpeed = Mathf.SmoothDamp(currentSpeed, 0, ref smoothInputVelocity, accelerationMomentum / 100);
-                    
-
-                    if(Mathf.Abs(currentSpeed) <= 0.1f)
-                        rootState = PlayerRootState.OnGround;
-                }
-                */
-                break;
+                break;            
 
             case PlayerRootState.onAir:
                 if(!inputHandler.IsJumpPressed)
@@ -157,16 +124,38 @@ public class Player : MonoBehaviour
                         Timer.ForceStopTimer(jumpPressedLimitTimer);
                 }
 
+                
+                if (!jumpOngoing)
+                {
+                    if (GroundCheck())
+                    {
+                        Debug.Log("Grounded");
+                        rootState = PlayerRootState.OnGround;
 
+                        if (jumpTriggered)
+                        {
+                            jumpTriggered = false;
+                            Debug.Log("REJUMP");
+                            NormalizeVerticalMovement();
+                            StartJumping();
+                        }
+                    }
+                }
                 break;
 
             case PlayerRootState.interacting:
 
                 //playerState = PlayerMoveState.idle; //shortcut to direct idle
                 break;  
-        }        
+        }
 
-        if(moveOngoing)
+        if (Mathf.Abs(inputHandler.MoveAxis) > 0.01f)
+        {
+            if (!moveOngoing)
+                moveOngoing = true;
+        }
+
+        if (moveOngoing)
         {
             GroundMove();
         }
@@ -174,20 +163,16 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(rootState == PlayerRootState.onAir)
+
+        if (rootState == PlayerRootState.onAir)
         {
-            if(jumpOngoing)
+            if (jumpOngoing)
+            {
                 Jump();
-            else if (!jumpOngoing)
+            }
+            else
             {
                 Fall();
-
-                if (GroundCheck())
-                {
-                    Debug.Log("Grounded");
-                    jumpOngoing = false;
-                    rootState = PlayerRootState.OnGround; 
-                }
             }
         }
 
@@ -281,27 +266,66 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void ForceFalling()
+    {
+        if (jumpOngoing)
+            jumpOngoing = false;
+    }
+
+    private void JumpTriggerSwitch()
+    {
+        if (jumpTriggered)
+            jumpTriggered = false;
+    }
+
+    private void StartJumping()
+    {
+        jumpOngoing = true;
+
+        //Stop jump trigger treshold timer if it's running
+        if (Timer.TimerRunning(jumpTriggerTresholdTimer))
+        {
+            Timer.ForceStopTimer(jumpTriggerTresholdTimer);
+            JumpTriggerSwitch();
+        }
+
+        //start jump hold limit timer if it's not running
+        if (!Timer.TimerRunning(jumpPressedLimitTimer))
+            Timer.Create(ForceFalling, jumpPressedLimit, jumpPressedLimitTimer);
+
+        rootState = PlayerRootState.onAir;
+    }
+
     private void JumpTrigger(PlayerInputHandler inputHandler)
     {
-        if(GroundCheck() && (rootState == PlayerRootState.OnGround || rootState == PlayerRootState.move))
+        if (GroundCheck() && rootState == PlayerRootState.OnGround)
         {
-            jumpOngoing = true;
+            StartJumping();
+        }
 
-            if (!Timer.TimerRunning(jumpPressedLimitTimer))
-                Timer.Create(ForceFalling, jumpPressedLimit, jumpPressedLimitTimer);
-            
-            rootState = PlayerRootState.onAir;
+        else if(!GroundCheck())
+        {
+            if (!Timer.TimerRunning(jumpTriggerTresholdTimer))
+            {
+                Timer.Create(JumpTriggerSwitch, jumpTriggerTreshold, jumpTriggerTresholdTimer);
+                jumpTriggered = true;
+            }
         }
     }
 
     private void Jump() => rb.velocity = Vector2.up * jumpForce * Time.deltaTime;
 
-    private void Fall() => rb.velocity += Vector2.up * (gravityMods * -1) * Time.deltaTime;
+    private void Fall()
+    {
+        rb.velocity += Vector2.up * (gravityMods * -1) * Time.deltaTime;
+    }
+
+    private void NormalizeVerticalMovement() => rb.velocity = Vector2.up * 0;
 
     private void HorizontalMovement() => rb.velocity = new Vector2(_playerVelocity.x * currentSpeed * Time.deltaTime, rb.velocity.y);
 
     public bool GroundCheck()
-    {
+    {        
         groundCheckHit = Physics2D.BoxCast(playerCollider.bounds.center, playerCollider.bounds.size, 0, Vector2.down, groundCheckBounds, groundLayer);
         
         Color rayColor = groundCheckHit.collider != null ? Color.green : Color.red;
@@ -326,17 +350,12 @@ public class Player : MonoBehaviour
         OnSetPlayerPosition?.Invoke(this.transform);
     }
 
-    private void ForceFalling()
-    {
-        if (jumpOngoing)
-            jumpOngoing = false;
-    }
+
 }
 
 public enum PlayerRootState
 {
     OnGround,
-    move,
     onAir,
     interacting
 }
