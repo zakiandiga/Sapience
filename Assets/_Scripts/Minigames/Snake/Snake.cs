@@ -89,6 +89,7 @@ public class Snake : MinigameBase
                 break;
             case State.Dead:
                 gameHandler.playLoseSound();
+                gameHandler.stopMusic();
                 EndingMinigame();
                 state = State.Waiting;
                 break;

@@ -15,15 +15,15 @@ public class GameHandler : MonoBehaviour
 
     private LevelGrid levelGrid;
 
-    public AudioClip snakeMusic;
+    /*public AudioClip snakeMusic;
     public AudioClip collectSound;
     public AudioClip gameOverSound;
     public AudioSource snakeAudioSource;
-    public AudioSource snakeMusicSource;
+    public AudioSource snakeMusicSource;*/
     private bool startMusicOnce;
 
     //FMOD version of this system
-    [SerializeField] private EventReference musicPath, collectPath, gameOverPath;
+    [SerializeField] private EventReference musicPath, collectSoundPath, gameOverSoundPath;
     private EventInstance musicInstance;
     private PLAYBACK_STATE currentMusicState;
 
@@ -43,11 +43,11 @@ public class GameHandler : MonoBehaviour
         snake.Setup(levelGrid);
         levelGrid.Setup(snake);
 
-        snakeAudioSource = GetComponent<AudioSource>(); //If these GetComponentFunctions don't work, then you can comment them out or delete them and just drag the audio sources into the open script component
+        /*snakeAudioSource = GetComponent<AudioSource>();
 
         snakeMusicSource = GetComponent<AudioSource>();
         snakeMusicSource.clip = snakeMusic;
-        snakeMusicSource.loop = true;
+        snakeMusicSource.loop = true;*/
         startMusicOnce = false;
 
         //create the instance of the BGM to be ready to use, don't forget to stop and release it later when it's no longer used (OnDisable?)
@@ -64,25 +64,30 @@ public class GameHandler : MonoBehaviour
             //playCollectSound();
 
             //We ask FMOD bank to play one shot this path
-            RuntimeManager.PlayOneShot(collectPath, this.transform.position);
+            RuntimeManager.PlayOneShot(collectSoundPath, this.transform.position);
             previousScore = score;
         }
 
-        if (snake.gameStarted == true && startMusicOnce == false) //Starts the in-game music when the Fungus intro ends. If this doesn't work, you can just hard code it to begin on start in the inspector.
+        /*if (snake.gameStarted == true && startMusicOnce == false) //Starts the in-game music when the Fungus intro ends. If this doesn't work, you can just hard code it to begin on start in the inspector.
         {
             //snakeMusicSource.Play();
  
             Debug.Log("Music is now playing");
-            startMusicOnce = true;
-        }
+        }*/
 
         //fmod version of the above
-        if(snake.gameStarted)
+        if(snake.gameStarted && !startMusicOnce)
         {
             //Check if the music is playing or starting, then if it's not, start the music
             musicInstance.getPlaybackState(out currentMusicState);
             if (currentMusicState != PLAYBACK_STATE.PLAYING || currentMusicState != PLAYBACK_STATE.STARTING)
+            {
                 musicInstance.start();
+                musicInstance.release();
+                startMusicOnce = true;
+            }
+                
+                
         }
     }
 
@@ -101,7 +106,7 @@ public class GameHandler : MonoBehaviour
     {
         //snakeAudioSource.PlayOneShot(collectSound, 1);
 
-        RuntimeManager.PlayOneShot(collectPath, this.transform.position);
+        RuntimeManager.PlayOneShot(collectSoundPath, this.transform.position);
         Debug.Log("CollectedSound!");
     }
 
@@ -109,8 +114,14 @@ public class GameHandler : MonoBehaviour
     public void playLoseSound()
     {
         //snakeAudioSource.PlayOneShot(gameOverSound, 1);
-        RuntimeManager.PlayOneShot(gameOverPath, this.transform.position);
+        RuntimeManager.PlayOneShot(gameOverSoundPath, this.transform.position);
         Debug.Log("DeadSound!");
+    }
+
+    public void stopMusic()
+    {
+        musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        Debug.Log("Music has stopped");
     }
 
 }

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD.Studio;
+using FMODUnity;
 
 public class FlappyGameManager : MinigameBase
 {
@@ -12,13 +14,17 @@ public class FlappyGameManager : MinigameBase
     public Parallax groundParallax;
     public Parallax backgroundParallax;
 
+    //FMOD version of the below system
+    [SerializeField] private EventReference musicPath, scorePointSoundPath, collisionSoundPath, gameOverSoundPath;
+    private EventInstance musicInstance;
+    private PLAYBACK_STATE currentMusicState;
 
-    public AudioClip flappyBirdMusic;
+    /*public AudioClip flappyBirdMusic;
     public AudioClip scorePointSound;
     public AudioClip collisionSound;
     public AudioClip gameOverSound;
     public AudioSource flappyAudioSource;
-    public AudioSource flappyMusicSource;
+    public AudioSource flappyMusicSource;*/
     private bool startMusicOnce;
 
 
@@ -32,11 +38,18 @@ public class FlappyGameManager : MinigameBase
         groundParallax.enabled = false;
         backgroundParallax.enabled = false;
 
-        flappyAudioSource = GetComponent<AudioSource>(); //If these GetComponentFunctions don't work, then you can comment them out or delete them and just drag the audio sources into the open script component
+        /*flappyAudioSource = GetComponent<AudioSource>(); //If these GetComponentFunctions don't work, then you can comment them out or delete them and just drag the audio sources into the open script component
 
         flappyMusicSource = GetComponent<AudioSource>();
         flappyMusicSource.clip = flappyBirdMusic;
-        flappyMusicSource.loop = true;
+        flappyMusicSource.loop = true;*/
+    }
+
+    private void Start()
+    {
+        //create the instance of the BGM to be ready to use, don't forget to stop and release it later when it's no longer used (OnDisable?)
+        musicInstance = RuntimeManager.CreateInstance(musicPath);
+
         startMusicOnce = false;
     }
 
@@ -49,7 +62,15 @@ public class FlappyGameManager : MinigameBase
 
         if (!startMusicOnce)
         {
-            flappyMusicSource.Play();
+            //flappyMusicSource.Play();
+
+            //Check if the music is playing or starting, then if it's not, start the music
+            musicInstance.getPlaybackState(out currentMusicState);
+            if (currentMusicState != PLAYBACK_STATE.PLAYING || currentMusicState != PLAYBACK_STATE.STARTING)
+            {
+                musicInstance.start();
+                musicInstance.release();
+            }
             startMusicOnce = true;
         }
 
@@ -73,7 +94,8 @@ public class FlappyGameManager : MinigameBase
 
     public void LoseLife()
     {
-        flappyAudioSource.PlayOneShot(collisionSound, 1);
+        //flappyAudioSource.PlayOneShot(collisionSound, 1);
+        RuntimeManager.PlayOneShot(collisionSoundPath, this.transform.position);
         Pause();
         lives--;
         if (lives == 0)
@@ -87,15 +109,19 @@ public class FlappyGameManager : MinigameBase
 
     public void GameOver()
     {
-        flappyAudioSource.PlayOneShot(gameOverSound, 1);
+        //flappyAudioSource.PlayOneShot(gameOverSound, 1);
+        RuntimeManager.PlayOneShot(gameOverSoundPath, this.transform.position);
         Debug.Log("Game over");
+        musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        Debug.Log("Music has stopped");
         EndingMinigame();
     }
 
     public void IncreaseScore()
     {
         score++;
-        flappyAudioSource.PlayOneShot(scorePointSound, 1);
+        //flappyAudioSource.PlayOneShot(scorePointSound, 1);
+        RuntimeManager.PlayOneShot(scorePointSoundPath, this.transform.position);
 
         if (score > bestScore)
         {

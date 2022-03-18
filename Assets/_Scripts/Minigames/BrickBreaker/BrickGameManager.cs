@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD.Studio;
+using FMODUnity;
 
 public class BrickGameManager : MonoBehaviour
 {
@@ -14,15 +16,20 @@ public class BrickGameManager : MonoBehaviour
     public static int lives = 3;
 
 
-    public AudioClip brickBreakerMusic;
+    /*public AudioClip brickBreakerMusic;
     public AudioClip paddleHitSound;
     public AudioClip brickHitSound;
     public AudioClip wallHitSound;
     public AudioClip loseSound;
     public AudioClip winSound;
     public AudioSource brickAudioSource;
-    public AudioSource brickMusicSource;
+    public AudioSource brickMusicSource;*/
 
+
+    //FMOD version of this system
+    [SerializeField] private EventReference musicPath, paddleHitSoundPath, brickHitSoundPath, wallHitSoundPath, loseSoundPath, winSoundPath;
+    private EventInstance musicInstance;
+    private PLAYBACK_STATE currentMusicState;
 
 
     private void Awake()
@@ -31,11 +38,17 @@ public class BrickGameManager : MonoBehaviour
         this.paddle = FindObjectOfType<Paddle>();
         this.bricks = FindObjectsOfType<Brick>();
 
-        brickAudioSource = GetComponent<AudioSource>(); //If these GetComponentFunctions don't work, then you can comment them out or delete them and just drag the audio sources into the open script component
+       /* brickAudioSource = GetComponent<AudioSource>(); //If these GetComponentFunctions don't work, then you can comment them out or delete them and just drag the audio sources into the open script component
 
         brickMusicSource = GetComponent<AudioSource>();
         brickMusicSource.clip = brickBreakerMusic;
-        brickMusicSource.loop = true;
+        brickMusicSource.loop = true;*/
+    }
+
+    private void Start()
+    {
+        //create the instance of the BGM to be ready to use, don't forget to stop and release it later when it's no longer used (OnDisable?)
+        musicInstance = RuntimeManager.CreateInstance(musicPath);
     }
 
 
@@ -60,7 +73,8 @@ public class BrickGameManager : MonoBehaviour
             ResetLevel();
         } else
         {
-            brickAudioSource.PlayOneShot(loseSound, 1);
+            //brickAudioSource.PlayOneShot(loseSound, 1);
+            RuntimeManager.PlayOneShot(loseSoundPath, this.transform.position);
             GameOver();
         }
     }
@@ -69,11 +83,13 @@ public class BrickGameManager : MonoBehaviour
     public void Hit(Brick brick)
     {
         score += brick.points;
-        brickAudioSource.PlayOneShot(brickHitSound, 1);
+        //brickAudioSource.PlayOneShot(brickHitSound, 1);
+        RuntimeManager.PlayOneShot(brickHitSoundPath, this.transform.position);
         Debug.Log("Brick hit sound");
 
         if (Cleared()){
-            brickAudioSource.PlayOneShot(winSound, 1);
+            //brickAudioSource.PlayOneShot(winSound, 1);
+            RuntimeManager.PlayOneShot(winSoundPath, this.transform.position);
             GameOver();
         }
     }
@@ -94,20 +110,35 @@ public class BrickGameManager : MonoBehaviour
 
     public void StartMusic()
     {
-        brickMusicSource.Play();
-        Debug.Log("Music is now playing");
+        //brickMusicSource.Play();
+
+        //Check if the music is playing or starting, then if it's not, start the music
+        musicInstance.getPlaybackState(out currentMusicState);
+        if (currentMusicState != PLAYBACK_STATE.PLAYING || currentMusicState != PLAYBACK_STATE.STARTING)
+        {
+            musicInstance.start();
+            musicInstance.release();
+        }
+    }
+
+    public void StopMusic()
+    {
+        musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        Debug.Log("Music has stopped");
     }
 
 
     public void PlayPaddleBounceSound()
     {
-        brickAudioSource.PlayOneShot(paddleHitSound, 1);
+        //brickAudioSource.PlayOneShot(paddleHitSound, 1);
+        RuntimeManager.PlayOneShot(paddleHitSoundPath, this.transform.position);
         Debug.Log("Paddle hit sound");
     }
 
     public void PlayWallSound()
     {
-        brickAudioSource.PlayOneShot(wallHitSound, 1);
+        //brickAudioSource.PlayOneShot(wallHitSound, 1);
+        RuntimeManager.PlayOneShot(wallHitSoundPath, this.transform.position);
         Debug.Log("Wall hit sound");
     }
 }

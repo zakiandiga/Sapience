@@ -75,6 +75,7 @@ public class Paddle : MinigameBase
                 HandleInput();
                 break;
             case GameState.Dead:
+                FindObjectOfType<BrickGameManager>().StopMusic();
                 ball.StopBall();
                 EndingMinigame();
                 state = GameState.Waiting;
