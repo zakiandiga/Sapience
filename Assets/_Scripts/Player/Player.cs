@@ -4,8 +4,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public string PlayerName => playerData.characterName;
-    public float VerticalVelocity => rb.velocity.y;
-    public float HorizontalVelocity => rb.velocity.x;
     public Interactable CurrentInteractable { get; private set; }
 
     private PlayerRootState rootState = PlayerRootState.OnGround;
@@ -19,26 +17,28 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     private RaycastHit2D groundCheckHit;
 
-
-    #region Private Variables
+    #region Movement Properties & Variables
     [SerializeField] private PlayerData playerData;
+
+    public float VerticalVelocity => rb.velocity.y;
+    public float HorizontalVelocity => rb.velocity.x;
+    private float accelerationMomentum => playerData.accelerationMomentum;
+    private float deccelerationMomentum => playerData.deccelerationMomentum;
+    private float turningMomentum => playerData.turningMomentum;
+    private float turningSpeedTreshold => playerData.turningSpeedTreshold;
+    private float maxSpeed => playerData.maxSpeed;
+    [SerializeField] private float jumpForce => playerData.jumpForce;
+    [SerializeField] private float gravityMods => playerData.fallForce;
+    [SerializeField] private float jumpPressedLimit => playerData.jumpPressLimit;
+
     private Vector2 _playerVelocity = Vector2.zero;
     private float tempAxis = 0f;
     private float smoothInputVelocity = 1f;
-    [SerializeField] private float accelerationMomentum = 50f;
-    [SerializeField] private float deccelerationMomentum = 50f;
-    [SerializeField] private float turningMomentum = 50f;
-    [SerializeField] private float turningSpeedTreshold = 100f;
-    private bool moveOngoing = false;
-
-    [SerializeField] private float maxSpeed = 10f;
-    private float currentSpeed;
-    [SerializeField] private float jumpForce = 50f;
-    [SerializeField] private float gravityMods = 10f;
-    [SerializeField] private float jumpPressedLimit = 0.8f;
-    private string jumpPressedLimitTimer = "JumpPressedTimer";
+    private float currentSpeed = 80f;
     private bool jumpOngoing = false;
-
+    private bool moveOngoing = false;
+    
+    private string jumpPressedLimitTimer = "JumpPressedTimer";
     #endregion
 
     #region Player Events
