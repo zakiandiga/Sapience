@@ -247,7 +247,7 @@ MonoBehaviour:
       Data2: 1247722810
       Data3: -251757127
       Data4: 506645998
-    Path: event:/Music
+    Path: event:/Music/RPG
   musicSwitch: MusicTransition
 --- !u!4 &1187327690
 Transform:

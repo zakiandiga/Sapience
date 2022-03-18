@@ -552,11 +552,11 @@ MonoBehaviour:
   backgroundParallax: {fileID: 1794275388}
   musicPath:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1891736924
+      Data2: 1074516983
+      Data3: 1022891957
+      Data4: -1869928633
+    Path: event:/Music/BGM_FlappyBird
   scorePointSoundPath:
     Guid:
       Data1: 0
