@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: 716899001
     Data4: -1537474084
   Banks:
-  - {fileID: 2287462648481007877}
+  - {fileID: 8834169553626099857}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-5499635998539965324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/BGM_BreakOut
+  m_EditorClassIdentifier: 
+  Path: event:/Music/BGM_BreakOut
+  Guid:
+    Data1: 292880468
+    Data2: 1135923677
+    Data3: 506699143
+    Data4: -154558494
+  Banks:
+  - {fileID: 8834169553626099857}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42755
 --- !u!114 &-5267007744941171485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,7 +73,7 @@ MonoBehaviour:
     Data3: 59878042
     Data4: 551763295
   Banks:
-  - {fileID: 2287462648481007877}
+  - {fileID: 8834169553626099857}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -54,6 +81,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-2228826212796302130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/BGM_City
+  m_EditorClassIdentifier: 
+  Path: event:/Music/BGM_City
+  Guid:
+    Data1: 1101587089
+    Data2: 1198774529
+    Data3: -70373742
+    Data4: 817989294
+  Banks:
+  - {fileID: 8834169553626099857}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 92164
+--- !u!114 &-2016793012942273329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/BGM_Factory
+  m_EditorClassIdentifier: 
+  Path: event:/Music/BGM_Factory
+  Guid:
+    Data1: -384342217
+    Data2: 1336088774
+    Data3: -365304934
+    Data4: -875448449
+  Banks:
+  - {fileID: 8834169553626099857}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 124235
+--- !u!114 &-1972381122067558526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/BGM_Piano
+  m_EditorClassIdentifier: 
+  Path: event:/Music/BGM_Piano
+  Guid:
+    Data1: 1032985231
+    Data2: 1105088458
+    Data3: -1313508968
+    Data4: -1157397873
+  Banks:
+  - {fileID: 8834169553626099857}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 110344
 --- !u!114 &-1693198396348996117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,14 +181,14 @@ MonoBehaviour:
     Data3: 799485829
     Data4: -350686105
   Banks:
-  - {fileID: 2287462648481007877}
+  - {fileID: 8834169553626099857}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 50
+  Length: 0
 --- !u!114 &-1533332284915012820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,14 +208,14 @@ MonoBehaviour:
     Data3: -664750659
     Data4: 1268807613
   Banks:
-  - {fileID: 2287462648481007877}
-  IsStream: 0
+  - {fileID: 8834169553626099857}
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 34220
 --- !u!114 &-863230190215787018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,15 +235,15 @@ MonoBehaviour:
     Data3: 2015015827
     Data4: 1451714334
   Banks:
-  - {fileID: 2287462648481007877}
+  - {fileID: 8834169553626099857}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 50
---- !u!114 &-455409756446047407
+  Length: 0
+--- !u!114 &-210994326703866750
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,17 +252,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/BGM_Streets
   m_EditorClassIdentifier: 
-  Path: Assets/_fmodBank/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637831345916397422
-  FileSizes:
-  - Name: 
-    Value: 1246
-  Exists: 1
+  Path: event:/Music/BGM_Streets
+  Guid:
+    Data1: 1825711537
+    Data2: 1097783589
+    Data3: 911552919
+    Data4: -1462499958
+  Banks:
+  - {fileID: 8834169553626099857}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 242758
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,24 +283,30 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -455409756446047407}
-  - {fileID: 2287462648481007877}
+  - {fileID: 3138254017692045785}
+  - {fileID: 8834169553626099857}
   EditorEvents:
   - {fileID: -8481704790593232355}
   - {fileID: 7776193544158202977}
   - {fileID: -863230190215787018}
-  - {fileID: 7579080168692658928}
   - {fileID: -5267007744941171485}
   - {fileID: 5558808462508197952}
   - {fileID: -1533332284915012820}
   - {fileID: 675011890313285004}
   - {fileID: -1693198396348996117}
+  - {fileID: -2016793012942273329}
+  - {fileID: 9084882865314947167}
+  - {fileID: -5499635998539965324}
+  - {fileID: -1972381122067558526}
+  - {fileID: -2228826212796302130}
+  - {fileID: 8574331282726936249}
+  - {fileID: -210994326703866750}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 2287462648481007877}
+  - {fileID: 8834169553626099857}
   StringsBanks:
-  - {fileID: -455409756446047407}
-  cacheTime: 637831345916397422
+  - {fileID: 3138254017692045785}
+  cacheTime: 637832248022258080
   cacheVersion: 10
 --- !u!114 &675011890313285004
 MonoBehaviour:
@@ -206,7 +327,7 @@ MonoBehaviour:
     Data3: 92321210
     Data4: -839193594
   Banks:
-  - {fileID: 2287462648481007877}
+  - {fileID: 8834169553626099857}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -214,7 +335,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &2287462648481007877
+--- !u!114 &3138254017692045785
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,15 +345,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/Desktop/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: Assets/_fmodBank/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637831345916387482
-  FileSizes: []
+  Path: Assets/_fmodBank/Davis/Desktop/Master.strings.bank
+  Name: Desktop/Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637832248022258080
+  FileSizes:
+  - Name: 
+    Value: 1496
   Exists: 1
---- !u!114 &3897383199299258987
+--- !u!114 &4591638425906752481
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -242,7 +365,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/RPG/MusicTransition
+  m_Name: parameter:/BGM_Apartment/MusicTransition
   m_EditorClassIdentifier: 
   Name: MusicTransition
   StudioPath: 
@@ -275,42 +398,14 @@ MonoBehaviour:
     Data3: 1022891957
     Data4: -1869928633
   Banks:
-  - {fileID: 2287462648481007877}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &7579080168692658928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/RPG
-  m_EditorClassIdentifier: 
-  Path: event:/Music/RPG
-  Guid:
-    Data1: -1957541879
-    Data2: 1247722810
-    Data3: -251757127
-    Data4: 506645998
-  Banks:
-  - {fileID: 2287462648481007877}
+  - {fileID: 8834169553626099857}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters:
-  - {fileID: 3897383199299258987}
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 50000
+  Length: 85460
 --- !u!114 &7776193544158202977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,11 +425,84 @@ MonoBehaviour:
     Data3: -208703860
     Data4: -820170187
   Banks:
-  - {fileID: 2287462648481007877}
+  - {fileID: 8834169553626099857}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1500
+  Length: 1093
+--- !u!114 &8574331282726936249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/BGM_Apartment
+  m_EditorClassIdentifier: 
+  Path: event:/Music/BGM_Apartment
+  Guid:
+    Data1: -5079902
+    Data2: 1128966155
+    Data3: 2049067908
+    Data4: 1315915847
+  Banks:
+  - {fileID: 8834169553626099857}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4591638425906752481}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 135731
+--- !u!114 &8834169553626099857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/_fmodBank/Davis/Desktop/Master.bank
+  Name: Desktop/Master
+  StudioPath: bank:/Master
+  lastModified: 637832248022228424
+  FileSizes: []
+  Exists: 1
+--- !u!114 &9084882865314947167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/BGM_Strings
+  m_EditorClassIdentifier: 
+  Path: event:/Music/BGM_Strings
+  Guid:
+    Data1: -1807913648
+    Data2: 1157638990
+    Data3: -2138199126
+    Data4: -318179714
+  Banks:
+  - {fileID: 8834169553626099857}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 112000
