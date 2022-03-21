@@ -9,6 +9,9 @@ public class PipeSpawner : MonoBehaviour
     public float minHeight = -1f;
     public float maxHeight = 1f;
 
+    //Hack for 3D layering
+    private Vector3 pipeOffset = new Vector3(0, 0, -1);
+
     private void OnEnable()
     {
         InvokeRepeating(nameof(Spawn), spawnRate, spawnRate);
@@ -22,6 +25,7 @@ public class PipeSpawner : MonoBehaviour
     private void Spawn()
     {
         GameObject pipes = Instantiate(prefab, transform.position, Quaternion.identity);
+        pipes.transform.position += pipeOffset;
         pipes.transform.position += Vector3.up * Random.Range(minHeight, maxHeight);
     }
 }

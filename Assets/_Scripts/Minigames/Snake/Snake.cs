@@ -264,8 +264,11 @@ public class Snake : MinigameBase
         public SnakeBodyPart(int bodyIndex)
         {
             GameObject snakeBodyGameObject = new GameObject("SnakeBody", typeof(SpriteRenderer));
-            snakeBodyGameObject.GetComponent<SpriteRenderer>().sprite = GameAssets.i.snakeBodySprite;
-            snakeBodyGameObject.GetComponent<SpriteRenderer>().sortingOrder = -bodyIndex;
+
+            var snakeBodyRenderer = snakeBodyGameObject.GetComponent<SpriteRenderer>();
+            snakeBodyRenderer.sprite = GameAssets.i.snakeBodySprite;
+            snakeBodyRenderer.sortingLayerName = "MinigameFG";
+            snakeBodyRenderer.sortingOrder = -bodyIndex;
             transform = snakeBodyGameObject.transform;
         }
 

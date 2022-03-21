@@ -7,6 +7,7 @@ TagManager:
   - FxTemporaire
   - Obstacle
   - Scoring
+  - BrickBreakerWall
   layers:
   - Default
   - TransparentFX
@@ -15,10 +16,10 @@ TagManager:
   - Water
   - UI
   - Map
+  - Ground
   - 
   - 
-  - 
-  - 
+  - Minigames
   - 
   - 
   - 
@@ -55,4 +56,10 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 945782503
+    locked: 0
+  - name: MinigameBG
+    uniqueID: 3625814793
+    locked: 0
+  - name: MinigameFG
+    uniqueID: 840499135
     locked: 0

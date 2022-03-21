@@ -57,13 +57,13 @@ public class CameraManager : MonoBehaviour
     {    
         if (cinemachineBrain.IsBlending && !cameraBlending)
         {
-            Debug.Log("Camera start blending");
+            //Debug.Log("Camera start blending");
             cameraBlending = true;
             OnCameraBlendingStart?.Invoke(true);
         }
         else if (!cinemachineBrain.IsBlending && cameraBlending)
         {
-            Debug.Log("Camera STOP blending");
+            //Debug.Log("Camera STOP blending");
             cameraBlending = false;
             OnCameraBlendingFinish?.Invoke(false);
         }
