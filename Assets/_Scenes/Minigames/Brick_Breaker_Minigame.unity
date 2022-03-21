@@ -2871,7 +2871,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 526.25
     y: 155
-    width: 71.6
+    width: 72
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2989,7 +2989,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 255.25
     y: 158
-    width: 77.2
+    width: 77.333336
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4025,7 +4025,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &2066221772
 AudioListener:
   m_ObjectHideFlags: 0
