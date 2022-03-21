@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
     private float tempAxis = 0f;
     private float smoothInputVelocity = 1f;
     private float currentSpeed = 80f;
+    private float minimumSpeedToStop = 15f;
     private bool jumpOngoing = false;
     private bool moveOngoing = false;
     
@@ -95,6 +96,15 @@ public class Player : MonoBehaviour
     private void DisablingPlayerControl(string blockName)
     {
         rootState = PlayerRootState.interacting;
+        if(moveState != PlayerMoveState.ready)
+        {
+            tempAxis = 0;
+            currentSpeed = 0;
+            _playerVelocity.x = tempAxis;
+            moveState = PlayerMoveState.ready;
+            moveOngoing = false;
+        }
+
         inputHandler.InputActionSwitch(false);
     }
 
@@ -144,7 +154,14 @@ public class Player : MonoBehaviour
                 break;
 
             case PlayerRootState.interacting:
-
+                if(moveState != PlayerMoveState.ready)
+                {
+                    tempAxis = 0;
+                    currentSpeed = 0;
+                    _playerVelocity.x = tempAxis;
+                    moveState = PlayerMoveState.ready;
+                    moveOngoing = false;
+                }
                 //playerState = PlayerMoveState.idle; //shortcut to direct idle
                 break;  
         }
@@ -185,9 +202,9 @@ public class Player : MonoBehaviour
         {
             case PlayerMoveState.ready:
 
-                Debug.Log("Enter Ready moveState");
+                //Debug.Log("Enter Ready moveState");
                 tempAxis = inputHandler.MoveAxis;
-                Debug.Log("Exit to acceleration");
+                //Debug.Log("Exit to acceleration");
                 moveState = PlayerMoveState.acceleration;
                 break;
 
@@ -197,13 +214,13 @@ public class Player : MonoBehaviour
 
                 if(currentSpeed >= maxSpeed * (90f/100f))
                 {
-                    Debug.Log("Exit to TopSpeed");
+                    //Debug.Log("Exit to TopSpeed");
                     moveState = PlayerMoveState.topSpeed;
                 }
 
                 if(Mathf.Abs(inputHandler.MoveAxis) < 0.1f)
                 {
-                    Debug.Log("Exit to decceleration");
+                    //Debug.Log("Exit to decceleration");
                     moveState = PlayerMoveState.decceleration;
                 }
                 break;
@@ -211,7 +228,7 @@ public class Player : MonoBehaviour
             case PlayerMoveState.topSpeed:
                 if(Mathf.Abs(inputHandler.MoveAxis) < 0.1f)
                 {
-                    Debug.Log("Exit from topSpeed to decceleration");
+                    //Debug.Log("Exit from topSpeed to decceleration");
                     moveState = PlayerMoveState.decceleration;
                 }
                 break;
@@ -228,20 +245,20 @@ public class Player : MonoBehaviour
                         if(Mathf.Abs(_playerVelocity.x) > 0.01f)
                         {
                             tempAxis *= -1;
-                            Debug.Log("Exit to turning");
+                            //Debug.Log("Exit to turning");
                             moveState = PlayerMoveState.turning;
                         }
                     }
                     //on the same direction
                     else if(!ChangeDirection(inputHandler.MoveAxis))
                     {
-                        Debug.Log("exit to accel");
+                        //Debug.Log("exit to accel");
                         moveState = PlayerMoveState.acceleration;
                     }
                 }
 
                 //If no directional input and current speed is almost 0
-                else if(Mathf.Abs(inputHandler.MoveAxis) < 0.01f && Mathf.Abs(currentSpeed) < 0.1f)
+                else if(Mathf.Abs(inputHandler.MoveAxis) < 0.01f && Mathf.Abs(currentSpeed) < minimumSpeedToStop)
                 {
                     moveState = PlayerMoveState.stop;
                 }

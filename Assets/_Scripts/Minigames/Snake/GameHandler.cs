@@ -107,7 +107,7 @@ public class GameHandler : MonoBehaviour
         //snakeAudioSource.PlayOneShot(collectSound, 1);
 
         RuntimeManager.PlayOneShot(collectSoundPath, this.transform.position);
-        Debug.Log("CollectedSound!");
+        //Debug.Log("CollectedSound!");
     }
 
 
@@ -115,13 +115,13 @@ public class GameHandler : MonoBehaviour
     {
         //snakeAudioSource.PlayOneShot(gameOverSound, 1);
         RuntimeManager.PlayOneShot(gameOverSoundPath, this.transform.position);
-        Debug.Log("DeadSound!");
+        //Debug.Log("DeadSound!");
     }
 
     public void stopMusic()
     {
         musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        Debug.Log("Music has stopped");
+        //Debug.Log("Music has stopped");
     }
 
 }

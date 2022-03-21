@@ -42,7 +42,7 @@ public class MovementManager : MonoBehaviour
     {
         SceneManager.sceneLoaded -= FinalizeLoadMinigame;
         SceneManager.SetActiveScene(scene);
-        Debug.Log("OnMinigameLoaded: " + scene.name);
+        Debug.Log("OnMinigameLoaded: " + currentMinigameScene);
 
         MinigameBase.OnMinigameClose += CloseMinigame;
         cameraManager.OnCameraBlendingStart += WaitingCameraBlendToMinigame;
@@ -63,6 +63,7 @@ public class MovementManager : MonoBehaviour
 
     private void WaitingCameraBlendFromMinigame(bool cameraBlend)
     {
+        cameraManager.OnCameraBlendingFinish -= WaitingCameraBlendFromMinigame;
         Debug.Log("Camera blending done!");
         SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName(currentMinigameScene));
         SceneManager.sceneUnloaded += FinalizeClosingMinigame;
@@ -81,11 +82,12 @@ public class MovementManager : MonoBehaviour
     {
         Debug.Log("Finalizing minigame");
         SceneManager.sceneUnloaded -= FinalizeClosingMinigame;
+        MinigameBase.OnMinigameClose -= CloseMinigame;
+
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentStoryScene));
 
         //enable player movement here
         //PlayerMove("Minigame");
-        MinigameBase.OnMinigameClose -= CloseMinigame;
         currentMinigameScene = null;
         currentFlowchart.SetBooleanVariable("OnMinigame", false);
     }

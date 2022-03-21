@@ -949,7 +949,6 @@ GameObject:
   - component: {fileID: 421270141}
   - component: {fileID: 421270140}
   - component: {fileID: 421270044}
-  - component: {fileID: 421270043}
   - component: {fileID: 421270041}
   - component: {fileID: 421270038}
   - component: {fileID: 421270238}
@@ -1057,6 +1056,8 @@ GameObject:
   - component: {fileID: 421270241}
   - component: {fileID: 421270221}
   - component: {fileID: 421270046}
+  - component: {fileID: 421270043}
+  - component: {fileID: 421270322}
   m_Layer: 0
   m_Name: day1_x3_office
   m_TagString: Untagged
@@ -2119,7 +2120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 786.1001, y: 210.55795}
+  scrollPos: {x: 953.1001, y: 292.55795}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 564
@@ -2131,9 +2132,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 421270148}
+  - {fileID: 421270140}
   selectedCommands:
-  - {fileID: 421270145}
+  - {fileID: 421270300}
   variables:
   - {fileID: 421270003}
   - {fileID: 421270048}
@@ -7303,7 +7304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -293.23776
+    x: -292.23776
     y: -24.594656
     width: 105
     height: 40
@@ -7314,6 +7315,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 421270043}
   commandList:
+  - {fileID: 421270322}
   - {fileID: 421270236}
   - {fileID: 421270238}
   - {fileID: 421270044}
@@ -7660,7 +7662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -438.2188
+    x: -437.2188
     y: -159.19104
     width: 147
     height: 40
@@ -18194,9 +18196,9 @@ MonoBehaviour:
   indentLevel: 0
   anyOrAllConditions: 0
   conditions:
-  - compareOperator: 0
+  - compareOperator: 4
     anyVar:
-      variable: {fileID: 0}
+      variable: {fileID: 421270048}
       data:
         animatorData:
           animatorRef: {fileID: 0}
@@ -18227,7 +18229,7 @@ MonoBehaviour:
           gameObjectVal: {fileID: 0}
         integerData:
           integerRef: {fileID: 0}
-          integerVal: 0
+          integerVal: 3
         materialData:
           materialRef: {fileID: 0}
           materialVal: {fileID: 0}
@@ -19990,6 +19992,51 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &421270322
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421269992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 596
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 711362087}
+  targetComponentAssemblyName: MovementManager, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: MovementManager
+  targetMethod: DisablePlayer
+  targetMethodText: 'DisablePlayer (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &440331292
 GameObject:
   m_ObjectHideFlags: 0
@@ -20464,7 +20511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 421270011}
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &567913352
 Transform:
   m_ObjectHideFlags: 1
@@ -22976,8 +23023,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1613982751}
   - component: {fileID: 1613982750}
-  - component: {fileID: 1613982749}
   - component: {fileID: 1613982752}
+  - component: {fileID: 1613982749}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -22985,14 +23032,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1613982749
-AudioListener:
+--- !u!114 &1613982749
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613982748}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!20 &1613982750
 Camera:
   m_ObjectHideFlags: 0
@@ -24293,7 +24346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4346099511649620162, guid: 5c79f757d5608044aafb0da7dcbf67da, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -19.892944
+      value: -19.893066
       objectReference: {fileID: 0}
     - target: {fileID: 5514802049631104143, guid: 5c79f757d5608044aafb0da7dcbf67da, type: 3}
       propertyPath: m_Name

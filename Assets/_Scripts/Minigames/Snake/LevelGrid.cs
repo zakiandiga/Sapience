@@ -33,8 +33,16 @@ public class LevelGrid
         } while (snake.GetFullSnakeGridPositionList().IndexOf(foodGridPosition) != -1); //Randomizes food spawn position and prevents the food from spawning on top of the snake
 
         foodGameObject = new GameObject("Food", typeof(SpriteRenderer));
-        foodGameObject.GetComponent<SpriteRenderer>().sprite = GameAssets.i.foodSprite;
+
+        //We need to set the layer in Food's sprite renderer, so we'll put the SpriteRenderer on a variable
+
+        var foodObject = foodGameObject.GetComponent<SpriteRenderer>();
+        foodObject.sprite = GameAssets.i.foodSprite;
+        foodObject.sortingLayerName = "MinigameFG";       
+        
         foodGameObject.transform.position = new Vector3(foodGridPosition.x, foodGridPosition.y);
+        
+      
     }
 
     public bool TrySnakeEatFood(Vector2 snakeGridPosition)

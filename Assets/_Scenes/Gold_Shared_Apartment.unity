@@ -40268,6 +40268,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomAnnouncer_SayDialog
       objectReference: {fileID: 0}
+    - target: {fileID: 4761730684712872322, guid: b81dc905559fd254491e91213701f03b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -38.899902
+      objectReference: {fileID: 0}
+    - target: {fileID: 4761730684712872322, guid: b81dc905559fd254491e91213701f03b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 38.075012
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b81dc905559fd254491e91213701f03b, type: 3}
 --- !u!1 &912640994
@@ -41967,7 +41975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1089941246
 Transform:
   m_ObjectHideFlags: 0
@@ -54482,9 +54490,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 760926905}
     m_Modifications:
+    - target: {fileID: 2930253499820547182, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -14
+      objectReference: {fileID: 0}
     - target: {fileID: 3752538852284840679, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 14.13002
+      value: 14.130005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3824241689266550811, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.1000977
       objectReference: {fileID: 0}
     - target: {fileID: 3824241689266550811, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -54768,7 +54784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4346099511649620162, guid: 5c79f757d5608044aafb0da7dcbf67da, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -19.893066
+      value: -19.893555
       objectReference: {fileID: 0}
     - target: {fileID: 5514802049631104143, guid: 5c79f757d5608044aafb0da7dcbf67da, type: 3}
       propertyPath: m_Name
@@ -54776,11 +54792,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6926779393721825530, guid: 5c79f757d5608044aafb0da7dcbf67da, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1.0002441
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818202617475414025, guid: 5c79f757d5608044aafb0da7dcbf67da, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.869873
       objectReference: {fileID: 0}
     - target: {fileID: 8407099549247034162, guid: 5c79f757d5608044aafb0da7dcbf67da, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 22.49997
+      value: 22.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c79f757d5608044aafb0da7dcbf67da, type: 3}
@@ -59030,7 +59050,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 185.42097
     y: 64.42106
-    width: 107.69226
+    width: 117.30763
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -96763,15 +96783,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 127770540494739173, guid: 996e3784279215043b336d12b8691f5d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.099853516
+      value: -0.099609375
       objectReference: {fileID: 0}
     - target: {fileID: 325642371584238030, guid: 996e3784279215043b336d12b8691f5d, type: 3}
       propertyPath: m_Name
       value: TitleCardDay1_SayDialog
       objectReference: {fileID: 0}
+    - target: {fileID: 3622935255884542136, guid: 996e3784279215043b336d12b8691f5d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 10.999023
+      objectReference: {fileID: 0}
     - target: {fileID: 3886269487737575303, guid: 996e3784279215043b336d12b8691f5d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7.0004883
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 4443384652056622202, guid: 996e3784279215043b336d12b8691f5d, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -96860,6 +96884,10 @@ PrefabInstance:
     - target: {fileID: 7337025241277632195, guid: 996e3784279215043b336d12b8691f5d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117393847894284552, guid: 996e3784279215043b336d12b8691f5d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.5004883
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 996e3784279215043b336d12b8691f5d, type: 3}
@@ -96951,6 +96979,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: TitleCardDay2_SayDialog
       objectReference: {fileID: 0}
+    - target: {fileID: 899469800468487701, guid: c24c41e2e09170b4dbfd4207abd2c511, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.099609375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057932550044573559, guid: c24c41e2e09170b4dbfd4207abd2c511, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4609752863090145352, guid: c24c41e2e09170b4dbfd4207abd2c511, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 10.999023
+      objectReference: {fileID: 0}
     - target: {fileID: 7524450859854513715, guid: c24c41e2e09170b4dbfd4207abd2c511, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -97034,6 +97074,10 @@ PrefabInstance:
     - target: {fileID: 7524450859854513715, guid: c24c41e2e09170b4dbfd4207abd2c511, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302699014914920952, guid: c24c41e2e09170b4dbfd4207abd2c511, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.5004883
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c24c41e2e09170b4dbfd4207abd2c511, type: 3}
