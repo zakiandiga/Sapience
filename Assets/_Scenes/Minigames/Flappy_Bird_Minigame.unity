@@ -177,7 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 200942310}
   - component: {fileID: 200942311}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: ScoreWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 293182584}
   - component: {fileID: 293182583}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Backdrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 441092846}
   - component: {fileID: 441092845}
   - component: {fileID: 441092844}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 519950978}
   - component: {fileID: 519950980}
   - component: {fileID: 519950979}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -545,7 +545,7 @@ GameObject:
   - component: {fileID: 632929273}
   - component: {fileID: 632929275}
   - component: {fileID: 632929274}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Offscreen Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -620,7 +620,7 @@ GameObject:
   - component: {fileID: 671911661}
   - component: {fileID: 671911663}
   - component: {fileID: 671911662}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Offscreen Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -694,7 +694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 677300778}
   - component: {fileID: 677300777}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -772,7 +772,7 @@ GameObject:
   - component: {fileID: 717849753}
   - component: {fileID: 717849755}
   - component: {fileID: 717849754}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 806539720}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Quads
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -888,7 +888,7 @@ GameObject:
   - component: {fileID: 1002410415}
   - component: {fileID: 1002410412}
   - component: {fileID: 1002410411}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FlappyBirdFlowchart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1193,7 +1193,7 @@ GameObject:
   - component: {fileID: 1071374295}
   - component: {fileID: 1071374297}
   - component: {fileID: 1071374296}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: LivesText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1327,7 +1327,7 @@ GameObject:
   - component: {fileID: 1075013399}
   - component: {fileID: 1075013398}
   - component: {fileID: 1075013397}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1403,7 +1403,7 @@ GameObject:
   - component: {fileID: 1163789687}
   - component: {fileID: 1163789690}
   - component: {fileID: 1163789691}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundQuad
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1523,7 +1523,7 @@ GameObject:
   - component: {fileID: 1263522910}
   - component: {fileID: 1263522912}
   - component: {fileID: 1263522911}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1598,7 +1598,7 @@ GameObject:
   - component: {fileID: 1280266889}
   - component: {fileID: 1280266891}
   - component: {fileID: 1280266890}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: BestScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1734,7 +1734,7 @@ GameObject:
   - component: {fileID: 1367100107}
   - component: {fileID: 1367100106}
   - component: {fileID: 1367100105}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1849,7 +1849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1383930754}
   - component: {fileID: 1383930753}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1896,7 +1896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1404998563}
   - component: {fileID: 1404998562}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1955,7 +1955,7 @@ GameObject:
   - component: {fileID: 1408743054}
   - component: {fileID: 1408743055}
   - component: {fileID: 1408743056}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2031,7 +2031,7 @@ GameObject:
   - component: {fileID: 1688727734}
   - component: {fileID: 1688727733}
   - component: {fileID: 1688727736}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -2148,7 +2148,7 @@ GameObject:
   - component: {fileID: 1782814483}
   - component: {fileID: 1782814485}
   - component: {fileID: 1782814484}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2283,7 +2283,7 @@ GameObject:
   - component: {fileID: 1794275390}
   - component: {fileID: 1794275389}
   - component: {fileID: 1794275388}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BackgroundQuad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2376,7 +2376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1821706692}
   - component: {fileID: 1821706691}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CameraHook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
