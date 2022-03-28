@@ -15,12 +15,13 @@ public class WriterBeepCustom : MonoBehaviour, IWriterListener
 
     public void OnStart(AudioClip audioClip)
     {
-        if (audioEvent.Path == null)
+
+        if (audioEvent.IsNull)
         {
-            Debug.LogError("No audioEvent assigned on " + this.gameObject);
+            Debug.Log("No audioEvent assigned on " + this.gameObject);
             return;
         }
-
+      
         currentSpeaker = RuntimeManager.CreateInstance(audioEvent);
     }
 

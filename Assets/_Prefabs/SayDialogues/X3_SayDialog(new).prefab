@@ -336,6 +336,7 @@ GameObject:
   - component: {fileID: 4254359936010306168}
   - component: {fileID: 2741020006363953198}
   - component: {fileID: 3910464613334239722}
+  - component: {fileID: 7882737239549386885}
   m_Layer: 5
   m_Name: X3_SayDialog(new)
   m_TagString: Untagged
@@ -486,7 +487,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7713282639571324865}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
   m_Name: 
@@ -613,6 +614,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &7882737239549386885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7713282639571324865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30abf168795668844984c0ea276eb616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioEvent:
+    Guid:
+      Data1: 1488417960
+      Data2: 1238434197
+      Data3: -208703860
+      Data4: -820170187
+    Path: event:/Dialogue/Say-X3
 --- !u!1 &7740993614607388454
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ public class WriterAudioCustom : MonoBehaviour, IWriterListener
 
     public void OnStart(AudioClip audioClip)
     {
-        if (audioEvent.Path == null)
+        if (audioEvent.IsNull)
         {
             Debug.LogError("No audioEvent assign on " + this.gameObject);
             return;
@@ -56,7 +56,7 @@ public class WriterAudioCustom : MonoBehaviour, IWriterListener
 
     public void OnPause()
     {
-        if (audioEvent.Path == null)
+        if (audioEvent.IsNull)
             return;
 
         Pause();
@@ -69,7 +69,7 @@ public class WriterAudioCustom : MonoBehaviour, IWriterListener
     }
     public void OnResume()
     {
-        if(audioEvent.Path == null)
+        if(audioEvent.IsNull)
             return;
 
         Resume();
@@ -104,7 +104,7 @@ public class WriterAudioCustom : MonoBehaviour, IWriterListener
 
     public void OnInput()
     {
-        if(audioEvent.Path != null)
+        if(audioEvent.IsNull)
         {
             
             currentSpeaker.release();

@@ -20,16 +20,18 @@ namespace Fungus
         private PLAYBACK_STATE currentPlaybackState;
 
         public override void OnEnter()
-        {
-            if(soundPath.Path != null)
+        {           
+            
+            if(!soundPath.IsNull)
             {
                 soundInstance = RuntimeManager.CreateInstance(soundPath);
                 soundInstance.start();
             }
-            else if(soundPath.Path == null)
+            else if(soundPath.IsNull)
             {
-                Debug.LogError("Sound path not set");
+                Debug.Log("Sound path not set");
             }
+            
 
             if (waitUntilFinished)
             {
@@ -59,12 +61,13 @@ namespace Fungus
 
         public override string GetSummary()
         {
-            if(soundPath.Path == null)
+            if(soundPath.IsNull)
             {
                 return "Error: Sound Path is empty";
             }
+            
 
-            return soundPath.Path;
+            return soundPath.Guid.ToString();
         }
 
         public override Color GetButtonColor()
