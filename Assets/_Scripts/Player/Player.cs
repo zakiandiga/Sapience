@@ -139,13 +139,13 @@ public class Player : MonoBehaviour
                 {
                     if (GroundCheck())
                     {
-                        Debug.Log("Grounded");
+                        //Debug.Log("Grounded");
                         rootState = PlayerRootState.OnGround;
 
                         if (jumpTriggered)
                         {
                             jumpTriggered = false;
-                            Debug.Log("REJUMP");
+                            //Debug.Log("REJUMP");
                             NormalizeVerticalMovement();
                             StartJumping();
                         }
@@ -196,6 +196,7 @@ public class Player : MonoBehaviour
         HorizontalMovement();
     }
 
+    #region Movement Logic
     private void GroundMove()
     {
         switch(moveState)
@@ -358,6 +359,7 @@ public class Player : MonoBehaviour
         else
             return true;        
     }
+    #endregion
 
     public void SetInteractible(Interactable currentInteractible) => CurrentInteractable = currentInteractible;
 

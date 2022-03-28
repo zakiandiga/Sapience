@@ -473,7 +473,7 @@ MonoBehaviour:
   HasSourceProject: 0
   HasPlatforms: 0
   sourceProjectPath: E:/FMOD Projects/Ladder/Ladder.fspro
-  sourceBankPath: Assets/_fmodBank/Desktop
+  sourceBankPath: Assets/_fmodBank/Davis/Desktop
   SourceBankPathUnformatted: 
   BankRefreshCooldown: -1
   ShowBankRefreshWindow: 0

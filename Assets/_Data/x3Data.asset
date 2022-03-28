@@ -18,6 +18,6 @@ MonoBehaviour:
   deccelerationMomentum: 30
   turningMomentum: 25
   turningSpeedTreshold: 80
-  jumpForce: 600
+  jumpForce: 691
   fallForce: 80
   jumpPressLimit: 0.2
