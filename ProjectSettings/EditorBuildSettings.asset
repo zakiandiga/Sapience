@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/Gold_Office.unity
     guid: 74fdc9dfc56dc604e847f0d11baeac23
   - enabled: 1
-    path: Assets/_Scenes/Minigames/Snake_Minigame.unity
+    path: Assets/_Scenes/Minigames/Snake/Snake_Base.unity
     guid: 786d22a8ab00b11489c97b0dec144aca
   - enabled: 1
     path: Assets/_Scenes/TestingScenes/Gold_Office_TESTRPG.unity
@@ -24,9 +24,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/AudioManager.unity
     guid: ddbac05adb10ea54b8cb002b07a71ab3
   - enabled: 1
-    path: Assets/_Scenes/Minigames/Brick_Breaker_Minigame.unity
+    path: Assets/_Scenes/Minigames/Brick_Breaker/Brick_Breaker_Silver.unity
     guid: 793700284e948324f98146b010b7e696
   - enabled: 1
-    path: Assets/_Scenes/Minigames/Flappy_Bird_Minigame.unity
+    path: Assets/_Scenes/Minigames/Flappy_Bird/Flappy_Bird_Base.unity
     guid: f98ac93128841184a98f73b255519469
   m_configObjects: {}

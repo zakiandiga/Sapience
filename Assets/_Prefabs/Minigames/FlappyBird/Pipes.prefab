@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5614879042565684187}
   - component: {fileID: 6734448838225494116}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pipes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 6535042145643883995}
   - component: {fileID: 9147894163381414949}
   - component: {fileID: 8125834015682680970}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TopPipe
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 643523564257691364}
   - component: {fileID: 2674046768657921159}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ScoreZone
   m_TagString: Scoring
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 3646784931002100803}
   - component: {fileID: 2085468203035514743}
   - component: {fileID: 7307084380850127068}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BottomPipe
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
