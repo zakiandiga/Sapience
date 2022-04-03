@@ -2841,6 +2841,7 @@ GameObject:
   - component: {fileID: 65298108}
   - component: {fileID: 65298107}
   - component: {fileID: 65298106}
+  - component: {fileID: 65298109}
   m_Layer: 0
   m_Name: day1_day_x3_shared_apt
   m_TagString: Untagged
@@ -8433,6 +8434,7 @@ MonoBehaviour:
   - {fileID: 65298088}
   - {fileID: 65298000}
   - {fileID: 65297991}
+  - {fileID: 65298109}
   - {fileID: 65297981}
   - {fileID: 65297988}
   - {fileID: 65298108}
@@ -8569,9 +8571,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 65298054}
+  - {fileID: 65297990}
   selectedCommands:
-  - {fileID: 65298106}
+  - {fileID: 65298088}
   variables:
   - {fileID: 65297968}
   - {fileID: 65297932}
@@ -15692,6 +15694,28 @@ MonoBehaviour:
       Data3: 2049067908
       Data4: 1315915847
     Path: event:/Music/BGM_Apartment
+--- !u!114 &65298109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 297
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &90587570
 GameObject:
   m_ObjectHideFlags: 0
@@ -82825,7 +82849,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00005340576, y: 0}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0}
   m_SizeDelta: {x: -14.299988, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1804957588
