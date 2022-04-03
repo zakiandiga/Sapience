@@ -1,64 +1,64 @@
-using System.Collections.Generic;
 using UnityEngine;
 using FMOD.Studio;
 using FMODUnity;
+using Fungus;
 
 public class MusicManager : MonoBehaviour
 {
-    [SerializeField]private PlayerInputHandler input;
     private int currentParameter;
 
+    private PLAYBACK_STATE isPlaying;
+
     private EventInstance musicInstance;
+    private EventReference currentMusicPath;
+    private EventReference nullMusicPath;
 
-    [SerializeField] private EventReference musicEventReference;
-
-    [SerializeField] private string musicSwitch;
-
-    private void Start()
+    private void OnEnable()
     {
-        input = GetComponent<PlayerInputHandler>();
+        PlayMusicFMOD.OnStartMusic += StartMusic;
+        PlayMusicFMOD.OnStopMusic += StopMusic;
     }
 
-    private void Update()
+    private void OnDisable()
     {
-        if(input.IsJumpPressed)
-        {
-            //StartMusic();
-        }
-
-        if(input.Interacting)
-        {
-            currentParameter = (currentParameter == 0) ? 1 : 0;
-            SwitchTrack(currentParameter);
-        }
+        PlayMusicFMOD.OnStartMusic -= StartMusic;
+        PlayMusicFMOD.OnStopMusic -= StopMusic;
     }
 
-    private void StartMusic()
+    private void StartMusic(EventReference soundPath)
     {
-        var isPlaying = PLAYBACK_STATE.PLAYING; 
-        musicInstance.getPlaybackState(out isPlaying);
-        
-        if (isPlaying == PLAYBACK_STATE.PLAYING)
-            StopMusic();
-        else
+        if (currentMusicPath.Guid == soundPath.Guid || currentMusicPath.IsNull)
         {
-            Debug.Log("PLAY");
-            musicInstance = RuntimeManager.CreateInstance(musicEventReference);
+            currentMusicPath.Guid = soundPath.Guid;
+
+            musicInstance = RuntimeManager.CreateInstance(currentMusicPath);
             musicInstance.start();
             musicInstance.release();
         }
+        else
+        {
+            Debug.Log("Another music is playing!");
+        }
     }
 
-    private void SwitchTrack(int section)
+    private void StopMusic(EventReference soundPath)
     {
-        musicInstance.setParameterByName(musicSwitch, section);
+        if (currentMusicPath.Guid == soundPath.Guid)
+        {
+            musicInstance.getPlaybackState(out isPlaying);
+            if (isPlaying == PLAYBACK_STATE.PLAYING)
+                StopMusic();
+
+            currentMusicPath = nullMusicPath;
+        }
+        else
+            Debug.LogError("Music you're trying to stop is not playing");
     }
 
     private void StopMusic()
     {
         musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
-
 }
 
 

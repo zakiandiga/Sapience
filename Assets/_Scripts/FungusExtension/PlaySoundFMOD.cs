@@ -21,7 +21,6 @@ namespace Fungus
 
         public override void OnEnter()
         {           
-            
             if(!soundPath.IsNull)
             {
                 soundInstance = RuntimeManager.CreateInstance(soundPath);
@@ -29,7 +28,7 @@ namespace Fungus
             }
             else if(soundPath.IsNull)
             {
-                Debug.Log("Sound path not set");
+                Debug.LogError("Sound path not set at: " + this.ParentBlock.BlockName);
             }
             
 
