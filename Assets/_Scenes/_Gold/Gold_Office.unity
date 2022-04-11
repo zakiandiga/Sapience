@@ -2128,9 +2128,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 421270034}
+  - {fileID: 421270148}
   selectedCommands:
-  - {fileID: 421270007}
+  - {fileID: 421270145}
   variables:
   - {fileID: 421270003}
   - {fileID: 421270048}
@@ -2154,7 +2154,7 @@ MonoBehaviour:
   luaBindingName: flowchart
 --- !u!114 &421270012
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2265,7 +2265,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -571.0508
-    y: -110.76372
+    y: -111.79465
     width: 131.4433
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
@@ -7535,7 +7535,7 @@ MonoBehaviour:
       intValue: 0
       boolValue: 0
       floatValue: 0
-      stringValue: Brick_Breaker_Minigame
+      stringValue: Brick_Breaker_Silver
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
@@ -17053,7 +17053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -455.20535
+    x: -456.23627
     y: 63.753273
     width: 118.04124
     height: 40
@@ -18802,7 +18802,7 @@ MonoBehaviour:
       intValue: 0
       boolValue: 0
       floatValue: 0
-      stringValue: Flappy_Bird_Minigame
+      stringValue: Flappy_Bird_Base
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
@@ -19341,7 +19341,7 @@ MonoBehaviour:
       intValue: 0
       boolValue: 0
       floatValue: 0
-      stringValue: Snake_Minigame
+      stringValue: Snake_Base
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}

@@ -7830,8 +7830,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 645212379}
-  selectedCommands: []
+  - {fileID: 645212376}
+  selectedCommands:
+  - {fileID: 645212507}
   variables:
   - {fileID: 645212336}
   - {fileID: 645212363}
@@ -14515,7 +14516,7 @@ MonoBehaviour:
       intValue: 0
       boolValue: 0
       floatValue: 0
-      stringValue: Snake_Minigame
+      stringValue: Snake_Base
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
@@ -15048,7 +15049,7 @@ MonoBehaviour:
       intValue: 0
       boolValue: 0
       floatValue: 0
-      stringValue: Flappy_Bird_Minigame
+      stringValue: Flappy_Bird_Base
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
@@ -15677,7 +15678,7 @@ MonoBehaviour:
       intValue: 0
       boolValue: 0
       floatValue: 0
-      stringValue: Brick_Breaker_Minigame
+      stringValue: Brick_Breaker_Silver
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}

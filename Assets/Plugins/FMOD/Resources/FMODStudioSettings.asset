@@ -473,7 +473,7 @@ MonoBehaviour:
   HasSourceProject: 0
   HasPlatforms: 0
   sourceProjectPath: E:/FMOD Projects/Ladder/Ladder.fspro
-  sourceBankPath: Assets/_Data/_fmodBank/Davis/Desktop
+  sourceBankPath: Assets/_Data/_fmodBank/BuildVersion/Desktop
   SourceBankPathUnformatted: 
   BankRefreshCooldown: -1
   ShowBankRefreshWindow: 0
@@ -505,7 +505,7 @@ MonoBehaviour:
   MeterChannelOrdering: 0
   StopEventsOutsideMaxDistance: 0
   BoltUnitOptionsBuildPending: 0
-  EnableErrorCallback: 0
+  EnableErrorCallback: 1
   SharedLibraryUpdateStage: 0
   SharedLibraryTimeSinceStart: 0
   CurrentVersion: 131588
@@ -612,7 +612,7 @@ MonoBehaviour:
       HasValue: 0
     Overlay:
       Value: 0
-      HasValue: 0
+      HasValue: 1
     Logging:
       Value: 0
       HasValue: 0

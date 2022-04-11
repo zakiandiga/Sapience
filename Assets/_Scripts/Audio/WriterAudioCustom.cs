@@ -36,7 +36,6 @@ public class WriterAudioCustom : MonoBehaviour, IWriterListener
 
     private void OnDisable()
     {
-        Debug.Log("at OnDisable");
         currentSpeaker.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         currentSpeaker.release();
     }
