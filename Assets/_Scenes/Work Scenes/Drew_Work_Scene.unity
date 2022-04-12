@@ -502,7 +502,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 827139075652489976, guid: e8e461eb1865ab84891a2653984b5bd6, type: 3}
       propertyPath: m_Name
-      value: X24_Idle
+      value: X3_Idle
       objectReference: {fileID: 0}
     - target: {fileID: 827139075652489981, guid: e8e461eb1865ab84891a2653984b5bd6, type: 3}
       propertyPath: m_RootOrder
@@ -717,7 +717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1435307402226262739, guid: 70054dac92c29e743a9e523f9cc3908d, type: 3}
       propertyPath: m_Name
-      value: X23_Idle
+      value: X4_Idle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70054dac92c29e743a9e523f9cc3908d, type: 3}
@@ -1072,7 +1072,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4922982681273724632, guid: 282ce46b35f74f040a919b2e2c9d940a, type: 3}
       propertyPath: m_Name
-      value: X23_Sprite
+      value: X4_Sprite
       objectReference: {fileID: 0}
     - target: {fileID: 4922982681273724635, guid: 282ce46b35f74f040a919b2e2c9d940a, type: 3}
       propertyPath: m_RootOrder
@@ -1230,7 +1230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6579078675008992222, guid: 284d3dbdb1795e94886b4a8a3fb1813a, type: 3}
       propertyPath: m_Name
-      value: X24_Sprite
+      value: X3_Sprite
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 284d3dbdb1795e94886b4a8a3fb1813a, type: 3}
