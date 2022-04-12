@@ -2760,6 +2760,8 @@ GameObject:
   - component: {fileID: 65298100}
   - component: {fileID: 65298103}
   - component: {fileID: 65298104}
+  - component: {fileID: 65298000}
+  - component: {fileID: 65297981}
   m_Layer: 0
   m_Name: day1_day_x3_shared_apt
   m_TagString: Untagged
@@ -8072,6 +8074,28 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &65297981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 292
+  indentLevel: 0
+  commandType: 1
+  soundPath:
+    Guid:
+      Data1: -5079902
+      Data2: 1128966155
+      Data3: 2049067908
+      Data4: 1315915847
+    Path: event:/Music/BGM_Apartment
 --- !u!114 &65297982
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8330,6 +8354,7 @@ MonoBehaviour:
   - {fileID: 65298088}
   - {fileID: 65297991}
   - {fileID: 65297988}
+  - {fileID: 65298000}
   - {fileID: 65298037}
   suppressAllAutoSelections: 0
 --- !u!114 &65297991
@@ -8418,7 +8443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -441.71667
+    x: -440.71667
     y: 38.511467
     width: 140
     height: 40
@@ -8450,7 +8475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 534.05524, y: 82.15933}
+  scrollPos: {x: 391.05524, y: -17.840668}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 434
@@ -8462,9 +8487,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 65297990}
+  - {fileID: 65298082}
   selectedCommands:
-  - {fileID: 65297988}
+  - {fileID: 65297981}
   variables:
   - {fileID: 65297968}
   - {fileID: 65297932}
@@ -8713,6 +8738,28 @@ MonoBehaviour:
   scope: 0
   key: MessageReceived
   value: 0
+--- !u!114 &65298000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 291
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: -5079902
+      Data2: 1128966155
+      Data3: 2049067908
+      Data4: 1315915847
+    Path: event:/Music/BGM_Apartment
 --- !u!114 &65298001
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10443,7 +10490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 187.95801
+    x: 188.95801
     y: 247.74567
     width: 131
     height: 40
@@ -14066,6 +14113,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 65297981}
   - {fileID: 65298081}
   suppressAllAutoSelections: 0
 --- !u!114 &65298083
@@ -43603,7 +43651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1693589550}
+  selectedFlowchart: {fileID: 65297995}
 --- !u!4 &1123761817
 Transform:
   m_ObjectHideFlags: 1

@@ -14936,6 +14936,8 @@ GameObject:
   - component: {fileID: 920885938}
   - component: {fileID: 920886041}
   - component: {fileID: 920886042}
+  - component: {fileID: 920886043}
+  - component: {fileID: 920886044}
   m_Layer: 0
   m_Name: day1_x3_day_commute
   m_TagString: Untagged
@@ -15267,10 +15269,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 38.031296, y: 137.45291}
+  scrollPos: {x: 175.17413, y: 297.4528}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 317.66666
+  blockViewHeight: 484
   zoom: 0.7000003
   scrollViewRect:
     serializedVersion: 2
@@ -15279,8 +15281,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 920885962}
-  selectedCommands: []
+  - {fileID: 920886013}
+  selectedCommands:
+  - {fileID: 920886043}
   variables:
   - {fileID: 920885895}
   - {fileID: 920885893}
@@ -17201,6 +17204,7 @@ MonoBehaviour:
   - {fileID: 920886004}
   - {fileID: 920886003}
   - {fileID: 920885963}
+  - {fileID: 920886044}
   - {fileID: 920885965}
   suppressAllAutoSelections: 0
 --- !u!114 &920885963
@@ -19369,6 +19373,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 920886012}
+  - {fileID: 920886043}
   - {fileID: 920885977}
   - {fileID: 920885904}
   - {fileID: 920885900}
@@ -21080,6 +21085,50 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 1
   durationOLD: 0
+--- !u!114 &920886043
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920885888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 235
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: 1825711537
+      Data2: 1097783589
+      Data3: 911552919
+      Data4: -1462499958
+    Path: event:/Music/BGM_Streets
+--- !u!114 &920886044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920885888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 236
+  indentLevel: 1
+  commandType: 1
+  soundPath:
+    Guid:
+      Data1: 1825711537
+      Data2: 1097783589
+      Data3: 911552919
+      Data4: -1462499958
+    Path: event:/Music/BGM_Streets
 --- !u!1 &923981148
 GameObject:
   m_ObjectHideFlags: 0
@@ -24828,7 +24877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 969045904}
+  selectedFlowchart: {fileID: 920885903}
 --- !u!4 &1133143351
 Transform:
   m_ObjectHideFlags: 1
@@ -39778,7 +39827,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 471036155294586677, guid: 90a5cdef2f8613d4b852c3c03bbf4790, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -14.850983
+      value: -14.850952
       objectReference: {fileID: 0}
     - target: {fileID: 471036155950124758, guid: 90a5cdef2f8613d4b852c3c03bbf4790, type: 3}
       propertyPath: m_Name
@@ -40219,6 +40268,10 @@ PrefabInstance:
     - target: {fileID: 2977811847093750503, guid: 459dd63f19ac745498fc9c0ddf15628f, type: 3}
       propertyPath: m_Name
       value: SayDialog_Bark_Goldhampton1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977811848774729848, guid: 459dd63f19ac745498fc9c0ddf15628f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 6.549011
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459dd63f19ac745498fc9c0ddf15628f, type: 3}
