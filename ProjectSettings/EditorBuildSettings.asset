@@ -6,19 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/Gold_Shared_Apartment.unity
+    path: Assets/_Scenes/_Gold/Gold_Shared_Apartment.unity
     guid: 5c588704de14eb74cbabea82a765796c
   - enabled: 1
-    path: Assets/_Scenes/Gold_Commute.unity
+    path: Assets/_Scenes/_Gold/Gold_Commute.unity
     guid: 1dc0af37a7774c341bbb4231594c6553
   - enabled: 1
-    path: Assets/_Scenes/Gold_Office.unity
+    path: Assets/_Scenes/_Gold/Gold_Office.unity
     guid: 74fdc9dfc56dc604e847f0d11baeac23
   - enabled: 1
-    path: Assets/_Scenes/Platinum_Commute.unity
+    path: Assets/_Scenes/_Platinum/Platinum_Commute.unity
     guid: 0ce11da0431f2f4418464cf2a15561b3
   - enabled: 1
-    path: Assets/_Scenes/Platinum_Office.unity
+    path: Assets/_Scenes/_Platinum/Platinum_Office.unity
     guid: 6d7cf33f861ebdf4aba6be28166d5bf0
   - enabled: 1
     path: Assets/_Scenes/AudioManager.unity

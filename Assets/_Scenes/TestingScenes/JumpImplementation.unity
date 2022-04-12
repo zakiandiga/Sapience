@@ -191,6 +191,10 @@ PrefabInstance:
       value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 6796494449539547866, guid: b7029faac5f6147448c948f54f24d2ce, type: 3}
+      propertyPath: playerData
+      value: 
+      objectReference: {fileID: 11400000, guid: d3a69f1ff7adbbe43a00fe5af0431c09, type: 2}
+    - target: {fileID: 6796494449539547866, guid: b7029faac5f6147448c948f54f24d2ce, type: 3}
       propertyPath: gravityMods
       value: 80
       objectReference: {fileID: 0}

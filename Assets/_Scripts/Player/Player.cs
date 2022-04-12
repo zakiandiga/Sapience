@@ -199,14 +199,21 @@ public class Player : MonoBehaviour
     #region Movement Logic
     private void GroundMove()
     {
+        _playerVelocity.x = inputHandler.MoveAxis;
+        currentSpeed = maxSpeed;
+        #region Bugged
+        /*
         switch(moveState)
         {
             case PlayerMoveState.ready:
 
                 //Debug.Log("Enter Ready moveState");
+                tempAxis = 0;
                 tempAxis = inputHandler.MoveAxis;
                 //Debug.Log("Exit to acceleration");
-                moveState = PlayerMoveState.acceleration;
+                _playerVelocity.x = tempAxis;
+                if(Mathf.Abs(_playerVelocity.x) > 0.01f)
+                    moveState = PlayerMoveState.acceleration;
                 break;
 
             case PlayerMoveState.acceleration:
@@ -246,14 +253,14 @@ public class Player : MonoBehaviour
                         if(Mathf.Abs(_playerVelocity.x) > 0.01f)
                         {
                             tempAxis *= -1;
-                            //Debug.Log("Exit to turning");
+                            Debug.Log("Exit to turning");
                             moveState = PlayerMoveState.turning;
                         }
                     }
                     //on the same direction
                     else if(!ChangeDirection(inputHandler.MoveAxis))
                     {
-                        //Debug.Log("exit to accel");
+                        Debug.Log("exit to accel");
                         moveState = PlayerMoveState.acceleration;
                     }
                 }
@@ -268,11 +275,13 @@ public class Player : MonoBehaviour
             case PlayerMoveState.turning:
 
                 currentSpeed = Mathf.SmoothDamp(currentSpeed, 0, ref smoothInputVelocity, turningMomentum / 100);
+                if (ChangeDirection(inputHandler.MoveAxis))
+
                 if (Mathf.Abs(currentSpeed) < turningSpeedTreshold)
                 {
-                    _playerVelocity.x = tempAxis;
+                _playerVelocity.x = tempAxis;
                     moveState = PlayerMoveState.acceleration;
-                }
+                }                
                 break;
 
             case PlayerMoveState.stop:
@@ -282,6 +291,8 @@ public class Player : MonoBehaviour
                 moveOngoing = false;
                 break;
         }
+        */
+        #endregion
     }
 
     private void ForceFalling()

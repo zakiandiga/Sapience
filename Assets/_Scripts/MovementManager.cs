@@ -86,8 +86,6 @@ public class MovementManager : MonoBehaviour
 
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentStoryScene));
 
-        //enable player movement here
-        //PlayerMove("Minigame");
         currentMinigameScene = null;
         currentFlowchart.SetBooleanVariable("OnMinigame", false);
     }
@@ -108,11 +106,6 @@ public class MovementManager : MonoBehaviour
         currentMinigameScene = minigameSceneName;
         SceneManager.LoadSceneAsync(currentMinigameScene, LoadSceneMode.Additive);
         SceneManager.sceneLoaded += FinalizeLoadMinigame;
-    }
-
-    public void PlayMusic(string musicName)
-    {
-        //MusicManager.Instance.PlayMusic(musicName);
     }
 
     public void ChangeRoom(GameObject currentRoom, GameObject nextRoom)
