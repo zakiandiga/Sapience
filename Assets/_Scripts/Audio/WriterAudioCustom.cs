@@ -14,30 +14,22 @@ public class WriterAudioCustom : MonoBehaviour, IWriterListener
     public void OnStart(AudioClip audioClip)
     {
         if (audioEvent.IsNull)
-        {
-            Debug.LogError("No audioEvent assign on " + this.gameObject);
             return;
-        }
 
         if(currentSpeaker.isValid())
-        {
-            Debug.Log("No need to set currentSpeaker");
             return;
-        }
-        else
-        {
-            
-            currentSpeaker = RuntimeManager.CreateInstance(audioEvent);
-            Debug.Log("Set currentSpeaker to " + currentSpeaker);
 
-        }
-            Play();
+        else           
+            currentSpeaker = RuntimeManager.CreateInstance(audioEvent);
+ 
+        
+        Play();
     }
 
     private void OnDisable()
     {
-        currentSpeaker.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        currentSpeaker.release();
+        if(currentSpeaker.isValid())
+            currentSpeaker.release();  
     }
 
     protected void Play()
@@ -48,7 +40,8 @@ public class WriterAudioCustom : MonoBehaviour, IWriterListener
 
     protected void Stop()
     {
-        //currentSpeaker.release();
+        if(currentSpeaker.isValid())
+            currentSpeaker.release();
         //currentSpeaker.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
 
     }
@@ -63,8 +56,7 @@ public class WriterAudioCustom : MonoBehaviour, IWriterListener
 
     protected void Pause()
     {
-        //pause
-        Debug.Log("Pausing");
+
     }
     public void OnResume()
     {
@@ -76,17 +68,13 @@ public class WriterAudioCustom : MonoBehaviour, IWriterListener
 
     protected void Resume()
     {
-        //resume
-        Debug.Log("Resume");
+
     }
     public void OnEnd(bool stopAudio)
     {
-        Debug.Log("OnEnd called!");
-        Debug.Log("currentSpeaker is Valid = " + currentSpeaker.isValid());
+
         if(stopAudio)
-        {
             Stop();
-        }
     }
 
 
@@ -103,15 +91,9 @@ public class WriterAudioCustom : MonoBehaviour, IWriterListener
 
     public void OnInput()
     {
-        if(audioEvent.IsNull)
-        {
-            
+        if(audioEvent.IsNull)          
             currentSpeaker.release();
-            currentSpeaker.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        }
     }
-
-
 
 
     public void OnVoiceover(AudioClip voiceOverClip)

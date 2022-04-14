@@ -57,6 +57,9 @@ TagManager:
   - name: Player
     uniqueID: 945782503
     locked: 0
+  - name: InGameUI
+    uniqueID: 3014949485
+    locked: 0
   - name: MinigameBG
     uniqueID: 3625814793
     locked: 0
