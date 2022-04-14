@@ -1,49 +1,49 @@
 fileFormatVersion: 2
-guid: 9911dcb171b73f143aa2d8428494901a
+guid: 4bb0b122298440144903f3e470aca7c2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3200729095360032365
-    second: animated_elevator_door_entrance_1_48x48_0
+      213: 7389585452983109638
+    second: elevator_doors_1_48x48_0
   - first:
-      213: 7310958775847961316
-    second: animated_elevator_door_entrance_1_48x48_1
+      213: -7944687307105262547
+    second: elevator_doors_1_48x48_1
   - first:
-      213: 2060261582382999061
-    second: animated_elevator_door_entrance_1_48x48_2
+      213: 555954963255232028
+    second: elevator_doors_1_48x48_2
   - first:
-      213: -3830501281730718013
-    second: animated_elevator_door_entrance_1_48x48_3
+      213: 2402985578915331344
+    second: elevator_doors_1_48x48_3
   - first:
-      213: 5957152035780326375
-    second: animated_elevator_door_entrance_1_48x48_4
+      213: 3096545483515381003
+    second: elevator_doors_1_48x48_4
   - first:
-      213: 6664925852392892349
-    second: animated_elevator_door_entrance_1_48x48_5
+      213: 345612446740076567
+    second: elevator_doors_1_48x48_5
   - first:
-      213: -1175746590973816909
-    second: animated_elevator_door_entrance_1_48x48_6
+      213: 6212442962203712245
+    second: elevator_doors_1_48x48_6
   - first:
-      213: 5348208574137070927
-    second: animated_elevator_door_entrance_1_48x48_7
+      213: 5680846605435036659
+    second: elevator_doors_1_48x48_7
   - first:
-      213: 7394460901783126127
-    second: animated_elevator_door_entrance_1_48x48_8
+      213: -9041909968395225634
+    second: elevator_doors_1_48x48_8
   - first:
-      213: -5772409000162640688
-    second: animated_elevator_door_entrance_1_48x48_9
+      213: 6242471545683787755
+    second: elevator_doors_1_48x48_9
   - first:
-      213: 4846208079856767312
-    second: animated_elevator_door_entrance_1_48x48_10
+      213: -9082042003898028275
+    second: elevator_doors_1_48x48_10
   - first:
-      213: -7424159330486220471
-    second: animated_elevator_door_entrance_1_48x48_11
+      213: -477906997873937907
+    second: elevator_doors_1_48x48_11
   - first:
-      213: -5189867590822319670
-    second: animated_elevator_door_entrance_1_48x48_12
+      213: 2731025955163113418
+    second: elevator_doors_1_48x48_12
   - first:
-      213: 6908357594230211300
-    second: animated_elevator_door_entrance_1_48x48_13
+      213: -2923444447719320905
+    second: elevator_doors_1_48x48_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -145,7 +145,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: animated_elevator_door_entrance_1_48x48_0
+      name: elevator_doors_1_48x48_0
       rect:
         serializedVersion: 2
         x: 0
@@ -159,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6e213f67264b6c20800000000000000
-      internalID: 3200729095360032365
+      spriteID: 608c37a51d41d8660800000000000000
+      internalID: 7389585452983109638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_elevator_door_entrance_1_48x48_1
+      name: elevator_doors_1_48x48_1
       rect:
         serializedVersion: 2
         x: 96
@@ -180,14 +180,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e241f1854eb57560800000000000000
-      internalID: 7310958775847961316
+      spriteID: d24af68acfcceb190800000000000000
+      internalID: -7944687307105262547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_elevator_door_entrance_1_48x48_2
+      name: elevator_doors_1_48x48_2
       rect:
         serializedVersion: 2
         x: 192
@@ -201,14 +201,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 516a2525ef4879c10800000000000000
-      internalID: 2060261582382999061
+      spriteID: c1681ffe71627b700800000000000000
+      internalID: 555954963255232028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_elevator_door_entrance_1_48x48_3
+      name: elevator_doors_1_48x48_3
       rect:
         serializedVersion: 2
         x: 288
@@ -222,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c613ce016357dac0800000000000000
-      internalID: -3830501281730718013
+      spriteID: 01d72a707ae195120800000000000000
+      internalID: 2402985578915331344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_elevator_door_entrance_1_48x48_4
+      name: elevator_doors_1_48x48_4
       rect:
         serializedVersion: 2
         x: 384
@@ -243,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e37ea5d63e0ca250800000000000000
-      internalID: 5957152035780326375
+      spriteID: b0546c706b329fa20800000000000000
+      internalID: 3096545483515381003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_elevator_door_entrance_1_48x48_5
+      name: elevator_doors_1_48x48_5
       rect:
         serializedVersion: 2
         x: 480
@@ -264,14 +264,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db7223e10c29e7c50800000000000000
-      internalID: 6664925852392892349
+      spriteID: 71855ed60bcdbc400800000000000000
+      internalID: 345612446740076567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_elevator_door_entrance_1_48x48_6
+      name: elevator_doors_1_48x48_6
       rect:
         serializedVersion: 2
         x: 576
@@ -285,14 +285,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bf012374b8eeafe0800000000000000
-      internalID: -1175746590973816909
+      spriteID: 5fa178d85f7073650800000000000000
+      internalID: 6212442962203712245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_elevator_door_entrance_1_48x48_7
+      name: elevator_doors_1_48x48_7
       rect:
         serializedVersion: 2
         x: 672
@@ -306,14 +306,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f457326bc57a83a40800000000000000
-      internalID: 5348208574137070927
+      spriteID: 3f36074a3eb66de40800000000000000
+      internalID: 5680846605435036659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_elevator_door_entrance_1_48x48_8
+      name: elevator_doors_1_48x48_8
       rect:
         serializedVersion: 2
         x: 768
@@ -327,14 +327,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f604c4c33076e9660800000000000000
-      internalID: 7394460901783126127
+      spriteID: ed53db23acea48280800000000000000
+      internalID: -9041909968395225634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_elevator_door_entrance_1_48x48_9
+      name: elevator_doors_1_48x48_9
       rect:
         serializedVersion: 2
         x: 864
@@ -348,14 +348,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dcb90f099844efa0800000000000000
-      internalID: -5772409000162640688
+      spriteID: bef37f8fbc6b1a650800000000000000
+      internalID: 6242471545683787755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_elevator_door_entrance_1_48x48_10
+      name: elevator_doors_1_48x48_10
       rect:
         serializedVersion: 2
         x: 960
@@ -369,14 +369,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0519d738290314340800000000000000
-      internalID: 4846208079856767312
+      spriteID: d0f2b7a8aea16f180800000000000000
+      internalID: -9082042003898028275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_elevator_door_entrance_1_48x48_11
+      name: elevator_doors_1_48x48_11
       rect:
         serializedVersion: 2
         x: 1056
@@ -390,14 +390,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 949877e7c6618f890800000000000000
-      internalID: -7424159330486220471
+      spriteID: d02fc041e122e59f0800000000000000
+      internalID: -477906997873937907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_elevator_door_entrance_1_48x48_12
+      name: elevator_doors_1_48x48_12
       rect:
         serializedVersion: 2
         x: 1152
@@ -411,14 +411,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac929b95ce2e9f7b0800000000000000
-      internalID: -5189867590822319670
+      spriteID: ac78ed9f2ad86e520800000000000000
+      internalID: 2731025955163113418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_elevator_door_entrance_1_48x48_13
+      name: elevator_doors_1_48x48_13
       rect:
         serializedVersion: 2
         x: 1248
@@ -432,8 +432,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e2c67141aa6fdf50800000000000000
-      internalID: 6908357594230211300
+      spriteID: 7b21a1d83c6dd67d0800000000000000
+      internalID: -2923444447719320905
       vertices: []
       indices: 
       edges: []
