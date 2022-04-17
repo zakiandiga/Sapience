@@ -46159,7 +46159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2145691494}
+  selectedFlowchart: {fileID: 1548148948}
 --- !u!4 &1123761817
 Transform:
   m_ObjectHideFlags: 1
@@ -59635,7 +59635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -125.920135
+    x: -127.18596
     y: -27.728254
     width: 143.67087
     height: 40
@@ -59802,16 +59802,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1510446059}
-  selectedCommands:
-  - {fileID: 1510446076}
-  - {fileID: 1510446069}
-  - {fileID: 1510446134}
-  - {fileID: 1510446075}
-  - {fileID: 1510446074}
-  - {fileID: 1510446073}
-  - {fileID: 1510446135}
-  - {fileID: 1510446072}
-  - {fileID: 1510446071}
+  selectedCommands: []
   variables:
   - {fileID: 1510446066}
   - {fileID: 1510446062}
@@ -63075,7 +63066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1547050353
 Transform:
   m_ObjectHideFlags: 0
@@ -65316,7 +65307,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 185.42097
     y: 64.42106
-    width: 107.69226
+    width: 117.30763
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -84556,7 +84547,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2044613854}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1971309242
 GameObject:
@@ -85427,13 +85418,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 682139777}
+  - {fileID: 1970211732}
   - {fileID: 1760438648}
   - {fileID: 916276672}
   - {fileID: 966452422}
   - {fileID: 647519122}
   - {fileID: 535669076}
   - {fileID: 2141416794}
-  - {fileID: 1970211732}
   m_Father: {fileID: 1547050353}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -107592,7 +107583,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2145691742
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

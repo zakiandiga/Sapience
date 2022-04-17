@@ -3201,11 +3201,11 @@ PrefabInstance:
     - target: {fileID: 3336094060341428069, guid: b99c67dbc779f69459d04bc7c70f587f, type: 3}
       propertyPath: interactIcon
       value: 
-      objectReference: {fileID: 171641809}
+      objectReference: {fileID: 0}
     - target: {fileID: 3336094060341428069, guid: b99c67dbc779f69459d04bc7c70f587f, type: 3}
       propertyPath: currentBlockReference.block
       value: 
-      objectReference: {fileID: 321905313}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b99c67dbc779f69459d04bc7c70f587f, type: 3}
 --- !u!4 &222739333 stripped
@@ -13846,7 +13846,7 @@ PrefabInstance:
     - target: {fileID: 4643587298880772976, guid: dce111dff10f25f418abae8b53892fbe, type: 3}
       propertyPath: currentBlockReference.block
       value: 
-      objectReference: {fileID: 321905258}
+      objectReference: {fileID: 969045952}
     - target: {fileID: 4643587298880772977, guid: dce111dff10f25f418abae8b53892fbe, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -21520,11 +21520,6 @@ GameObject:
   - component: {fileID: 969045912}
   - component: {fileID: 969045911}
   - component: {fileID: 969045921}
-  - component: {fileID: 969045920}
-  - component: {fileID: 969045919}
-  - component: {fileID: 969045918}
-  - component: {fileID: 969045917}
-  - component: {fileID: 969045916}
   - component: {fileID: 969045910}
   - component: {fileID: 969045909}
   - component: {fileID: 969045892}
@@ -21532,6 +21527,8 @@ GameObject:
   - component: {fileID: 969045924}
   - component: {fileID: 969045923}
   - component: {fileID: 969045922}
+  - component: {fileID: 969045931}
+  - component: {fileID: 969045916}
   m_Layer: 0
   m_Name: day3_x3_day_commute
   m_TagString: Untagged
@@ -21928,7 +21925,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 124.31671
     y: 28.045658
-    width: 112.63736
+    width: 115
     height: 40
   tint: {r: 0.5686275, g: 0, b: 1, a: 1}
   useCustomTint: 1
@@ -22209,7 +22206,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -302.64948
     y: 0.071237564
-    width: 196.15384
+    width: 199
     height: 40
   tint: {r: 0, g: 1, b: 0.043137256, a: 1}
   useCustomTint: 1
@@ -22237,11 +22234,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 414.60733, y: 53.14778}
+  scrollPos: {x: 431.69073, y: 46.20073}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 575
-  zoom: 0.9100001
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -22250,8 +22247,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 969045903}
-  selectedCommands:
-  - {fileID: 969045893}
+  selectedCommands: []
   variables:
   - {fileID: 969045900}
   - {fileID: 969045898}
@@ -22260,6 +22256,7 @@ MonoBehaviour:
   - {fileID: 969045896}
   - {fileID: 969045894}
   - {fileID: 969045887}
+  - {fileID: 969045931}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -22591,97 +22588,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 969045884}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fdbfa13daf6276409876e97d1cee96e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 969045920}
-  suppressBlockAutoSelect: 0
---- !u!114 &969045917
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969045884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 284
-  indentLevel: 0
-  description: 
-  targetObject: {fileID: 1499596702}
-  targetComponentAssemblyName: MovementManager, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: MovementManager
-  targetMethod: PlayerMove
-  targetMethodText: 'PlayerMove (String): Void'
-  methodParameters:
-  - objValue:
-      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      typeFullname: System.String
-      intValue: 0
-      boolValue: 0
-      floatValue: 0
-      stringValue: 
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 0}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &969045918
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969045884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 283
-  indentLevel: 0
-  storyText: I don't have time to go back.
-  description: 
-  character: {fileID: 333232175}
-  portrait: {fileID: 21300000, guid: a232cce8f3310e045a9e0cbda918f87d, type: 3}
-  voiceOverClip: {fileID: 0}
-  fireOffVoice: 0
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1389518233}
---- !u!114 &969045919
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969045884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 282
+  itemId: 293
   indentLevel: 0
   description: 
   targetObject: {fileID: 1499596702}
@@ -22714,35 +22624,6 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &969045920
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969045884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -73.08635
-    y: 0.79927063
-    width: 158.7912
-    height: 40
-  tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
-  useCustomTint: 1
-  itemId: 216
-  blockName: Apartment Entrance
-  description: 
-  eventHandler: {fileID: 969045916}
-  commandList:
-  - {fileID: 969045919}
-  - {fileID: 969045918}
-  - {fileID: 969045917}
-  suppressAllAutoSelections: 0
 --- !u!114 &969045921
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -22877,6 +22758,21 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 1020641354}
+--- !u!114 &969045931
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969045884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: TriedtoGoHome
+  value: 0
 --- !u!114 &969045944
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -22980,7 +22876,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 120.355804
     y: 88.59683
-    width: 121.428566
+    width: 122
     height: 40
   tint: {r: 0.5686275, g: 0, b: 1, a: 1}
   useCustomTint: 1
@@ -22989,6 +22885,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 969045912}
   commandList:
+  - {fileID: 969045916}
   - {fileID: 969045910}
   - {fileID: 969045911}
   - {fileID: 969045892}
@@ -23158,7 +23055,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -275.5411
     y: 60.455612
-    width: 144.5055
+    width: 147
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23256,7 +23153,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -269.97653
     y: 116.58123
-    width: 133.51648
+    width: 134
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -23864,9 +23761,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -83.03373
-    y: 121.78767
-    width: 185.16483
+    x: -89.03373
+    y: 81.78767
+    width: 188
     height: 40
   tint: {r: 1, g: 0, b: 0.88211536, a: 1}
   useCustomTint: 1
@@ -23999,9 +23896,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -74.484535
-    y: 62.770576
-    width: 169.78021
+    x: -80.484535
+    y: 22.770576
+    width: 173
     height: 40
   tint: {r: 1, g: 0, b: 0.88211536, a: 1}
   useCustomTint: 1
@@ -24442,7 +24339,7 @@ PrefabInstance:
     - target: {fileID: 2290128821051553119, guid: 6809bca1b9f9cdd48844a6bdab6a4856, type: 3}
       propertyPath: currentBlockReference.block
       value: 
-      objectReference: {fileID: 321905331}
+      objectReference: {fileID: 969046002}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6809bca1b9f9cdd48844a6bdab6a4856, type: 3}
 --- !u!4 &1041816477 stripped
@@ -24878,7 +24775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 920885903}
+  selectedFlowchart: {fileID: 969045904}
 --- !u!4 &1133143351
 Transform:
   m_ObjectHideFlags: 1
@@ -34649,7 +34546,7 @@ PrefabInstance:
     - target: {fileID: 4643587298880772976, guid: f26c98f5fbd8e5a468e60f18bfbbbb03, type: 3}
       propertyPath: currentBlockReference.block
       value: 
-      objectReference: {fileID: 321905309}
+      objectReference: {fileID: 0}
     - target: {fileID: 4643587298880772977, guid: f26c98f5fbd8e5a468e60f18bfbbbb03, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -36784,7 +36681,7 @@ PrefabInstance:
     - target: {fileID: 4210903603527970513, guid: 2d67e53777262454cb800f9c7a53035e, type: 3}
       propertyPath: currentBlockReference.block
       value: 
-      objectReference: {fileID: 321905323}
+      objectReference: {fileID: 969045997}
     - target: {fileID: 4210903603527970524, guid: 2d67e53777262454cb800f9c7a53035e, type: 3}
       propertyPath: m_RootOrder
       value: 2

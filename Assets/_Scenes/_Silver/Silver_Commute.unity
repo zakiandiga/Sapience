@@ -6575,7 +6575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 2
   key: Cab
-  value: 1
+  value: 0
 --- !u!114 &616625955
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6983,7 +6983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 49.934807, y: 224.51399}
+  scrollPos: {x: 127.934814, y: 212.51399}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 442
@@ -6995,7 +6995,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 616625976}
+  - {fileID: 616625970}
   selectedCommands: []
   variables:
   - {fileID: 616625967}
@@ -9784,7 +9784,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: SILVERTON
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1156549737}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
@@ -9795,7 +9795,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1134871793}
 --- !u!114 &616626063
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11347,9 +11347,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1078817656}
-  selectedCommands:
-  - {fileID: 1078817687}
+  - {fileID: 1078817676}
+  selectedCommands: []
   variables:
   - {fileID: 1078817644}
   - {fileID: 1078817642}
@@ -11898,7 +11897,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &1078817661
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -12565,7 +12564,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1134871793}
 --- !u!114 &1078817686
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -12595,7 +12594,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1078817687
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -12624,7 +12623,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1078817688
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -14534,7 +14533,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1822768156
 Transform:
   m_ObjectHideFlags: 0
@@ -18891,7 +18890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1078817650}
+  selectedFlowchart: {fileID: 449554977}
 --- !u!4 &2144609763
 Transform:
   m_ObjectHideFlags: 1
