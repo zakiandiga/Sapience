@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438504558418113624}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1279.9999, y: -535, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -49,5 +49,5 @@ MonoBehaviour:
   portraits:
   - {fileID: 21300000, guid: d1889c374bc53fc4f88e3b696f2d31bf, type: 3}
   portraitsFace: 0
-  setSayDialog: {fileID: 2977811847093750509, guid: 459dd63f19ac745498fc9c0ddf15628f, type: 3}
+  setSayDialog: {fileID: 0}
   description: 

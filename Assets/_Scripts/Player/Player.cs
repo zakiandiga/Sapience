@@ -379,8 +379,6 @@ public class Player : MonoBehaviour
         transform.position = targetPosition.position;
         OnSetPlayerPosition?.Invoke(this.transform);
     }
-
-
 }
 
 public enum PlayerRootState
