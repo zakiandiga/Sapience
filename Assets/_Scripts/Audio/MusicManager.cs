@@ -21,7 +21,6 @@ public class MusicManager : MonoBehaviour
 
     private void OnDisable()
     {
-        Debug.Log("Disabled");
         PlayMusicFMOD.OnStartMusic -= StartMusic;
         PlayMusicFMOD.OnStopMusic -= StopMusic;
     }
@@ -36,30 +35,24 @@ public class MusicManager : MonoBehaviour
             musicInstance.start();
             musicInstance.release();
         }
-
-        if(!currentMusicPath.IsNull && currentMusicPath.Guid != soundPath.Guid)
+        else
         {
-            StopMusic();
-
-            currentMusicPath.Guid = soundPath.Guid;
-            musicInstance = RuntimeManager.CreateInstance(currentMusicPath);
-            musicInstance.start();
-            musicInstance.release();
+            Debug.Log("Another music is playing!");
         }
     }
 
     private void StopMusic(EventReference soundPath)
     {
-        //if (currentMusicPath.Guid == soundPath.Guid)
-        //{
+        if (currentMusicPath.Guid == soundPath.Guid)
+        {
             musicInstance.getPlaybackState(out isPlaying);
             if (isPlaying == PLAYBACK_STATE.PLAYING)
                 StopMusic();
 
             currentMusicPath = nullMusicPath;
-        //}
-        //else
-        //    Debug.LogError("Music you're trying to stop is not playing");
+        }
+        else
+            Debug.LogError("Music you're trying to stop is not playing");
     }
 
     private void StopMusic()

@@ -61,7 +61,7 @@ namespace Fungus
             Resources.UnloadUnusedAssets();
 
             // We're now finished with the SceneLoader
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
 
         protected virtual void OnGUI()
