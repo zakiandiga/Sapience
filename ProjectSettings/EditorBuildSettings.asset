@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Scenes/TitleScreen.unity
+    guid: ebb020313d982754fb8a19c05d70040d
+  - enabled: 1
     path: Assets/_Scenes/_Gold/Gold_Shared_Apartment.unity
     guid: 5c588704de14eb74cbabea82a765796c
   - enabled: 1
@@ -21,8 +24,23 @@ EditorBuildSettings:
     path: Assets/_Scenes/_Platinum/Platinum_Office.unity
     guid: 6d7cf33f861ebdf4aba6be28166d5bf0
   - enabled: 1
+    path: Assets/_Scenes/_Silver/Silver_Commute.unity
+    guid: 0384f378dd6f519439cde583f0dfd392
+  - enabled: 1
+    path: Assets/_Scenes/_Silver/Silver_Office.unity
+    guid: 4eef34a864802a94282e2d5657de12fe
+  - enabled: 1
     path: Assets/_Scenes/AudioManager.unity
     guid: ddbac05adb10ea54b8cb002b07a71ab3
+  - enabled: 1
+    path: Assets/_Scenes/Minigames/Brick_Breaker/Brick_Breaker_Gold.unity
+    guid: 2ec68769a48be584b810f9c8c8f6d502
+  - enabled: 1
+    path: Assets/_Scenes/Minigames/Flappy_Bird/Flappy_Bird_Gold.unity
+    guid: 67cf78650aa1c23499537e52242892e7
+  - enabled: 1
+    path: Assets/_Scenes/Minigames/Snake/Snake_Gold.unity
+    guid: 40e5ede1bb4ce4c4d9cb1e1174ad94e4
   - enabled: 1
     path: Assets/_Scenes/Minigames/Brick_Breaker/Brick_Breaker_Silver.unity
     guid: 793700284e948324f98146b010b7e696

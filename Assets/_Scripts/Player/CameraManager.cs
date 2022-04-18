@@ -34,7 +34,7 @@ public class CameraManager : MonoBehaviour
         Player.OnPlayerDisabled -= DeassignPlayer;
     }
 
-    private void AssignPlayer(Transform player)
+    public void AssignPlayer(Transform player)
     {
         Debug.Log("Assign player " + player.gameObject.name);
         if(currentPlayer != player)
@@ -68,5 +68,18 @@ public class CameraManager : MonoBehaviour
             OnCameraBlendingFinish?.Invoke(false);
         }
     }
+
+    #region Fungus Invoke Methods
+
+    public void LookAtCharacter(Transform characterTransform, float zoomLevel)
+    {
+        //cameraManager.AssignPlayer(characterTransform);
+        cinemachine.m_Follow = characterTransform;
+        cinemachine.m_Lens.OrthographicSize = zoomLevel;
+        //cinemachine.m_Transitions.m_BlendHint = 
+        //Normal orthographic size is 4
+    }
+
+    #endregion
 
 }
