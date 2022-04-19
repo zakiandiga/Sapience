@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001B0534F1CD8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000253E24DABC8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,10 +18,128 @@
 [LOG] Manager::readBank                        : fileversion = 141, compatVersion = 140 (oldest = 44, newest = 141)
 [LOG] Manager::readBank                        : fileversion = 141, compatVersion = 140 (oldest = 44, newest = 141)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] SystemI::createSound                     : filename = Assets/_Data/_fmodBank/BuildVersion/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : setdata soundi = 000002539EE873E8 : node = 00000254BEAA28A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002539E7AAF78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002539EE873E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/_Data/_fmodBank/BuildVersion/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13012800
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 27872
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000254BEAA29B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='MeloncholyVGMFinal', format=5, channels=2, frequency=48000, lengthbytes=3298656, lengthpcm=11652414, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.997284.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002539EE873E8
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 13012800
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 27872
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005981DFF0A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8847C0AD0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8847C0AA0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8847C0BA0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8847C0C60
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002547AD10108
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='X3-3', format=5, channels=2, frequency=48000, lengthbytes=6784, lengthpcm=33024, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.126491.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 13012800
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 27872
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005981DFF0A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8847C0AD0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8847C0AA0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8847C0BA0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8847C0C60
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002547AD10108
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='X3-2', format=5, channels=2, frequency=48000, lengthbytes=10528, lengthpcm=52608, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.123197.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 13012800
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 27872
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005981DFF0A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8847C0AD0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8847C0AA0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8847C0BA0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8847C0C60
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002547AD10108
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='X3-4', format=5, channels=2, frequency=48000, lengthbytes=15008, lengthpcm=55872, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.123871.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 13012800
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 27872
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005981DFF0A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8847C0AD0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8847C0AA0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8847C0BA0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8847C0C60
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002547AD10108
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='X3-1', format=5, channels=2, frequency=48000, lengthbytes=9792, lengthpcm=47744, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.122862.
+[WRN] EventInstance::update                    : Event {58b774a8-0195-49d1-8c6e-8ff335321dcf} waited 509 milliseconds for sample data to load.  Preload sample data to avoid this delay.
+[LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002547A690BB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002547A690BB8
+[LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002547A690BB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002547A690BB8
+[LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002547A690BB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002547A690BB8
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002547A690BB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002547A690BB8
+[LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002547A690BB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002547A690BB8
+[LOG] SoundI::release                          : MeloncholyVGMFinal (000002539EE873E8)
+[LOG] SoundI::release                          :     MeloncholyVGMFinal (00000254BE9310F8)
+[LOG] SoundI::release                          :     MeloncholyVGMFinal (000002547A690BB8)
+[LOG] SoundI::release                          :  (00000254874C2578)
+[LOG] SoundI::release                          :     X3-4 (00000254875728A8)
+[LOG] SoundI::release                          :  (0000025477F51218)
+[LOG] SoundI::release                          :     X3-1 (0000025487572D88)
+[LOG] SoundI::release                          :  (00000254874C29C8)
+[LOG] SoundI::release                          :     X3-2 (00000254875723C8)
+[LOG] SoundI::release                          :  (00000254875C6658)
+[LOG] SoundI::release                          :     X3-3 (00000253975863C8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
