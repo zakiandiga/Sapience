@@ -7,7 +7,7 @@ public class MovementManager : MonoBehaviour
 {
     public static event Action<string> OnBlockEnd;
     public static event Action<string> OnBlockStart;
-    public static event Action<Transform> OnSetPlayerSpawn;
+    public static event Action<Transform, int> OnSetPlayerSpawn;
     public static event Action<Flowchart> OnAnnounceFlowchart; //CHECK USAGE
 
     private CameraManager cameraManager;
@@ -92,7 +92,7 @@ public class MovementManager : MonoBehaviour
     #endregion
 
     #region Fungus Invoke Methods
-    public void SetPlayerPosition(Transform targetPosition) => OnSetPlayerSpawn?.Invoke(targetPosition);
+    public void SetPlayerPosition(Transform targetPosition, int characterCode) => OnSetPlayerSpawn?.Invoke(targetPosition, characterCode);
 
     public void PlayerMove(string blockName) => OnBlockEnd?.Invoke(blockName);
 

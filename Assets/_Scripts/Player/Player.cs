@@ -6,14 +6,17 @@ public class Player : MonoBehaviour
     public string PlayerName => playerData.characterName;
     public Interactable CurrentInteractable { get; private set; }
 
-    private PlayerRootState rootState = PlayerRootState.OnGround;
+    private PlayerRootState rootState = PlayerRootState.onGround;
     private PlayerMoveState moveState = PlayerMoveState.ready;
 
     #region Player's Components
     private PlayerInputHandler inputHandler;
-    private CharacterAnimation playerAnimation;
+    //private CharacterAnimation playerAnimation;
     private BoxCollider2D playerCollider;
     private Rigidbody2D rb;
+    [SerializeField] private Transform x3Sprite, x4Sprite;
+    private Animator anim;
+    private SpriteRenderer spriteRenderer;
     #endregion
 
     #region GroundChecks
@@ -61,7 +64,7 @@ public class Player : MonoBehaviour
     {
         playerCollider = GetComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
-        playerAnimation = GetComponentInChildren<CharacterAnimation>();
+        //playerAnimation = GetComponentInChildren<CharacterAnimation>();
 
     }
 
@@ -88,14 +91,27 @@ public class Player : MonoBehaviour
 
     private void EnablingPlayerControl(string blockName)
     {
-        rootState = PlayerRootState.OnGround;
+        if (GroundCheck())
+        {
+            anim.SetBool("OnGround", true);
+            rootState = PlayerRootState.onGround;
+        }
+        else
+            rootState = PlayerRootState.onAir;
         CurrentInteractable = null;
         inputHandler.InputActionSwitch(true);
     }
 
     private void DisablingPlayerControl(string blockName)
     {
-        rootState = PlayerRootState.interacting;
+        if (anim != null)
+        {
+            anim.SetBool("IsWalking", false);
+            anim.SetTrigger("Land");
+        }
+
+        //rootState = PlayerRootState.interacting;
+        /*
         if(moveState != PlayerMoveState.ready)
         {
             tempAxis = 0;
@@ -104,16 +120,18 @@ public class Player : MonoBehaviour
             moveState = PlayerMoveState.ready;
             moveOngoing = false;
         }
-
+        */
         inputHandler.InputActionSwitch(false);
     }
 
     void Update()
     {
+
         switch (rootState)
         {
-            case PlayerRootState.OnGround:                
-                if(VerticalVelocity < -0.05f)
+            case PlayerRootState.onGround:
+
+                if(VerticalVelocity < -0.5f)
                 {
                     rootState = PlayerRootState.onAir;
                 }
@@ -121,47 +139,63 @@ public class Player : MonoBehaviour
 
                 if (inputHandler.Interacting)
                 {
+                    
                     OnPlayerInteract?.Invoke(this);
                 }
 
                 break;            
 
             case PlayerRootState.onAir:
-                if(!inputHandler.IsJumpPressed)
+                if (!inputHandler.IsJumpPressed)
                 {
                     jumpOngoing = false;
                     if (Timer.TimerRunning(jumpPressedLimitTimer))
                         Timer.ForceStopTimer(jumpPressedLimitTimer);
                 }
 
+                if (GroundCheck() && !jumpOngoing)
+                    rootState = PlayerRootState.landing;
                 
-                if (!jumpOngoing)
-                {
-                    if (GroundCheck())
-                    {
-                        //Debug.Log("Grounded");
-                        rootState = PlayerRootState.OnGround;
+                
+                break;
 
-                        if (jumpTriggered)
-                        {
-                            jumpTriggered = false;
-                            //Debug.Log("REJUMP");
-                            NormalizeVerticalMovement();
-                            StartJumping();
-                        }
-                    }
+            case PlayerRootState.landing:
+                if (jumpTriggered)
+                {
+                    jumpTriggered = false;
+                    //Debug.Log("REJUMP");
+                    NormalizeVerticalMovement();
+                    StartJumping();
                 }
+
+                if (anim != null)
+                {
+
+                    anim.SetTrigger("Land");
+
+                }
+
+                if (anim != null)
+                    anim.SetBool("OnGround", true);
+                rootState = PlayerRootState.onGround;
+
+
                 break;
 
             case PlayerRootState.interacting:
-                if(moveState != PlayerMoveState.ready)
+
+
+                /*
+                if (moveState != PlayerMoveState.ready)
                 {
+
                     tempAxis = 0;
                     currentSpeed = 0;
                     _playerVelocity.x = tempAxis;
                     moveState = PlayerMoveState.ready;
                     moveOngoing = false;
                 }
+                */
                 //playerState = PlayerMoveState.idle; //shortcut to direct idle
                 break;  
         }
@@ -191,6 +225,7 @@ public class Player : MonoBehaviour
             {
                 Fall();
             }
+
         }
 
         HorizontalMovement();
@@ -199,8 +234,26 @@ public class Player : MonoBehaviour
     #region Movement Logic
     private void GroundMove()
     {
+        if(spriteRenderer != null)
+        {
+            if (inputHandler.MoveAxis > 0 && spriteRenderer.flipX)
+                spriteRenderer.flipX = false;
+            if (inputHandler.MoveAxis < 0 && !spriteRenderer.flipX)
+                spriteRenderer.flipX = true;
+        }
+
         _playerVelocity.x = inputHandler.MoveAxis;
         currentSpeed = maxSpeed;
+        if (anim != null)
+        {
+            if (Mathf.Abs(HorizontalVelocity) > 0.01f)
+                anim.SetBool("IsWalking", true);
+            else
+                anim.SetBool("IsWalking", false);        
+
+        }
+
+
         #region Bugged
         /*
         switch(moveState)
@@ -322,12 +375,18 @@ public class Player : MonoBehaviour
         if (!Timer.TimerRunning(jumpPressedLimitTimer))
             Timer.Create(ForceFalling, jumpPressedLimit, jumpPressedLimitTimer);
 
+        if (anim != null)
+        {
+            anim.SetBool("OnGround", false);
+            anim.Play("Jump");            
+        }
+
         rootState = PlayerRootState.onAir;
     }
 
     private void JumpTrigger(PlayerInputHandler inputHandler)
     {
-        if (GroundCheck() && rootState == PlayerRootState.OnGround)
+        if (GroundCheck() && rootState == PlayerRootState.onGround)
         {
             StartJumping();
         }
@@ -354,11 +413,11 @@ public class Player : MonoBehaviour
     private void HorizontalMovement() => rb.velocity = new Vector2(_playerVelocity.x * currentSpeed * Time.deltaTime, rb.velocity.y);
 
     public bool GroundCheck()
-    {        
+    {
         groundCheckHit = Physics2D.BoxCast(playerCollider.bounds.center, playerCollider.bounds.size, 0, Vector2.down, groundCheckBounds, groundLayer);
         
-        Color rayColor = groundCheckHit.collider != null ? Color.green : Color.red;
-        Debug.DrawRay(playerCollider.bounds.center, Vector2.down * (playerCollider.bounds.extents.y + groundCheckBounds), rayColor);
+        //Color rayColor = groundCheckHit.collider != null ? Color.green : Color.red;
+        //Debug.DrawRay(playerCollider.bounds.center, Vector2.down * (playerCollider.bounds.extents.y + groundCheckBounds), rayColor);
         
         return groundCheckHit.collider != null;
     } 
@@ -374,18 +433,42 @@ public class Player : MonoBehaviour
 
     public void SetInteractible(Interactable currentInteractible) => CurrentInteractable = currentInteractible;
 
-    private void SetPlayerPosition(Transform targetPosition)
+    private void SetPlayerPosition(Transform targetPosition, int characterCode)
     {
         transform.position = targetPosition.position;
+
+        if(characterCode == 1)
+        {
+            Debug.Log("Set Character Code to: " + characterCode);
+            if (x4Sprite.gameObject.activeSelf)
+                x4Sprite.gameObject.SetActive(false);
+            
+            if(!x3Sprite.gameObject.activeSelf)
+                x3Sprite.gameObject.SetActive(true);
+            anim = x3Sprite.GetComponent<Animator>();
+            spriteRenderer = x3Sprite.GetComponent<SpriteRenderer>();
+        }
+        else if(characterCode == 2)
+        {
+            if (x3Sprite.gameObject.activeSelf)
+                x3Sprite.gameObject.SetActive(false);
+
+            if (!x4Sprite.gameObject.activeSelf)
+                x4Sprite.gameObject.SetActive(true);
+            anim = x4Sprite.GetComponent<Animator>();
+            spriteRenderer = x4Sprite.GetComponent<SpriteRenderer>();
+        }
+
         OnSetPlayerPosition?.Invoke(this.transform);
     }
 }
 
 public enum PlayerRootState
 {
-    OnGround,
+    onGround,
     onAir,
-    interacting
+    interacting,
+    landing
 }
 
 public enum PlayerMoveState
