@@ -243,7 +243,10 @@ public class Player : MonoBehaviour
         }
 
         _playerVelocity.x = inputHandler.MoveAxis;
+
+
         currentSpeed = maxSpeed;
+
         if (anim != null)
         {
             if (Mathf.Abs(HorizontalVelocity) > 0.01f)
@@ -410,7 +413,11 @@ public class Player : MonoBehaviour
 
     private void NormalizeVerticalMovement() => rb.velocity = Vector2.up * 0;
 
-    private void HorizontalMovement() => rb.velocity = new Vector2(_playerVelocity.x * currentSpeed * Time.deltaTime, rb.velocity.y);
+    private void HorizontalMovement()
+    {
+        rb.velocity = new Vector2(_playerVelocity.x * currentSpeed * Time.deltaTime, rb.velocity.y);
+    } 
+
 
     public bool GroundCheck()
     {
@@ -461,6 +468,7 @@ public class Player : MonoBehaviour
 
         OnSetPlayerPosition?.Invoke(this.transform);
     }
+
 }
 
 public enum PlayerRootState
