@@ -36,7 +36,6 @@ public class CameraManager : MonoBehaviour
 
     public void AssignPlayer(Transform player)
     {
-        Debug.Log("Assign player " + player.gameObject.name);
         if(currentPlayer != player)
             currentPlayer = player;
 

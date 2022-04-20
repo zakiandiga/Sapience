@@ -447,7 +447,6 @@ public class Player : MonoBehaviour
 
         if(characterCode == 1)
         {
-            Debug.Log("Set Character Code to: " + characterCode);
             if (x4Sprite.gameObject.activeSelf)
                 x4Sprite.gameObject.SetActive(false);
             

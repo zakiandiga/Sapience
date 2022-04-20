@@ -22,7 +22,6 @@ public class MovementManager : MonoBehaviour
         cameraManager = GetComponent<CameraManager>();
         if(!SceneManager.GetSceneByName("AudioManager").isLoaded)
         {
-            Debug.Log("Loading AudioManager");
             SceneManager.LoadScene("AudioManager", LoadSceneMode.Additive);
         }
     }

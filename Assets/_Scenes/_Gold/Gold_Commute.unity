@@ -21075,6 +21075,7 @@ GameObject:
   - component: {fileID: 920886042}
   - component: {fileID: 920886043}
   - component: {fileID: 920886044}
+  - component: {fileID: 920886045}
   m_Layer: 0
   m_Name: day1_x3_day_commute
   m_TagString: Untagged
@@ -21406,7 +21407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -67.293625, y: 290.16058}
+  scrollPos: {x: 129.40965, y: 287.96283}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 484
@@ -21418,9 +21419,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 920885962}
+  - {fileID: 920886013}
   selectedCommands:
-  - {fileID: 920886044}
+  - {fileID: 920886012}
   variables:
   - {fileID: 920885895}
   - {fileID: 920885893}
@@ -25499,7 +25500,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 91.9947
-    y: 46.98076
+    y: 45.88186
     width: 133.51648
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -25510,6 +25511,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 920886012}
+  - {fileID: 920886045}
   - {fileID: 920886043}
   - {fileID: 920885977}
   - {fileID: 920885904}
@@ -27283,6 +27285,68 @@ MonoBehaviour:
       Data3: 911552919
       Data4: -1462499958
     Path: event:/Music/BGM_Streets
+--- !u!114 &920886045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920885888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 237
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1499596702}
+  targetComponentAssemblyName: MovementManager, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: MovementManager
+  targetMethod: SetPlayerPosition
+  targetMethodText: 'SetPlayerPosition (Transform, Int32): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      typeFullname: UnityEngine.Transform
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 784948892}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 1
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &923981148
 GameObject:
   m_ObjectHideFlags: 0
@@ -43739,7 +43803,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1195761394
 Transform:
   m_ObjectHideFlags: 0
