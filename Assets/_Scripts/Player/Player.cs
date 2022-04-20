@@ -141,6 +141,7 @@ public class Player : MonoBehaviour
                 {
                     
                     OnPlayerInteract?.Invoke(this);
+                    Debug.Log("Interacting");
                 }
 
                 break;            

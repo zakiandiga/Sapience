@@ -2700,7 +2700,7 @@ MonoBehaviour:
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: MovementManager
   targetMethod: SetPlayerPosition
-  targetMethodText: 'SetPlayerPosition (Transform): Void'
+  targetMethodText: 'SetPlayerPosition (Transform, Int32): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -2714,6 +2714,23 @@ MonoBehaviour:
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
       objectValue: {fileID: 1762771306}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 2
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
@@ -3289,8 +3306,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 149710773}
+  selectedCommands:
+  - {fileID: 149710756}
   variables:
   - {fileID: 149710777}
   - {fileID: 149710776}
@@ -3494,10 +3513,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6796494449539547868, guid: b7029faac5f6147448c948f54f24d2ce, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 42082b2d31487044c9a533e6eac6d03d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7029faac5f6147448c948f54f24d2ce, type: 3}
 --- !u!4 &171641808 stripped
@@ -5198,6 +5213,7 @@ GameObject:
   - component: {fileID: 321905342}
   - component: {fileID: 321905341}
   - component: {fileID: 321905340}
+  - component: {fileID: 321905268}
   m_Layer: 0
   m_Name: day2_x4_day_commute
   m_TagString: Untagged
@@ -5477,6 +5493,28 @@ MonoBehaviour:
   - {fileID: 321905296}
   - {fileID: 321905294}
   suppressAllAutoSelections: 0
+--- !u!114 &321905268
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321905256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 268
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: 1101587089
+      Data2: 1198774529
+      Data3: -70373742
+      Data4: 817989294
+    Path: event:/Music/BGM_City
 --- !u!114 &321905269
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5799,8 +5837,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 321905267}
-  selectedCommands: []
+  - {fileID: 321905303}
+  selectedCommands:
+  - {fileID: 321905268}
   variables:
   - {fileID: 321905276}
   - {fileID: 321905275}
@@ -6258,7 +6297,7 @@ MonoBehaviour:
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: MovementManager
   targetMethod: SetPlayerPosition
-  targetMethodText: 'SetPlayerPosition (Transform): Void'
+  targetMethodText: 'SetPlayerPosition (Transform, Int32): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -6272,6 +6311,23 @@ MonoBehaviour:
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
       objectValue: {fileID: 33942257}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 2
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
@@ -6467,7 +6523,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 87.32678
-    y: 149.52098
+    y: 151.01352
     width: 138.05966
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6478,6 +6534,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 321905292}
+  - {fileID: 321905268}
   - {fileID: 321905301}
   - {fileID: 321905300}
   - {fileID: 321905299}
@@ -11116,7 +11173,6 @@ GameObject:
   - component: {fileID: 528289830}
   - component: {fileID: 528289829}
   - component: {fileID: 528289823}
-  - component: {fileID: 528289833}
   m_Layer: 0
   m_Name: day_picker_gold_commute
   m_TagString: Untagged
@@ -13075,7 +13131,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 528289823}
   commandList:
-  - {fileID: 528289833}
   - {fileID: 528289822}
   - {fileID: 528289812}
   - {fileID: 528289836}
@@ -13125,7 +13180,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 528289824}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 528289822}
   variables:
   - {fileID: 528289821}
   - {fileID: 528289809}
@@ -13988,158 +14044,6 @@ MonoBehaviour:
       vector4Data:
         vector4Ref: {fileID: 0}
         vector4Val: {x: 0, y: 0, z: 0, w: 0}
-  variable: {fileID: 0}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &528289833
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 528289806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 31
-  indentLevel: 0
-  anyVar:
-    variable: {fileID: 528289821}
-    data:
-      animatorData:
-        animatorRef: {fileID: 0}
-        animatorVal: {fileID: 0}
-      audioSourceData:
-        audioSourceRef: {fileID: 0}
-        audioSourceVal: {fileID: 0}
-      booleanData:
-        booleanRef: {fileID: 0}
-        booleanVal: 0
-      collectionData:
-        collectionRef: {fileID: 0}
-        collectionVal: {fileID: 0}
-      collider2DData:
-        collider2DRef: {fileID: 0}
-        collider2DVal: {fileID: 0}
-      colliderData:
-        colliderRef: {fileID: 0}
-        colliderVal: {fileID: 0}
-      colorData:
-        colorRef: {fileID: 0}
-        colorVal: {r: 0, g: 0, b: 0, a: 0}
-      floatData:
-        floatRef: {fileID: 0}
-        floatVal: 0
-      gameObjectData:
-        gameObjectRef: {fileID: 0}
-        gameObjectVal: {fileID: 0}
-      integerData:
-        integerRef: {fileID: 0}
-        integerVal: 1
-      materialData:
-        materialRef: {fileID: 0}
-        materialVal: {fileID: 0}
-      matrix4x4Data:
-        matrix4x4Ref: {fileID: 0}
-        matrix4x4Val:
-          e00: 0
-          e01: 0
-          e02: 0
-          e03: 0
-          e10: 0
-          e11: 0
-          e12: 0
-          e13: 0
-          e20: 0
-          e21: 0
-          e22: 0
-          e23: 0
-          e30: 0
-          e31: 0
-          e32: 0
-          e33: 0
-      objectData:
-        objectRef: {fileID: 0}
-        objectVal: {fileID: 0}
-      quaternionData:
-        quaternionRef: {fileID: 0}
-        quaternionVal: {x: 0, y: 0, z: 0, w: 0}
-      rigidbody2DData:
-        rigidbody2DRef: {fileID: 0}
-        rigidbody2DVal: {fileID: 0}
-      rigidbodyData:
-        rigidbodyRef: {fileID: 0}
-        rigidbodyVal: {fileID: 0}
-      spriteData:
-        spriteRef: {fileID: 0}
-        spriteVal: {fileID: 0}
-      stringData:
-        stringRef: {fileID: 0}
-        stringVal: 
-      textureData:
-        textureRef: {fileID: 0}
-        textureVal: {fileID: 0}
-      transformData:
-        transformRef: {fileID: 0}
-        transformVal: {fileID: 0}
-      vector2Data:
-        vector2Ref: {fileID: 0}
-        vector2Val: {x: 0, y: 0}
-      vector3Data:
-        vector3Ref: {fileID: 0}
-        vector3Val: {x: 0, y: 0, z: 0}
-      vector4Data:
-        vector4Ref: {fileID: 0}
-        vector4Val: {x: 0, y: 0, z: 0, w: 0}
-  setOperator: 0
   variable: {fileID: 0}
   booleanData:
     booleanRef: {fileID: 0}
@@ -20526,7 +20430,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784948891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.5, y: 1.5, z: -31.18779}
+  m_LocalPosition: {x: -10.13, y: 1.3, z: -31.18779}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 73769666}
@@ -21514,9 +21418,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 920885902}
+  - {fileID: 920885962}
   selectedCommands:
-  - {fileID: 920886034}
+  - {fileID: 920886044}
   variables:
   - {fileID: 920885895}
   - {fileID: 920885893}
@@ -23416,7 +23320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 752.2661
+    x: 753.365
     y: 168.88132
     width: 95.05494
     height: 40
@@ -27782,6 +27686,7 @@ GameObject:
   - component: {fileID: 969045924}
   - component: {fileID: 969045923}
   - component: {fileID: 969045922}
+  - component: {fileID: 969045926}
   m_Layer: 0
   m_Name: day3_x3_day_commute
   m_TagString: Untagged
@@ -28238,7 +28143,7 @@ MonoBehaviour:
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: MovementManager
   targetMethod: SetPlayerPosition
-  targetMethodText: 'SetPlayerPosition (Transform): Void'
+  targetMethodText: 'SetPlayerPosition (Transform, Int32): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -28252,6 +28157,23 @@ MonoBehaviour:
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
       objectValue: {fileID: 1779519396}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 1
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
@@ -28487,7 +28409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 414.60733, y: 53.14778}
+  scrollPos: {x: 711.31067, y: 174.0269}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 575
@@ -28499,9 +28421,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 969045903}
+  - {fileID: 969045971}
   selectedCommands:
-  - {fileID: 969045893}
+  - {fileID: 969045926}
   variables:
   - {fileID: 969045900}
   - {fileID: 969045898}
@@ -29127,6 +29049,28 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &969045926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969045884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 293
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: 1825711537
+      Data2: 1097783589
+      Data3: 911552919
+      Data4: -1462499958
+    Path: event:/Music/BGM_Streets
 --- !u!114 &969045944
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -29418,6 +29362,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 969045977}
+  - {fileID: 969045926}
   - {fileID: 969045970}
   - {fileID: 969045976}
   - {fileID: 969045975}
@@ -41051,7 +40996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 528289825}
+  selectedFlowchart: {fileID: 920885903}
 --- !u!4 &1133143351
 Transform:
   m_ObjectHideFlags: 1
@@ -46183,6 +46128,7 @@ GameObject:
   - component: {fileID: 1363837977}
   - component: {fileID: 1363837979}
   - component: {fileID: 1363837976}
+  - component: {fileID: 1363837985}
   m_Layer: 0
   m_Name: day1_x3_night_commute
   m_TagString: Untagged
@@ -46421,7 +46367,7 @@ MonoBehaviour:
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: MovementManager
   targetMethod: SetPlayerPosition
-  targetMethodText: 'SetPlayerPosition (Transform): Void'
+  targetMethodText: 'SetPlayerPosition (Transform, Int32): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -46435,6 +46381,23 @@ MonoBehaviour:
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
       objectValue: {fileID: 1763877795}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 1
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
@@ -46545,7 +46508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -125.19463, y: -27.853306}
+  scrollPos: {x: 536.661, y: 168.023}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 445
@@ -46557,8 +46520,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1363838023}
-  selectedCommands: []
+  - {fileID: 1363837992}
+  selectedCommands:
+  - {fileID: 1363837985}
   variables:
   - {fileID: 1363837963}
   - {fileID: 1363837961}
@@ -46983,6 +46947,28 @@ MonoBehaviour:
   - {fileID: 1363837973}
   - {fileID: 1363837982}
   suppressAllAutoSelections: 0
+--- !u!114 &1363837985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363837954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 234
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: 1825711537
+      Data2: 1097783589
+      Data3: 911552919
+      Data4: -1462499958
+    Path: event:/Music/BGM_Streets
 --- !u!114 &1363837986
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -47172,6 +47158,7 @@ MonoBehaviour:
   - {fileID: 1363837990}
   - {fileID: 1363837989}
   - {fileID: 1363837988}
+  - {fileID: 1363837985}
   - {fileID: 1363837958}
   suppressAllAutoSelections: 0
 --- !u!114 &1363837993

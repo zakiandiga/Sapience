@@ -12218,6 +12218,8 @@ GameObject:
   - component: {fileID: 645212527}
   - component: {fileID: 645212526}
   - component: {fileID: 645212530}
+  - component: {fileID: 645212531}
+  - component: {fileID: 645212523}
   m_Layer: 0
   m_Name: day2_x4_office
   m_TagString: Untagged
@@ -12597,9 +12599,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 645212376}
+  - {fileID: 645212439}
   selectedCommands:
-  - {fileID: 645212507}
+  - {fileID: 645212523}
   variables:
   - {fileID: 645212336}
   - {fileID: 645212363}
@@ -16104,6 +16106,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 645212459}
+  - {fileID: 645212531}
   - {fileID: 645212435}
   - {fileID: 645212455}
   - {fileID: 645212454}
@@ -16131,7 +16134,7 @@ MonoBehaviour:
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: MovementManager
   targetMethod: SetPlayerPosition
-  targetMethodText: 'SetPlayerPosition (Transform): Void'
+  targetMethodText: 'SetPlayerPosition (Transform, Int32): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -16145,6 +16148,23 @@ MonoBehaviour:
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
       objectValue: {fileID: 729171809}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 2
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
@@ -16205,6 +16225,7 @@ MonoBehaviour:
   - {fileID: 645212464}
   - {fileID: 645212519}
   - {fileID: 645212520}
+  - {fileID: 645212523}
   - {fileID: 645212419}
   suppressAllAutoSelections: 0
 --- !u!114 &645212440
@@ -21732,6 +21753,28 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &645212523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645212331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 629
+  indentLevel: 1
+  commandType: 1
+  soundPath:
+    Guid:
+      Data1: -1807913648
+      Data2: 1157638990
+      Data3: -2138199126
+      Data4: -318179714
+    Path: event:/Music/BGM_Strings
 --- !u!114 &645212524
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -22576,6 +22619,28 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &645212531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645212331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 628
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: -1807913648
+      Data2: 1157638990
+      Data3: -2138199126
+      Data4: -318179714
+    Path: event:/Music/BGM_Strings
 --- !u!1001 &646201580
 PrefabInstance:
   m_ObjectHideFlags: 0

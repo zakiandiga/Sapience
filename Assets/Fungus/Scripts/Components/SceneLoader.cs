@@ -30,7 +30,7 @@ namespace Fungus
         protected virtual IEnumerator DoLoadBlock()
         {
             // Wait until loading image has been displayed in OnGUI
-            while (loadingTexture != null && 
+            while (loadingTexture != null &&
                    !displayedImage)
             {
                 yield return new WaitForEndOfFrame();
@@ -57,11 +57,11 @@ namespace Fungus
 
             yield return new WaitForEndOfFrame();
 
-            // Clean up any remaining unused assets
+            // Clean up any remaining unused assets            
             Resources.UnloadUnusedAssets();
 
             // We're now finished with the SceneLoader
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
 
         protected virtual void OnGUI()

@@ -287,11 +287,9 @@ MonoBehaviour:
   - {fileID: 5009111624477694468}
   EditorEvents:
   - {fileID: 993925042092406772}
-  - {fileID: 1479681871727680846}
   - {fileID: -7908912390953239769}
   - {fileID: -7435001670480505115}
   - {fileID: 882383235394523845}
-  - {fileID: 5004623288544265697}
   - {fileID: 1756883313008996524}
   - {fileID: 6650573218904413539}
   - {fileID: 3399958673117413674}
@@ -314,7 +312,7 @@ MonoBehaviour:
   - {fileID: 5009111624477694468}
   StringsBanks:
   - {fileID: 3509748158883826890}
-  cacheTime: 637853611346312023
+  cacheTime: 637860140076864172
   cacheVersion: 10
 --- !u!114 &882383235394523845
 MonoBehaviour:
@@ -369,33 +367,6 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
---- !u!114 &1479681871727680846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/SayBeep-X4
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/SayBeep-X4
-  Guid:
-    Data1: -556479674
-    Data2: 1291028360
-    Data3: 799485829
-    Data4: -350686105
-  Banks:
-  - {fileID: 5009111624477694468}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
   Length: 0
 --- !u!114 &1756883313008996524
 MonoBehaviour:
@@ -547,38 +518,11 @@ MonoBehaviour:
   Path: Assets/_Data/_fmodBank/BuildVersion/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637853611327557845
+  lastModified: 637860140076864172
   FileSizes:
   - Name: 
-    Value: 1834
+    Value: 1740
   Exists: 1
---- !u!114 &5004623288544265697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/SayBeep-X3
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/SayBeep-X3
-  Guid:
-    Data1: -385949450
-    Data2: 1128596482
-    Data3: 2015015827
-    Data4: 1451714334
-  Banks:
-  - {fileID: 5009111624477694468}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &5009111624477694468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,7 +538,7 @@ MonoBehaviour:
   Path: Assets/_Data/_fmodBank/BuildVersion/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637853611346312023
+  lastModified: 637860140076833931
   FileSizes: []
   Exists: 1
 --- !u!114 &6650573218904413539

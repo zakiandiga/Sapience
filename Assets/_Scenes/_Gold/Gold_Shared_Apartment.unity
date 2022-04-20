@@ -2851,7 +2851,6 @@ GameObject:
   - component: {fileID: 65298084}
   - component: {fileID: 65298083}
   - component: {fileID: 65298082}
-  - component: {fileID: 65298081}
   - component: {fileID: 65298080}
   - component: {fileID: 65298026}
   - component: {fileID: 65297998}
@@ -2876,6 +2875,9 @@ GameObject:
   - component: {fileID: 65298100}
   - component: {fileID: 65298103}
   - component: {fileID: 65298104}
+  - component: {fileID: 65297981}
+  - component: {fileID: 65298000}
+  - component: {fileID: 65298081}
   m_Layer: 0
   m_Name: day1_day_x3_shared_apt
   m_TagString: Untagged
@@ -8188,6 +8190,28 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &65297981
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 291
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: -5079902
+      Data2: 1128966155
+      Data3: 2049067908
+      Data4: 1315915847
+    Path: event:/Music/BGM_Apartment
 --- !u!114 &65297982
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8446,6 +8470,7 @@ MonoBehaviour:
   - {fileID: 65298088}
   - {fileID: 65297991}
   - {fileID: 65297988}
+  - {fileID: 65297981}
   - {fileID: 65298037}
   suppressAllAutoSelections: 0
 --- !u!114 &65297991
@@ -8566,7 +8591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 534.05524, y: 82.15933}
+  scrollPos: {x: 386.05524, y: 191.15933}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 434
@@ -8578,9 +8603,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 65297990}
+  - {fileID: 65298082}
   selectedCommands:
-  - {fileID: 65297988}
+  - {fileID: 65298081}
   variables:
   - {fileID: 65297968}
   - {fileID: 65297932}
@@ -8829,6 +8854,25 @@ MonoBehaviour:
   scope: 0
   key: MessageReceived
   value: 0
+--- !u!114 &65298000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65297884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 293
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Gold_Commute
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!114 &65298001
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11853,7 +11897,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 251.26904
-    y: 58.28705
+    y: 57.28705
     width: 151
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
@@ -12346,7 +12390,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 422.2595
-    y: 61.478523
+    y: 60.478523
     width: 155
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
@@ -14089,7 +14133,7 @@ MonoBehaviour:
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: MovementManager
   targetMethod: SetPlayerPosition
-  targetMethodText: 'SetPlayerPosition (Transform): Void'
+  targetMethodText: 'SetPlayerPosition (Transform, Int32): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -14103,6 +14147,23 @@ MonoBehaviour:
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
       objectValue: {fileID: 510270348}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 1
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
@@ -14140,23 +14201,26 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &65298081
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65297884}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 266
+  itemId: 294
   indentLevel: 0
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: Gold_Commute
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
+  commandType: 1
+  soundPath:
+    Guid:
+      Data1: -5079902
+      Data2: 1128966155
+      Data3: 2049067908
+      Data4: 1315915847
+    Path: event:/Music/BGM_Apartment
 --- !u!114 &65298082
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -14183,6 +14247,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 65298081}
+  - {fileID: 65298000}
   suppressAllAutoSelections: 0
 --- !u!114 &65298083
 MonoBehaviour:
@@ -14199,7 +14264,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 138.30621
-    y: 307.6037
+    y: 306.6037
     width: 109
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
@@ -37407,7 +37472,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510270347}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.5, y: 1, z: 0}
+  m_LocalPosition: {x: -19.5, y: 1.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1580258466}
@@ -38225,12 +38290,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 600593321}
-  - component: {fileID: 600593322}
   - component: {fileID: 600593325}
   - component: {fileID: 600593324}
   - component: {fileID: 600593323}
   m_Layer: 0
-  m_Name: X3 Bedroom Door
+  m_Name: X4 Bedroom Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38250,21 +38314,6 @@ Transform:
   m_Father: {fileID: 761509140}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &600593322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600593320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba0baace4d0413c41b2645c0437bf2d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactIcon: {fileID: 1109012312}
-  currentBlockReference:
-    block: {fileID: 65298042}
 --- !u!19719996 &600593323
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -44486,7 +44535,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &761509140
 Transform:
   m_ObjectHideFlags: 0
@@ -46368,7 +46417,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -49993,7 +50042,7 @@ MonoBehaviour:
   m_ZDamping: 1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
-  m_ScreenY: 0.5
+  m_ScreenY: 0.65
   m_CameraDistance: 10
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
@@ -50249,7 +50298,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -50259,7 +50308,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -50269,7 +50318,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -50286,14 +50335,14 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -4073979633049891299, guid: 3bc2c54afd52a294a841e676f98e2a62, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -7383361797432390446, guid: 3bc2c54afd52a294a841e676f98e2a62, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 308597363677553271, guid: 3bc2c54afd52a294a841e676f98e2a62, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 3
     m_Data:
@@ -51094,7 +51143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1089941246
 Transform:
   m_ObjectHideFlags: 0
@@ -51448,7 +51497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1548148948}
+  selectedFlowchart: {fileID: 65297995}
 --- !u!4 &1123761817
 Transform:
   m_ObjectHideFlags: 1
@@ -57339,6 +57388,7 @@ GameObject:
   - component: {fileID: 1331215971}
   - component: {fileID: 1331215894}
   - component: {fileID: 1331215901}
+  - component: {fileID: 1331215967}
   m_Layer: 0
   m_Name: day1_night_x3_shared_apt
   m_TagString: Untagged
@@ -58305,6 +58355,7 @@ MonoBehaviour:
   - {fileID: 1331215966}
   - {fileID: 1331215968}
   - {fileID: 1331215965}
+  - {fileID: 1331215967}
   - {fileID: 1331215964}
   suppressAllAutoSelections: 0
 --- !u!114 &1331215914
@@ -58320,7 +58371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -145.6865, y: 180.192}
+  scrollPos: {x: 341.45618, y: 260.19196}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 685
@@ -58331,8 +58382,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1331215913}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 1331215909}
@@ -60571,6 +60621,28 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &1331215967
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331215886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 293
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: -5079902
+      Data2: 1128966155
+      Data3: 2049067908
+      Data4: 1315915847
+    Path: event:/Music/BGM_Apartment
 --- !u!114 &1331215968
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -60592,7 +60664,7 @@ MonoBehaviour:
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: MovementManager
   targetMethod: SetPlayerPosition
-  targetMethodText: 'SetPlayerPosition (Transform): Void'
+  targetMethodText: 'SetPlayerPosition (Transform, Int32): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -60606,6 +60678,23 @@ MonoBehaviour:
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
       objectValue: {fileID: 1474900577}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 1
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
@@ -66285,7 +66374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 249.81248, y: 109.34369}
+  scrollPos: {x: 582.72363, y: 296.68542}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 468
@@ -66298,7 +66387,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1510446059}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1510446073}
   variables:
   - {fileID: 1510446066}
   - {fileID: 1510446062}
@@ -66453,7 +66543,7 @@ MonoBehaviour:
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: MovementManager
   targetMethod: SetPlayerPosition
-  targetMethodText: 'SetPlayerPosition (Transform): Void'
+  targetMethodText: 'SetPlayerPosition (Transform, Int32): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -66467,6 +66557,23 @@ MonoBehaviour:
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
       objectValue: {fileID: 1012877249}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 1
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
@@ -75898,8 +76005,9 @@ GameObject:
   - component: {fileID: 1564186595}
   - component: {fileID: 1564186594}
   - component: {fileID: 1564186593}
+  - component: {fileID: 1564186596}
   m_Layer: 0
-  m_Name: X4 Bedroom Door
+  m_Name: X3 Bedroom Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76125,6 +76233,21 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1564186596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564186591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba0baace4d0413c41b2645c0437bf2d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactIcon: {fileID: 1109012312}
+  currentBlockReference:
+    block: {fileID: 65298042}
 --- !u!1 &1566678797
 GameObject:
   m_ObjectHideFlags: 0
@@ -76510,7 +76633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1580258466
 Transform:
   m_ObjectHideFlags: 0
@@ -76519,7 +76642,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580258465}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 702503564}
@@ -79167,6 +79290,7 @@ GameObject:
   - component: {fileID: 1693589638}
   - component: {fileID: 1693589637}
   - component: {fileID: 1693589679}
+  - component: {fileID: 1693589630}
   m_Layer: 0
   m_Name: day2_night_x4_shared_apt
   m_TagString: Untagged
@@ -80450,7 +80574,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 774.40155
     y: 301.3628
-    width: 139.19382
+    width: 136.50067
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -80955,7 +81079,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 958.7329
     y: 226.53915
-    width: 135.76329
+    width: 129.9476
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -80998,7 +81122,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 769.1144
     y: 231.16675
-    width: 151.20068
+    width: 148.29622
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -81065,7 +81189,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 591.6759
     y: 228.47137
-    width: 142.62436
+    width: 137.81128
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -81965,7 +82089,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 851.176
     y: 147.7059
-    width: 106.603775
+    width: 105.04588
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -82032,7 +82156,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 703.3811
     y: 149.42438
-    width: 125.471695
+    width: 120.77328
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -82074,7 +82198,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 771.40674
     y: 83.62914
-    width: 134.04803
+    width: 129.9476
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -82219,7 +82343,7 @@ MonoBehaviour:
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: MovementManager
   targetMethod: SetPlayerPosition
-  targetMethodText: 'SetPlayerPosition (Transform): Void'
+  targetMethodText: 'SetPlayerPosition (Transform, Int32): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -82232,7 +82356,24 @@ MonoBehaviour:
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
-      objectValue: {fileID: 1538901527}
+      objectValue: {fileID: 1970211732}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 2
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
@@ -82259,7 +82400,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 107.08206
     y: 17.821438
-    width: 123.75643
+    width: 122.08389
     height: 40
   tint: {r: 0, g: 1, b: 0.043137256, a: 1}
   useCustomTint: 1
@@ -82349,19 +82490,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 256.7249, y: 47.256866}
+  scrollPos: {x: 399.44403, y: 195.57722}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 572
-  zoom: 0.583
+  zoom: 0.76299983
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1693589560}
+  selectedCommands:
+  - {fileID: 1693589630}
   variables:
   - {fileID: 1693589549}
   - {fileID: 1693589548}
@@ -83285,7 +83428,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 98.9845
     y: 86.65862
-    width: 137.47856
+    width: 136.50067
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -83297,6 +83440,7 @@ MonoBehaviour:
   - {fileID: 1693589540}
   - {fileID: 1693589559}
   - {fileID: 1693589604}
+  - {fileID: 1693589630}
   - {fileID: 1693589603}
   suppressAllAutoSelections: 0
 --- !u!114 &1693589561
@@ -83760,7 +83904,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 781.6383
     y: 27.148415
-    width: 115.1801
+    width: 110.288345
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -83929,7 +84073,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 932.279
     y: 66.313965
-    width: 134.04803
+    width: 131.25821
     height: 40
   tint: {r: 0.98039216, g: 0.5803922, b: 1, a: 1}
   useCustomTint: 1
@@ -84157,7 +84301,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 926.0717
     y: 9.232273
-    width: 142.62436
+    width: 139.12192
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -84319,7 +84463,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 264.73242
     y: 15.112906
-    width: 161.49228
+    width: 157.47054
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -84484,7 +84628,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1102.6514
     y: 70.49851
-    width: 140.90909
+    width: 139.12192
     height: 40
   tint: {r: 0.98039216, g: 0.5803922, b: 1, a: 1}
   useCustomTint: 1
@@ -84645,7 +84789,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 278.25336
     y: 70.75764
-    width: 128.90222
+    width: 126.01575
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -84806,7 +84950,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1097.4055
     y: 9.84281
-    width: 149.48541
+    width: 146.9856
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -84972,7 +85116,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 452.14276
     y: 10.938411
-    width: 152.91595
+    width: 150.91745
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -87126,7 +87270,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 769.57404
     y: 364.16278
-    width: 149.48541
+    width: 145.67499
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -87447,6 +87591,28 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &1693589630
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693589446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 499
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: -5079902
+      Data2: 1128966155
+      Data3: 2049067908
+      Data4: 1315915847
+    Path: event:/Music/BGM_Apartment
 --- !u!114 &1693589631
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -87477,7 +87643,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 492.6518
     y: 335.00302
-    width: 115.1801
+    width: 111.59897
     height: 40
   tint: {r: 0.5686275, g: 0, b: 1, a: 1}
   useCustomTint: 1
@@ -88211,7 +88377,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 625.3316
     y: 64.80252
-    width: 113.464836
+    width: 108.97774
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -88643,7 +88809,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 638.60455
     y: 17.811531
-    width: 91.16638
+    width: 88.00787
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -88946,7 +89112,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 453.95575
     y: 66.84752
-    width: 144.33963
+    width: 143.05376
     height: 40
   tint: {r: 0.98039216, g: 0.5803922, b: 1, a: 1}
   useCustomTint: 1
@@ -89137,7 +89303,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 268.68195
     y: 123.043335
-    width: 147.77016
+    width: 146.9856
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -93083,7 +93249,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -93508,8 +93674,8 @@ Tilemap:
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 451254388b36ac64abb6b48d4448273a, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: -410742986790132360, guid: 3bc2c54afd52a294a841e676f98e2a62, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: -7442499880123999561, guid: 3bc2c54afd52a294a841e676f98e2a62, type: 3}
   - m_RefCount: 1
@@ -93520,8 +93686,8 @@ Tilemap:
     m_Data: {fileID: -7148330070157507308, guid: 3bc2c54afd52a294a841e676f98e2a62, type: 3}
   - m_RefCount: 10
     m_Data: {fileID: 3471366126753521613, guid: 3bc2c54afd52a294a841e676f98e2a62, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -410742986790132360, guid: 3bc2c54afd52a294a841e676f98e2a62, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 5461947033182290030, guid: 3bc2c54afd52a294a841e676f98e2a62, type: 3}
   - m_RefCount: 3
@@ -94362,7 +94528,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 5
+    OrthographicSize: 4
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -95703,6 +95869,7 @@ GameObject:
   - component: {fileID: 2058956564}
   - component: {fileID: 2058956563}
   - component: {fileID: 2058956607}
+  - component: {fileID: 2058956606}
   m_Layer: 0
   m_Name: day2_day_x4_shared_apt
   m_TagString: Untagged
@@ -96259,7 +96426,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 229.3477
     y: 137.13954
-    width: 130.16876
+    width: 132.27846
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -96288,7 +96455,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 371.4788
     y: 138.68642
-    width: 122.57382
+    width: 124.683525
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -96363,7 +96530,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 302.70468
     y: 214.7186
-    width: 108.22783
+    width: 110.759476
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -96590,7 +96757,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 140.29533
+    width: 143.67087
     height: 40
   tint: {r: 0, g: 1, b: 0.043137256, a: 1}
   useCustomTint: 1
@@ -96621,7 +96788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -110.52211, y: -11.834766}
+  scrollPos: {x: 373.0221, y: 156.51964}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 498
@@ -96668,7 +96835,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 92.51116
     y: 141.31049
-    width: 93.037964
+    width: 91.77214
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -96681,6 +96848,7 @@ MonoBehaviour:
   - {fileID: 2058956561}
   - {fileID: 2058956501}
   - {fileID: 2058956562}
+  - {fileID: 2058956606}
   - {fileID: 2058956495}
   suppressAllAutoSelections: 0
 --- !u!114 &2058956506
@@ -96787,7 +96955,7 @@ MonoBehaviour:
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: MovementManager
   targetMethod: SetPlayerPosition
-  targetMethodText: 'SetPlayerPosition (Transform): Void'
+  targetMethodText: 'SetPlayerPosition (Transform, Int32): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -96800,7 +96968,24 @@ MonoBehaviour:
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
-      objectValue: {fileID: 510270348}
+      objectValue: {fileID: 2024108575}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 2
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
@@ -96957,7 +97142,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 298.92804
     y: 68.57154
-    width: 124.26158
+    width: 129.74683
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -97916,7 +98101,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 533.55884
     y: 133.43427
-    width: 141.9831
+    width: 143.67087
     height: 40
   tint: {r: 0.98039216, g: 0.5803922, b: 1, a: 1}
   useCustomTint: 1
@@ -97960,7 +98145,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 528.7226
     y: 68.59155
-    width: 150.4219
+    width: 153.79744
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -98139,7 +98324,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1178.0803
     y: 124.3067
-    width: 135.23206
+    width: 136.07593
     height: 40
   tint: {r: 0.98039216, g: 0.5803922, b: 1, a: 1}
   useCustomTint: 1
@@ -98183,7 +98368,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 853.1602
     y: 129.52623
-    width: 146.20251
+    width: 147.46832
     height: 40
   tint: {r: 0.98039216, g: 0.5803922, b: 1, a: 1}
   useCustomTint: 1
@@ -98213,7 +98398,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1344.6241
     y: 64.078156
-    width: 96.41349
+    width: 96.835434
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -98249,7 +98434,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1037.7131
     y: 65.82774
-    width: 89.66244
+    width: 89.24049
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -98300,7 +98485,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 728.67096
     y: 208.17476
-    width: 112.44724
+    width: 113.29112
     height: 40
   tint: {r: 0.5686275, g: 0, b: 1, a: 1}
   useCustomTint: 1
@@ -98415,7 +98600,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1173.2152
     y: 68.66446
-    width: 143.67087
+    width: 146.20251
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -98473,7 +98658,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 854.038
     y: 67.54071
-    width: 154.64133
+    width: 157.59491
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -99431,7 +99616,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1331.9723
     y: 123.442764
-    width: 121.72994
+    width: 125.94935
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -100549,7 +100734,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1025.0898
     y: 125.39935
-    width: 111.60336
+    width: 115.82277
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -100829,7 +101014,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1479.722
     y: 87.29861
-    width: 111.60336
+    width: 114.556946
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -100990,7 +101175,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 701.5795
     y: 102.44148
-    width: 126.79323
+    width: 128.48099
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -101003,6 +101188,28 @@ MonoBehaviour:
   - {fileID: 2058956602}
   - {fileID: 2058956603}
   suppressAllAutoSelections: 0
+--- !u!114 &2058956606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058956479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 359
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: -5079902
+      Data2: 1128966155
+      Data3: 2049067908
+      Data4: 1315915847
+    Path: event:/Music/BGM_Apartment
 --- !u!114 &2058956607
 MonoBehaviour:
   m_ObjectHideFlags: 2

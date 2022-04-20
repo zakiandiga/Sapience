@@ -11,6 +11,7 @@ public class MusicManager : MonoBehaviour
 
     private EventInstance musicInstance;
     private EventReference currentMusicPath;
+    private EventReference pathToUnload;
     private EventReference nullMusicPath;
 
     private void OnEnable()
@@ -21,9 +22,9 @@ public class MusicManager : MonoBehaviour
 
     private void OnDisable()
     {
-        Debug.Log("Disabled");
         PlayMusicFMOD.OnStartMusic -= StartMusic;
         PlayMusicFMOD.OnStopMusic -= StopMusic;
+        StopMusic();
     }
 
     private void StartMusic(EventReference soundPath)
@@ -62,9 +63,14 @@ public class MusicManager : MonoBehaviour
         //    Debug.LogError("Music you're trying to stop is not playing");
     }
 
-    private void StopMusic()
+    public void StopMusic()
     {
-        musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        if(!currentMusicPath.IsNull)
+        {
+            musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            currentMusicPath = nullMusicPath;
+        }
+
     }
 }
 
