@@ -3668,7 +3668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2290128821051553112, guid: e7912eeb454b5e744bd7f0f6b5ae3844, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: -0.24
       objectReference: {fileID: 0}
     - target: {fileID: 2290128821051553112, guid: e7912eeb454b5e744bd7f0f6b5ae3844, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3708,20 +3708,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2290128821051553117, guid: e7912eeb454b5e744bd7f0f6b5ae3844, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2290128821051553117, guid: e7912eeb454b5e744bd7f0f6b5ae3844, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2290128821051553117, guid: e7912eeb454b5e744bd7f0f6b5ae3844, type: 3}
       propertyPath: m_SortingLayerID
-      value: -1801956857
+      value: 945782503
       objectReference: {fileID: 0}
     - target: {fileID: 2290128821051553119, guid: e7912eeb454b5e744bd7f0f6b5ae3844, type: 3}
       propertyPath: currentBlockReference.block
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 862884677}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7912eeb454b5e744bd7f0f6b5ae3844, type: 3}
 --- !u!4 &496639369 stripped
@@ -4749,6 +4749,14 @@ PrefabInstance:
     - target: {fileID: 5555953141228723296, guid: 6a7b148af3e95934ab1840f69ef641a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555953141228723297, guid: 6a7b148af3e95934ab1840f69ef641a1, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555953141228723297, guid: 6a7b148af3e95934ab1840f69ef641a1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1280017811
       objectReference: {fileID: 0}
     - target: {fileID: 5555953141228723302, guid: 6a7b148af3e95934ab1840f69ef641a1, type: 3}
       propertyPath: m_Name
@@ -7875,7 +7883,6 @@ GameObject:
   - component: {fileID: 862884649}
   - component: {fileID: 862884648}
   - component: {fileID: 862884647}
-  - component: {fileID: 862884646}
   - component: {fileID: 862884645}
   - component: {fileID: 862884652}
   - component: {fileID: 862884651}
@@ -7924,8 +7931,11 @@ GameObject:
   - component: {fileID: 862884688}
   - component: {fileID: 862884689}
   - component: {fileID: 862884690}
-  - component: {fileID: 862884691}
   - component: {fileID: 862884692}
+  - component: {fileID: 862884695}
+  - component: {fileID: 862884694}
+  - component: {fileID: 862884646}
+  - component: {fileID: 862884691}
   m_Layer: 0
   m_Name: day2_x4_morning_platinum_commute
   m_TagString: Untagged
@@ -8074,7 +8084,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 245.6
     y: 86
-    width: 201.21948
+    width: 206.96199
     height: 40
   tint: {r: 0, g: 1, b: 0.043137256, a: 1}
   useCustomTint: 1
@@ -8083,10 +8093,11 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 862884695}
+  - {fileID: 862884691}
   - {fileID: 862884649}
   - {fileID: 862884648}
   - {fileID: 862884647}
-  - {fileID: 862884646}
   - {fileID: 862884645}
   suppressAllAutoSelections: 0
 --- !u!114 &862884624
@@ -8162,11 +8173,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -70.21823, y: 22.246227}
+  scrollPos: {x: -62.160248, y: -36.043377}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 409
-  zoom: 0.8200002
+  zoom: 0.7900002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -8174,8 +8185,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 862884623}
-  selectedCommands: []
+  - {fileID: 862884631}
+  selectedCommands:
+  - {fileID: 862884692}
   variables:
   - {fileID: 862884627}
   - {fileID: 862884626}
@@ -8255,7 +8267,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 603
     y: 288
-    width: 96.34145
+    width: 98.10126
     height: 40
   tint: {r: 0.5686275, g: 0, b: 1, a: 1}
   useCustomTint: 1
@@ -8285,7 +8297,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 284.86368
     y: 230.81815
-    width: 124.39023
+    width: 125.94935
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -8316,7 +8328,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 285
     y: 157.18185
-    width: 123.170715
+    width: 124.683525
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8326,11 +8338,12 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 862884620}
+  - {fileID: 862884694}
+  - {fileID: 862884646}
   - {fileID: 862884652}
   - {fileID: 862884651}
   - {fileID: 862884654}
   - {fileID: 862884650}
-  - {fileID: 862884691}
   - {fileID: 862884622}
   suppressAllAutoSelections: 0
 --- !u!114 &862884634
@@ -8481,7 +8494,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 471.41418
     y: 109.38297
-    width: 171.9512
+    width: 174.0506
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -8704,7 +8717,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 686.88617
     y: 107.86207
-    width: 136.58536
+    width: 139.8734
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -8741,66 +8754,25 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &862884646
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862884618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 234
+  itemId: 299
   indentLevel: 0
-  description: 
-  targetObject: {fileID: 1881138313}
-  targetComponentAssemblyName: MovementManager, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: MovementManager
-  targetMethod: SetPlayerPosition
-  targetMethodText: 'SetPlayerPosition (Transform, Int32): Void'
-  methodParameters:
-  - objValue:
-      typeAssemblyname: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      typeFullname: UnityEngine.Transform
-      intValue: 0
-      boolValue: 0
-      floatValue: 0
-      stringValue: 
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 0}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 957493412}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
-  - objValue:
-      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      typeFullname: System.Int32
-      intValue: 2
-      boolValue: 0
-      floatValue: 0
-      stringValue: 
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 0}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 660378962}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
 --- !u!114 &862884647
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8995,7 +8967,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 872.51196
     y: 108.45959
-    width: 98.78048
+    width: 100.632904
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -10172,7 +10144,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 468.81342
     y: 178.0455
-    width: 179.26826
+    width: 181.64554
     height: 40
   tint: {r: 1, g: 0, b: 0.88211536, a: 1}
   useCustomTint: 1
@@ -10332,7 +10304,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 695.0065
     y: 175.04489
-    width: 126.829254
+    width: 129.74683
     height: 40
   tint: {r: 0.98039216, g: 0.5803922, b: 1, a: 1}
   useCustomTint: 1
@@ -10440,7 +10412,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 872.34106
     y: 168.362
-    width: 97.56097
+    width: 98.10126
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -10563,7 +10535,7 @@ MonoBehaviour:
   suppressBlockAutoSelect: 0
 --- !u!114 &862884691
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10573,7 +10545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 295
+  itemId: 300
   indentLevel: 0
   commandType: 0
   soundPath:
@@ -10605,6 +10577,89 @@ MonoBehaviour:
       Data3: -70373742
       Data4: 817989294
     Path: event:/Music/BGM_City
+--- !u!114 &862884694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862884618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 298
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1881138313}
+  targetComponentAssemblyName: MovementManager, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: MovementManager
+  targetMethod: SetPlayerPosition
+  targetMethodText: 'SetPlayerPosition (Transform, Int32): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      typeFullname: UnityEngine.Transform
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 957493412}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 2
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &862884695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862884618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 297
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 660378962}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  targetGameObjectOLD: {fileID: 0}
 --- !u!1 &899277445
 GameObject:
   m_ObjectHideFlags: 0
@@ -15440,7 +15495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957493411}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7, y: 0, z: -31.18779}
+  m_LocalPosition: {x: -7, y: 0.76, z: -31.18779}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1056114352}
@@ -21162,7 +21217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1264724696
 Transform:
   m_ObjectHideFlags: 0
@@ -32185,15 +32240,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7005962366419126681, guid: e4014839637e1a642ad3b4634e7fb2eb, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7005962366419126681, guid: e4014839637e1a642ad3b4634e7fb2eb, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7005962366419126681, guid: e4014839637e1a642ad3b4634e7fb2eb, type: 3}
       propertyPath: m_SortingLayerID
-      value: -1801956857
+      value: 945782503
+      objectReference: {fileID: 0}
+    - target: {fileID: 7005962366419126682, guid: e4014839637e1a642ad3b4634e7fb2eb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7005962366419126683, guid: e4014839637e1a642ad3b4634e7fb2eb, type: 3}
       propertyPath: m_RootOrder
@@ -32205,7 +32264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7005962366419126683, guid: e4014839637e1a642ad3b4634e7fb2eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: -0.24
       objectReference: {fileID: 0}
     - target: {fileID: 7005962366419126683, guid: e4014839637e1a642ad3b4634e7fb2eb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32275,7 +32334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1022250927}
+  selectedFlowchart: {fileID: 862884628}
 --- !u!4 &1666736375
 Transform:
   m_ObjectHideFlags: 1
@@ -35720,7 +35779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6796494449539547864, guid: b7029faac5f6147448c948f54f24d2ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.13
+      value: -18.4
       objectReference: {fileID: 0}
     - target: {fileID: 6796494449539547864, guid: b7029faac5f6147448c948f54f24d2ce, type: 3}
       propertyPath: m_LocalPosition.y

@@ -63,7 +63,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1280017811
   m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &7593716058153393130
@@ -330,10 +330,10 @@ RectTransform:
   m_Father: {fileID: 7593716058153393122}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -750.0001, y: 0}
-  m_SizeDelta: {x: 1500, y: 335}
+  m_AnchorMin: {x: 0.3088422, y: 0.48416668}
+  m_AnchorMax: {x: 0.8184067, y: 0.975}
+  m_AnchoredPosition: {x: 6, y: -3}
+  m_SizeDelta: {x: -5.5043945, y: 7.6967163}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &7593716058419722596
 CanvasRenderer:
@@ -356,22 +356,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.22745098, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0.764151, b: 0.43180364, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e8ab00ef0d9684dcb9deb52811d91218, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: de851a0fcccce9043bc0f3ab4e58e7b7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!225 &7593716058419722594
 CanvasGroup:
@@ -447,10 +447,10 @@ RectTransform:
   m_Father: {fileID: 7593716058419722592}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.238, y: 0.78700006}
-  m_AnchoredPosition: {x: 574.5, y: 14.130005}
-  m_SizeDelta: {x: 1082, y: -63}
+  m_AnchorMin: {x: 0.22600001, y: 0.321}
+  m_AnchorMax: {x: 0.72900003, y: 0.80200005}
+  m_AnchoredPosition: {x: 22.24231, y: 0.37438965}
+  m_SizeDelta: {x: -18.1825, y: -17.2404}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7593716058929275823
 CanvasRenderer:
@@ -481,12 +481,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 79197ecfbc3a4294a89ce589dac02cf2, type: 3}
-    m_FontSize: 45
+    m_Font: {fileID: 12800000, guid: 2e3cca4f7d4f1b8489f90b72b583bd2b, type: 3}
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
-    m_MaxSize: 50
+    m_MinSize: 3
+    m_MaxSize: 60
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
