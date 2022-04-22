@@ -4361,6 +4361,7 @@ GameObject:
   - component: {fileID: 421270393}
   - component: {fileID: 421270383}
   - component: {fileID: 421270382}
+  - component: {fileID: 421270012}
   m_Layer: 0
   m_Name: day1_x3_office
   m_TagString: Untagged
@@ -5403,7 +5404,7 @@ MonoBehaviour:
   itemId: 0
   blockName: Day 1 - Office
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 421270012}
   commandList:
   - {fileID: 421270359}
   - {fileID: 421270221}
@@ -5459,6 +5460,21 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
+--- !u!114 &421270012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421269992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 421270010}
+  suppressBlockAutoSelect: 0
+  waitForFrames: 1
 --- !u!114 &421270013
 MonoBehaviour:
   m_ObjectHideFlags: 2

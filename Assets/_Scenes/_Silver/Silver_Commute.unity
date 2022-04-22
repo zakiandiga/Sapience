@@ -1427,6 +1427,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 623434669}
     m_Modifications:
+    - target: {fileID: 835070654044638823, guid: b7029faac5f6147448c948f54f24d2ce, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6796494449539547863, guid: b7029faac5f6147448c948f54f24d2ce, type: 3}
       propertyPath: m_Name
       value: Player
@@ -26693,7 +26697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3129102535677772962, guid: a2e6ea34f5102f049bf861e1ed21f103, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 81.09
+      value: 81.5
       objectReference: {fileID: 0}
     - target: {fileID: 3129102535677772962, guid: a2e6ea34f5102f049bf861e1ed21f103, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26736,9 +26740,13 @@ PrefabInstance:
       value: Silverton5_Bark
       objectReference: {fileID: 0}
     - target: {fileID: 8766395104228499216, guid: a2e6ea34f5102f049bf861e1ed21f103, type: 3}
+      propertyPath: isBarking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766395104228499216, guid: a2e6ea34f5102f049bf861e1ed21f103, type: 3}
       propertyPath: currentBlockReference.block
       value: 
-      objectReference: {fileID: 616626069}
+      objectReference: {fileID: 616626049}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e6ea34f5102f049bf861e1ed21f103, type: 3}
 --- !u!4 &328681470 stripped
@@ -30422,10 +30430,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2290128821051553118, guid: c08879dedf5e7314ea2c254f94f28096, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2290128821051553119, guid: c08879dedf5e7314ea2c254f94f28096, type: 3}
       propertyPath: currentBlockReference.block
       value: 
-      objectReference: {fileID: 616626069}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c08879dedf5e7314ea2c254f94f28096, type: 3}
 --- !u!4 &459313650 stripped
@@ -34154,6 +34166,7 @@ GameObject:
   - component: {fileID: 616626041}
   - component: {fileID: 616626043}
   - component: {fileID: 616626040}
+  - component: {fileID: 616626051}
   m_Layer: 0
   m_Name: day3_x3_day_commute
   m_TagString: Untagged
@@ -34403,8 +34416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 308
   indentLevel: 0
-  storyText: How are we going to meet quota today? How can I tell everyone they have
-    to increase their output by that much?
+  storyText: How can I tell everyone they have to increase their output by that much?
   description: 
   character: {fileID: 1854489636}
   portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
@@ -34417,7 +34429,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 865105129}
+  setSayDialog: {fileID: 1173934571}
 --- !u!114 &616625954
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -34432,7 +34444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 2
   key: Cab
-  value: 1
+  value: 0
 --- !u!114 &616625955
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -34550,7 +34562,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -37.21287
     y: -29.689053
-    width: 112.63736
+    width: 118.085106
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -34587,7 +34599,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 100.43752
     y: -30.940613
-    width: 125.824165
+    width: 131.91489
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -34603,6 +34615,7 @@ MonoBehaviour:
   - {fileID: 616626003}
   - {fileID: 616625951}
   - {fileID: 616625960}
+  - {fileID: 616626051}
   - {fileID: 616625953}
   - {fileID: 616626001}
   - {fileID: 616625957}
@@ -34812,7 +34825,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -8.524682
     y: -171.89685
-    width: 196.15384
+    width: 203.19148
     height: 40
   tint: {r: 0, g: 1, b: 0.043137256, a: 1}
   useCustomTint: 1
@@ -34821,8 +34834,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 616626062}
   - {fileID: 616626043}
+  - {fileID: 616626062}
   - {fileID: 616626061}
   - {fileID: 616626060}
   - {fileID: 616625968}
@@ -34840,18 +34853,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 218.68663, y: 245.68591}
+  scrollPos: {x: 74.48017, y: 298.88794}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 442
-  zoom: 0.9100001
+  zoom: 0.94000006
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 616625970}
   selectedCommands: []
   variables:
   - {fileID: 616625967}
@@ -34888,7 +34902,7 @@ MonoBehaviour:
   storyText: 'I guess I do now. '
   description: 
   character: {fileID: 1854489636}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -34898,7 +34912,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 865105129}
+  setSayDialog: {fileID: 1173934571}
 --- !u!114 &616625973
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -35033,7 +35047,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 532.6446
     y: -79.732
-    width: 134.61539
+    width: 138.29787
     height: 40
   tint: {r: 0.5686275, g: 0, b: 1, a: 1}
   useCustomTint: 1
@@ -35121,7 +35135,7 @@ MonoBehaviour:
   storyText: Is there really acid rain here?
   description: 
   character: {fileID: 1854489636}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -35131,7 +35145,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 865105129}
+  setSayDialog: {fileID: 1173934571}
 --- !u!114 &616625980
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -36184,7 +36198,7 @@ MonoBehaviour:
   storyText: Sorry.
   description: 
   character: {fileID: 1854489636}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -36194,7 +36208,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 865105129}
+  setSayDialog: {fileID: 1173934571}
 --- !u!114 &616626003
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -36381,7 +36395,7 @@ MonoBehaviour:
   storyText: Hi, I'm at the Silverton train station stop, and I--
   description: 
   character: {fileID: 2025737951}
-  portrait: {fileID: 21300000, guid: d55f822480b85c640bc4c98509985895, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -36465,7 +36479,7 @@ MonoBehaviour:
   storyText: 'That''s it, I''m going to call the rusting bus company. '
   description: 
   character: {fileID: 2025737951}
-  portrait: {fileID: 21300000, guid: d55f822480b85c640bc4c98509985895, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -36475,7 +36489,7 @@ MonoBehaviour:
   waitForClick: 0
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 1500183549}
+  setSayDialog: {fileID: 1420374067}
 --- !u!114 &616626013
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -36493,7 +36507,7 @@ MonoBehaviour:
   storyText: '30 rusting minutes? Some of us have work! '
   description: 
   character: {fileID: 489961282}
-  portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -36606,7 +36620,7 @@ MonoBehaviour:
   storyText: 'You''re kidding. '
   description: 
   character: {fileID: 489961282}
-  portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -36616,7 +36630,7 @@ MonoBehaviour:
   waitForClick: 0
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 1466841300}
+  setSayDialog: {fileID: 700013143}
 --- !u!114 &616626018
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -36662,7 +36676,7 @@ MonoBehaviour:
   storyText: 'Do you know when the 44 is arriving? '
   description: 
   character: {fileID: 489961282}
-  portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -36672,7 +36686,7 @@ MonoBehaviour:
   waitForClick: 0
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 1466841300}
+  setSayDialog: {fileID: 700013143}
 --- !u!114 &616626020
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -36765,7 +36779,7 @@ MonoBehaviour:
   storyText: 'Well, time to face the junk show. '
   description: 
   character: {fileID: 1854489636}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -36775,7 +36789,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 865105129}
+  setSayDialog: {fileID: 1173934571}
 --- !u!114 &616626024
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -37045,7 +37059,7 @@ MonoBehaviour:
   storyText: 'I need to get to work. '
   description: 
   character: {fileID: 1854489636}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -37055,7 +37069,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 865105129}
+  setSayDialog: {fileID: 1173934571}
 --- !u!114 &616626034
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -37221,7 +37235,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 511.9699
     y: -144.18683
-    width: 171.97801
+    width: 179.78723
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -37474,7 +37488,7 @@ MonoBehaviour:
   storyText: 'You''ve got to be rusting kidding me, a PhoneBot?! '
   description: 
   character: {fileID: 2025737951}
-  portrait: {fileID: 21300000, guid: d55f822480b85c640bc4c98509985895, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -37484,7 +37498,7 @@ MonoBehaviour:
   waitForClick: 0
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 1500183549}
+  setSayDialog: {fileID: 1420374067}
 --- !u!114 &616626049
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -37501,7 +37515,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 283.98605
     y: -101.49753
-    width: 162.08789
+    width: 168.0851
     height: 40
   tint: {r: 1, g: 0, b: 0.88211536, a: 1}
   useCustomTint: 1
@@ -37548,6 +37562,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 616626065}
   suppressBlockAutoSelect: 0
+--- !u!114 &616626051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616625945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 343
+  indentLevel: 0
+  storyText: How are we going to meet quota today?
+  description: 
+  character: {fileID: 1854489636}
+  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1173934571}
 --- !u!114 &616626056
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -37564,7 +37606,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 24.000927
     y: -107.58494
-    width: 128.02197
+    width: 132.97873
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -37657,7 +37699,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: SILVERTON
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1156549737}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
@@ -37668,7 +37710,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1134871793}
 --- !u!114 &616626063
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -37741,7 +37783,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 267.93668
     y: -44.042942
-    width: 189.56042
+    width: 198.93616
     height: 40
   tint: {r: 1, g: 0, b: 0.88211536, a: 1}
   useCustomTint: 1
@@ -37830,7 +37872,7 @@ MonoBehaviour:
   storyText: 'Today of all days. Of course this would happen to me '
   description: 
   character: {fileID: 489961282}
-  portrait: {fileID: 21300000, guid: 589d7ed6bb6de42428c5e4ec79622637, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -37840,7 +37882,7 @@ MonoBehaviour:
   waitForClick: 0
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 1466841300}
+  setSayDialog: {fileID: 700013143}
 --- !u!114 &616626069
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -37857,7 +37899,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 281.69357
     y: -162.11208
-    width: 165.38461
+    width: 173.40425
     height: 40
   tint: {r: 1, g: 0, b: 0.88211536, a: 1}
   useCustomTint: 1
@@ -38324,6 +38366,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &700013143 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4922082200885339750, guid: b580ba1451c47934f9ba2e7abde9de2b, type: 3}
+  m_PrefabInstance: {fileID: 2037626087}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &706874351
 GameObject:
   m_ObjectHideFlags: 0
@@ -46242,119 +46295,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &865105127
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1888012374}
-    m_Modifications:
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7713282639571324865, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-      propertyPath: m_Name
-      value: X3_SayDialog(new)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
---- !u!224 &865105128 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5666916747360205657, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-  m_PrefabInstance: {fileID: 865105127}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &865105129 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7153043395286991130, guid: 8990eb47226da5340b82e2958c8d314b, type: 3}
-  m_PrefabInstance: {fileID: 865105127}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &898852331
 GameObject:
   m_ObjectHideFlags: 0
@@ -46716,7 +46656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3535502038067301061, guid: c800748ca3e553e46b0d7f8e219b234d, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3535502038067301061, guid: c800748ca3e553e46b0d7f8e219b234d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -47676,7 +47616,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 865105129}
+  setSayDialog: {fileID: 0}
 --- !u!114 &1078817649
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -48199,7 +48139,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 865105129}
+  setSayDialog: {fileID: 0}
 --- !u!114 &1078817658
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -49345,7 +49285,7 @@ PrefabInstance:
     - target: {fileID: -4622073941434497255, guid: 94ceb6f9fc0b20b48a454698f7df1ed1, type: 3}
       propertyPath: currentBlockReference.block
       value: 
-      objectReference: {fileID: 616626069}
+      objectReference: {fileID: 616626065}
     - target: {fileID: 7005962366419126676, guid: 94ceb6f9fc0b20b48a454698f7df1ed1, type: 3}
       propertyPath: m_Name
       value: Silverton2_Bark
@@ -49572,6 +49512,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1173934571 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7153043394361579330, guid: b7029faac5f6147448c948f54f24d2ce, type: 3}
+  m_PrefabInstance: {fileID: 174385893}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1180565818
 GameObject:
   m_ObjectHideFlags: 0
@@ -49983,7 +49934,7 @@ Transform:
   - {fileID: 1466841299}
   - {fileID: 1500183548}
   m_Father: {fileID: 1888012374}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1326879443
 GameObject:
@@ -50699,6 +50650,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1420374067 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8339649791605441126, guid: a2e6ea34f5102f049bf861e1ed21f103, type: 3}
+  m_PrefabInstance: {fileID: 328681469}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1432716580
 GameObject:
   m_ObjectHideFlags: 0
@@ -54096,7 +54058,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1822768156
 Transform:
   m_ObjectHideFlags: 0
@@ -55005,7 +54967,6 @@ Transform:
   m_Children:
   - {fileID: 1089410601}
   - {fileID: 406867635}
-  - {fileID: 865105128}
   - {fileID: 1043244576}
   - {fileID: 2122813420}
   - {fileID: 966994980}
@@ -55609,8 +55570,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5555953141228723296, guid: 6a7b148af3e95934ab1840f69ef641a1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 174.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555953141228723296, guid: 6a7b148af3e95934ab1840f69ef641a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.5
+      value: 24.4186
       objectReference: {fileID: 0}
     - target: {fileID: 5555953141228723296, guid: 6a7b148af3e95934ab1840f69ef641a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -55647,6 +55612,14 @@ PrefabInstance:
     - target: {fileID: 5555953141228723296, guid: 6a7b148af3e95934ab1840f69ef641a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555953141228723297, guid: 6a7b148af3e95934ab1840f69ef641a1, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555953141228723297, guid: 6a7b148af3e95934ab1840f69ef641a1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 945782503
       objectReference: {fileID: 0}
     - target: {fileID: 5555953141228723302, guid: 6a7b148af3e95934ab1840f69ef641a1, type: 3}
       propertyPath: m_Name
@@ -55831,7 +55804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3129102535677772962, guid: b580ba1451c47934f9ba2e7abde9de2b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 72.9
+      value: 72.46
       objectReference: {fileID: 0}
     - target: {fileID: 3129102535677772962, guid: b580ba1451c47934f9ba2e7abde9de2b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -55872,6 +55845,18 @@ PrefabInstance:
     - target: {fileID: 3129102535677772963, guid: b580ba1451c47934f9ba2e7abde9de2b, type: 3}
       propertyPath: m_Name
       value: Silverton4_Bark
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922082200470311395, guid: b580ba1451c47934f9ba2e7abde9de2b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922082200470311395, guid: b580ba1451c47934f9ba2e7abde9de2b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766395104228499216, guid: b580ba1451c47934f9ba2e7abde9de2b, type: 3}
+      propertyPath: isBarking
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8766395104228499216, guid: b580ba1451c47934f9ba2e7abde9de2b, type: 3}
       propertyPath: currentBlockReference.block
@@ -58205,7 +58190,7 @@ RectTransform:
   m_Children:
   - {fileID: 1180565819}
   m_Father: {fileID: 1888012374}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -59337,7 +59322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6112610646438228873, guid: 2683e84fcf86cd94bb8cc3fb6d225c8b, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6112610646438228873, guid: 2683e84fcf86cd94bb8cc3fb6d225c8b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -59450,7 +59435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5463912617877980277, guid: ed11ccdebdf57d94a80146f2b058880d, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5463912617877980277, guid: ed11ccdebdf57d94a80146f2b058880d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -59628,7 +59613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8352796199016662158, guid: 5707100563b51e5478a71c1b41783777, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8352796199016662158, guid: 5707100563b51e5478a71c1b41783777, type: 3}
       propertyPath: m_AnchorMax.x
@@ -59847,7 +59832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8954208866288764083, guid: c313793150421d74b96b90ac587a4bbf, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8954208866288764083, guid: c313793150421d74b96b90ac587a4bbf, type: 3}
       propertyPath: m_AnchorMax.x

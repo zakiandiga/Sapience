@@ -51,9 +51,12 @@ EditorBuildSettings:
     path: Assets/_Scenes/Minigames/Snake/Snake_Silver.unity
     guid: 008143a098b2fd949a854b77244a415e
   - enabled: 1
-    path: Assets/_Scenes/Minigames/Snake/Snake_Base.unity
-    guid: 786d22a8ab00b11489c97b0dec144aca
+    path: Assets/_Scenes/Minigames/Brick_Breaker/Brick_Breaker_Platinum.unity
+    guid: 3ad1079728362a44c9322ee5b0022c14
   - enabled: 1
-    path: Assets/_Scenes/Minigames/Flappy_Bird/Flappy_Bird_Base.unity
-    guid: f98ac93128841184a98f73b255519469
+    path: Assets/_Scenes/Minigames/Flappy_Bird/Flappy_Bird_Platinum.unity
+    guid: f4862035b00e9a249a9bdf97d1073a37
+  - enabled: 1
+    path: Assets/_Scenes/Minigames/Snake/Snake_Platinum.unity
+    guid: d835643e83085f34e90e8b33779612ff
   m_configObjects: {}
