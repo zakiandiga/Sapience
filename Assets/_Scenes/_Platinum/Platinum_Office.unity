@@ -12428,7 +12428,6 @@ GameObject:
   - component: {fileID: 645212530}
   - component: {fileID: 645212531}
   - component: {fileID: 645212523}
-  - component: {fileID: 645212532}
   m_Layer: 0
   m_Name: day2_x4_office
   m_TagString: Untagged
@@ -12546,7 +12545,7 @@ MonoBehaviour:
   itemId: 0
   blockName: Day 2 - X4's Office
   description: 
-  eventHandler: {fileID: 645212532}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 645212333}
   - {fileID: 645212525}
@@ -12808,9 +12807,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 645212346}
-  selectedCommands:
-  - {fileID: 645212471}
+  - {fileID: 645212335}
+  selectedCommands: []
   variables:
   - {fileID: 645212336}
   - {fileID: 645212363}
@@ -22850,21 +22848,6 @@ MonoBehaviour:
       Data3: -2138199126
       Data4: -318179714
     Path: event:/Music/BGM_Strings
---- !u!114 &645212532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 645212331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 645212335}
-  suppressBlockAutoSelect: 0
-  waitForFrames: 1
 --- !u!1001 &646201580
 PrefabInstance:
   m_ObjectHideFlags: 0
