@@ -49,5 +49,5 @@ MonoBehaviour:
   portraits:
   - {fileID: 21300000, guid: d1889c374bc53fc4f88e3b696f2d31bf, type: 3}
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 2977811847093750509, guid: 459dd63f19ac745498fc9c0ddf15628f, type: 3}
   description: 

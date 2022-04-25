@@ -20,10 +20,12 @@ namespace Fungus
     {
         protected Texture2D loadingTexture;
         protected string sceneToLoad;
+        protected string sceneToUnload;
         protected bool displayedImage;
 
         protected virtual void Start()
         {
+
             StartCoroutine(DoLoadBlock());
         }
 
@@ -52,16 +54,45 @@ namespace Fungus
 #if UNITY_5_0 || UNITY_5_1 || UNITY_5_2
             Application.LoadLevel(sceneToLoad);
 #else
-            SceneManager.LoadScene(sceneToLoad);
+            //Original:
+            //SceneManager.LoadScene(sceneToLoad);
+            SceneManager.UnloadSceneAsync(sceneToUnload);
+
+            SceneManager.sceneUnloaded += LoadingScene;
+            
 #endif
 
+            //Original
+            /*
             yield return new WaitForEndOfFrame();
 
             // Clean up any remaining unused assets            
             Resources.UnloadUnusedAssets();
 
             // We're now finished with the SceneLoader
+            */
             Destroy(gameObject);
+        }
+
+        private void LoadingScene(Scene scene)
+        {
+            SceneManager.sceneUnloaded -= LoadingScene;
+            //StartCoroutine(FinishingLoadingScene());
+
+            SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
+            SceneManager.sceneLoaded += FinishingLoadingScene;
+        }
+
+        private void FinishingLoadingScene(Scene scene, LoadSceneMode loadSceneMode)
+        {
+            SceneManager.SetActiveScene(scene);
+            // Clean up any remaining unused assets            
+            Resources.UnloadUnusedAssets();
+
+            //Resources.UnloadUnusedAssets().completed +=
+
+            // We're now finished with the SceneLoader
+            //Destroy(this.gameObject);
         }
 
         protected virtual void OnGUI()
@@ -104,8 +135,10 @@ namespace Fungus
             DontDestroyOnLoad(go);
 
             SceneLoader sceneLoader = go.AddComponent<SceneLoader>();
+
             sceneLoader.sceneToLoad = _sceneToLoad;
             sceneLoader.loadingTexture = _loadingTexture;
+            sceneLoader.sceneToUnload = SceneManager.GetActiveScene().name;            
         }
 
         #endregion

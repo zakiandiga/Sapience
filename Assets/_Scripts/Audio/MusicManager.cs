@@ -14,8 +14,11 @@ public class MusicManager : MonoBehaviour
     private EventReference pathToUnload;
     private EventReference nullMusicPath;
 
+    private StudioListener studioListener;
+
     private void OnEnable()
     {
+        studioListener = GetComponent<StudioListener>();
         PlayMusicFMOD.OnStartMusic += StartMusic;
         PlayMusicFMOD.OnStopMusic += StopMusic;
     }
@@ -25,6 +28,11 @@ public class MusicManager : MonoBehaviour
         PlayMusicFMOD.OnStartMusic -= StartMusic;
         PlayMusicFMOD.OnStopMusic -= StopMusic;
         StopMusic();
+    }
+
+    private void DeassignPlayer(Transform player)
+    {
+        studioListener.attenuationObject = null;
     }
 
     private void StartMusic(EventReference soundPath)
