@@ -56,6 +56,7 @@ public class Player : MonoBehaviour
 
     #region Player Events
     public event Action<Player> OnPlayerInteract;
+    public static event Action<Player> OnPlayerEnabled;
     public static event Action<Transform> OnSetPlayerPosition;
     public static event Action<Transform> OnPlayerDisabled;
     #endregion
@@ -76,6 +77,8 @@ public class Player : MonoBehaviour
 
         inputHandler = GetComponent<PlayerInputHandler>();
         inputHandler.OnJump += JumpTrigger;
+
+        OnPlayerEnabled?.Invoke(this);
 
     }
 
@@ -141,7 +144,7 @@ public class Player : MonoBehaviour
                 {
                     
                     OnPlayerInteract?.Invoke(this);
-                    Debug.Log("Interacting");
+
                 }
 
                 break;            

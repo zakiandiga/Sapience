@@ -42,7 +42,7 @@ public class NPC : Interactable
 
         base.Interact(player);
 
-        Debug.Log(gameObject.name + "NPC Interact with " + currentPlayer.gameObject.name);
+        //Debug.Log(gameObject.name + "NPC Interact with " + currentPlayer.gameObject.name);
 
         //Do extra stuff NPC do
 
