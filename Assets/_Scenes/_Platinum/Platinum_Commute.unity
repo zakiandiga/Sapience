@@ -205,6 +205,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &43942207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 43942208}
+  m_Layer: 0
+  m_Name: Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &43942208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43942207}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 262758961}
+  m_Father: {fileID: 90462458}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &57638062
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +470,7 @@ Transform:
   - {fileID: 709795274}
   - {fileID: 120657592}
   - {fileID: 994328388}
+  - {fileID: 43942208}
   m_Father: {fileID: 1771198954}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2068,6 +2100,7 @@ Transform:
   - {fileID: 113340689}
   - {fileID: 228897316}
   - {fileID: 2120056245}
+  - {fileID: 1085727536}
   m_Father: {fileID: 1771198954}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6244,6 +6277,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &262758960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 262758961}
+  - component: {fileID: 262758962}
+  m_Layer: 0
+  m_Name: Sounds_PlatinumviewAmbience
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &262758961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262758960}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 43942208}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &262758962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262758960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1075712775
+      Data2: 1334502552
+      Data3: -272536647
+      Data4: 1075467168
+    Path: event:/Ambiences/Platinumview Ambience
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &300599517
 GameObject:
   m_ObjectHideFlags: 0
@@ -6409,6 +6503,98 @@ Transform:
   - {fileID: 1204835716}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &326694213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 326694214}
+  - component: {fileID: 326694215}
+  m_Layer: 0
+  m_Name: Sounds_PlatinumviewLobby
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &326694214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326694213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1085727536}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &326694215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326694213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2021922569
+      Data2: 1091153150
+      Data3: 1190586275
+      Data4: 705051221
+    Path: event:/Ambiences/Office Lobby
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &336523796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 336523797}
+  m_Layer: 0
+  m_Name: Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &336523797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336523796}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 615341183}
+  m_Father: {fileID: 1056114352}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &354236720
 PrefabInstance:
@@ -9762,6 +9948,67 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &615341182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 615341183}
+  - component: {fileID: 615341184}
+  m_Layer: 0
+  m_Name: Sounds_PlatinumviewAmbience
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &615341183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615341182}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 336523797}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &615341184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615341182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1075712775
+      Data2: 1334502552
+      Data3: -272536647
+      Data4: 1075467168
+    Path: event:/Ambiences/Platinumview Ambience
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &617649447
 GameObject:
   m_ObjectHideFlags: 0
@@ -20084,6 +20331,8 @@ GameObject:
   - component: {fileID: 862884695}
   - component: {fileID: 862884694}
   - component: {fileID: 862884646}
+  - component: {fileID: 862884696}
+  - component: {fileID: 862884693}
   - component: {fileID: 862884691}
   m_Layer: 0
   m_Name: day2_x4_morning_platinum_commute
@@ -20233,7 +20482,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 245.6
     y: 86
-    width: 201.21948
+    width: 203
     height: 40
   tint: {r: 0, g: 1, b: 0.043137256, a: 1}
   useCustomTint: 1
@@ -20243,7 +20492,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 862884695}
-  - {fileID: 862884691}
   - {fileID: 862884649}
   - {fileID: 862884648}
   - {fileID: 862884647}
@@ -20322,11 +20570,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -79.4341, y: -35.209785}
+  scrollPos: {x: -225.08536, y: -57.181854}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 409
-  zoom: 0.8200002
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -20334,9 +20582,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 862884631}
-  selectedCommands:
-  - {fileID: 862884692}
+  - {fileID: 862884644}
+  selectedCommands: []
   variables:
   - {fileID: 862884627}
   - {fileID: 862884626}
@@ -20416,7 +20663,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 603
     y: 288
-    width: 96.34145
+    width: 96
     height: 40
   tint: {r: 0.5686275, g: 0, b: 1, a: 1}
   useCustomTint: 1
@@ -20446,7 +20693,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 284.86368
     y: 230.81815
-    width: 124.39023
+    width: 125
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -20477,7 +20724,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 285
     y: 157.18185
-    width: 123.170715
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20486,6 +20733,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 862884696}
   - {fileID: 862884620}
   - {fileID: 862884694}
   - {fileID: 862884646}
@@ -20643,7 +20891,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 471.41418
     y: 109.38297
-    width: 171.9512
+    width: 173
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -20866,7 +21114,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 686.88617
     y: 107.86207
-    width: 136.58536
+    width: 136
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -20876,6 +21124,7 @@ MonoBehaviour:
   eventHandler: {fileID: 862884639}
   commandList:
   - {fileID: 862884643}
+  - {fileID: 862884693}
   - {fileID: 862884640}
   - {fileID: 862884687}
   - {fileID: 862884686}
@@ -21116,7 +21365,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 872.51196
     y: 108.45959
-    width: 98.78048
+    width: 98
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -22293,7 +22542,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 468.81342
     y: 178.0455
-    width: 179.26826
+    width: 180
     height: 40
   tint: {r: 1, g: 0, b: 0.88211536, a: 1}
   useCustomTint: 1
@@ -22453,7 +22702,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 695.0065
     y: 175.04489
-    width: 126.829254
+    width: 127
     height: 40
   tint: {r: 0.98039216, g: 0.5803922, b: 1, a: 1}
   useCustomTint: 1
@@ -22561,7 +22810,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 872.34106
     y: 168.362
-    width: 97.56097
+    width: 98
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -22571,6 +22820,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 862884682}
+  - {fileID: 862884691}
   - {fileID: 862884641}
   suppressAllAutoSelections: 0
 --- !u!114 &862884686
@@ -22691,19 +22941,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 862884618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Script: {fileID: 11500000, guid: d8a3fb5b605f7ef409e4d3658a72fbc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 300
+  itemId: 303
   indentLevel: 0
-  commandType: 0
+  waitUntilFinished: 1
   soundPath:
     Guid:
-      Data1: 1101587089
-      Data2: 1198774529
-      Data3: -70373742
-      Data4: 817989294
-    Path: event:/Music/BGM_City
+      Data1: -2004015660
+      Data2: 1212577991
+      Data3: -558934900
+      Data4: 1587011305
+    Path: event:/SFX/Elevator
 --- !u!114 &862884692
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -22717,6 +22967,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 296
+  indentLevel: 0
+  commandType: 1
+  soundPath:
+    Guid:
+      Data1: 1101587089
+      Data2: 1198774529
+      Data3: -70373742
+      Data4: 817989294
+    Path: event:/Music/BGM_City
+--- !u!114 &862884693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862884618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 302
   indentLevel: 0
   commandType: 1
   soundPath:
@@ -22809,6 +23081,28 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &862884696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862884618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 301
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: 1101587089
+      Data2: 1198774529
+      Data3: -70373742
+      Data4: 817989294
+    Path: event:/Music/BGM_City
 --- !u!1 &865668048
 GameObject:
   m_ObjectHideFlags: 0
@@ -28399,8 +28693,8 @@ GameObject:
   - component: {fileID: 962515880}
   - component: {fileID: 962515879}
   - component: {fileID: 962515878}
-  - component: {fileID: 962515866}
   - component: {fileID: 962515868}
+  - component: {fileID: 962515866}
   m_Layer: 0
   m_Name: day2_x4_evening_platinum_commute
   m_TagString: Untagged
@@ -28438,21 +28732,26 @@ MonoBehaviour:
   suppressBlockAutoSelect: 0
 --- !u!114 &962515866
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962515863}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 301
+  itemId: 303
   indentLevel: 0
-  soundClip: {fileID: 0}
-  volume: 1
-  waitUntilFinished: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: 1101587089
+      Data2: 1198774529
+      Data3: -70373742
+      Data4: 817989294
+    Path: event:/Music/BGM_City
 --- !u!114 &962515867
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -29166,7 +29465,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 466.95807
     y: 195.77661
-    width: 126.829254
+    width: 130.85106
     height: 40
   tint: {r: 0.98039216, g: 0.5803922, b: 1, a: 1}
   useCustomTint: 1
@@ -29176,6 +29475,7 @@ MonoBehaviour:
   eventHandler: {fileID: 962515888}
   commandList:
   - {fileID: 962515891}
+  - {fileID: 962515866}
   - {fileID: 962515880}
   - {fileID: 962515890}
   - {fileID: 962515889}
@@ -29918,7 +30218,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 624.9122
     y: 198.77725
-    width: 179.26826
+    width: 182.97871
     height: 40
   tint: {r: 1, g: 0, b: 0.88211536, a: 1}
   useCustomTint: 1
@@ -30282,7 +30582,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 478.60974
     y: 285.56097
-    width: 121.9512
+    width: 126.59574
     height: 40
   tint: {r: 0.5686275, g: 0, b: 1, a: 1}
   useCustomTint: 1
@@ -30293,7 +30593,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 962515868}
   - {fileID: 962515867}
-  - {fileID: 962515866}
   - {fileID: 962515878}
   - {fileID: 962515917}
   suppressAllAutoSelections: 0
@@ -30313,7 +30612,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 270.36584
     y: 197.4258
-    width: 119.512184
+    width: 123.40425
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -30476,7 +30775,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 643.5129
     y: 131.11467
-    width: 146.34145
+    width: 152.12766
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -30564,7 +30863,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 458.8377
     y: 128.5938
-    width: 136.58536
+    width: 140.42554
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -30593,7 +30892,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 230.96585
     y: 127.90244
-    width: 196.34143
+    width: 202.12766
     height: 40
   tint: {r: 0, g: 1, b: 0.043137256, a: 1}
   useCustomTint: 1
@@ -30683,11 +30982,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -33.96796, y: -34.75447}
+  scrollPos: {x: -88.09348, y: -78.085945}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 500
-  zoom: 0.8200002
+  zoom: 0.94000006
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -30695,9 +30994,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 962515930}
-  selectedCommands:
-  - {fileID: 962515913}
+  - {fileID: 962515900}
+  selectedCommands: []
   variables:
   - {fileID: 962515934}
   - {fileID: 962515933}
@@ -35096,6 +35394,7 @@ Transform:
   - {fileID: 699479510}
   - {fileID: 917624376}
   - {fileID: 1008329286}
+  - {fileID: 1179179154}
   m_Father: {fileID: 1264724696}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35134,6 +35433,7 @@ Transform:
   - {fileID: 784729614}
   - {fileID: 245787861}
   - {fileID: 784892660}
+  - {fileID: 336523797}
   m_Father: {fileID: 1264724696}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35170,6 +35470,37 @@ Transform:
   - {fileID: 114500985}
   - {fileID: 2147017399}
   m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1085727535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1085727536}
+  m_Layer: 0
+  m_Name: Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1085727536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085727535}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 326694214}
+  m_Father: {fileID: 126037520}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1092424129
@@ -35403,6 +35734,37 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!1 &1179179153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1179179154}
+  m_Layer: 0
+  m_Name: Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1179179154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179179153}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1885344814}
+  m_Father: {fileID: 1035095013}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1204835715
 GameObject:
   m_ObjectHideFlags: 3
@@ -61829,7 +62191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 862884628}
+  selectedFlowchart: {fileID: 962515935}
 --- !u!4 &1666736375
 Transform:
   m_ObjectHideFlags: 1
@@ -63426,6 +63788,67 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2665749050037415962, guid: 1559341d0d951714788c262c2cfb6926, type: 3}
   m_PrefabInstance: {fileID: 1881138312}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1885344813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1885344814}
+  - component: {fileID: 1885344815}
+  m_Layer: 0
+  m_Name: Sounds_PlatinumviewLobby
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1885344814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885344813}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1179179154}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1885344815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885344813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2021922569
+      Data2: 1091153150
+      Data3: 1190586275
+      Data4: 705051221
+    Path: event:/Ambiences/Office Lobby
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1900104692
 GameObject:
   m_ObjectHideFlags: 0
@@ -64146,7 +64569,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 10
-      m_TileSpriteIndex: 24
+      m_TileSpriteIndex: 25
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -64156,7 +64579,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 10
+      m_TileSpriteIndex: 24
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -65571,8 +65994,8 @@ Tilemap:
     m_Data: {fileID: -3917367302026937657, guid: ae7e7eb7233244742b96ec8a3c900547, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: -976799676793849644, guid: ae7e7eb7233244742b96ec8a3c900547, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 5997153540713025535, guid: ae7e7eb7233244742b96ec8a3c900547, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 4
@@ -65600,9 +66023,9 @@ Tilemap:
   - m_RefCount: 8
     m_Data: {fileID: -8074250313516125646, guid: ae7e7eb7233244742b96ec8a3c900547, type: 3}
   - m_RefCount: 1
+    m_Data: {fileID: 5997153540713025535, guid: ae7e7eb7233244742b96ec8a3c900547, type: 3}
+  - m_RefCount: 1
     m_Data: {fileID: 8632356513991887847, guid: ae7e7eb7233244742b96ec8a3c900547, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 5693030733304701706, guid: ae7e7eb7233244742b96ec8a3c900547, type: 3}
   - m_RefCount: 1
