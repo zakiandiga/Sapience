@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 145971
+--- !u!114 &-9031815380438940411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Events/Applause-Light
+  m_EditorClassIdentifier: 
+  Path: event:/Events/Applause-Light
+  Guid:
+    Data1: -1819876735
+    Data2: 1118220353
+    Data3: 1942018455
+    Data4: 797255068
+  Banks:
+  - {fileID: 5009111624477694468}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5156
 --- !u!114 &-7966697732094608364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,6 +513,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2915
+--- !u!114 &-110694413219434481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Events/TextMsg
+  m_EditorClassIdentifier: 
+  Path: event:/Events/TextMsg
+  Guid:
+    Data1: 5936924
+    Data2: 1143980442
+    Data3: 1676333497
+    Data4: 1003461910
+  Banks:
+  - {fileID: 5009111624477694468}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 472
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -551,12 +605,17 @@ MonoBehaviour:
   - {fileID: 4838307188405118892}
   - {fileID: 8238706499966195094}
   - {fileID: -2207417886341754323}
+  - {fileID: -110694413219434481}
+  - {fileID: 3801950462204725516}
+  - {fileID: 1475877874505923786}
+  - {fileID: -9031815380438940411}
+  - {fileID: 2925003164931706022}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5009111624477694468}
   StringsBanks:
   - {fileID: 3509748158883826890}
-  cacheTime: 637866593780000000
+  cacheTime: 637866797828096393
   cacheVersion: 10
 --- !u!114 &305410381447696895
 MonoBehaviour:
@@ -693,6 +752,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3000
+--- !u!114 &1475877874505923786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Events/Murmur
+  m_EditorClassIdentifier: 
+  Path: event:/Events/Murmur
+  Guid:
+    Data1: 1456441452
+    Data2: 1328861017
+    Data3: 1449841307
+    Data4: 872643985
+  Banks:
+  - {fileID: 5009111624477694468}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10125
 --- !u!114 &1562159448641527868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -909,6 +995,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 826
+--- !u!114 &2925003164931706022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Events/IncomingText
+  m_EditorClassIdentifier: 
+  Path: event:/Events/IncomingText
+  Guid:
+    Data1: 1886972669
+    Data2: 1199135819
+    Data3: -1541206655
+    Data4: 877399707
+  Banks:
+  - {fileID: 5009111624477694468}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2954
 --- !u!114 &3399958673117413674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -951,11 +1064,38 @@ MonoBehaviour:
   Path: Assets/_Data/_fmodBank/BuildVersion/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637866593780000000
+  lastModified: 637866797828096393
   FileSizes:
   - Name: 
-    Value: 3092
+    Value: 3322
   Exists: 1
+--- !u!114 &3801950462204725516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Events/Applause-Heavy
+  m_EditorClassIdentifier: 
+  Path: event:/Events/Applause-Heavy
+  Guid:
+    Data1: 284923227
+    Data2: 1149614191
+    Data3: 1839068311
+    Data4: 1020692012
+  Banks:
+  - {fileID: 5009111624477694468}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7476
 --- !u!114 &4148713726955280398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1133,7 +1273,7 @@ MonoBehaviour:
   Path: Assets/_Data/_fmodBank/BuildVersion/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637866593780000000
+  lastModified: 637866797828036840
   FileSizes: []
   Exists: 1
 --- !u!114 &5541572776379309228
