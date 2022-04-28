@@ -63,15 +63,15 @@ namespace Fungus
 #endif
 
             //Original
-            /*
+
             yield return new WaitForEndOfFrame();
 
             // Clean up any remaining unused assets            
             Resources.UnloadUnusedAssets();
 
             // We're now finished with the SceneLoader
-            */
-            Destroy(gameObject);
+
+            //Destroy(gameObject);
         }
 
         private void LoadingScene(Scene scene)
@@ -85,14 +85,15 @@ namespace Fungus
 
         private void FinishingLoadingScene(Scene scene, LoadSceneMode loadSceneMode)
         {
-            SceneManager.SetActiveScene(scene);
+            SceneManager.sceneLoaded -= FinishingLoadingScene;
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneToLoad));
             // Clean up any remaining unused assets            
-            Resources.UnloadUnusedAssets();
+
 
             //Resources.UnloadUnusedAssets().completed +=
 
             // We're now finished with the SceneLoader
-            //Destroy(this.gameObject);
+            Destroy(this.gameObject);
         }
 
         protected virtual void OnGUI()

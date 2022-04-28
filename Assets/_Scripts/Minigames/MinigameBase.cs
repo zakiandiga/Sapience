@@ -19,7 +19,6 @@ public class MinigameBase : MonoBehaviour
     public void ClosingMinigame()
     {
         minigameScene = SceneManager.GetActiveScene().name;
-        Debug.Log("CALLING ON MINIGAME CLOSE HERE: " + minigameScene);
         OnMinigameClose?.Invoke(minigameScene);        
     }
 }

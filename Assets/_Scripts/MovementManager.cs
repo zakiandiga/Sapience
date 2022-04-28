@@ -22,7 +22,7 @@ public class MovementManager : MonoBehaviour
         cameraManager = GetComponent<CameraManager>();
         if(!SceneManager.GetSceneByName("AudioManager").isLoaded)
         {
-            SceneManager.LoadScene("AudioManager", LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync("AudioManager", LoadSceneMode.Additive);
         }
     }
 
@@ -70,7 +70,6 @@ public class MovementManager : MonoBehaviour
 
     private void CloseMinigame(string sceneName)
     {
-        Debug.Log("CLOSING MINIGAME, Waiting for camera blending to finish");
         cameraManager.OnCameraBlendingFinish += WaitingCameraBlendFromMinigame;
         cameraManager.SetMinigameCamera(false);
         //put transition here        
@@ -79,7 +78,6 @@ public class MovementManager : MonoBehaviour
 
     private void FinalizeClosingMinigame(Scene scene)
     {
-        Debug.Log("Finalizing minigame");
         SceneManager.sceneUnloaded -= FinalizeClosingMinigame;
         MinigameBase.OnMinigameClose -= CloseMinigame;
 
@@ -102,6 +100,7 @@ public class MovementManager : MonoBehaviour
     public void LoadMinigame(string minigameSceneName, Flowchart flowchart)
     {
         currentFlowchart = flowchart;
+        currentStoryScene = SceneManager.GetActiveScene().name;
         currentMinigameScene = minigameSceneName;
         SceneManager.LoadSceneAsync(currentMinigameScene, LoadSceneMode.Additive);
         SceneManager.sceneLoaded += FinalizeLoadMinigame;
