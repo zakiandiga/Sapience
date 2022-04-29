@@ -4082,8 +4082,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 238.21057
-    y: 80
+    x: 237.21057
+    y: 79
     width: 112
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4141,7 +4141,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 116161188}
   selectedCommands: []
   variables:
   - {fileID: 116161189}
@@ -12613,6 +12614,12 @@ GameObject:
   - component: {fileID: 645212530}
   - component: {fileID: 645212531}
   - component: {fileID: 645212519}
+  - component: {fileID: 645212536}
+  - component: {fileID: 645212535}
+  - component: {fileID: 645212534}
+  - component: {fileID: 645212533}
+  - component: {fileID: 645212532}
+  - component: {fileID: 645212523}
   m_Layer: 0
   m_Name: day2_x4_office
   m_TagString: Untagged
@@ -12723,7 +12730,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -596.60657
     y: 20.827621
-    width: 158.95517
+    width: 157
     height: 40
   tint: {r: 0, g: 1, b: 0.043137256, a: 1}
   useCustomTint: 1
@@ -12980,11 +12987,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 461.57092, y: 12.420403}
+  scrollPos: {x: 791.5555, y: 146.86865}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 543
-  zoom: 0.6700003
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -12992,7 +12999,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 645212361}
+  - {fileID: 645212335}
   selectedCommands: []
   variables:
   - {fileID: 645212336}
@@ -13116,7 +13123,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 128.29375
     y: 13.183491
-    width: 130.59698
+    width: 128
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -13152,7 +13159,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -324.6242
     y: 162.31691
-    width: 178.35815
+    width: 174
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -13195,7 +13202,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 400.8988
     y: 89.74035
-    width: 144.02982
+    width: 140
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13229,7 +13236,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 568.69324
     y: 90.78821
-    width: 123.13429
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13392,7 +13399,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 464.94354
     y: 13.89838
-    width: 173.88054
+    width: 169
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -13680,7 +13687,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 146.90675
     y: 205.89491
-    width: 99.25371
+    width: 98
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -13995,7 +14002,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 33.12009
     y: 144.09552
-    width: 142.53726
+    width: 138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14006,12 +14013,14 @@ MonoBehaviour:
   commandList:
   - {fileID: 645212356}
   - {fileID: 645212358}
+  - {fileID: 645212534}
   - {fileID: 645212491}
   - {fileID: 645212490}
   - {fileID: 645212489}
   - {fileID: 645212488}
   - {fileID: 645212487}
   - {fileID: 645212486}
+  - {fileID: 645212533}
   - {fileID: 645212357}
   suppressAllAutoSelections: 0
 --- !u!114 &645212366
@@ -14643,7 +14652,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 280.64172
     y: 57.01733
-    width: 90.29849
+    width: 89
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -14705,7 +14714,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 218.34465
     y: 133.56834
-    width: 121.641754
+    width: 119
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14716,12 +14725,14 @@ MonoBehaviour:
   commandList:
   - {fileID: 645212371}
   - {fileID: 645212375}
+  - {fileID: 645212532}
   - {fileID: 645212507}
   - {fileID: 645212506}
   - {fileID: 645212505}
   - {fileID: 645212504}
   - {fileID: 645212503}
   - {fileID: 645212502}
+  - {fileID: 645212523}
   - {fileID: 645212501}
   suppressAllAutoSelections: 0
 --- !u!114 &645212377
@@ -14789,7 +14800,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -22.971405
     y: 60.186947
-    width: 136.56712
+    width: 134
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14800,12 +14811,14 @@ MonoBehaviour:
   commandList:
   - {fileID: 645212372}
   - {fileID: 645212378}
+  - {fileID: 645212536}
   - {fileID: 645212498}
   - {fileID: 645212497}
   - {fileID: 645212496}
   - {fileID: 645212495}
   - {fileID: 645212494}
   - {fileID: 645212493}
+  - {fileID: 645212535}
   - {fileID: 645212377}
   suppressAllAutoSelections: 0
 --- !u!114 &645212380
@@ -14985,7 +14998,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 506.68018
     y: 186.38072
-    width: 88.805954
+    width: 87
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15327,7 +15340,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 397.9596
     y: 358.4205
-    width: 158.95517
+    width: 154
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15489,7 +15502,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 506.87878
     y: 265.55954
-    width: 88.805954
+    width: 88
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15879,7 +15892,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 567.7942
     y: 357.5336
-    width: 117.16415
+    width: 115
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15987,7 +16000,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 508.13174
     y: 445.80948
-    width: 88.805954
+    width: 88
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -16488,7 +16501,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -575.7097
     y: 91.86709
-    width: 118.656685
+    width: 116
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -16601,7 +16614,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -82.48437
     y: 294.63824
-    width: 120.14922
+    width: 117
     height: 40
   tint: {r: 0.5686275, g: 0, b: 1, a: 1}
   useCustomTint: 1
@@ -16736,7 +16749,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -206.2221
     y: 85.40754
-    width: 157.46265
+    width: 153
     height: 40
   tint: {r: 0.98039216, g: 0.5803922, b: 1, a: 1}
   useCustomTint: 1
@@ -16780,7 +16793,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -209.45567
     y: 27.188019
-    width: 167.9104
+    width: 162
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -16917,7 +16930,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -396.39948
     y: 86.72914
-    width: 155.9701
+    width: 154
     height: 40
   tint: {r: 0.98039216, g: 0.5803922, b: 1, a: 1}
   useCustomTint: 1
@@ -17151,7 +17164,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -399.39948
     y: 29.729141
-    width: 166.41785
+    width: 163
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -21837,7 +21850,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &645212519
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -22149,6 +22162,28 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &645212523
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645212331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 635
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: -5079902
+      Data2: 1128966155
+      Data3: 2049067908
+      Data4: 1315915847
+    Path: event:/Music/BGM_Apartment
 --- !u!114 &645212524
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -23008,6 +23043,116 @@ MonoBehaviour:
   itemId: 628
   indentLevel: 0
   commandType: 0
+  soundPath:
+    Guid:
+      Data1: -5079902
+      Data2: 1128966155
+      Data3: 2049067908
+      Data4: 1315915847
+    Path: event:/Music/BGM_Apartment
+--- !u!114 &645212532
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645212331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 634
+  indentLevel: 0
+  commandType: 1
+  soundPath:
+    Guid:
+      Data1: -5079902
+      Data2: 1128966155
+      Data3: 2049067908
+      Data4: 1315915847
+    Path: event:/Music/BGM_Apartment
+--- !u!114 &645212533
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645212331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 633
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: -5079902
+      Data2: 1128966155
+      Data3: 2049067908
+      Data4: 1315915847
+    Path: event:/Music/BGM_Apartment
+--- !u!114 &645212534
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645212331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 632
+  indentLevel: 0
+  commandType: 1
+  soundPath:
+    Guid:
+      Data1: -5079902
+      Data2: 1128966155
+      Data3: 2049067908
+      Data4: 1315915847
+    Path: event:/Music/BGM_Apartment
+--- !u!114 &645212535
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645212331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 631
+  indentLevel: 0
+  commandType: 0
+  soundPath:
+    Guid:
+      Data1: -5079902
+      Data2: 1128966155
+      Data3: 2049067908
+      Data4: 1315915847
+    Path: event:/Music/BGM_Apartment
+--- !u!114 &645212536
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645212331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfece5fdf8c96954bac1369f8019f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 630
+  indentLevel: 0
+  commandType: 1
   soundPath:
     Guid:
       Data1: -5079902
@@ -49495,6 +49640,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1801956857
       objectReference: {fileID: 0}
+    - target: {fileID: 3165119119383160505, guid: 69a5d67b0b9c0654eb199d1cd6375c0c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3546217409451684465, guid: 69a5d67b0b9c0654eb199d1cd6375c0c, type: 3}
       propertyPath: m_Name
       value: X25
@@ -49505,6 +49654,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3546217409451684465, guid: 69a5d67b0b9c0654eb199d1cd6375c0c, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841530718168251019, guid: 69a5d67b0b9c0654eb199d1cd6375c0c, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7185034909092001049, guid: 69a5d67b0b9c0654eb199d1cd6375c0c, type: 3}
