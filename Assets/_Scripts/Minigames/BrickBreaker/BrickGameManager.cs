@@ -61,6 +61,8 @@ public class BrickGameManager : MonoBehaviour
     private void GameOver()
     {
         this.paddle.Dead();
+        score = 0;
+        lives = 3;
     }
     
 

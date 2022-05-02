@@ -101,6 +101,11 @@ public class GameHandler : MonoBehaviour
         score += 1;
     }
 
+    public static void ResetScore()
+    {
+        score = 0;
+    }
+
 
     public void playCollectSound()
     {

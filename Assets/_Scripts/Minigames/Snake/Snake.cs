@@ -91,6 +91,7 @@ public class Snake : MinigameBase
                 gameHandler.playLoseSound();
                 gameHandler.stopMusic();
                 EndingMinigame();
+                GameHandler.ResetScore();
                 state = State.Waiting;
                 break;
         }

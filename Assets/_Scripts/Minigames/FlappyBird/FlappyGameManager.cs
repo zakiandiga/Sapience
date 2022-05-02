@@ -115,6 +115,9 @@ public class FlappyGameManager : MinigameBase
         musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         Debug.Log("Music has stopped");
         EndingMinigame();
+        score = 0;
+        bestScore = 0;
+        lives = 3;
     }
 
     public void IncreaseScore()
