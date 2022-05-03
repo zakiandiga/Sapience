@@ -157,11 +157,11 @@ MonoBehaviour:
   - {fileID: 402000577348113954}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3000
+  Length: 266
 --- !u!114 &-7268178461588277431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,10 +177,10 @@ MonoBehaviour:
   Path: Assets/_Data/_fmodBank/BuildVersion/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637866912540000000
+  lastModified: 637871091388850331
   FileSizes:
   - Name: 
-    Value: 3322
+    Value: 3352
   Exists: 1
 --- !u!114 &-6886248967338963159
 MonoBehaviour:
@@ -680,7 +680,6 @@ MonoBehaviour:
   - {fileID: 6192949907488177301}
   - {fileID: 2486794604158083292}
   - {fileID: 8489217793133232923}
-  - {fileID: 4901149682140044922}
   - {fileID: -7869659491524508969}
   - {fileID: -8251061608242111742}
   - {fileID: -1229153592447272958}
@@ -711,12 +710,14 @@ MonoBehaviour:
   - {fileID: -6670139297585443568}
   - {fileID: -4059296950033054879}
   - {fileID: 7921324009076759688}
+  - {fileID: 7145653789630247264}
+  - {fileID: 2344595698261529727}
   EditorParameters: []
   MasterBanks:
   - {fileID: 402000577348113954}
   StringsBanks:
   - {fileID: -7268178461588277431}
-  cacheTime: 637866912540000000
+  cacheTime: 637871091388850331
   cacheVersion: 10
 --- !u!114 &50083299895740572
 MonoBehaviour:
@@ -760,7 +761,7 @@ MonoBehaviour:
   Path: Assets/_Data/_fmodBank/BuildVersion/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637866912540000000
+  lastModified: 637871091388799576
   FileSizes: []
   Exists: 1
 --- !u!114 &620231932191086139
@@ -925,6 +926,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 717
+--- !u!114 &2344595698261529727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps/Land
+  m_EditorClassIdentifier: 
+  Path: event:/Footsteps/Land
+  Guid:
+    Data1: 79117452
+    Data2: 1277733684
+    Data3: -547555677
+    Data4: -1716630242
+  Banks:
+  - {fileID: 402000577348113954}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 125
 --- !u!114 &2486794604158083292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1249,33 +1277,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 87048
---- !u!114 &4901149682140044922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Jump
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Jump
-  Guid:
-    Data1: 1771335029
-    Data2: 1158766555
-    Data3: -609756514
-    Data4: -1581451902
-  Banks:
-  - {fileID: 402000577348113954}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 462
 --- !u!114 &4930156996686038248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1411,6 +1412,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 124235
+--- !u!114 &7145653789630247264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/Footsteps/Jump
+  Guid:
+    Data1: 1771335029
+    Data2: 1158766555
+    Data3: -609756514
+    Data4: -1581451902
+  Banks:
+  - {fileID: 402000577348113954}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 462
 --- !u!114 &7455387462574039960
 MonoBehaviour:
   m_ObjectHideFlags: 0

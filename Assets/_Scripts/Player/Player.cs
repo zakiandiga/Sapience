@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform x3Sprite, x4Sprite;
     private Animator anim;
     private SpriteRenderer spriteRenderer;
+    private playerAnimationEventAudio animationEventAudio;
     #endregion
 
     #region GroundChecks
@@ -101,6 +102,7 @@ public class Player : MonoBehaviour
         }
         else
             rootState = PlayerRootState.onAir;
+
         CurrentInteractable = null;
         inputHandler.InputActionSwitch(true);
     }
@@ -164,6 +166,7 @@ public class Player : MonoBehaviour
                 break;
 
             case PlayerRootState.landing:
+                animationEventAudio.PlayAudio(3);
                 if (jumpTriggered)
                 {
                     jumpTriggered = false;
@@ -174,9 +177,7 @@ public class Player : MonoBehaviour
 
                 if (anim != null)
                 {
-
                     anim.SetTrigger("Land");
-
                 }
 
                 if (anim != null)
@@ -457,6 +458,7 @@ public class Player : MonoBehaviour
                 x3Sprite.gameObject.SetActive(true);
             anim = x3Sprite.GetComponent<Animator>();
             spriteRenderer = x3Sprite.GetComponent<SpriteRenderer>();
+            animationEventAudio = x3Sprite.GetComponent<playerAnimationEventAudio>();
         }
         else if(characterCode == 2)
         {
@@ -467,6 +469,7 @@ public class Player : MonoBehaviour
                 x4Sprite.gameObject.SetActive(true);
             anim = x4Sprite.GetComponent<Animator>();
             spriteRenderer = x4Sprite.GetComponent<SpriteRenderer>();
+            animationEventAudio = x4Sprite.GetComponent<playerAnimationEventAudio>();
         }
 
         OnSetPlayerPosition?.Invoke(this.transform);

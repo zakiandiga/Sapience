@@ -31,10 +31,6 @@ public class MovementManager : MonoBehaviour
         currentStoryScene = SceneManager.GetActiveScene().name;
 
     }
-    private void OnDisable()
-    {
-
-    }    
 
     #region Event Subscribers
     private void FinalizeLoadMinigame(Scene scene, LoadSceneMode mode)

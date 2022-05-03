@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using FMOD.Studio;
 using FMODUnity;
@@ -18,6 +17,8 @@ namespace Fungus
         private EventInstance soundInstance;
 
         private PLAYBACK_STATE currentPlaybackState;
+
+
 
         public override void OnEnter()
         {           

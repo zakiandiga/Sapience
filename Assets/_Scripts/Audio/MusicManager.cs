@@ -55,20 +55,17 @@ public class MusicManager : MonoBehaviour
             musicInstance.start();
             musicInstance.release();
         }
+        else if(!currentMusicPath.IsNull && currentMusicPath.Guid == soundPath.Guid)
+            return;        
     }
 
     private void StopMusic(EventReference soundPath)
     {
-        //if (currentMusicPath.Guid == soundPath.Guid)
-        //{
-            musicInstance.getPlaybackState(out isPlaying);
-            if (isPlaying == PLAYBACK_STATE.PLAYING)
-                StopMusic();
+        musicInstance.getPlaybackState(out isPlaying);
+        if (isPlaying == PLAYBACK_STATE.PLAYING)
+            StopMusic();
 
-            currentMusicPath = nullMusicPath;
-        //}
-        //else
-        //    Debug.LogError("Music you're trying to stop is not playing");
+        currentMusicPath = nullMusicPath;
     }
 
     public void StopMusic()

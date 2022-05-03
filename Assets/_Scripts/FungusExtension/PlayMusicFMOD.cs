@@ -1,6 +1,7 @@
 using System;
+using System.Collections;
 using UnityEngine;
-using FMOD.Studio;
+using UnityEngine.SceneManagement;
 using FMODUnity;
 
 namespace Fungus
@@ -17,8 +18,20 @@ namespace Fungus
         public static event Action<EventReference> OnStartMusic;
         public static event Action<EventReference> OnStopMusic;
 
+        private IEnumerator WaitForAudioManager()
+        {
+            yield return new WaitUntil(() => SceneManager.GetSceneByName("AudioManager").isLoaded);
+            OnEnter();
+        }
+
         public override void OnEnter()
         {
+            if (!SceneManager.GetSceneByName("AudioManager").isLoaded)
+            {
+                StartCoroutine(WaitForAudioManager());
+                return;
+            }
+
             if (!soundPath.IsNull)
             {
                 if (commandType == CommandType.Start)

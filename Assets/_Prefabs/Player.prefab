@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7553134904990441598}
   - component: {fileID: 286521288609663621}
   - component: {fileID: 722746150845159097}
+  - component: {fileID: 2104132927598308045}
   m_Layer: 0
   m_Name: SpriteX4
   m_TagString: Untagged
@@ -105,6 +106,39 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2104132927598308045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689854633977213913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 656924142a147624e84a3926bf94a52f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jump:
+    Guid:
+      Data1: 1771335029
+      Data2: 1158766555
+      Data3: -609756514
+      Data4: -1581451902
+    Path: event:/Footsteps/Jump
+  step:
+    Guid:
+      Data1: -1161620213
+      Data2: 1207241393
+      Data3: -1556537216
+      Data4: 1851795978
+    Path: event:/Footsteps/Footstep Concrete
+  land:
+    Guid:
+      Data1: 79117452
+      Data2: 1277733684
+      Data3: -547555677
+      Data4: -1716630242
+    Path: event:/Footsteps/Land
 --- !u!1 &5496355189195001722
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +150,7 @@ GameObject:
   - component: {fileID: 2800939208055946688}
   - component: {fileID: 835070654044638823}
   - component: {fileID: 5033198821852445330}
+  - component: {fileID: 2950346350544112204}
   m_Layer: 0
   m_Name: SpriteX3
   m_TagString: Untagged
@@ -210,6 +245,39 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2950346350544112204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5496355189195001722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 656924142a147624e84a3926bf94a52f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jump:
+    Guid:
+      Data1: 1771335029
+      Data2: 1158766555
+      Data3: -609756514
+      Data4: -1581451902
+    Path: event:/Footsteps/Jump
+  step:
+    Guid:
+      Data1: -1161620213
+      Data2: 1207241393
+      Data3: -1556537216
+      Data4: 1851795978
+    Path: event:/Footsteps/Footstep Concrete
+  land:
+    Guid:
+      Data1: 79117452
+      Data2: 1277733684
+      Data3: -547555677
+      Data4: -1716630242
+    Path: event:/Footsteps/Land
 --- !u!1 &6796494449539547863
 GameObject:
   m_ObjectHideFlags: 0
