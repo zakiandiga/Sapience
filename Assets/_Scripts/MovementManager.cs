@@ -8,6 +8,7 @@ public class MovementManager : MonoBehaviour
     public static event Action<string> OnBlockEnd;
     public static event Action<string> OnBlockStart;
     public static event Action<Transform, int> OnSetPlayerSpawn;
+    public static event Action<string> OnAudioManagerLoaded;
     public static event Action<Flowchart> OnAnnounceFlowchart; //CHECK USAGE
 
     private CameraManager cameraManager;
@@ -28,7 +29,14 @@ public class MovementManager : MonoBehaviour
         if(!SceneManager.GetSceneByName("AudioManager").isLoaded)
         {
             SceneManager.LoadSceneAsync("AudioManager", LoadSceneMode.Additive);
+            SceneManager.sceneLoaded += LoadingAudioManager;
         }
+    }
+
+    private void LoadingAudioManager(Scene scene, LoadSceneMode loadMode)
+    {
+        SceneManager.sceneLoaded -= LoadingAudioManager;
+        OnAudioManagerLoaded?.Invoke(scene.name);
     }
 
     private void OnEnable()
