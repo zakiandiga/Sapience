@@ -11,6 +11,7 @@ public class MinigameBase : MonoBehaviour
     public static event Action<BlockReference> OnMinigameEnd;
     public static event Action<string> OnMinigameClose;
 
+
     protected void EndingMinigame()
     {
         OnMinigameEnd(targetBlock);

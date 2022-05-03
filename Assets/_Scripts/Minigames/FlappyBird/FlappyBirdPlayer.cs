@@ -42,11 +42,9 @@ public class FlappyBirdPlayer : MonoBehaviour
         if (collision.gameObject.tag == "Obstacle")
         {
             FindObjectOfType<FlappyGameManager>().LoseLife();
-            Debug.Log("Pipe hit");
         } else if (collision.gameObject.tag == "Scoring")
         {
             FindObjectOfType<FlappyGameManager>().IncreaseScore();
-            Debug.Log("Score");
         }
     }
 }

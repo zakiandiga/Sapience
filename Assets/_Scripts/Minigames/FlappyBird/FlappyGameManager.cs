@@ -47,6 +47,7 @@ public class FlappyGameManager : MinigameBase
 
     private void Start()
     {
+        
         //create the instance of the BGM to be ready to use, don't forget to stop and release it later when it's no longer used (OnDisable?)
         musicInstance = RuntimeManager.CreateInstance(musicPath);
 
@@ -111,9 +112,9 @@ public class FlappyGameManager : MinigameBase
     {
         //flappyAudioSource.PlayOneShot(gameOverSound, 1);
         RuntimeManager.PlayOneShot(gameOverSoundPath, this.transform.position);
-        Debug.Log("Game over");
+
         musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        Debug.Log("Music has stopped");
+
         EndingMinigame();
         score = 0;
         bestScore = 0;

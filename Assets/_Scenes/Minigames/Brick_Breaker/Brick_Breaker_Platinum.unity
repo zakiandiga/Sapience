@@ -3183,6 +3183,7 @@ GameObject:
   - component: {fileID: 1300437116}
   - component: {fileID: 1300437113}
   - component: {fileID: 1300437112}
+  - component: {fileID: 1300437124}
   m_Layer: 10
   m_Name: Brick_Flowchart
   m_TagString: Untagged
@@ -3257,9 +3258,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1300437118}
+  - {fileID: 1300437123}
   selectedCommands:
-  - {fileID: 1300437117}
+  - {fileID: 1300437124}
   variables: []
   description: 
   stepPause: 0
@@ -3474,10 +3475,28 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1300437119}
   commandList:
+  - {fileID: 1300437124}
   - {fileID: 1300437122}
   - {fileID: 1300437121}
   - {fileID: 1300437120}
   suppressAllAutoSelections: 0
+--- !u!114 &1300437124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300437111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9232e9295ed476a8cfb707b5c242b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  frameCount:
+    integerRef: {fileID: 0}
+    integerVal: 60
 --- !u!1001 &1369930861
 PrefabInstance:
   m_ObjectHideFlags: 0

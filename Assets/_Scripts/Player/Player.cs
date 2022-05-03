@@ -141,12 +141,9 @@ public class Player : MonoBehaviour
                     rootState = PlayerRootState.onAir;
                 }
 
-
                 if (inputHandler.Interacting)
                 {
-                    
-                    OnPlayerInteract?.Invoke(this);
-
+                    rootState = PlayerRootState.interacting;
                 }
 
                 break;            
@@ -188,7 +185,7 @@ public class Player : MonoBehaviour
                 break;
 
             case PlayerRootState.interacting:
-
+                OnPlayerInteract?.Invoke(this);
 
                 /*
                 if (moveState != PlayerMoveState.ready)

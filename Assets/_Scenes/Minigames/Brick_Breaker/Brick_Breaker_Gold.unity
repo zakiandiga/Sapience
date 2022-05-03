@@ -3618,6 +3618,7 @@ GameObject:
   - component: {fileID: 1300437126}
   - component: {fileID: 1300437125}
   - component: {fileID: 1300437124}
+  - component: {fileID: 1300437127}
   m_Layer: 10
   m_Name: Brick_Flowchart
   m_TagString: Untagged
@@ -3693,7 +3694,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1300437123}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1300437127}
   variables: []
   description: 
   stepPause: 0
@@ -3898,7 +3900,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 255.25
-    y: 155
+    y: 154
     width: 77
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3908,6 +3910,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1300437119}
   commandList:
+  - {fileID: 1300437127}
   - {fileID: 1300437122}
   - {fileID: 1300437126}
   - {fileID: 1300437125}
@@ -3999,6 +4002,23 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 149999293}
+--- !u!114 &1300437127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300437111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9232e9295ed476a8cfb707b5c242b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  indentLevel: 0
+  frameCount:
+    integerRef: {fileID: 0}
+    integerVal: 60
 --- !u!1001 &1372989192
 PrefabInstance:
   m_ObjectHideFlags: 0

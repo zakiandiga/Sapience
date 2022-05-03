@@ -204,10 +204,10 @@ MonoBehaviour:
   Path: Assets/_Data/_fmodBank/BuildVersion/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637871200384671908
+  lastModified: 637871463019957051
   FileSizes:
   - Name: 
-    Value: 3438
+    Value: 3490
   Exists: 1
 --- !u!114 &-6886248967338963159
 MonoBehaviour:
@@ -768,12 +768,13 @@ MonoBehaviour:
   - {fileID: 2344595698261529727}
   - {fileID: -2138214363014752253}
   - {fileID: -7471963100935232988}
+  - {fileID: 7564283390223865219}
   EditorParameters: []
   MasterBanks:
   - {fileID: 402000577348113954}
   StringsBanks:
   - {fileID: -7268178461588277431}
-  cacheTime: 637871200384671908
+  cacheTime: 637871463019957051
   cacheVersion: 10
 --- !u!114 &50083299895740572
 MonoBehaviour:
@@ -817,7 +818,7 @@ MonoBehaviour:
   Path: Assets/_Data/_fmodBank/BuildVersion/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637871200384522038
+  lastModified: 637871463019857280
   FileSizes: []
   Exists: 1
 --- !u!114 &620231932191086139
@@ -1522,6 +1523,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 50255
+--- !u!114 &7564283390223865219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Events/AlarmClock
+  m_EditorClassIdentifier: 
+  Path: event:/Events/AlarmClock
+  Guid:
+    Data1: 609274982
+    Data2: 1315083864
+    Data3: 887386289
+    Data4: 463792753
+  Banks:
+  - {fileID: 402000577348113954}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3100
 --- !u!114 &7642671011522545151
 MonoBehaviour:
   m_ObjectHideFlags: 0

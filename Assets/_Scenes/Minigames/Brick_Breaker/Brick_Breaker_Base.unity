@@ -276,7 +276,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 840499135
-  m_SortingLayer: 5
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1f910d85709e61c4c8cd4142a2425f87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -701,7 +701,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 840499135
-  m_SortingLayer: 5
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b4af52ac9e1be8d45bd534054070fa4e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2875,6 +2875,7 @@ GameObject:
   - component: {fileID: 1300437116}
   - component: {fileID: 1300437113}
   - component: {fileID: 1300437112}
+  - component: {fileID: 1300437124}
   m_Layer: 10
   m_Name: Brick_Flowchart
   m_TagString: Untagged
@@ -2951,7 +2952,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1300437123}
   selectedCommands:
-  - {fileID: 1300437120}
+  - {fileID: 1300437124}
   variables: []
   description: 
   stepPause: 0
@@ -3166,10 +3167,28 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1300437119}
   commandList:
+  - {fileID: 1300437124}
   - {fileID: 1300437122}
   - {fileID: 1300437121}
   - {fileID: 1300437120}
   suppressAllAutoSelections: 0
+--- !u!114 &1300437124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300437111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9232e9295ed476a8cfb707b5c242b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  frameCount:
+    integerRef: {fileID: 0}
+    integerVal: 60
 --- !u!1001 &1372989192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3667,7 +3686,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -669152503
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}

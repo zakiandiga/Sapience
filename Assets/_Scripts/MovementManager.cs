@@ -17,6 +17,11 @@ public class MovementManager : MonoBehaviour
     private string currentStoryScene;
     private string currentMinigameScene;
 
+    [SerializeField] private CurtainManager curtainManager;
+
+    private GameObject roomToActivate;
+    private GameObject roomToDeactivate;
+
     private void Start()
     {
         cameraManager = GetComponent<CameraManager>();
@@ -29,19 +34,25 @@ public class MovementManager : MonoBehaviour
     private void OnEnable()
     {
         currentStoryScene = SceneManager.GetActiveScene().name;
-
     }
 
     #region Event Subscribers
+    private void StartLoadingMinigame(CurtainManager c)
+    {
+        CurtainManager.OnFinishFadeTo -= StartLoadingMinigame;
+        SceneManager.LoadSceneAsync(currentMinigameScene, LoadSceneMode.Additive);
+        SceneManager.sceneLoaded += FinalizeLoadMinigame;
+    }
+
     private void FinalizeLoadMinigame(Scene scene, LoadSceneMode mode)
     {
         SceneManager.sceneLoaded -= FinalizeLoadMinigame;
         SceneManager.SetActiveScene(scene);
-        Debug.Log("OnMinigameLoaded: " + currentMinigameScene);
 
         MinigameBase.OnMinigameClose += CloseMinigame;
         cameraManager.OnCameraBlendingStart += WaitingCameraBlendToMinigame;
         cameraManager.SetMinigameCamera(true);
+
 
         //Handle fade out here
     }
@@ -49,17 +60,19 @@ public class MovementManager : MonoBehaviour
     private void WaitingCameraBlendToMinigame(bool cameraBlend)
     {
         cameraManager.OnCameraBlendingStart -= WaitingCameraBlendToMinigame;
+        cameraManager.OnCameraBlendingFinish += RevealMinigame;
+    }
 
-        if (cameraBlend)
-        {
-            Debug.Log("Camera is transitioning");
-        }
+    private void RevealMinigame(bool b)
+    {
+        cameraManager.OnCameraBlendingFinish -= RevealMinigame;
+        curtainManager.FadeFrom();
     }
 
     private void WaitingCameraBlendFromMinigame(bool cameraBlend)
     {
         cameraManager.OnCameraBlendingFinish -= WaitingCameraBlendFromMinigame;
-        Debug.Log("Camera blending done!");
+
         SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName(currentMinigameScene));
         SceneManager.sceneUnloaded += FinalizeClosingMinigame;
     }
@@ -68,6 +81,7 @@ public class MovementManager : MonoBehaviour
     {
         cameraManager.OnCameraBlendingFinish += WaitingCameraBlendFromMinigame;
         cameraManager.SetMinigameCamera(false);
+        curtainManager.FadeTo();
         //put transition here        
         //waiting for the OnCameraBlending(false) event
     }
@@ -80,6 +94,14 @@ public class MovementManager : MonoBehaviour
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentStoryScene));
 
         currentMinigameScene = null;
+
+        CurtainManager.OnFinishFadeFrom += ReactivateFlowchart;
+        curtainManager.FadeFrom();
+    }
+
+    private void ReactivateFlowchart(CurtainManager c)
+    {
+        CurtainManager.OnFinishFadeFrom -= ReactivateFlowchart;
         currentFlowchart.SetBooleanVariable("OnMinigame", false);
     }
     #endregion
@@ -98,16 +120,24 @@ public class MovementManager : MonoBehaviour
         currentFlowchart = flowchart;
         currentStoryScene = SceneManager.GetActiveScene().name;
         currentMinigameScene = minigameSceneName;
-        SceneManager.LoadSceneAsync(currentMinigameScene, LoadSceneMode.Additive);
-        SceneManager.sceneLoaded += FinalizeLoadMinigame;
+        CurtainManager.OnFinishFadeTo += StartLoadingMinigame;
+        curtainManager.FadeTo();
     }
 
     public void ChangeRoom(GameObject currentRoom, GameObject nextRoom)
     {
-        //fade out
-        currentRoom.SetActive(false);
-        nextRoom.SetActive(true);
-        //fade in
+        roomToDeactivate = currentRoom;
+        roomToActivate = nextRoom;
+        CurtainManager.OnFinishFadeTo += DisableCurrentRoom;
+        curtainManager.FadeTo();
+    }
+
+    private void DisableCurrentRoom(CurtainManager c)
+    {
+        CurtainManager.OnFinishFadeTo -= DisableCurrentRoom;
+        roomToDeactivate.SetActive(false);
+        roomToActivate.SetActive(true);
+        curtainManager.FadeFrom();
     }
 
     public void AnnouncingFlowchart(Flowchart flowchart) //Do we use this?

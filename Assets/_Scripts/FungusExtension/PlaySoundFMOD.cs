@@ -45,7 +45,7 @@ namespace Fungus
         public override void OnExit()
         {
             if(soundInstance.isValid())
-                soundInstance.release();
+                soundInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
 
         private IEnumerator FinishingSound()

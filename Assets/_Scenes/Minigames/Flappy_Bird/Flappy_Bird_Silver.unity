@@ -945,6 +945,7 @@ GameObject:
   - component: {fileID: 1002410415}
   - component: {fileID: 1002410412}
   - component: {fileID: 1002410411}
+  - component: {fileID: 1002410423}
   m_Layer: 10
   m_Name: FlappyBirdFlowchart
   m_TagString: Untagged
@@ -1021,7 +1022,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1002410417}
   selectedCommands:
-  - {fileID: 1002410416}
+  - {fileID: 1002410423}
   variables: []
   description: 
   stepPause: 0
@@ -1118,6 +1119,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1002410411}
   commandList:
+  - {fileID: 1002410423}
   - {fileID: 1002410416}
   - {fileID: 1002410415}
   - {fileID: 1002410412}
@@ -1240,6 +1242,23 @@ MonoBehaviour:
   - {fileID: 1002410420}
   - {fileID: 1002410419}
   suppressAllAutoSelections: 0
+--- !u!114 &1002410423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002410410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9232e9295ed476a8cfb707b5c242b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  frameCount:
+    integerRef: {fileID: 0}
+    integerVal: 60
 --- !u!1 &1071374294
 GameObject:
   m_ObjectHideFlags: 0

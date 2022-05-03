@@ -1,6 +1,6 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CurtainManager : MonoBehaviour
 {
@@ -24,12 +24,12 @@ public class CurtainManager : MonoBehaviour
         animator.Play("FadeFrom");
     }
 
-    public void FinishFadeTo()
+    private void FinishFadeTo()
     {
         OnFinishFadeTo?.Invoke(this);
     }
 
-    public void FinishFadeFrom()
+    private void FinishFadeFrom()
     {
         OnFinishFadeFrom?.Invoke(this);
     }
