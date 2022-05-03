@@ -411,7 +411,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.10874296, y: 0.23}
   m_AnchorMax: {x: 0.45312384, y: 0.33333334}
-  m_AnchoredPosition: {x: -0.099975586, y: -0.4000244}
+  m_AnchoredPosition: {x: -0.099975586, y: -0.40008545}
   m_SizeDelta: {x: -7.685089, y: 8.109497}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &210874117
@@ -2084,7 +2084,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7572721, y: 0.011688742}
   m_AnchorMax: {x: 0.883, y: 0.09534437}
-  m_AnchoredPosition: {x: -2.4692383, y: 1.5096436}
+  m_AnchoredPosition: {x: -2.4692383, y: 1.5095215}
   m_SizeDelta: {x: 150.8297, y: 12.8176}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1206253013
@@ -2599,6 +2599,10 @@ PrefabInstance:
     - target: {fileID: 2853452185445455466, guid: d699b0b122fe6f24d82f089d58ca091a, type: 3}
       propertyPath: m_Name
       value: Curtain
+      objectReference: {fileID: 0}
+    - target: {fileID: 2853452185445455466, guid: d699b0b122fe6f24d82f089d58ca091a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d699b0b122fe6f24d82f089d58ca091a, type: 3}
@@ -3184,7 +3188,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2111804436
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3199,10 +3203,10 @@ RectTransform:
   m_Father: {fileID: 632191797}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.626146, y: 0}
-  m_AnchorMax: {x: 0.93638784, y: 0.05834437}
-  m_AnchoredPosition: {x: -86, y: 14.000488}
-  m_SizeDelta: {x: -167, y: 10}
+  m_AnchorMin: {x: 0.64543754, y: 0}
+  m_AnchorMax: {x: 0.9064376, y: 0.075160705}
+  m_AnchoredPosition: {x: 2.5, y: 5.0005493}
+  m_SizeDelta: {x: 0.47000122, y: -8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2111804437
 MonoBehaviour:
@@ -3224,7 +3228,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (c) 2022 Studio Name Here
+  m_text: (c) 2022 WAM! Studios
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f0bd4ab5eb121e40aa111087c4980b8, type: 2}
   m_sharedMaterial: {fileID: 254332014753304395, guid: 5f0bd4ab5eb121e40aa111087c4980b8, type: 2}
@@ -3251,7 +3255,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.65
+  m_fontSize: 52.1
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3287,7 +3291,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 21.001465, z: -82.77051, w: 0}
+  m_margin: {x: 0, y: 21.001465, z: 12.128083, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
