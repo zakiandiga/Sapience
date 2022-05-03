@@ -55,8 +55,7 @@ public class MusicManager : MonoBehaviour
             musicInstance.start();
             musicInstance.release();
         }
-        else if(!currentMusicPath.IsNull && currentMusicPath.Guid == soundPath.Guid)
-            return;        
+
     }
 
     private void StopMusic(EventReference soundPath)
