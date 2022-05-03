@@ -190,7 +190,7 @@ Transform:
   - {fileID: 193400968}
   - {fileID: 470011275}
   m_Father: {fileID: 482622618}
-  m_RootOrder: 10
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &69216096 stripped
 MonoBehaviour:
@@ -344,7 +344,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2714075712036877979, guid: a5cd3848e6ac85542af8e5f8fd5b3ba6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.500267
+      value: 0.5002785
       objectReference: {fileID: 0}
     - target: {fileID: 9195786104362511060, guid: a5cd3848e6ac85542af8e5f8fd5b3ba6, type: 3}
       propertyPath: m_Pivot.x
@@ -1570,7 +1570,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 482622618}
+    m_TransformParent: {fileID: 1678920832}
     m_Modifications:
     - target: {fileID: 4643587298880772976, guid: aa656dfb68cc9e049b85fbfdfedd67d9, type: 3}
       propertyPath: interactIcon
@@ -1582,7 +1582,7 @@ PrefabInstance:
       objectReference: {fileID: 1513075030}
     - target: {fileID: 4643587298880772977, guid: aa656dfb68cc9e049b85fbfdfedd67d9, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4643587298880772977, guid: aa656dfb68cc9e049b85fbfdfedd67d9, type: 3}
       propertyPath: m_LocalScale.y
@@ -2066,7 +2066,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7593716058929275821, guid: 74483e704958a3741a71d04836c542b4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 22.240845
+      value: 22.240356
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74483e704958a3741a71d04836c542b4, type: 3}
@@ -2698,7 +2698,7 @@ Transform:
   m_Children:
   - {fileID: 1776972129}
   m_Father: {fileID: 482622618}
-  m_RootOrder: 19
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &399227953
 GameObject:
@@ -2732,7 +2732,7 @@ Transform:
   m_Children:
   - {fileID: 607733418}
   m_Father: {fileID: 482622618}
-  m_RootOrder: 17
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &399227955
 MonoBehaviour:
@@ -4642,12 +4642,7 @@ Transform:
   - {fileID: 445341535}
   - {fileID: 1104943229}
   - {fileID: 1612713530}
-  - {fileID: 1775033752}
-  - {fileID: 923558566}
-  - {fileID: 553503095}
-  - {fileID: 247020057}
-  - {fileID: 1691876466}
-  - {fileID: 1954315799}
+  - {fileID: 1678920832}
   - {fileID: 57234680}
   - {fileID: 797028949}
   - {fileID: 1077400235}
@@ -8507,7 +8502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8810884057783141419, guid: f1fb6d1ce7a4e3843b05845d7a4c5275, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.18
+      value: 5.86
       objectReference: {fileID: 0}
     - target: {fileID: 8810884057783141419, guid: f1fb6d1ce7a4e3843b05845d7a4c5275, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12106,7 +12101,7 @@ Transform:
   m_Children:
   - {fileID: 1461780771}
   m_Father: {fileID: 482622618}
-  m_RootOrder: 16
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &707450496
 SpriteRenderer:
@@ -13105,7 +13100,7 @@ Transform:
   - {fileID: 1593453701}
   - {fileID: 1354450154}
   m_Father: {fileID: 482622618}
-  m_RootOrder: 11
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &798933525 stripped
 GameObject:
@@ -14666,7 +14661,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 482622618}
+    m_TransformParent: {fileID: 1678920832}
     m_Modifications:
     - target: {fileID: 1326953494566833572, guid: dbce99fcad001b1418e8f76be282e78f, type: 3}
       propertyPath: m_Sprite
@@ -14706,7 +14701,7 @@ PrefabInstance:
       objectReference: {fileID: 1513075019}
     - target: {fileID: 7505168958446849812, guid: dbce99fcad001b1418e8f76be282e78f, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7505168958446849812, guid: dbce99fcad001b1418e8f76be282e78f, type: 3}
       propertyPath: m_LocalScale.x
@@ -14934,6 +14929,17 @@ Transform:
   m_Father: {fileID: 1198671263}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1027694274 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1756430116531691866, guid: 98a321b364f18084eb67dd112ce31873, type: 3}
+  m_PrefabInstance: {fileID: 767848523}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1063455878
 GameObject:
   m_ObjectHideFlags: 0
@@ -23017,7 +23023,7 @@ Transform:
   - {fileID: 1791413365}
   - {fileID: 163253650}
   m_Father: {fileID: 482622618}
-  m_RootOrder: 12
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1089981990
 GameObject:
@@ -25250,7 +25256,7 @@ Transform:
   - {fileID: 699231528}
   - {fileID: 1798132378}
   m_Father: {fileID: 482622618}
-  m_RootOrder: 13
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1198671262
 GameObject:
@@ -26706,7 +26712,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 482622618}
+    m_TransformParent: {fileID: 1678920832}
     m_Modifications:
     - target: {fileID: 4643587298880772976, guid: aa656dfb68cc9e049b85fbfdfedd67d9, type: 3}
       propertyPath: interactIcon
@@ -26718,7 +26724,7 @@ PrefabInstance:
       objectReference: {fileID: 1513075030}
     - target: {fileID: 4643587298880772977, guid: aa656dfb68cc9e049b85fbfdfedd67d9, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4643587298880772977, guid: aa656dfb68cc9e049b85fbfdfedd67d9, type: 3}
       propertyPath: m_LocalScale.y
@@ -27888,11 +27894,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8810884057783141419, guid: f1fb6d1ce7a4e3843b05845d7a4c5275, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.64
+      value: 22.08
       objectReference: {fileID: 0}
     - target: {fileID: 8810884057783141419, guid: f1fb6d1ce7a4e3843b05845d7a4c5275, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.75
+      value: 11.28
       objectReference: {fileID: 0}
     - target: {fileID: 8810884057783141419, guid: f1fb6d1ce7a4e3843b05845d7a4c5275, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28745,7 +28751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1446324697
 Transform:
   m_ObjectHideFlags: 0
@@ -40361,6 +40367,42 @@ GameObject:
   - component: {fileID: 1513075464}
   - component: {fileID: 1513075463}
   - component: {fileID: 1513075462}
+  - component: {fileID: 1513075471}
+  - component: {fileID: 1513075470}
+  - component: {fileID: 1513075469}
+  - component: {fileID: 1513075468}
+  - component: {fileID: 1513075467}
+  - component: {fileID: 1513075466}
+  - component: {fileID: 1513075465}
+  - component: {fileID: 1513075472}
+  - component: {fileID: 1513075473}
+  - component: {fileID: 1513075474}
+  - component: {fileID: 1513075477}
+  - component: {fileID: 1513075476}
+  - component: {fileID: 1513075475}
+  - component: {fileID: 1513075479}
+  - component: {fileID: 1513075478}
+  - component: {fileID: 1513075481}
+  - component: {fileID: 1513075480}
+  - component: {fileID: 1513075482}
+  - component: {fileID: 1513075483}
+  - component: {fileID: 1513075495}
+  - component: {fileID: 1513075494}
+  - component: {fileID: 1513075493}
+  - component: {fileID: 1513075492}
+  - component: {fileID: 1513075491}
+  - component: {fileID: 1513075490}
+  - component: {fileID: 1513075489}
+  - component: {fileID: 1513075488}
+  - component: {fileID: 1513075487}
+  - component: {fileID: 1513075486}
+  - component: {fileID: 1513075485}
+  - component: {fileID: 1513075484}
+  - component: {fileID: 1513075496}
+  - component: {fileID: 1513075497}
+  - component: {fileID: 1513075500}
+  - component: {fileID: 1513075499}
+  - component: {fileID: 1513075498}
   m_Layer: 0
   m_Name: day3_x3_silver_office
   m_TagString: Untagged
@@ -40481,8 +40523,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 131
   indentLevel: 0
-  storyText: 'Listen, if he''s not happy about our lack of production, he won''t
-    be happy that we''re spending extra money to make it up. '
+  storyText: Listen, if he's not happy about our lack of production, he won't be
+    happy that we're spending extra money.
   description: 
   character: {fileID: 1489431234}
   portrait: {fileID: 0}
@@ -40982,7 +41024,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1185.9619
     y: -62.63712
-    width: 179.68753
+    width: 184.24661
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -41025,7 +41067,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 996.7813
     y: -61.59549
-    width: 175.00003
+    width: 177.39731
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -41148,7 +41190,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 925.341
     y: -211.54312
-    width: 134.37502
+    width: 134.93153
     height: 40
   tint: {r: 0.34901962, g: 0.45882356, b: 0.7137255, a: 1}
   useCustomTint: 1
@@ -42142,7 +42184,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1077.9854
     y: -150.49896
-    width: 201.56253
+    width: 206.16443
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -42336,7 +42378,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1108.6891
     y: -208.36475
-    width: 146.87503
+    width: 145.89044
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -42419,7 +42461,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 577.3361
     y: -158.25696
-    width: 139.06252
+    width: 140.41098
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -42452,7 +42494,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1389.9834
     y: -219.06474
-    width: 128.12502
+    width: 129.45209
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -42838,7 +42880,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 430.03827
     y: -158.57385
-    width: 104.687515
+    width: 106.1644
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -43017,7 +43059,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 561.33234
     y: -219.36935
-    width: 167.18753
+    width: 170.54797
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -43165,7 +43207,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 418.59113
     y: -219.72664
-    width: 129.68752
+    width: 129.45209
     height: 40
   tint: {r: 0, g: 1, b: 0.043137256, a: 1}
   useCustomTint: 1
@@ -43193,11 +43235,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -1319.499, y: 309.64816}
+  scrollPos: {x: -992.37305, y: 239.6497}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 544
-  zoom: 0.63999987
+  zoom: 0.7299998
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -43205,9 +43247,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1513075198}
+  - {fileID: 1513074943}
   selectedCommands:
-  - {fileID: 1513075195}
+  - {fileID: 1513074929}
   variables:
   - {fileID: 1513074996}
   - {fileID: 1513074994}
@@ -43694,7 +43736,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 928.9026
     y: -154.00894
-    width: 126.562515
+    width: 125.34249
     height: 40
   tint: {r: 0.98039216, g: 0.5803922, b: 1, a: 1}
   useCustomTint: 1
@@ -44529,7 +44571,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 758.69525
     y: -157.31407
-    width: 157.81253
+    width: 158.21921
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -44577,7 +44619,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 754.9066
     y: -215.3176
-    width: 157.81253
+    width: 156.84935
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -45295,7 +45337,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 819.3864
     y: -81.949295
-    width: 157.81253
+    width: 159.58908
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -46606,7 +46648,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2045.948
     y: -107.917595
-    width: 137.50002
+    width: 139.04112
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 0
@@ -46620,7 +46662,9 @@ MonoBehaviour:
   - {fileID: 1513075202}
   - {fileID: 1513075201}
   - {fileID: 1513075204}
+  - {fileID: 1513075495}
   - {fileID: 1513075462}
+  - {fileID: 1513075494}
   - {fileID: 1513075203}
   - {fileID: 1513075200}
   - {fileID: 1513075199}
@@ -47414,7 +47458,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 849.5048
     y: -25.270912
-    width: 100.000015
+    width: 102.05481
     height: 40
   tint: {r: 0.5686275, g: 0, b: 1, a: 1}
   useCustomTint: 1
@@ -47719,7 +47763,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2328.5728
     y: -169.2392
-    width: 128.12502
+    width: 130.82195
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -47769,7 +47813,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1628.1199
     y: -161.59448
-    width: 101.562515
+    width: 102.05481
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -47819,7 +47863,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2322.576
     y: -231.22333
-    width: 132.81252
+    width: 134.93153
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -47849,6 +47893,7 @@ MonoBehaviour:
   - {fileID: 1513075309}
   - {fileID: 1513075308}
   - {fileID: 1513075307}
+  - {fileID: 1513075483}
   - {fileID: 1513075316}
   - {fileID: 1513075315}
   - {fileID: 1513075314}
@@ -47874,7 +47919,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1618.0803
     y: -233.93918
-    width: 118.750015
+    width: 122.60276
     height: 40
   tint: {r: 1, g: 0.050980393, b: 0, a: 1}
   useCustomTint: 1
@@ -47969,7 +48014,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1399.7418
     y: -68.065704
-    width: 115.625015
+    width: 115.75344
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -48031,8 +48076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 439
   indentLevel: 0
-  storyText: 'Alright everyone, let''s get to work. The sooner we start, the sooner
-    we can shove this junk up the company''s exhaust vent. '
+  storyText: 'Alright everyone, let''s get to work. '
   description: 
   character: {fileID: 6783689858992243635}
   portrait: {fileID: 0}
@@ -48453,7 +48497,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1967.8914
     y: -270.75534
-    width: 126.562515
+    width: 130.82195
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -48636,8 +48680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 428
   indentLevel: 0
-  storyText: I know this is a big ask, but we need all hands on deck today, and for
-    everyone to really go above and beyond.
+  storyText: I know this is a big ask, but we need all hands on deck today.
   description: 
   character: {fileID: 1489431234}
   portrait: {fileID: 0}
@@ -48696,7 +48739,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1903.7325
     y: -107.01905
-    width: 109.375015
+    width: 110.27399
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -48711,6 +48754,9 @@ MonoBehaviour:
   - {fileID: 1513075071}
   - {fileID: 1513075055}
   - {fileID: 1513075053}
+  - {fileID: 1513075500}
+  - {fileID: 1513075499}
+  - {fileID: 1513075498}
   - {fileID: 1513075038}
   suppressAllAutoSelections: 0
 --- !u!114 &1513075084
@@ -48729,7 +48775,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1970.4326
     y: -191.54486
-    width: 123.437515
+    width: 126.71235
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -49804,7 +49850,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 2138629881}
 --- !u!114 &1513075102
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -49819,8 +49865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 411
   indentLevel: 0
-  storyText: 'You''re going to have to work your hardest to make up for this loss.
-    I will be helping out where I can. '
+  storyText: You're going to have to work your hardest to make up for this loss.
   description: 
   character: {fileID: 1489431234}
   portrait: {fileID: 0}
@@ -50423,11 +50468,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 743
   indentLevel: 0
-  storyText: 'They won''t listen to me. They respect you. And your exhaust is on
-    the line as much as mine is. '
+  storyText: 'They won''t listen to me. They respect you. '
   description: 
   character: {fileID: 1489431234}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -50437,7 +50481,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 301455811}
 --- !u!114 &1513075110
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -50465,7 +50509,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 2138629881}
 --- !u!114 &1513075111
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -51582,8 +51626,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 593
   indentLevel: 3
-  storyText: 'You send out a flurry of messages, both to your employees that are
-    off today and to nearby sister factories, explaining your dire situation. '
+  storyText: You send out a flurry of messages, both to your employees that are off
+    today and to nearby sister factories.
   description: 
   character: {fileID: 1902905947}
   portrait: {fileID: 0}
@@ -51613,7 +51657,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1765.8058
     y: -232.95502
-    width: 142.18753
+    width: 144.52057
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -51623,6 +51667,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1513075232}
+  - {fileID: 1513075482}
   - {fileID: 1513075231}
   - {fileID: 1513075230}
   - {fileID: 1513075229}
@@ -53020,7 +53065,7 @@ MonoBehaviour:
   storyText: 'Creators, I can''t wait to lie down. '
   description: 
   character: {fileID: 1489431234}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -53030,7 +53075,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1140441058}
 --- !u!114 &1513075134
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -53267,8 +53312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 300
   indentLevel: 0
-  storyText: 'Wow, so that''s how it''s going to be? Alright. I''ll tell them. Go
-    rust yourself. '
+  storyText: Wow, so that's how it's going to be?
   description: 
   character: {fileID: 6783689858992243635}
   portrait: {fileID: 0}
@@ -53281,7 +53325,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 2138629881}
 --- !u!114 &1513075144
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -53330,7 +53374,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 2138629881}
 --- !u!114 &1513075146
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -53345,12 +53389,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 297
   indentLevel: 0
-  storyText: Hey I don't like it either but it's all of our necks on the line right
-    now, we've got clients breathing down or backs and if we don't deliver I don't
-    think we'll have job stability.
+  storyText: 'Hey I don''t like it either. '
   description: 
   character: {fileID: 1489431234}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -53360,7 +53402,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 301455811}
 --- !u!114 &1513075147
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -53399,7 +53441,7 @@ MonoBehaviour:
   storyText: 'So, Q-4792 gave me a solution to our problem. '
   description: 
   character: {fileID: 1489431234}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -53409,7 +53451,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 301455811}
 --- !u!114 &1513075149
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -53424,10 +53466,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 294
   indentLevel: 0
-  storyText: 'You were right. Tell everyone they get overtime if they stay late. '
+  storyText: 'You were right. '
   description: 
   character: {fileID: 1489431234}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -53437,7 +53479,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 301455811}
 --- !u!114 &1513075150
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -53507,7 +53549,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 2138629881}
 --- !u!114 &1513075153
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -53525,7 +53567,7 @@ MonoBehaviour:
   storyText: I don't have a choice.
   description: 
   character: {fileID: 1489431234}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -53535,7 +53577,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 301455811}
 --- !u!114 &1513075154
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -53571,7 +53613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 288
   indentLevel: 0
-  storyText: 'You''re rusting joking. You have a terrible sense of humor. '
+  storyText: 'You''re rusting joking. '
   description: 
   character: {fileID: 6783689858992243635}
   portrait: {fileID: 0}
@@ -53584,7 +53626,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 2138629881}
 --- !u!114 &1513075156
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -53599,10 +53641,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 287
   indentLevel: 0
-  storyText: 'He said...hypothetically...that people should clock out and keep working. '
+  storyText: He said... hypothetically...
   description: 
   character: {fileID: 1489431234}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -53612,7 +53654,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 301455811}
 --- !u!114 &1513075157
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -53676,11 +53718,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 284
   indentLevel: 0
-  storyText: 'I can''t believe I have to do this. I can''t believe I rusting have
-    to do this. Creator-damned rusting promotion. '
+  storyText: I can't believe I have to do this. I can't believe I rusting have to
+    do this.
   description: 
   character: {fileID: 1489431234}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -53690,7 +53732,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1140441058}
 --- !u!114 &1513075160
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -53821,7 +53863,7 @@ MonoBehaviour:
   storyText: Yeah, just...do what you can. Please.
   description: 
   character: {fileID: 1489431234}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -53831,7 +53873,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 301455811}
 --- !u!114 &1513075166
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -53895,11 +53937,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 275
   indentLevel: 0
-  storyText: It's the right thing to do. If he gets mad at me, I'll tell him to hypothetically
-    rust off. Plus, if I'm going to jail, it's not going to be because of that guy.
+  storyText: 'It''s the right thing to do. If he gets mad at me, I''ll tell him to
+    hypothetically rust off. '
   description: 
   character: {fileID: 1489431234}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -53909,7 +53951,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1140441058}
 --- !u!114 &1513075169
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -53965,7 +54007,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 2138629881}
 --- !u!114 &1513075171
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -54506,7 +54548,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2029.3324
     y: 30.530624
-    width: 168.75003
+    width: 170.54797
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -54521,17 +54563,23 @@ MonoBehaviour:
   - {fileID: 1513075112}
   - {fileID: 1513075111}
   - {fileID: 1513075159}
+  - {fileID: 1513075488}
   - {fileID: 1513075158}
   - {fileID: 1513075148}
   - {fileID: 1513075156}
+  - {fileID: 1513075487}
   - {fileID: 1513075155}
+  - {fileID: 1513075486}
   - {fileID: 1513075146}
+  - {fileID: 1513075485}
   - {fileID: 1513075152}
   - {fileID: 1513075153}
   - {fileID: 1513075145}
   - {fileID: 1513075110}
   - {fileID: 1513075109}
+  - {fileID: 1513075465}
   - {fileID: 1513075143}
+  - {fileID: 1513075484}
   - {fileID: 1513075139}
   - {fileID: 1513075138}
   - {fileID: 1513075137}
@@ -54553,7 +54601,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1914.8275
     y: -35.78628
-    width: 100.000015
+    width: 100.68495
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -54567,8 +54615,10 @@ MonoBehaviour:
   - {fileID: 1513075105}
   - {fileID: 1513075104}
   - {fileID: 1513075168}
+  - {fileID: 1513075466}
   - {fileID: 1513075166}
   - {fileID: 1513075149}
+  - {fileID: 1513075489}
   - {fileID: 1513075101}
   - {fileID: 1513075165}
   - {fileID: 1513075170}
@@ -54668,12 +54718,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 262
   indentLevel: 0
-  storyText: 'Let''s talk in hypotheticals. Hypothetically, you could have your employees
-    clock out and keep working. Hypothetically, you could tell them they''ll lose
-    their jobs if they don''t. Hypothetically. '
+  storyText: Hypothetically.
   description: 
   character: {fileID: 1757641105}
-  portrait: {fileID: 21300000, guid: 328dd7212f7a53c499f60fd9ae20de1a, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -54683,7 +54731,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1027694274}
 --- !u!114 &1513075183
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -54878,11 +54926,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 259
   indentLevel: 0
-  storyText: 'You''re right. It''s not. Seems like you''ll have to come up with some
-    solution. '
+  storyText: You're right. It's not.
   description: 
   character: {fileID: 1757641105}
-  portrait: {fileID: 21300000, guid: 328dd7212f7a53c499f60fd9ae20de1a, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -54892,7 +54939,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1027694274}
 --- !u!114 &1513075186
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -54908,10 +54955,10 @@ MonoBehaviour:
   itemId: 258
   indentLevel: 0
   storyText: The problem is that people are going to go into overtime, and I don't
-    think that's in the budget. ..
+    think that's in the budget...
   description: 
   character: {fileID: 1489431234}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -54921,7 +54968,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1140441058}
 --- !u!114 &1513075187
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -54936,11 +54983,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 257
   indentLevel: 0
-  storyText: 'Hypothetically, it''s only illegal if you get found out. Put the fear
-    of the creators in them, and no one will talk. '
+  storyText: 'Hypothetically, it''s only illegal if you get found out. '
   description: 
   character: {fileID: 1757641105}
-  portrait: {fileID: 21300000, guid: 328dd7212f7a53c499f60fd9ae20de1a, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -54950,7 +54996,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1027694274}
 --- !u!114 &1513075188
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -54968,7 +55014,7 @@ MonoBehaviour:
   storyText: Right, I'm just wondering if we could have an extension?
   description: 
   character: {fileID: 1489431234}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -54978,7 +55024,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1140441058}
 --- !u!114 &1513075189
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -55074,7 +55120,7 @@ MonoBehaviour:
   storyText: 'But...that''s illegal. '
   description: 
   character: {fileID: 1489431234}
-  portrait: {fileID: 21300000, guid: 88eeb667eac669e42b7b61c0facfc88c, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -55084,7 +55130,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 301455811}
 --- !u!114 &1513075193
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -55099,12 +55145,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 251
   indentLevel: 0
-  storyText: We have contracts. We fill the contracts. We don't get extensions on
-    our contracts because that would make us look bad. Does that all make sense to
-    you?
+  storyText: We have contracts. We fill the contracts.
   description: 
   character: {fileID: 1757641105}
-  portrait: {fileID: 21300000, guid: 328dd7212f7a53c499f60fd9ae20de1a, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   fireOffVoice: 0
   showAlways: 1
@@ -55114,7 +55158,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1027694274}
 --- !u!114 &1513075194
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -55170,7 +55214,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1027694274}
 --- !u!114 &1513075196
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -55229,7 +55273,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2064.8926
     y: -35.78749
-    width: 101.562515
+    width: 100.68495
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -55242,11 +55286,20 @@ MonoBehaviour:
   - {fileID: 1513075195}
   - {fileID: 1513075188}
   - {fileID: 1513075193}
+  - {fileID: 1513075471}
+  - {fileID: 1513075493}
+  - {fileID: 1513075470}
   - {fileID: 1513075186}
   - {fileID: 1513075185}
+  - {fileID: 1513075492}
+  - {fileID: 1513075469}
   - {fileID: 1513075182}
+  - {fileID: 1513075491}
+  - {fileID: 1513075468}
+  - {fileID: 1513075490}
   - {fileID: 1513075192}
   - {fileID: 1513075187}
+  - {fileID: 1513075467}
   - {fileID: 1513075181}
   - {fileID: 1513075180}
   - {fileID: 1513075179}
@@ -55407,7 +55460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 240
   indentLevel: 0
-  storyText: The morning crew is set to clock out soon, myself included.
+  storyText: 'The morning crew is set to clock out soon, '
   description: 
   character: {fileID: 6783689858992243635}
   portrait: {fileID: 0}
@@ -55905,9 +55958,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1458.0142
+    x: 1459.384
     y: -146.77232
-    width: 145.31253
+    width: 145.89044
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -55918,17 +55971,23 @@ MonoBehaviour:
   commandList:
   - {fileID: 1513075212}
   - {fileID: 1513075455}
+  - {fileID: 1513075497}
   - {fileID: 1513075160}
   - {fileID: 1513075103}
   - {fileID: 1513075454}
   - {fileID: 1513075102}
+  - {fileID: 1513075481}
   - {fileID: 1513075453}
+  - {fileID: 1513075480}
   - {fileID: 1513075092}
   - {fileID: 1513075089}
   - {fileID: 1513075141}
   - {fileID: 1513075140}
   - {fileID: 1513075136}
   - {fileID: 1513075135}
+  - {fileID: 1513075477}
+  - {fileID: 1513075476}
+  - {fileID: 1513075475}
   - {fileID: 1513075040}
   suppressAllAutoSelections: 0
 --- !u!114 &1513075215
@@ -55947,7 +56006,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1313.9828
     y: -146.43858
-    width: 128.12502
+    width: 128.08221
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -55958,18 +56017,24 @@ MonoBehaviour:
   commandList:
   - {fileID: 1513075088}
   - {fileID: 1513075452}
+  - {fileID: 1513075496}
   - {fileID: 1513075087}
   - {fileID: 1513075451}
   - {fileID: 1513075081}
+  - {fileID: 1513075479}
   - {fileID: 1513075080}
   - {fileID: 1513075079}
   - {fileID: 1513075069}
   - {fileID: 1513075068}
+  - {fileID: 1513075478}
   - {fileID: 1513075067}
   - {fileID: 1513075150}
   - {fileID: 1513075147}
   - {fileID: 1513075144}
   - {fileID: 1513075142}
+  - {fileID: 1513075474}
+  - {fileID: 1513075473}
+  - {fileID: 1513075472}
   - {fileID: 1513075065}
   suppressAllAutoSelections: 0
 --- !u!114 &1513075216
@@ -56969,9 +57034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 489
   indentLevel: 0
-  storyText: 'It takes some pleading, but one of your employees offers to come in.
-    You know that this will put them in overtime for their entire shift, but you
-    don''t really know that you have a choice. '
+  storyText: It takes some pleading, but one of your employees offers to come in.
   description: 
   character: {fileID: 1902905947}
   portrait: {fileID: 0}
@@ -58727,7 +58790,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1610.4838
     y: -37.77939
-    width: 134.37502
+    width: 133.56168
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -60158,7 +60221,7 @@ MonoBehaviour:
       intValue: 0
       boolValue: 0
       floatValue: 0
-      stringValue: Flappy_Bird_Silver
+      stringValue: Brick_Breaker_Silver
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
@@ -61393,7 +61456,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2150.205
     y: -170.57013
-    width: 151.56253
+    width: 152.73975
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -61424,7 +61487,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2149.1506
     y: -233.61081
-    width: 156.25003
+    width: 156.84935
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -61497,7 +61560,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1624.27
     y: -100.9034
-    width: 110.937515
+    width: 111.64385
     height: 40
   tint: {r: 0.9058824, g: 0.8000001, b: 0, a: 1}
   useCustomTint: 0
@@ -61537,7 +61600,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1779.0165
     y: -160.12103
-    width: 128.12502
+    width: 126.71235
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -62113,7 +62176,7 @@ MonoBehaviour:
       intValue: 0
       boolValue: 0
       floatValue: 0
-      stringValue: Brick_Breaker_Silver
+      stringValue: Flappy_Bird_Silver
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
@@ -63455,7 +63518,7 @@ MonoBehaviour:
       intValue: 0
       boolValue: 0
       floatValue: 0
-      stringValue: Flappy_Bird_Silver
+      stringValue: Brick_Breaker_Silver
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
@@ -64641,7 +64704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 669
-  indentLevel: 3
+  indentLevel: 2
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 1513075332}
   startLabel:
@@ -64662,7 +64725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 668
-  indentLevel: 2
+  indentLevel: 1
   anyOrAllConditions: 0
   conditions:
   - compareOperator: 0
@@ -64905,7 +64968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 667
-  indentLevel: 3
+  indentLevel: 2
 --- !u!114 &1513075315
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -64919,7 +64982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 666
-  indentLevel: 4
+  indentLevel: 3
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 1513075279}
   startLabel:
@@ -64940,7 +65003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 665
-  indentLevel: 3
+  indentLevel: 2
   anyOrAllConditions: 0
   conditions:
   - compareOperator: 0
@@ -65648,7 +65711,7 @@ MonoBehaviour:
       intValue: 0
       boolValue: 0
       floatValue: 0
-      stringValue: Brick_Breaker_Silver
+      stringValue: Flappy_Bird_Silver
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
@@ -67090,7 +67153,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2316.7295
     y: -299.37427
-    width: 142.18753
+    width: 144.52057
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -67130,7 +67193,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2302.9988
     y: -357.0482
-    width: 165.62503
+    width: 166.43839
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -71184,7 +71247,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2310.4814
     y: -41.926315
-    width: 160.93753
+    width: 162.3288
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -71215,7 +71278,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2321.541
     y: -105.719376
-    width: 137.50002
+    width: 140.41098
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -71255,7 +71318,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1984.7646
     y: 210.69093
-    width: 118.750015
+    width: 121.232895
     height: 40
   tint: {r: 0, g: 0.9490196, b: 1, a: 1}
   useCustomTint: 1
@@ -73911,7 +73974,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 587.69867
     y: -79.109604
-    width: 157.81253
+    width: 160.95894
     height: 40
   tint: {r: 0.3529412, g: 0.46666667, b: 0.7254902, a: 1}
   useCustomTint: 1
@@ -74302,7 +74365,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 592.7621
     y: -22.617273
-    width: 150.00003
+    width: 151.3699
     height: 40
   tint: {r: 0.98039216, g: 0.5803922, b: 1, a: 1}
   useCustomTint: 1
@@ -74763,7 +74826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 841
-  indentLevel: 1
+  indentLevel: 0
 --- !u!114 &1513075436
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -74777,7 +74840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 840
-  indentLevel: 2
+  indentLevel: 1
 --- !u!114 &1513075437
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -75030,8 +75093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 853
   indentLevel: 0
-  storyText: 'Um...so, this past month has been a rough transition and unfortunately
-    we''re short of our production goal. '
+  storyText: Um...so, this past month has been a rough transition.
   description: 
   character: {fileID: 1489431234}
   portrait: {fileID: 0}
@@ -75059,8 +75121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 857
   indentLevel: 0
-  storyText: 'There will also be no overtime, so make sure that you get your work
-    done in your assigned work period. '
+  storyText: There will also be no overtime.
   description: 
   character: {fileID: 1489431234}
   portrait: {fileID: 0}
@@ -75117,8 +75178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 855
   indentLevel: 0
-  storyText: 'The division manager and myself have deemed this unacceptable, and
-    the deficit must be made up by end of day. '
+  storyText: 'The division manager and myself have deemed this unacceptable. '
   description: 
   character: {fileID: 1489431234}
   portrait: {fileID: 0}
@@ -75315,8 +75375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 866
   indentLevel: 0
-  storyText: But unless the afternoon and evening crews really pick up their pace,
-    we're not going to hit the target.
+  storyText: 'But unless the later crews pick up their pace, '
   description: 
   character: {fileID: 6783689858992243635}
   portrait: {fileID: 0}
@@ -75375,6 +75434,960 @@ MonoBehaviour:
   indentLevel: 2
   storyText: 'If you stay late you''ll miss it, but you''re not sure if the factory
     will actually hit quota unless you''re overseeing things. '
+  description: 
+  character: {fileID: 1902905947}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 101327094}
+--- !u!114 &1513075465
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 873
+  indentLevel: 0
+  storyText: 'And your exhaust is on the line as much as mine is. '
+  description: 
+  character: {fileID: 1489431234}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 301455811}
+--- !u!114 &1513075466
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 872
+  indentLevel: 0
+  storyText: Plus, if I'm going to jail, it's not going to be because of that guy.
+  description: 
+  character: {fileID: 1489431234}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1140441058}
+--- !u!114 &1513075467
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 871
+  indentLevel: 0
+  storyText: 'Put the fear of the creators in them, and no one will talk. '
+  description: 
+  character: {fileID: 1757641105}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1027694274}
+--- !u!114 &1513075468
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 870
+  indentLevel: 0
+  storyText: 'Hypothetically. '
+  description: 
+  character: {fileID: 1757641105}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1027694274}
+--- !u!114 &1513075469
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 869
+  indentLevel: 0
+  storyText: 'Let''s talk in hypotheticals. '
+  description: 
+  character: {fileID: 1757641105}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1027694274}
+--- !u!114 &1513075470
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 868
+  indentLevel: 0
+  storyText: Does that all make sense to you?
+  description: 
+  character: {fileID: 1757641105}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1027694274}
+--- !u!114 &1513075471
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 867
+  indentLevel: 0
+  storyText: We don't get extensions on our contracts.
+  description: 
+  character: {fileID: 1757641105}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1027694274}
+--- !u!114 &1513075472
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 874
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1576387493}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1513075473
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 875
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 698857241}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1513075474
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 876
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 2014522145}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1513075475
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 879
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1576387493}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1513075476
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 878
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 698857241}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1513075477
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 877
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 2014522145}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1513075478
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 881
+  indentLevel: 0
+  storyText: 'The sooner we start, the sooner we can shove this junk up the company''s
+    exhaust vent. '
+  description: 
+  character: {fileID: 6783689858992243635}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 691107204}
+--- !u!114 &1513075479
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 880
+  indentLevel: 0
+  storyText: We need for everyone to really go above and beyond.
+  description: 
+  character: {fileID: 1489431234}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1140441058}
+--- !u!114 &1513075480
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 883
+  indentLevel: 0
+  storyText: 'So make sure that you get your work done in your assigned work period. '
+  description: 
+  character: {fileID: 1489431234}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1140441058}
+--- !u!114 &1513075481
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 882
+  indentLevel: 0
+  storyText: 'I will be helping out where I can. '
+  description: 
+  character: {fileID: 1489431234}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1140441058}
+--- !u!114 &1513075482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 884
+  indentLevel: 0
+  storyText: 'You know that this will put them in overtime for their entire shift,
+    but you don''t really know that you have a choice. '
+  description: 
+  character: {fileID: 1902905947}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 101327094}
+--- !u!114 &1513075483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 885
+  indentLevel: 3
+--- !u!114 &1513075484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 897
+  indentLevel: 0
+  storyText: ' Alright. I''ll tell them. Go rust yourself. '
+  description: 
+  character: {fileID: 6783689858992243635}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 2138629881}
+--- !u!114 &1513075485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 896
+  indentLevel: 0
+  storyText: But  if we don't deliver I don't think we'll have job stability.
+  description: 
+  character: {fileID: 1489431234}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 301455811}
+--- !u!114 &1513075486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 895
+  indentLevel: 0
+  storyText: 'You have a terrible sense of humor. '
+  description: 
+  character: {fileID: 6783689858992243635}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 2138629881}
+--- !u!114 &1513075487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 894
+  indentLevel: 0
+  storyText: 'that people should clock out and keep working. '
+  description: 
+  character: {fileID: 1489431234}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 301455811}
+--- !u!114 &1513075488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 893
+  indentLevel: 0
+  storyText: 'Creator-damned rusting promotion. '
+  description: 
+  character: {fileID: 1489431234}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1140441058}
+--- !u!114 &1513075489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 892
+  indentLevel: 0
+  storyText: 'Tell everyone they get overtime if they stay late. '
+  description: 
+  character: {fileID: 1489431234}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 301455811}
+--- !u!114 &1513075490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 891
+  indentLevel: 0
+  storyText: You could tell them they'll lose their jobs if they don't.
+  description: 
+  character: {fileID: 1757641105}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1027694274}
+--- !u!114 &1513075491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 890
+  indentLevel: 0
+  storyText: 'You could have your employees clock out and keep working. '
+  description: 
+  character: {fileID: 1757641105}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1027694274}
+--- !u!114 &1513075492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 889
+  indentLevel: 0
+  storyText: 'Seems like you''ll have to come up with some solution. '
+  description: 
+  character: {fileID: 1757641105}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1027694274}
+--- !u!114 &1513075493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 888
+  indentLevel: 0
+  storyText: 'Because that would make us look bad. '
+  description: 
+  character: {fileID: 1757641105}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1027694274}
+--- !u!114 &1513075494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 887
+  indentLevel: 0
+  storyText: we're not going to hit the target.
+  description: 
+  character: {fileID: 6783689858992243635}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 2138629881}
+--- !u!114 &1513075495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 886
+  indentLevel: 0
+  storyText: myself included.
+  description: 
+  character: {fileID: 6783689858992243635}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 2138629881}
+--- !u!114 &1513075496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 898
+  indentLevel: 0
+  storyText: 'And unfortunately we''re short of our production goal. '
+  description: 
+  character: {fileID: 1489431234}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1140441058}
+--- !u!114 &1513075497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 899
+  indentLevel: 0
+  storyText: 'And the deficit must be made up by end of day. '
+  description: 
+  character: {fileID: 1489431234}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1140441058}
+--- !u!114 &1513075498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 902
+  indentLevel: 0
+  storyText: The shipping crew still has orders to send out.
+  description: 
+  character: {fileID: 1902905947}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 101327094}
+--- !u!114 &1513075499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 901
+  indentLevel: 0
+  storyText: 'The manufacturing crew also has more to do. '
+  description: 
+  character: {fileID: 1902905947}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  fireOffVoice: 0
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 101327094}
+--- !u!114 &1513075500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513074924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 900
+  indentLevel: 0
+  storyText: 'The assembly line probably needs more help. '
   description: 
   character: {fileID: 1902905947}
   portrait: {fileID: 0}
@@ -78021,6 +79034,42 @@ Transform:
   m_Father: {fileID: 1446324697}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1678920831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1678920832}
+  m_Layer: 0
+  m_Name: Doors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1678920832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678920831}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1775033752}
+  - {fileID: 923558566}
+  - {fileID: 553503095}
+  - {fileID: 247020057}
+  - {fileID: 1691876466}
+  - {fileID: 1954315799}
+  m_Father: {fileID: 482622618}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1680889653
 GameObject:
   m_ObjectHideFlags: 0
@@ -78179,7 +79228,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 482622618}
+    m_TransformParent: {fileID: 1678920832}
     m_Modifications:
     - target: {fileID: 1948726494510796232, guid: 4fce18fb8066d8049b38668a301df141, type: 3}
       propertyPath: m_Name
@@ -78195,7 +79244,7 @@ PrefabInstance:
       objectReference: {fileID: 1513074948}
     - target: {fileID: 7505168958446849812, guid: 4fce18fb8066d8049b38668a301df141, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7505168958446849812, guid: 4fce18fb8066d8049b38668a301df141, type: 3}
       propertyPath: m_LocalPosition.x
@@ -78486,7 +79535,7 @@ Transform:
   - {fileID: 1565629651}
   - {fileID: 341093752}
   m_Father: {fileID: 482622618}
-  m_RootOrder: 18
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1737900900
 GameObject:
@@ -78739,7 +79788,7 @@ Transform:
   m_Children:
   - {fileID: 1309583479}
   m_Father: {fileID: 482622618}
-  m_RootOrder: 15
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1743972978
 SpriteRenderer:
@@ -78933,7 +79982,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 482622618}
-  m_RootOrder: 14
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1751697706
 GameObject:
@@ -79318,7 +80367,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 482622618}
+    m_TransformParent: {fileID: 1678920832}
     m_Modifications:
     - target: {fileID: 1326953494566833572, guid: dbce99fcad001b1418e8f76be282e78f, type: 3}
       propertyPath: m_Sprite
@@ -79358,7 +80407,7 @@ PrefabInstance:
       objectReference: {fileID: 1513075021}
     - target: {fileID: 7505168958446849812, guid: dbce99fcad001b1418e8f76be282e78f, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7505168958446849812, guid: dbce99fcad001b1418e8f76be282e78f, type: 3}
       propertyPath: m_LocalScale.x
@@ -80545,7 +81594,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 482622618}
+    m_TransformParent: {fileID: 1678920832}
     m_Modifications:
     - target: {fileID: 1948726494510796232, guid: 4fce18fb8066d8049b38668a301df141, type: 3}
       propertyPath: m_Name
@@ -80561,7 +81610,7 @@ PrefabInstance:
       objectReference: {fileID: 1513075401}
     - target: {fileID: 7505168958446849812, guid: 4fce18fb8066d8049b38668a301df141, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7505168958446849812, guid: 4fce18fb8066d8049b38668a301df141, type: 3}
       propertyPath: m_LocalPosition.x
