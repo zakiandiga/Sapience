@@ -355,7 +355,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.654902, g: 0.70980394, b: 0.69803923, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -419,7 +419,7 @@ MonoBehaviour:
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
   m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
+  m_BlendUpdateMethod: 0
   m_DefaultBlend:
     m_Style: 1
     m_Time: 2
@@ -33744,8 +33744,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1022250920}
-  selectedCommands:
-  - {fileID: 1022250931}
+  selectedCommands: []
   variables:
   - {fileID: 1022250923}
   - {fileID: 1022250933}
@@ -36369,7 +36368,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2714075712036877979, guid: a5cd3848e6ac85542af8e5f8fd5b3ba6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.5001488
+      value: 0.50014496
       objectReference: {fileID: 0}
     - target: {fileID: 9195786104362511060, guid: a5cd3848e6ac85542af8e5f8fd5b3ba6, type: 3}
       propertyPath: m_Pivot.x
@@ -36458,6 +36457,14 @@ PrefabInstance:
     - target: {fileID: 9195786104362511061, guid: a5cd3848e6ac85542af8e5f8fd5b3ba6, type: 3}
       propertyPath: m_Name
       value: SayDialog_Narrator
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195786104739557297, guid: a5cd3848e6ac85542af8e5f8fd5b3ba6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.7248535
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195786105787698512, guid: a5cd3848e6ac85542af8e5f8fd5b3ba6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.1418457
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5cd3848e6ac85542af8e5f8fd5b3ba6, type: 3}
