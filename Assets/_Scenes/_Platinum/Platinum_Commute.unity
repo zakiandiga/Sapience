@@ -10837,7 +10837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5555953141228723297, guid: 6a7b148af3e95934ab1840f69ef641a1, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5555953141228723297, guid: 6a7b148af3e95934ab1840f69ef641a1, type: 3}
       propertyPath: m_SortingLayerID
@@ -20512,7 +20512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -182.98232, y: 19.519175}
+  scrollPos: {x: -113.909996, y: -56.76951}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 644
@@ -20524,8 +20524,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 862884685}
-  selectedCommands: []
+  - {fileID: 862884633}
+  selectedCommands:
+  - {fileID: 862884646}
   variables:
   - {fileID: 862884627}
   - {fileID: 862884626}
@@ -20985,7 +20986,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 274
   indentLevel: 0
-  storyText: You arrive at your new workplace, a tall, all-glass tower.
+  storyText: You arrive at your new workplace, a tall, metallic tower covered in
+    windows.
   description: 
   character: {fileID: 686253600}
   portrait: {fileID: 0}
@@ -21112,7 +21114,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 660378962}
+    gameObjectVal: {fileID: 1169526644}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -23111,7 +23113,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 660378962}
+    gameObjectVal: {fileID: 1169526644}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -28840,6 +28842,7 @@ GameObject:
   - component: {fileID: 962515902}
   - component: {fileID: 962515904}
   - component: {fileID: 962515903}
+  - component: {fileID: 962515905}
   m_Layer: 0
   m_Name: day2_x4_evening_platinum_commute
   m_TagString: Untagged
@@ -30614,6 +30617,28 @@ MonoBehaviour:
   frameCount:
     integerRef: {fileID: 0}
     integerVal: 30
+--- !u!114 &962515905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962515863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a3fb5b605f7ef409e4d3658a72fbc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 317
+  indentLevel: 0
+  waitUntilFinished: 0
+  soundPath:
+    Guid:
+      Data1: 1275807050
+      Data2: 1157986484
+      Data3: 1034456193
+      Data4: -1673153625
+    Path: event:/SFX/Train Passby
 --- !u!114 &962515906
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -30904,6 +30929,7 @@ MonoBehaviour:
   - {fileID: 962515868}
   - {fileID: 962515901}
   - {fileID: 962515867}
+  - {fileID: 962515905}
   - {fileID: 962515878}
   - {fileID: 962515903}
   - {fileID: 962515904}
@@ -30923,7 +30949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 270.36584
+    x: 271.4297
     y: 197.4258
     width: 123.40425
     height: 40
@@ -31207,7 +31233,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 230.96585
-    y: 127.90244
+    y: 128.96628
     width: 202.12766
     height: 40
   tint: {r: 0, g: 1, b: 0.043137256, a: 1}
@@ -31296,7 +31322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -83.30422, y: 54.107594}
+  scrollPos: {x: -43.942528, y: -95.89239}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 679
@@ -31308,8 +31334,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 962515920}
-  selectedCommands: []
+  - {fileID: 962515918}
+  selectedCommands:
+  - {fileID: 962515905}
   variables:
   - {fileID: 962515934}
   - {fileID: 962515933}
@@ -36342,7 +36369,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2714075712036877979, guid: a5cd3848e6ac85542af8e5f8fd5b3ba6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.5001259
+      value: 0.5001488
       objectReference: {fileID: 0}
     - target: {fileID: 9195786104362511060, guid: a5cd3848e6ac85542af8e5f8fd5b3ba6, type: 3}
       propertyPath: m_Pivot.x
@@ -62726,7 +62753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 962515935}
+  selectedFlowchart: {fileID: 1022250927}
 --- !u!4 &1666736375
 Transform:
   m_ObjectHideFlags: 1
@@ -68814,7 +68841,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 286521288609663621, guid: b7029faac5f6147448c948f54f24d2ce, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6796494449539547863, guid: b7029faac5f6147448c948f54f24d2ce, type: 3}
       propertyPath: m_Name
