@@ -328,7 +328,6 @@ GameObject:
   m_Component:
   - component: {fileID: 81848212}
   - component: {fileID: 81848211}
-  - component: {fileID: 81848210}
   - component: {fileID: 81848213}
   m_Layer: 0
   m_Name: Main Camera
@@ -337,14 +336,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &81848210
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81848209}
-  m_Enabled: 1
 --- !u!20 &81848211
 Camera:
   m_ObjectHideFlags: 0
@@ -419,7 +410,7 @@ MonoBehaviour:
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
   m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
+  m_BlendUpdateMethod: 0
   m_DefaultBlend:
     m_Style: 1
     m_Time: 2

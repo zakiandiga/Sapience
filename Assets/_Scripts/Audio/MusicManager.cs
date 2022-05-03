@@ -37,6 +37,9 @@ public class MusicManager : MonoBehaviour
 
     private void StartMusic(EventReference soundPath)
     {
+        if (!currentMusicPath.IsNull && currentMusicPath.Guid == soundPath.Guid)
+            return;
+
         if (currentMusicPath.IsNull || currentMusicPath.Guid == soundPath.Guid)
         {
             currentMusicPath.Guid = soundPath.Guid;
@@ -56,8 +59,6 @@ public class MusicManager : MonoBehaviour
             musicInstance.release();
         }
 
-        if (!currentMusicPath.IsNull && currentMusicPath.Guid == soundPath.Guid)
-            return;
 
     }
 
