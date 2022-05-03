@@ -3693,9 +3693,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1300437123}
+  - {fileID: 1300437118}
   selectedCommands:
-  - {fileID: 1300437127}
+  - {fileID: 1300437117}
   variables: []
   description: 
   stepPause: 0
@@ -3753,7 +3753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  storyText: The game is over now.
+  storyText: Inbox cleared.
   description: 
   character: {fileID: 674952897}
   portrait: {fileID: 0}
