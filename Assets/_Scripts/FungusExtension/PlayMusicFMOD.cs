@@ -18,9 +18,17 @@ namespace Fungus
         public static event Action<EventReference> OnStartMusic;
         public static event Action<EventReference> OnStopMusic;
 
+        /*
         private IEnumerator WaitForAudioManager()
         {
             yield return new WaitUntil(() => SceneManager.GetSceneByName("AudioManager").isLoaded);
+            OnEnter();
+        }
+        */
+
+        private void RetryPlayMusic(string scene)
+        {
+            MovementManager.OnAudioManagerLoaded -= RetryPlayMusic;
             OnEnter();
         }
 
@@ -28,7 +36,9 @@ namespace Fungus
         {
             if (!SceneManager.GetSceneByName("AudioManager").isLoaded)
             {
-                StartCoroutine(WaitForAudioManager());
+                MovementManager.OnAudioManagerLoaded += RetryPlayMusic;
+
+                //StartCoroutine(WaitForAudioManager());
                 return;
             }
 

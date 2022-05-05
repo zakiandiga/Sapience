@@ -143,7 +143,8 @@ public class Player : MonoBehaviour
 
                 if (inputHandler.Interacting)
                 {
-                    rootState = PlayerRootState.interacting;
+                    OnPlayerInteract?.Invoke(this);
+                    //rootState = PlayerRootState.interacting;
                 }
 
                 break;            
@@ -185,7 +186,7 @@ public class Player : MonoBehaviour
                 break;
 
             case PlayerRootState.interacting:
-                OnPlayerInteract?.Invoke(this);
+                
 
                 /*
                 if (moveState != PlayerMoveState.ready)
