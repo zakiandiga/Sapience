@@ -37,8 +37,6 @@ namespace Fungus
             if (!SceneManager.GetSceneByName("AudioManager").isLoaded)
             {
                 MovementManager.OnAudioManagerLoaded += RetryPlayMusic;
-
-                //StartCoroutine(WaitForAudioManager());
                 return;
             }
 

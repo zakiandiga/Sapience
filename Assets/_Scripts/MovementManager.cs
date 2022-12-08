@@ -60,9 +60,6 @@ public class MovementManager : MonoBehaviour
         MinigameBase.OnMinigameClose += CloseMinigame;
         cameraManager.OnCameraBlendingStart += WaitingCameraBlendToMinigame;
         cameraManager.SetMinigameCamera(true);
-
-
-        //Handle fade out here
     }
 
     private void WaitingCameraBlendToMinigame(bool cameraBlend)
@@ -90,8 +87,6 @@ public class MovementManager : MonoBehaviour
         cameraManager.OnCameraBlendingFinish += WaitingCameraBlendFromMinigame;
         cameraManager.SetMinigameCamera(false);
         curtainManager.FadeTo();
-        //put transition here        
-        //waiting for the OnCameraBlending(false) event
     }
 
     private void FinalizeClosingMinigame(Scene scene)

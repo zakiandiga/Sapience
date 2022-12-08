@@ -55,56 +55,54 @@ public class Interactable : MonoBehaviour
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         currentPlayer = collision.GetComponent<Player>();
-        if (currentPlayer.CurrentInteractable == null && interactableState == InteractableState.idle)
-        {
-            currentPlayer.SetInteractible(this);
-            interactableState = InteractableState.isInteractable;
-            InteractIconSwitch(true);
-            currentPlayer.OnPlayerInteract += Interact;
-        }
+        if (currentPlayer.CurrentInteractable != null && interactableState != InteractableState.idle)
+            return;
+
+        currentPlayer.SetInteractible(this);
+        interactableState = InteractableState.isInteractable;
+        InteractIconSwitch(true);
+        currentPlayer.OnPlayerInteract += Interact;
     }
 
     protected void OnTriggerStay2D(Collider2D collision)
     {
-        if (currentPlayer == null)
-        {
-            currentPlayer = collision.GetComponent<Player>();
-            if (currentPlayer.CurrentInteractable == null && interactableState == InteractableState.idle)
-            {
-                currentPlayer.SetInteractible(this);
-                interactableState = InteractableState.isInteractable;
-                InteractIconSwitch(true);
-                currentPlayer.OnPlayerInteract += Interact;
-            }
-        }
+        currentPlayer = collision.GetComponent<Player>();
+        
+        if (currentPlayer != null)
+            return;        
+
+        if (currentPlayer.CurrentInteractable != null && interactableState != InteractableState.idle)
+            return;
+
+        currentPlayer.SetInteractible(this);
+        interactableState = InteractableState.isInteractable;
+        InteractIconSwitch(true);
+        currentPlayer.OnPlayerInteract += Interact;        
     }
 
     protected virtual void OnTriggerExit2D(Collider2D collision)
     {
-        if (currentPlayer != null && interactableState == InteractableState.isInteractable)
-        {
-            currentPlayer.OnPlayerInteract -= Interact;            
-            interactableState = InteractableState.idle;
-            currentPlayer.SetInteractible(null);
-            InteractIconSwitch(false);
-            currentPlayer = null;
-            //isInteractable = false;
-            
-        }
+        if (currentPlayer == null && interactableState != InteractableState.isInteractable)
+            return;
+
+        currentPlayer.OnPlayerInteract -= Interact;            
+        interactableState = InteractableState.idle;
+        currentPlayer.SetInteractible(null);
+        InteractIconSwitch(false);
+        currentPlayer = null;
     }
 
     public virtual void Interact(Player player)
     {
-        if(interactableState == InteractableState.isInteractable)
-        {
-            interactableState = InteractableState.interacting;
+        if (interactableState != InteractableState.isInteractable)
+            return;
 
-            MovementManager.OnBlockEnd += SwitchingInteractIconFromBlock;
+        interactableState = InteractableState.interacting;
 
-            InteractIconSwitch(false);
-            OnCallingDialogue?.Invoke(currentBlockReference);        
+        MovementManager.OnBlockEnd += SwitchingInteractIconFromBlock;
 
-        }
+        InteractIconSwitch(false);
+        OnCallingDialogue?.Invoke(currentBlockReference);  
     }
 }
 
